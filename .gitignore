@@ -1,0 +1,3 @@
+data/.build_cache/
+*.tmp
+Thumbs.db

@@ -1,0 +1,2864 @@
+{
+  "schema_version": 2,
+  "repo_id": 1115,
+  "path_brand": "htc",
+  "path_device": "europe_magnids",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/htc/europe_magnids.git",
+  "repo_url": "https://dumps.tadiphone.dev/dumps/htc/europe_magnids",
+  "repo_size_bytes": 371508701,
+  "storage_size_bytes": 371508701,
+  "default_branch": "1.05.401.3-CL144761-release-keys",
+  "branches": [
+    "1.05.401.3-CL144761-release-keys"
+  ],
+  "branch_count": 1,
+  "branch_summaries": [
+    {
+      "branch": "1.05.401.3-CL144761-release-keys",
+      "is_default": true,
+      "tip_commit": "67032d01f2d64c1761980fdd77ff75605efbee8e",
+      "pushed_at": "2019-10-19T09:31:41Z",
+      "clone_url": "https://dumps.tadiphone.dev/dumps/htc/europe_magnids.git",
+      "repo_url": "https://dumps.tadiphone.dev/dumps/htc/europe_magnids",
+      "fingerprint": "htc_europe/htc_magnids/magnids:4.0.4/IMM76D/144761.3:user/release-keys",
+      "brand": "htc_europe",
+      "brand_norm": "htc_europe",
+      "codename": "magnids",
+      "top_codename": "magnids",
+      "manufacturer": "HTC",
+      "manufacturer_norm": "htc",
+      "platform": "msm7k",
+      "platform_norm": "msm7k",
+      "platform_family": "qualcomm",
+      "release": "4.0.4",
+      "description": "1.05.401.3 CL144761 release-keys",
+      "derived_branch": "1.05.401.3-CL144761-release-keys",
+      "is_ab": false,
+      "tags": "release-keys",
+      "build_id": "IMM76D",
+      "incremental": "144761.3",
+      "flavor": "user",
+      "cpu_abilist": null,
+      "cpu_abilist32": null,
+      "cpu_abilist64": null,
+      "primary_abi": null,
+      "secondary_abi": null,
+      "zygote_mode": null,
+      "userspace_bitness": null,
+      "binder_bitness": null,
+      "sdk_version": "15",
+      "product_first_api_level": null,
+      "board_first_api_level": null,
+      "security_patch": null,
+      "security_patch_levels": [],
+      "prop_sources": {
+        "flavor": "system/system/build.prop",
+        "release": "system/system/build.prop",
+        "build_id": "system/system/build.prop",
+        "incremental": "system/system/build.prop",
+        "tags": "system/system/build.prop",
+        "platform": "system/system/build.prop",
+        "manufacturer": "system/system/build.prop",
+        "fingerprint": "system/system/build.prop",
+        "codename": "system/system/build.prop",
+        "brand": "system/system/build.prop",
+        "description": "system/system/build.prop",
+        "sdk_version": "system/system/build.prop",
+        "gles_versions": "system/system/build.prop",
+        "default_locale": "system/system/build.prop"
+      },
+      "build_prop_files_found": [
+        "system/system/build.prop"
+      ],
+      "permission_files_found": [
+        "system/system/etc/permissions/android.hardware.camera.flash-autofocus.xml",
+        "system/system/etc/permissions/android.hardware.location.gps.xml",
+        "system/system/etc/permissions/android.hardware.sensor.accelerometer.xml",
+        "system/system/etc/permissions/android.hardware.sensor.light.xml",
+        "system/system/etc/permissions/android.hardware.sensor.proximity.xml",
+        "system/system/etc/permissions/android.hardware.telephony.gsm.xml",
+        "system/system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml",
+        "system/system/etc/permissions/android.hardware.usb.accessory.xml",
+        "system/system/etc/permissions/android.hardware.wifi.direct.xml",
+        "system/system/etc/permissions/android.hardware.wifi.xml",
+        "system/system/etc/permissions/android.software.live_wallpaper.xml",
+        "system/system/etc/permissions/android.software.sip.voip.xml",
+        "system/system/etc/permissions/com.android.location.provider.xml",
+        "system/system/etc/permissions/com.cisco.anyconnect.permissions.patch.htc.xml",
+        "system/system/etc/permissions/com.google.android.maps.xml",
+        "system/system/etc/permissions/com.google.android.media.effects.xml",
+        "system/system/etc/permissions/com.google.widevine.software.drm.xml",
+        "system/system/etc/permissions/com.htc.android.rosie.xml",
+        "system/system/etc/permissions/com.htc.fusion.fx.xml",
+        "system/system/etc/permissions/com.htc.lockscreen.fusion.xml",
+        "system/system/etc/permissions/com.htc.software.market.xml",
+        "system/system/etc/permissions/com.orange.authentication.simcard.xml",
+        "system/system/etc/permissions/handheld_core_hardware_no_compass.xml",
+        "system/system/etc/permissions/platform.xml"
+      ],
+      "partition_build_dates": [
+        {
+          "partition": "system",
+          "property": "ro.build.date.utc",
+          "value": "1358150036",
+          "iso": "2013-01-14T07:53:56+00:00",
+          "source_file": "system/system/build.prop"
+        }
+      ],
+      "partition_inventory": {
+        "present_partitions": [
+          "system"
+        ],
+        "partition_file_counts": {
+          "system": 1618,
+          "vendor": 0,
+          "odm": 0,
+          "product": 0,
+          "system_ext": 0,
+          "vendor_dlkm": 0,
+          "odm_dlkm": 0,
+          "system_dlkm": 0
+        },
+        "has_vendor_partition": false,
+        "has_product_partition": false,
+        "has_odm_partition": false,
+        "has_system_ext_partition": false,
+        "likely_treble": false
+      },
+      "partitioning_flags": {
+        "vendor_boot_present": false,
+        "super_partition_present": false,
+        "recovery_as_boot": false,
+        "first_stage_init": false
+      },
+      "vintf_summary": {
+        "manifest_files": [],
+        "compatibility_matrix_files": [],
+        "hal_names": [],
+        "hal_by_domain": {},
+        "aidl_hals": [],
+        "hidl_hals": [],
+        "matrix_levels": [],
+        "vendor_interface_levels": [],
+        "has_vintf_manifest": false,
+        "has_vintf_compatibility_matrix": false
+      },
+      "init_summary": {
+        "rc_files": [],
+        "service_count": 0,
+        "services": [],
+        "service_prefix_groups": [],
+        "vendor_service_names": [],
+        "service_binaries": [],
+        "import_count": 0
+      },
+      "fstab_summary": {
+        "fstab_files": [],
+        "mount_points": [],
+        "logical_partitions": [],
+        "slotselect_entries": 0,
+        "avb_mounts": [],
+        "fileencryption_hints": [],
+        "metadata_partition_present": false
+      },
+      "selinux_summary": {
+        "policy_files": [],
+        "has_platform_policy": false,
+        "has_vendor_policy": false,
+        "has_odm_policy": false,
+        "has_mapping_files": false
+      },
+      "framework_feature_summary": {
+        "hardware_features": [
+          "android.hardware.bluetooth",
+          "android.hardware.camera",
+          "android.hardware.camera.autofocus",
+          "android.hardware.camera.flash",
+          "android.hardware.faketouch",
+          "android.hardware.location",
+          "android.hardware.location.gps",
+          "android.hardware.location.network",
+          "android.hardware.microphone",
+          "android.hardware.screen.landscape",
+          "android.hardware.screen.portrait",
+          "android.hardware.sensor.accelerometer",
+          "android.hardware.sensor.light",
+          "android.hardware.sensor.proximity",
+          "android.hardware.telephony",
+          "android.hardware.telephony.gsm",
+          "android.hardware.touchscreen",
+          "android.hardware.touchscreen.multitouch",
+          "android.hardware.touchscreen.multitouch.distinct",
+          "android.hardware.usb.accessory",
+          "android.hardware.wifi",
+          "android.hardware.wifi.direct"
+        ],
+        "software_features": [
+          "android.software.live_wallpaper",
+          "android.software.sip",
+          "android.software.sip.voip",
+          "com.cisco.anyconnect.permissions.patch.htc",
+          "com.htc.android.rosie.widget",
+          "com.htc.lockscreen.fusion",
+          "com.htc.software.HTC",
+          "com.htc.software.MagniDS",
+          "com.htc.software.PlayGroup1",
+          "com.htc.software.Sense4.0",
+          "com.htc.software.WWE"
+        ],
+        "feature_categories": {
+          "audio": [
+            "android.hardware.microphone"
+          ],
+          "camera": [
+            "android.hardware.camera",
+            "android.hardware.camera.autofocus",
+            "android.hardware.camera.flash"
+          ],
+          "connectivity": [
+            "android.hardware.bluetooth",
+            "android.hardware.usb.accessory",
+            "android.hardware.wifi",
+            "android.hardware.wifi.direct"
+          ],
+          "location": [
+            "android.hardware.location",
+            "android.hardware.location.gps",
+            "android.hardware.location.network"
+          ],
+          "other": [
+            "android.hardware.faketouch",
+            "android.hardware.screen.landscape",
+            "android.hardware.screen.portrait",
+            "android.hardware.touchscreen",
+            "android.hardware.touchscreen.multitouch",
+            "android.hardware.touchscreen.multitouch.distinct",
+            "android.software.live_wallpaper",
+            "com.cisco.anyconnect.permissions.patch.htc",
+            "com.htc.android.rosie.widget",
+            "com.htc.lockscreen.fusion",
+            "com.htc.software.HTC",
+            "com.htc.software.MagniDS",
+            "com.htc.software.PlayGroup1",
+            "com.htc.software.Sense4.0",
+            "com.htc.software.WWE"
+          ],
+          "sensors": [
+            "android.hardware.sensor.accelerometer",
+            "android.hardware.sensor.light",
+            "android.hardware.sensor.proximity"
+          ],
+          "telephony": [
+            "android.hardware.telephony",
+            "android.hardware.telephony.gsm",
+            "android.software.sip",
+            "android.software.sip.voip"
+          ]
+        },
+        "graphics_features": [],
+        "biometric_features": [],
+        "connectivity_features": [
+          "android.hardware.bluetooth",
+          "android.hardware.telephony",
+          "android.hardware.telephony.gsm",
+          "android.hardware.usb.accessory",
+          "android.hardware.wifi",
+          "android.hardware.wifi.direct"
+        ],
+        "form_factor_features": [],
+        "feature_source_files": [
+          "system/system/etc/permissions/android.hardware.camera.flash-autofocus.xml",
+          "system/system/etc/permissions/android.hardware.location.gps.xml",
+          "system/system/etc/permissions/android.hardware.sensor.accelerometer.xml",
+          "system/system/etc/permissions/android.hardware.sensor.light.xml",
+          "system/system/etc/permissions/android.hardware.sensor.proximity.xml",
+          "system/system/etc/permissions/android.hardware.telephony.gsm.xml",
+          "system/system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml",
+          "system/system/etc/permissions/android.hardware.usb.accessory.xml",
+          "system/system/etc/permissions/android.hardware.wifi.direct.xml",
+          "system/system/etc/permissions/android.hardware.wifi.xml",
+          "system/system/etc/permissions/android.software.live_wallpaper.xml",
+          "system/system/etc/permissions/android.software.sip.voip.xml",
+          "system/system/etc/permissions/com.cisco.anyconnect.permissions.patch.htc.xml",
+          "system/system/etc/permissions/com.htc.android.rosie.xml",
+          "system/system/etc/permissions/com.htc.lockscreen.fusion.xml",
+          "system/system/etc/permissions/com.htc.software.market.xml",
+          "system/system/etc/permissions/handheld_core_hardware_no_compass.xml"
+        ]
+      },
+      "privileged_permission_summary": {
+        "privapp_permission_files": [],
+        "default_permission_files": [],
+        "sysconfig_files": [],
+        "privileged_permission_names": [
+          "android.permission.ACCESS_AUTOBOT_FILENODE",
+          "android.permission.ACCESS_CACHE_FILESYSTEM",
+          "android.permission.ACCESS_COARSE_LOCATION",
+          "android.permission.ACCESS_CW_FOLDER",
+          "android.permission.ACCESS_DRM",
+          "android.permission.ACCESS_FINE_LOCATION",
+          "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+          "android.permission.ACCESS_MTP",
+          "android.permission.ACCESS_NETWORK_STATE",
+          "android.permission.ACCESS_RECOVERY_FOLDER",
+          "android.permission.ACCESS_SURFACE_FLINGER",
+          "android.permission.ACCESS_WIFI_STATE",
+          "android.permission.BACKUP",
+          "android.permission.BATTERY_STATS",
+          "android.permission.BLUETOOTH",
+          "android.permission.BLUETOOTH_ADMIN",
+          "android.permission.BROADCAST_STICKY",
+          "android.permission.CALL_PHONE",
+          "android.permission.CAMERA",
+          "android.permission.CHANGE_CONFIGURATION",
+          "android.permission.CLEAR_APP_USER_DATA",
+          "android.permission.DELETE_CACHE_FILES",
+          "android.permission.DELETE_PACKAGES",
+          "android.permission.DEVICE_POWER",
+          "android.permission.DIAGNOSTIC",
+          "android.permission.DUMP",
+          "android.permission.FORCE_BACK",
+          "android.permission.FORCE_STOP_PACKAGES",
+          "android.permission.GET_TASKS",
+          "android.permission.INJECT_EVENTS",
+          "android.permission.INSTALL_LOCATION_PROVIDER",
+          "android.permission.INSTALL_PACKAGES",
+          "android.permission.INTERNAL_SYSTEM_WINDOW",
+          "android.permission.INTERNET",
+          "android.permission.KILL_BACKGROUND_PROCESSES",
+          "android.permission.MODIFY_AUDIO_SETTINGS",
+          "android.permission.MODIFY_NETWORK_ACCOUNTING",
+          "android.permission.NET_ADMIN",
+          "android.permission.NET_RAW",
+          "android.permission.READ_CALENDAR",
+          "android.permission.READ_CONTACTS",
+          "android.permission.READ_FRAME_BUFFER",
+          "android.permission.READ_INPUT_STATE",
+          "android.permission.READ_LOGS",
+          "android.permission.READ_NETWORK_USAGE_HISTORY",
+          "android.permission.READ_USER_DICTIONARY",
+          "android.permission.READ_WRITE_OMA_DRM",
+          "android.permission.REORDER_TASKS",
+          "android.permission.RETRIEVE_WINDOW_CONTENT",
+          "android.permission.SEND_SMS",
+          "android.permission.SET_ACTIVITY_WATCHER",
+          "android.permission.SET_ALWAYS_FINISH",
+          "android.permission.SET_ANIMATION_SCALE",
+          "android.permission.SET_DEBUG_APP",
+          "android.permission.SET_ORIENTATION",
+          "android.permission.SET_PREFERRED_APPLICATIONS",
+          "android.permission.SET_PROCESS_LIMIT",
+          "android.permission.SIGNAL_PERSISTENT_PROCESSES",
+          "android.permission.STOP_APP_SWITCHES",
+          "android.permission.VPN",
+          "android.permission.WAKE_LOCK",
+          "android.permission.WRITE_CALENDAR",
+          "android.permission.WRITE_CONTACTS",
+          "android.permission.WRITE_EXTERNAL_STORAGE",
+          "android.permission.WRITE_MEDIA_STORAGE",
+          "android.permission.WRITE_SECURE_SETTINGS",
+          "android.permission.WRITE_SETTINGS",
+          "android.permission.WRITE_USER_DICTIONARY"
+        ],
+        "privileged_permission_namespaces": [
+          "android.permission (68)"
+        ],
+        "oem_permission_namespaces": [
+          "com.android.future.usb",
+          "com.android.location",
+          "com.cisco.anyconnect.permissions.patch",
+          "com.google.android",
+          "com.google.android.media",
+          "com.google.widevine.software",
+          "com.htc.android",
+          "com.htc.android.rosie",
+          "com.htc.fusion",
+          "com.htc.lockscreen",
+          "com.htc.software",
+          "com.htc.software.Sense4",
+          "com.orange.authentication",
+          "javax"
+        ]
+      },
+      "qcom_ver_info": null,
+      "camera_hardware": {
+        "camera_config_files": [
+          "android.hardware.camera.flash-autofocus.xml"
+        ],
+        "hardware_config_files": [
+          "20-dns.conf",
+          "a2dp_avrcp.conf",
+          "adreno_config.txt",
+          "android.hardware.location.gps.xml",
+          "android.hardware.sensor.accelerometer.xml",
+          "android.hardware.sensor.light.xml",
+          "android.hardware.sensor.proximity.xml",
+          "android.hardware.telephony.gsm.xml",
+          "android.hardware.touchscreen.multitouch.distinct.xml",
+          "android.hardware.usb.accessory.xml",
+          "android.hardware.wifi.direct.xml",
+          "android.hardware.wifi.xml",
+          "android.software.live_wallpaper.xml",
+          "android.software.sip.voip.xml",
+          "audio.conf",
+          "audio_effects.conf",
+          "auto_pairing.conf",
+          "blacklist.conf",
+          "com.android.location.provider.xml",
+          "com.cisco.anyconnect.permissions.patch.htc.xml",
+          "com.google.android.maps.xml",
+          "com.google.android.media.effects.xml",
+          "com.google.widevine.software.drm.xml",
+          "com.htc.android.rosie.xml",
+          "com.htc.fusion.fx.xml",
+          "com.htc.lockscreen.fusion.xml",
+          "com.htc.software.market.xml",
+          "com.orange.authentication.simcard.xml",
+          "dbus.conf",
+          "dhcpcd.conf",
+          "fallback_fonts.xml",
+          "google_generic_update.txt",
+          "gps.conf",
+          "gpsconfig.xml",
+          "handheld_core_hardware_no_compass.xml",
+          "htcfs.conf",
+          "input.conf",
+          "media_profiles.xml",
+          "network.conf",
+          "platform.xml",
+          "sdkinfo.xml",
+          "spn-conf.xml",
+          "srs_bypass.cfg",
+          "srs_geq10.cfg",
+          "srs_global.cfg",
+          "srsfx_trumedia_51.cfg",
+          "srsfx_trumedia_movie.cfg",
+          "srsfx_trumedia_music.cfg",
+          "srsfx_trumedia_voice.cfg",
+          "system_fonts.xml",
+          "thermald.conf",
+          "voicemail-conf.xml",
+          "wifioffloadpkg.xml",
+          "wpa_supplicant.conf"
+        ],
+        "camera_sensors": [
+          "OV5693",
+          "S5K3H2YX",
+          "S5K4E1",
+          "S5K4E5YX"
+        ],
+        "camera_eeproms": [],
+        "camera_flashes": [],
+        "camera_actuators": [],
+        "camera_ois": []
+      },
+      "media_codec_summary": {
+        "codec_files": [],
+        "codec_names": [],
+        "has_codec2": false,
+        "has_omx": false
+      },
+      "audio_policy_summary": {
+        "policy_files": [],
+        "modules": [],
+        "mix_ports": []
+      },
+      "graphics_ml_summary": {
+        "gles_versions": [
+          "131072"
+        ],
+        "vulkan_features": [],
+        "nnapi_present": false,
+        "codec2_present": false,
+        "omx_present": false,
+        "camera2_capability_features": [],
+        "gpu_firmware_hints": [
+          "ContrastCurveSet.bmp",
+          "CurveCold.bmp",
+          "CurveCross.bmp",
+          "CurveSepia.bmp",
+          "CurveWarm.bmp",
+          "adreno_config.txt",
+          "dot_mask.bmp",
+          "dot_mask_0.bmp",
+          "dot_mask_1.bmp",
+          "dot_mask_128x128.bmp",
+          "dot_mask_16x16.bmp",
+          "dot_mask_2.bmp",
+          "dot_mask_3.bmp",
+          "header32bpp.bmp",
+          "header8bpp.bmp",
+          "init.goldfish.rc",
+          "init.goldfish.sh",
+          "libEGL_adreno200.so",
+          "libGLESv1_CM_adreno200.so",
+          "libGLESv2_adreno200.so",
+          "libq3dtools_adreno200.so",
+          "mask_vignette_legacy.bmp",
+          "mask_vignette_wide.bmp",
+          "stylizeColorRamp.bmp",
+          "stylizeContrastRamp.bmp",
+          "twoToneMaskH.bmp",
+          "twoToneMaskV.bmp",
+          "ueventd.goldfish.rc"
+        ]
+      },
+      "gpu_family": "adreno",
+      "radio_summary": {
+        "capability_hints": [
+          "qualcomm-platform"
+        ]
+      },
+      "overlay_summary": {
+        "overlay_file_count": 0,
+        "overlay_namespaces": []
+      },
+      "locale_region_defaults": {
+        "default_locale": "hdpi",
+        "locale_language": "hdpi",
+        "region_props": [],
+        "region_overlay_hints": []
+      },
+      "carrier_market_hints": {
+        "carrier_tokens": [],
+        "operator_variant_tokens": [],
+        "apn_files_present": [],
+        "carrier_customization_dirs": [
+          "system"
+        ],
+        "market_hints": []
+      },
+      "firmware_component_summary": {
+        "modem_version_strings": [],
+        "camera_component_names": [
+          "android.hardware.camera.flash-autofocus.xml"
+        ],
+        "touch_panel_hints": [
+          "himax-touchscreen.idc",
+          "himax-touchscreen.kl",
+          "sr_touchscreen.kl",
+          "touch"
+        ],
+        "fingerprint_component_hints": [],
+        "nfc_component_hints": [
+          "libnfc_ndef.so"
+        ],
+        "charger_battery_hints": [
+          "LowBattery.ogg"
+        ],
+        "gpu_firmware_hints": [
+          "ContrastCurveSet.bmp",
+          "CurveCold.bmp",
+          "CurveCross.bmp",
+          "CurveSepia.bmp",
+          "CurveWarm.bmp",
+          "adreno_config.txt",
+          "dot_mask.bmp",
+          "dot_mask_0.bmp",
+          "dot_mask_1.bmp",
+          "dot_mask_128x128.bmp",
+          "dot_mask_16x16.bmp",
+          "dot_mask_2.bmp",
+          "dot_mask_3.bmp",
+          "header32bpp.bmp",
+          "header8bpp.bmp",
+          "libEGL_adreno200.so",
+          "libGLESv1_CM_adreno200.so",
+          "libGLESv2_adreno200.so",
+          "libq3dtools_adreno200.so",
+          "mask_vignette_legacy.bmp",
+          "mask_vignette_wide.bmp",
+          "stylizeColorRamp.bmp",
+          "stylizeContrastRamp.bmp",
+          "twoToneMaskH.bmp",
+          "twoToneMaskV.bmp"
+        ],
+        "dsp_firmware_hints": [
+          "libmm-adspsvc.so"
+        ],
+        "firmware_file_groups": [
+          "system"
+        ]
+      },
+      "library_inventory_summary": {
+        "shared_library_names": [
+          "audio.a2dp.default.so",
+          "audio.primary.default.so",
+          "audio.so",
+          "audio_policy.default.so",
+          "bluetooth-health.so",
+          "camera.msm7k.so",
+          "copybit.msm7k.so",
+          "eglsubAndroid.so",
+          "gps.default.so",
+          "gralloc.default.so",
+          "gralloc.msm7k.so",
+          "hwcomposer.msm7k.so",
+          "input.so",
+          "libAdobeReader.so",
+          "libAudioTrimmer.so",
+          "libChange.so",
+          "libEGL.so",
+          "libEGL_adreno200.so",
+          "libETC1.so",
+          "libFFTEm.so",
+          "libGLES_android.so",
+          "libGLESv1_CM.so",
+          "libGLESv1_CM_adreno200.so",
+          "libGLESv2.so",
+          "libGLESv2_adreno200.so",
+          "libGLESv2_dbg.so",
+          "libHTC_DIS.so",
+          "libLaputaEngine.so",
+          "libLaputaLbJni.so",
+          "libLaputaLbProviderJni.so",
+          "libLaputaLogJni.so",
+          "libMLTransition.so",
+          "libOlaEngine.so",
+          "libOlaEngineNew.so",
+          "libOmxCore.so",
+          "libOmxH264Dec.so",
+          "libOmxIttiamVenc.so",
+          "libOmxMpeg4Dec.so",
+          "libOmxVidEnc.so",
+          "libOpenMAXAL.so",
+          "libOpenSLES.so",
+          "libOpenVG.so",
+          "libQcomUI.so",
+          "libRS.so",
+          "libSR_AudioIn.so",
+          "libTRIM.so",
+          "libWVStreamControlAPI_L3.so",
+          "libWVphoneAPI.so",
+          "libacc.so",
+          "libaddrsdetection.so",
+          "libalbum_util2e.so",
+          "libandroid.so",
+          "libandroid_runtime.so",
+          "libandroid_servers.so",
+          "libandroid_simlock.so",
+          "libaricentomxplugin.so",
+          "libaudioeffect_jni.so",
+          "libaudioeq.so",
+          "libaudioflinger.so",
+          "libaudiopreprocessing.so",
+          "libauth.so",
+          "libbcc.so",
+          "libbcinfo.so",
+          "libbinder.so",
+          "libbluedroid.so",
+          "libbluetooth.so",
+          "libbluetoothd.so",
+          "libbt-aptx-4.0.3.so",
+          "libbtio.so",
+          "libbundlewrapper.so",
+          "libc.so",
+          "libcamera_client.so",
+          "libcameraface.so",
+          "libcamerapp.so",
+          "libcameraservice.so",
+          "libcapsjava.so",
+          "libcentralZoomTransition.so",
+          "libchromatix_ov5693_default_video.so",
+          "libchromatix_ov5693_hdr.so",
+          "libchromatix_ov5693_preview.so",
+          "libchromatix_s5k3h2yx_default_video.so",
+          "libchromatix_s5k3h2yx_hdr.so",
+          "libchromatix_s5k3h2yx_preview.so",
+          "libchromatix_s5k4e1_default_video.so",
+          "libchromatix_s5k4e1_preview.so",
+          "libchromatix_s5k4e5yx_default_video.so",
+          "libchromatix_s5k4e5yx_hdr.so",
+          "libchromatix_s5k4e5yx_preview.so",
+          "libchromeview.so",
+          "libchromium_net.so",
+          "libcm.so",
+          "libcontentZoomTransition.so",
+          "libcpt9.so",
+          "libcpt9core.so",
+          "libcpt9provider.so",
+          "libcrypto.so",
+          "libctest.so",
+          "libcubicRotateTransition.so",
+          "libcutils.so",
+          "libdbus.so",
+          "libdefcontainer_jni.so",
+          "libdiag.so",
+          "libdiskconfig.so",
+          "libdivxdrmdecrypt.so",
+          "libdl.so",
+          "libdnshostprio.so",
+          "libdrm1.so",
+          "libdrm1_jni.so",
+          "libdrmframework.so",
+          "libdrmframework_jni.so",
+          "libdrmwvmplugin.so",
+          "libdsi_netctrl.so",
+          "libdsm.so",
+          "libdsutils.so",
+          "libdumppcm.so",
+          "libdvm.so",
+          "libeffects.so",
+          "libemoji.so",
+          "libexif.so",
+          "libexpat.so",
+          "libext2_blkid.so",
+          "libext2_com_err.so",
+          "libext2_e2p.so",
+          "libext2_profile.so",
+          "libext2_uuid.so",
+          "libext2fs.so",
+          "libext4_utils.so",
+          "libfacelock_jni.so",
+          "libfilterfw.so",
+          "libfilterpack_facedetect.so",
+          "libfilterpack_imageproc.so",
+          "libflashplayer.so",
+          "libflint_engine_jni_api.so",
+          "libfrsdk.so",
+          "libfuse.so",
+          "libgabi++.so",
+          "libgcomm_jni.so",
+          "libgemini.so",
+          "libgenlock.so",
+          "libglib.so",
+          "libgnmc_aactag.2.5.9.4.so",
+          "libgnmc_decoder.2.5.9.4.so",
+          "libgnmc_fpx.2.5.9.4.so",
+          "libgnmc_id3tag.2.5.9.4.so",
+          "libgsl.so",
+          "libgui.so",
+          "libhardware.so",
+          "libhardware_legacy.so",
+          "libharfbuzz.so",
+          "libhtc_acoustic.so",
+          "libhtc_ril.so",
+          "libhtc_rilhook.so",
+          "libhtcanipluginmanager.so",
+          "libhtccamera.so",
+          "libhtcflag-jni.so",
+          "libhtcsunny2engine.so",
+          "libhtcsunnyengine.so",
+          "libhwui.so",
+          "libicui18n.so",
+          "libicule.so",
+          "libiculx.so",
+          "libicuuc.so",
+          "libidl.so",
+          "libimage-jpeg-enc-omx-comp.so",
+          "libimage-omx-common.so",
+          "libinput.so",
+          "libiprouteutil.so",
+          "libjnigraphics.so",
+          "libjpeg.so",
+          "liblog.so",
+          "liblz.so",
+          "libm.so",
+          "libmedia.so",
+          "libmedia_jni.so",
+          "libmediaplayerservice.so",
+          "libmemalloc.so",
+          "libmm-adspsvc.so",
+          "libmm-omxcore.so",
+          "libmmcamera_faceproc.so",
+          "libmmcamera_frameproc.so",
+          "libmmcamera_hdr_lib.so",
+          "libmmcamera_image_stab.so",
+          "libmmcamera_interface2.so",
+          "libmmcamera_rawchipproc.so",
+          "libmmcamera_statsproc31.so",
+          "libmmcamera_wavelet_lib.so",
+          "libmmipl.so",
+          "libmmjpeg.so",
+          "libmmosal.so",
+          "libmmparser.so",
+          "libmmparser_divxdrmlib.so",
+          "libmmstillomx.so",
+          "libmode10.so",
+          "libmode10AutoTest.so",
+          "libmode10GLES20.so",
+          "libmode10fx.so",
+          "libmtp.so",
+          "libnativedocviewer.so",
+          "libnativehelper.so",
+          "libnetlink.so",
+          "libnetmgr.so",
+          "libnetmonitor.so",
+          "libnetutils.so",
+          "libnfc_ndef.so",
+          "libnv.so",
+          "liboem_rapi.so",
+          "liboemcamera.so",
+          "liboma-drm1-fs.so",
+          "liboncrpc.so",
+          "liboverlay.so",
+          "libpagecurl.so",
+          "libpbmlib.so",
+          "libpicowrapper.so",
+          "libpixelflinger.so",
+          "libpng.so",
+          "libpolarisoffice_Clipboard.so",
+          "libposteffect.so",
+          "libpower.so",
+          "libpowermanager.so",
+          "libpphwr.so",
+          "libpphwrcore.so",
+          "libpphwrprovider.so",
+          "libprojector.so",
+          "libq3dtools_adreno200.so",
+          "libqc-opt.so",
+          "libqdi.so",
+          "libqdp.so",
+          "libqmi.so",
+          "libqmi_client_qmux.so",
+          "libqmiservices.so",
+          "libqueue.so",
+          "librecentappZoomTransition.so",
+          "libreverbwrapper.so",
+          "libril-qc-1.so",
+          "libril-qcril-hook-oem.so",
+          "libril.so",
+          "librpc.so",
+          "librs_jni.so",
+          "librtp_jni.so",
+          "libsc-a2xx.so",
+          "libscalado_htcalbum2.so",
+          "libscaladoapi.so",
+          "libscaladoutil.so",
+          "libsensorservice.so",
+          "libskia.so",
+          "libsonivox.so",
+          "libsoundpool.so",
+          "libspeex_sh.so",
+          "libspeexresampler.so",
+          "libspeexwrapper.so"
+        ],
+        "library_prefix_groups": [
+          "libchromatix (11)",
+          "libmmcamera (8)",
+          "libext2 (5)",
+          "audio (4)",
+          "libandroid (4)",
+          "libgnmc (4)",
+          "libhtc (4)",
+          "libglesv2 (3)",
+          "libril (3)",
+          "gralloc (2)",
+          "libdrm1 (2)",
+          "libdrmframework (2)",
+          "libegl (2)",
+          "libfilterpack (2)",
+          "libglesv1 (2)",
+          "libhardware (2)",
+          "libimage (2)",
+          "libmedia (2)",
+          "libmm (2)",
+          "libmmparser (2)",
+          "libqmi (2)",
+          "librs (2)",
+          "bluetooth",
+          "camera",
+          "copybit",
+          "eglsubandroid",
+          "gps",
+          "hwcomposer",
+          "input",
+          "libacc",
+          "libaddrsdetection",
+          "libadobereader",
+          "libalbum",
+          "libaricentomxplugin",
+          "libaudioeffect",
+          "libaudioeq",
+          "libaudioflinger",
+          "libaudiopreprocessing",
+          "libaudiotrimmer",
+          "libauth",
+          "libbcc",
+          "libbcinfo",
+          "libbinder",
+          "libbluedroid",
+          "libbluetooth",
+          "libbluetoothd",
+          "libbt",
+          "libbtio",
+          "libbundlewrapper",
+          "libc"
+        ],
+        "oem_library_prefixes": [
+          "audio (4)",
+          "gralloc (2)",
+          "bluetooth",
+          "camera",
+          "copybit",
+          "eglsubandroid",
+          "gps",
+          "hwcomposer",
+          "input"
+        ],
+        "framework_jar_names": [
+          "HTCCommonctrl.jar",
+          "HTCDev.jar",
+          "HTCExtension.jar",
+          "am.jar",
+          "android.policy.jar",
+          "android.test.runner.jar",
+          "apache-xml.jar",
+          "bmgr.jar",
+          "bouncycastle.jar",
+          "bu.jar",
+          "com.android.future.usb.accessory.jar",
+          "com.android.location.provider.jar",
+          "com.google.android.maps.jar",
+          "com.google.android.media.effects.jar",
+          "com.google.widevine.software.drm.jar",
+          "com.htc.android.bluetooth.jar",
+          "com.htc.android.rosie.jar",
+          "com.htc.fusion.fx.jar",
+          "com.htc.lockscreen.fusion.jar",
+          "com.orange.authentication.simcard.jar",
+          "com.scalado.caps.jar",
+          "com.scalado.util.ScaladoUtil.jar",
+          "core-junit.jar",
+          "core.jar",
+          "ext.jar",
+          "filterfw.jar",
+          "framework.jar",
+          "framework2.jar",
+          "ime.jar",
+          "input.jar",
+          "javax.obex.jar",
+          "modemwarmup.jar",
+          "monkey.jar",
+          "pm.jar",
+          "services.jar",
+          "svc.jar",
+          "usbnet.jar",
+          "wimax.jar"
+        ],
+        "apex_names": [],
+        "vendor_bin_names": []
+      },
+      "security_boot_summary": {
+        "signing_tags": "release-keys",
+        "selinux_summary": {
+          "policy_files": [],
+          "has_platform_policy": false,
+          "has_vendor_policy": false,
+          "has_odm_policy": false,
+          "has_mapping_files": false
+        },
+        "avb_enabled": null,
+        "dm_verity": null
+      },
+      "supported_hardware_features": [
+        "android.hardware.bluetooth",
+        "android.hardware.camera",
+        "android.hardware.camera.autofocus",
+        "android.hardware.camera.flash",
+        "android.hardware.faketouch",
+        "android.hardware.location",
+        "android.hardware.location.gps",
+        "android.hardware.location.network",
+        "android.hardware.microphone",
+        "android.hardware.screen.landscape",
+        "android.hardware.screen.portrait",
+        "android.hardware.sensor.accelerometer",
+        "android.hardware.sensor.light",
+        "android.hardware.sensor.proximity",
+        "android.hardware.telephony",
+        "android.hardware.telephony.gsm",
+        "android.hardware.touchscreen",
+        "android.hardware.touchscreen.multitouch",
+        "android.hardware.touchscreen.multitouch.distinct",
+        "android.hardware.usb.accessory",
+        "android.hardware.wifi",
+        "android.hardware.wifi.direct"
+      ],
+      "declared_permissions": [
+        "android.permission.ACCESS_AUTOBOT_FILENODE",
+        "android.permission.ACCESS_CACHE_FILESYSTEM",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_CW_FOLDER",
+        "android.permission.ACCESS_DRM",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+        "android.permission.ACCESS_MTP",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_RECOVERY_FOLDER",
+        "android.permission.ACCESS_SURFACE_FLINGER",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.BACKUP",
+        "android.permission.BATTERY_STATS",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BROADCAST_STICKY",
+        "android.permission.CALL_PHONE",
+        "android.permission.CAMERA",
+        "android.permission.CHANGE_CONFIGURATION",
+        "android.permission.CLEAR_APP_USER_DATA",
+        "android.permission.DELETE_CACHE_FILES",
+        "android.permission.DELETE_PACKAGES",
+        "android.permission.DEVICE_POWER",
+        "android.permission.DIAGNOSTIC",
+        "android.permission.DUMP",
+        "android.permission.FORCE_BACK",
+        "android.permission.FORCE_STOP_PACKAGES",
+        "android.permission.GET_TASKS",
+        "android.permission.INJECT_EVENTS",
+        "android.permission.INSTALL_LOCATION_PROVIDER",
+        "android.permission.INSTALL_PACKAGES",
+        "android.permission.INTERNAL_SYSTEM_WINDOW",
+        "android.permission.INTERNET",
+        "android.permission.KILL_BACKGROUND_PROCESSES",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.MODIFY_NETWORK_ACCOUNTING",
+        "android.permission.NET_ADMIN",
+        "android.permission.NET_RAW",
+        "android.permission.READ_CALENDAR",
+        "android.permission.READ_CONTACTS",
+        "android.permission.READ_FRAME_BUFFER",
+        "android.permission.READ_INPUT_STATE",
+        "android.permission.READ_LOGS",
+        "android.permission.READ_NETWORK_USAGE_HISTORY",
+        "android.permission.READ_USER_DICTIONARY",
+        "android.permission.READ_WRITE_OMA_DRM",
+        "android.permission.REORDER_TASKS",
+        "android.permission.RETRIEVE_WINDOW_CONTENT",
+        "android.permission.SEND_SMS",
+        "android.permission.SET_ACTIVITY_WATCHER",
+        "android.permission.SET_ALWAYS_FINISH",
+        "android.permission.SET_ANIMATION_SCALE",
+        "android.permission.SET_DEBUG_APP",
+        "android.permission.SET_ORIENTATION",
+        "android.permission.SET_PREFERRED_APPLICATIONS",
+        "android.permission.SET_PROCESS_LIMIT",
+        "android.permission.SIGNAL_PERSISTENT_PROCESSES",
+        "android.permission.STOP_APP_SWITCHES",
+        "android.permission.VPN",
+        "android.permission.WAKE_LOCK",
+        "android.permission.WRITE_CALENDAR",
+        "android.permission.WRITE_CONTACTS",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.WRITE_MEDIA_STORAGE",
+        "android.permission.WRITE_SECURE_SETTINGS",
+        "android.permission.WRITE_SETTINGS",
+        "android.permission.WRITE_USER_DICTIONARY"
+      ],
+      "hardware_feature_sources": [
+        {
+          "name": "android.hardware.bluetooth",
+          "files": [
+            "system/system/etc/permissions/handheld_core_hardware_no_compass.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.camera",
+          "files": [
+            "system/system/etc/permissions/android.hardware.camera.flash-autofocus.xml",
+            "system/system/etc/permissions/handheld_core_hardware_no_compass.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.camera.autofocus",
+          "files": [
+            "system/system/etc/permissions/android.hardware.camera.flash-autofocus.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.camera.flash",
+          "files": [
+            "system/system/etc/permissions/android.hardware.camera.flash-autofocus.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.faketouch",
+          "files": [
+            "system/system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.location",
+          "files": [
+            "system/system/etc/permissions/android.hardware.location.gps.xml",
+            "system/system/etc/permissions/handheld_core_hardware_no_compass.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.location.gps",
+          "files": [
+            "system/system/etc/permissions/android.hardware.location.gps.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.location.network",
+          "files": [
+            "system/system/etc/permissions/android.hardware.location.gps.xml",
+            "system/system/etc/permissions/handheld_core_hardware_no_compass.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.microphone",
+          "files": [
+            "system/system/etc/permissions/handheld_core_hardware_no_compass.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.screen.landscape",
+          "files": [
+            "system/system/etc/permissions/handheld_core_hardware_no_compass.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.screen.portrait",
+          "files": [
+            "system/system/etc/permissions/handheld_core_hardware_no_compass.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.sensor.accelerometer",
+          "files": [
+            "system/system/etc/permissions/android.hardware.sensor.accelerometer.xml",
+            "system/system/etc/permissions/handheld_core_hardware_no_compass.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.sensor.light",
+          "files": [
+            "system/system/etc/permissions/android.hardware.sensor.light.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.sensor.proximity",
+          "files": [
+            "system/system/etc/permissions/android.hardware.sensor.proximity.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.telephony",
+          "files": [
+            "system/system/etc/permissions/android.hardware.telephony.gsm.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.telephony.gsm",
+          "files": [
+            "system/system/etc/permissions/android.hardware.telephony.gsm.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.touchscreen",
+          "files": [
+            "system/system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml",
+            "system/system/etc/permissions/handheld_core_hardware_no_compass.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.touchscreen.multitouch",
+          "files": [
+            "system/system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.touchscreen.multitouch.distinct",
+          "files": [
+            "system/system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.usb.accessory",
+          "files": [
+            "system/system/etc/permissions/android.hardware.usb.accessory.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.wifi",
+          "files": [
+            "system/system/etc/permissions/android.hardware.wifi.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.wifi.direct",
+          "files": [
+            "system/system/etc/permissions/android.hardware.wifi.direct.xml"
+          ]
+        },
+        {
+          "name": "android.software.live_wallpaper",
+          "files": [
+            "system/system/etc/permissions/android.software.live_wallpaper.xml"
+          ]
+        },
+        {
+          "name": "android.software.sip",
+          "files": [
+            "system/system/etc/permissions/android.software.sip.voip.xml"
+          ]
+        },
+        {
+          "name": "android.software.sip.voip",
+          "files": [
+            "system/system/etc/permissions/android.software.sip.voip.xml"
+          ]
+        },
+        {
+          "name": "com.cisco.anyconnect.permissions.patch.htc",
+          "files": [
+            "system/system/etc/permissions/com.cisco.anyconnect.permissions.patch.htc.xml"
+          ]
+        },
+        {
+          "name": "com.htc.android.rosie.widget",
+          "files": [
+            "system/system/etc/permissions/com.htc.android.rosie.xml"
+          ]
+        },
+        {
+          "name": "com.htc.lockscreen.fusion",
+          "files": [
+            "system/system/etc/permissions/com.htc.lockscreen.fusion.xml"
+          ]
+        },
+        {
+          "name": "com.htc.software.HTC",
+          "files": [
+            "system/system/etc/permissions/com.htc.software.market.xml"
+          ]
+        },
+        {
+          "name": "com.htc.software.MagniDS",
+          "files": [
+            "system/system/etc/permissions/com.htc.software.market.xml"
+          ]
+        },
+        {
+          "name": "com.htc.software.PlayGroup1",
+          "files": [
+            "system/system/etc/permissions/com.htc.software.market.xml"
+          ]
+        },
+        {
+          "name": "com.htc.software.Sense4.0",
+          "files": [
+            "system/system/etc/permissions/com.htc.software.market.xml"
+          ]
+        },
+        {
+          "name": "com.htc.software.WWE",
+          "files": [
+            "system/system/etc/permissions/com.htc.software.market.xml"
+          ]
+        }
+      ],
+      "region_sku_hints": {
+        "value": [],
+        "heuristic": true,
+        "basis": []
+      },
+      "gms_oem_summary": {
+        "value": [
+          "brand:htc"
+        ],
+        "heuristic": true,
+        "basis": [
+          "permissions",
+          "brand"
+        ]
+      },
+      "gsi_readiness_signals": {
+        "value": [],
+        "heuristic": true,
+        "basis": []
+      },
+      "modding_signals": {
+        "value": [],
+        "heuristic": true,
+        "basis": []
+      },
+      "app_compatibility_summary": {
+        "api_levels": [
+          "15"
+        ],
+        "abis": [],
+        "graphics_ml": [
+          "131072"
+        ],
+        "hardware_features": [
+          "android.hardware.bluetooth",
+          "android.hardware.camera",
+          "android.hardware.camera.autofocus",
+          "android.hardware.camera.flash",
+          "android.hardware.faketouch",
+          "android.hardware.location",
+          "android.hardware.location.gps",
+          "android.hardware.location.network",
+          "android.hardware.microphone",
+          "android.hardware.screen.landscape",
+          "android.hardware.screen.portrait",
+          "android.hardware.sensor.accelerometer",
+          "android.hardware.sensor.light",
+          "android.hardware.sensor.proximity",
+          "android.hardware.telephony",
+          "android.hardware.telephony.gsm",
+          "android.hardware.touchscreen",
+          "android.hardware.touchscreen.multitouch",
+          "android.hardware.touchscreen.multitouch.distinct",
+          "android.hardware.usb.accessory",
+          "android.hardware.wifi",
+          "android.hardware.wifi.direct"
+        ],
+        "media_audio": [],
+        "ecosystem_hints": [
+          "brand:htc"
+        ]
+      },
+      "device_bringup_summary": {
+        "partition_model": [
+          "system"
+        ],
+        "treble_vintf": [],
+        "hal_domains": [],
+        "service_groups": [],
+        "fstab_hints": [],
+        "selinux_split": []
+      },
+      "security_trust_summary": {
+        "security_patch": null,
+        "boot_security": [],
+        "signing_debug": [
+          "release-keys"
+        ],
+        "privileged_surface": [
+          "android.permission (68)",
+          "com.android.future.usb",
+          "com.android.location",
+          "com.cisco.anyconnect.permissions.patch",
+          "com.google.android",
+          "com.google.android.media",
+          "com.google.widevine.software",
+          "com.htc.android",
+          "com.htc.android.rosie",
+          "com.htc.fusion",
+          "com.htc.lockscreen",
+          "com.htc.software",
+          "com.htc.software.Sense4",
+          "com.orange.authentication",
+          "javax"
+        ],
+        "build_freshness": [
+          "system"
+        ]
+      },
+      "vendor_stack_summary": {
+        "platform_family": "qualcomm",
+        "radio_hints": [
+          "qualcomm-platform"
+        ],
+        "firmware_components": [
+          "himax-touchscreen.idc",
+          "himax-touchscreen.kl",
+          "sr_touchscreen.kl",
+          "touch",
+          "libnfc_ndef.so"
+        ],
+        "library_groups": [
+          "libchromatix (11)",
+          "libmmcamera (8)",
+          "libext2 (5)",
+          "audio (4)",
+          "libandroid (4)",
+          "libgnmc (4)",
+          "libhtc (4)",
+          "libglesv2 (3)",
+          "libril (3)",
+          "gralloc (2)",
+          "libdrm1 (2)",
+          "libdrmframework (2)",
+          "libegl (2)",
+          "libfilterpack (2)",
+          "libglesv1 (2)",
+          "libhardware (2)",
+          "libimage (2)",
+          "libmedia (2)",
+          "libmm (2)",
+          "libmmparser (2)",
+          "libqmi (2)",
+          "librs (2)",
+          "bluetooth",
+          "camera",
+          "copybit",
+          "eglsubandroid",
+          "gps",
+          "hwcomposer",
+          "input",
+          "libacc",
+          "libaddrsdetection",
+          "libadobereader",
+          "libalbum",
+          "libaricentomxplugin",
+          "libaudioeffect",
+          "libaudioeq",
+          "libaudioflinger",
+          "libaudiopreprocessing",
+          "libaudiotrimmer",
+          "libauth"
+        ],
+        "overlay_namespaces": []
+      },
+      "variant_timeline_summary": {
+        "region_sku": [],
+        "pushed_at": "2019-10-19T09:31:41Z",
+        "partition_build_dates": [
+          "2013-01-14T07:53:56+00:00"
+        ],
+        "locale": [
+          "hdpi"
+        ]
+      },
+      "user_facing_feature_summary": {
+        "biometrics": [],
+        "connectivity": [
+          "android.hardware.bluetooth",
+          "android.hardware.telephony",
+          "android.hardware.telephony.gsm",
+          "android.hardware.usb.accessory",
+          "android.hardware.wifi",
+          "android.hardware.wifi.direct"
+        ],
+        "form_factor": [],
+        "sensors": [
+          "android.hardware.sensor.accelerometer",
+          "android.hardware.sensor.light",
+          "android.hardware.sensor.proximity"
+        ],
+        "audio_media": [],
+        "camera": [
+          "OV5693",
+          "S5K3H2YX",
+          "S5K4E1",
+          "S5K4E5YX"
+        ]
+      }
+    }
+  ],
+  "android_versions": [
+    "4.0.4"
+  ],
+  "platforms_seen": [
+    "msm7k"
+  ],
+  "platform_families_seen": [
+    "qualcomm"
+  ],
+  "gpu_families_seen": [
+    "adreno"
+  ],
+  "sdk_versions": [
+    "15"
+  ],
+  "security_patches": [],
+  "userspace_modes": [],
+  "binder_modes": [],
+  "hardware_summary": {
+    "camera_config_files": [
+      "android.hardware.camera.flash-autofocus.xml"
+    ],
+    "hardware_config_files": [
+      "20-dns.conf",
+      "a2dp_avrcp.conf",
+      "adreno_config.txt",
+      "android.hardware.location.gps.xml",
+      "android.hardware.sensor.accelerometer.xml",
+      "android.hardware.sensor.light.xml",
+      "android.hardware.sensor.proximity.xml",
+      "android.hardware.telephony.gsm.xml",
+      "android.hardware.touchscreen.multitouch.distinct.xml",
+      "android.hardware.usb.accessory.xml",
+      "android.hardware.wifi.direct.xml",
+      "android.hardware.wifi.xml",
+      "android.software.live_wallpaper.xml",
+      "android.software.sip.voip.xml",
+      "audio.conf",
+      "audio_effects.conf",
+      "auto_pairing.conf",
+      "blacklist.conf",
+      "com.android.location.provider.xml",
+      "com.cisco.anyconnect.permissions.patch.htc.xml",
+      "com.google.android.maps.xml",
+      "com.google.android.media.effects.xml",
+      "com.google.widevine.software.drm.xml",
+      "com.htc.android.rosie.xml",
+      "com.htc.fusion.fx.xml",
+      "com.htc.lockscreen.fusion.xml",
+      "com.htc.software.market.xml",
+      "com.orange.authentication.simcard.xml",
+      "dbus.conf",
+      "dhcpcd.conf",
+      "fallback_fonts.xml",
+      "google_generic_update.txt",
+      "gps.conf",
+      "gpsconfig.xml",
+      "handheld_core_hardware_no_compass.xml",
+      "htcfs.conf",
+      "input.conf",
+      "media_profiles.xml",
+      "network.conf",
+      "platform.xml",
+      "sdkinfo.xml",
+      "spn-conf.xml",
+      "srs_bypass.cfg",
+      "srs_geq10.cfg",
+      "srs_global.cfg",
+      "srsfx_trumedia_51.cfg",
+      "srsfx_trumedia_movie.cfg",
+      "srsfx_trumedia_music.cfg",
+      "srsfx_trumedia_voice.cfg",
+      "system_fonts.xml",
+      "thermald.conf",
+      "voicemail-conf.xml",
+      "wifioffloadpkg.xml",
+      "wpa_supplicant.conf"
+    ],
+    "camera_sensors": [
+      "OV5693",
+      "S5K3H2YX",
+      "S5K4E1",
+      "S5K4E5YX"
+    ],
+    "camera_eeproms": [],
+    "camera_flashes": [],
+    "camera_actuators": [],
+    "camera_ois": []
+  },
+  "supported_hardware_features": [
+    "android.hardware.bluetooth",
+    "android.hardware.camera",
+    "android.hardware.camera.autofocus",
+    "android.hardware.camera.flash",
+    "android.hardware.faketouch",
+    "android.hardware.location",
+    "android.hardware.location.gps",
+    "android.hardware.location.network",
+    "android.hardware.microphone",
+    "android.hardware.screen.landscape",
+    "android.hardware.screen.portrait",
+    "android.hardware.sensor.accelerometer",
+    "android.hardware.sensor.light",
+    "android.hardware.sensor.proximity",
+    "android.hardware.telephony",
+    "android.hardware.telephony.gsm",
+    "android.hardware.touchscreen",
+    "android.hardware.touchscreen.multitouch",
+    "android.hardware.touchscreen.multitouch.distinct",
+    "android.hardware.usb.accessory",
+    "android.hardware.wifi",
+    "android.hardware.wifi.direct"
+  ],
+  "media_codecs": [],
+  "region_hints": [],
+  "hal_domains_seen": [],
+  "graphics_ml_union": [
+    "131072"
+  ],
+  "carrier_market_union": [],
+  "service_prefixes_seen": [],
+  "library_prefix_union": [
+    "audio (4)",
+    "bluetooth",
+    "camera",
+    "copybit",
+    "eglsubandroid",
+    "gps",
+    "gralloc (2)",
+    "hwcomposer",
+    "input",
+    "libacc",
+    "libaddrsdetection",
+    "libadobereader",
+    "libalbum",
+    "libandroid (4)",
+    "libaricentomxplugin",
+    "libaudioeffect",
+    "libaudioeq",
+    "libaudioflinger",
+    "libaudiopreprocessing",
+    "libaudiotrimmer",
+    "libauth",
+    "libbcc",
+    "libbcinfo",
+    "libbinder",
+    "libbluedroid",
+    "libbluetooth",
+    "libbluetoothd",
+    "libbt",
+    "libbtio",
+    "libbundlewrapper",
+    "libc",
+    "libchromatix (11)",
+    "libdrm1 (2)",
+    "libdrmframework (2)",
+    "libegl (2)",
+    "libext2 (5)",
+    "libfilterpack (2)",
+    "libglesv1 (2)",
+    "libglesv2 (3)",
+    "libgnmc (4)",
+    "libhardware (2)",
+    "libhtc (4)",
+    "libimage (2)",
+    "libmedia (2)",
+    "libmm (2)",
+    "libmmcamera (8)",
+    "libmmparser (2)",
+    "libqmi (2)",
+    "libril (3)",
+    "librs (2)"
+  ],
+  "firmware_component_union": [
+    "android.hardware.camera.flash-autofocus.xml",
+    "himax-touchscreen.idc",
+    "himax-touchscreen.kl",
+    "libnfc_ndef.so",
+    "sr_touchscreen.kl",
+    "touch"
+  ],
+  "timeline_summary": {
+    "branch_push_dates": [
+      {
+        "branch": "1.05.401.3-CL144761-release-keys",
+        "pushed_at": "2019-10-19T09:31:41Z"
+      }
+    ],
+    "earliest_branch_push": "2019-10-19T09:31:41+00:00",
+    "latest_branch_push": "2019-10-19T09:31:41+00:00",
+    "earliest_partition_build_date": "2013-01-14T07:53:56+00:00",
+    "latest_partition_build_date": "2013-01-14T07:53:56+00:00",
+    "branch_push_span_days": 0,
+    "build_date_span_days": 0
+  },
+  "variant_delta_summary": {
+    "varying_android_versions": [],
+    "varying_sdk_versions": [],
+    "varying_security_patches": [],
+    "varying_platforms": [],
+    "varying_partition_models": [],
+    "varying_hardware_features": [],
+    "varying_hal_domains": [],
+    "varying_radio_hints": [],
+    "varying_region_sku_hints": [],
+    "branch_count": 1,
+    "default_branch": "1.05.401.3-CL144761-release-keys"
+  },
+  "audience_summaries": {
+    "app_compatibility_summary": {
+      "api_levels": [
+        "15"
+      ],
+      "graphics_ml": [
+        "131072"
+      ],
+      "hardware_features": [
+        "android.hardware.bluetooth",
+        "android.hardware.camera",
+        "android.hardware.camera.autofocus",
+        "android.hardware.camera.flash",
+        "android.hardware.faketouch",
+        "android.hardware.location",
+        "android.hardware.location.gps",
+        "android.hardware.location.network",
+        "android.hardware.microphone",
+        "android.hardware.screen.landscape",
+        "android.hardware.screen.portrait",
+        "android.hardware.sensor.accelerometer",
+        "android.hardware.sensor.light",
+        "android.hardware.sensor.proximity",
+        "android.hardware.telephony",
+        "android.hardware.telephony.gsm",
+        "android.hardware.touchscreen",
+        "android.hardware.touchscreen.multitouch",
+        "android.hardware.touchscreen.multitouch.distinct",
+        "android.hardware.usb.accessory",
+        "android.hardware.wifi",
+        "android.hardware.wifi.direct"
+      ],
+      "ecosystem_hints": [
+        "brand:htc"
+      ]
+    },
+    "device_bringup_summary": {
+      "partition_model": [
+        "system"
+      ]
+    },
+    "security_trust_summary": {
+      "signing_debug": [
+        "release-keys"
+      ],
+      "privileged_surface": [
+        "android.permission (68)",
+        "com.android.future.usb",
+        "com.android.location",
+        "com.cisco.anyconnect.permissions.patch",
+        "com.google.android",
+        "com.google.android.media",
+        "com.google.widevine.software",
+        "com.htc.android",
+        "com.htc.android.rosie",
+        "com.htc.fusion",
+        "com.htc.lockscreen",
+        "com.htc.software",
+        "com.htc.software.Sense4",
+        "com.orange.authentication",
+        "javax"
+      ],
+      "build_freshness": [
+        "system"
+      ]
+    },
+    "vendor_stack_summary": {
+      "platform_family": [
+        "qualcomm"
+      ],
+      "radio_hints": [
+        "qualcomm-platform"
+      ],
+      "firmware_components": [
+        "himax-touchscreen.idc",
+        "himax-touchscreen.kl",
+        "sr_touchscreen.kl",
+        "touch",
+        "libnfc_ndef.so"
+      ],
+      "library_groups": [
+        "libchromatix (11)",
+        "libmmcamera (8)",
+        "libext2 (5)",
+        "audio (4)",
+        "libandroid (4)",
+        "libgnmc (4)",
+        "libhtc (4)",
+        "libglesv2 (3)",
+        "libril (3)",
+        "gralloc (2)",
+        "libdrm1 (2)",
+        "libdrmframework (2)",
+        "libegl (2)",
+        "libfilterpack (2)",
+        "libglesv1 (2)",
+        "libhardware (2)",
+        "libimage (2)",
+        "libmedia (2)",
+        "libmm (2)",
+        "libmmparser (2)",
+        "libqmi (2)",
+        "librs (2)",
+        "bluetooth",
+        "camera",
+        "copybit",
+        "eglsubandroid",
+        "gps",
+        "hwcomposer",
+        "input",
+        "libacc",
+        "libaddrsdetection",
+        "libadobereader",
+        "libalbum",
+        "libaricentomxplugin",
+        "libaudioeffect",
+        "libaudioeq",
+        "libaudioflinger",
+        "libaudiopreprocessing",
+        "libaudiotrimmer",
+        "libauth"
+      ]
+    },
+    "variant_timeline_summary": {
+      "pushed_at": [
+        "2019-10-19T09:31:41Z"
+      ],
+      "partition_build_dates": [
+        "2013-01-14T07:53:56+00:00"
+      ],
+      "locale": [
+        "hdpi"
+      ]
+    },
+    "user_facing_feature_summary": {
+      "connectivity": [
+        "android.hardware.bluetooth",
+        "android.hardware.telephony",
+        "android.hardware.telephony.gsm",
+        "android.hardware.usb.accessory",
+        "android.hardware.wifi",
+        "android.hardware.wifi.direct"
+      ],
+      "sensors": [
+        "android.hardware.sensor.accelerometer",
+        "android.hardware.sensor.light",
+        "android.hardware.sensor.proximity"
+      ],
+      "camera": [
+        "OV5693",
+        "S5K3H2YX",
+        "S5K4E1",
+        "S5K4E5YX"
+      ]
+    }
+  },
+  "community_summary": {
+    "gsi_readiness_signals": [],
+    "modding_signals": []
+  },
+  "qcom_ver_info_groups": [],
+  "fingerprint": "htc_europe/htc_magnids/magnids:4.0.4/IMM76D/144761.3:user/release-keys",
+  "brand": "htc_europe",
+  "brand_norm": "htc_europe",
+  "codename": "magnids",
+  "top_codename": "magnids",
+  "manufacturer": "HTC",
+  "manufacturer_norm": "htc",
+  "platform": "msm7k",
+  "platform_norm": "msm7k",
+  "platform_family": "qualcomm",
+  "gpu_family": "adreno",
+  "release": "4.0.4",
+  "description": "1.05.401.3 CL144761 release-keys",
+  "derived_branch": "1.05.401.3-CL144761-release-keys",
+  "is_ab": false,
+  "tags": "release-keys",
+  "build_id": "IMM76D",
+  "incremental": "144761.3",
+  "flavor": "user",
+  "cpu_abilist": null,
+  "cpu_abilist32": null,
+  "cpu_abilist64": null,
+  "primary_abi": null,
+  "secondary_abi": null,
+  "zygote_mode": null,
+  "userspace_bitness": null,
+  "binder_bitness": null,
+  "sdk_version": "15",
+  "product_first_api_level": null,
+  "board_first_api_level": null,
+  "security_patch": null,
+  "security_patch_levels": [],
+  "prop_sources": {
+    "flavor": "system/system/build.prop",
+    "release": "system/system/build.prop",
+    "build_id": "system/system/build.prop",
+    "incremental": "system/system/build.prop",
+    "tags": "system/system/build.prop",
+    "platform": "system/system/build.prop",
+    "manufacturer": "system/system/build.prop",
+    "fingerprint": "system/system/build.prop",
+    "codename": "system/system/build.prop",
+    "brand": "system/system/build.prop",
+    "description": "system/system/build.prop",
+    "sdk_version": "system/system/build.prop",
+    "gles_versions": "system/system/build.prop",
+    "default_locale": "system/system/build.prop"
+  },
+  "build_prop_files_found": [
+    "system/system/build.prop"
+  ],
+  "permission_files_found": [
+    "system/system/etc/permissions/android.hardware.camera.flash-autofocus.xml",
+    "system/system/etc/permissions/android.hardware.location.gps.xml",
+    "system/system/etc/permissions/android.hardware.sensor.accelerometer.xml",
+    "system/system/etc/permissions/android.hardware.sensor.light.xml",
+    "system/system/etc/permissions/android.hardware.sensor.proximity.xml",
+    "system/system/etc/permissions/android.hardware.telephony.gsm.xml",
+    "system/system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml",
+    "system/system/etc/permissions/android.hardware.usb.accessory.xml",
+    "system/system/etc/permissions/android.hardware.wifi.direct.xml",
+    "system/system/etc/permissions/android.hardware.wifi.xml",
+    "system/system/etc/permissions/android.software.live_wallpaper.xml",
+    "system/system/etc/permissions/android.software.sip.voip.xml",
+    "system/system/etc/permissions/com.android.location.provider.xml",
+    "system/system/etc/permissions/com.cisco.anyconnect.permissions.patch.htc.xml",
+    "system/system/etc/permissions/com.google.android.maps.xml",
+    "system/system/etc/permissions/com.google.android.media.effects.xml",
+    "system/system/etc/permissions/com.google.widevine.software.drm.xml",
+    "system/system/etc/permissions/com.htc.android.rosie.xml",
+    "system/system/etc/permissions/com.htc.fusion.fx.xml",
+    "system/system/etc/permissions/com.htc.lockscreen.fusion.xml",
+    "system/system/etc/permissions/com.htc.software.market.xml",
+    "system/system/etc/permissions/com.orange.authentication.simcard.xml",
+    "system/system/etc/permissions/handheld_core_hardware_no_compass.xml",
+    "system/system/etc/permissions/platform.xml"
+  ],
+  "partition_build_dates": [
+    {
+      "partition": "system",
+      "property": "ro.build.date.utc",
+      "value": "1358150036",
+      "iso": "2013-01-14T07:53:56+00:00",
+      "source_file": "system/system/build.prop"
+    }
+  ],
+  "partition_inventory": {
+    "present_partitions": [
+      "system"
+    ],
+    "partition_file_counts": {
+      "system": 1618,
+      "vendor": 0,
+      "odm": 0,
+      "product": 0,
+      "system_ext": 0,
+      "vendor_dlkm": 0,
+      "odm_dlkm": 0,
+      "system_dlkm": 0
+    },
+    "has_vendor_partition": false,
+    "has_product_partition": false,
+    "has_odm_partition": false,
+    "has_system_ext_partition": false,
+    "likely_treble": false
+  },
+  "partitioning_flags": {
+    "vendor_boot_present": false,
+    "super_partition_present": false,
+    "recovery_as_boot": false,
+    "first_stage_init": false
+  },
+  "vintf_summary": {
+    "manifest_files": [],
+    "compatibility_matrix_files": [],
+    "hal_names": [],
+    "hal_by_domain": {},
+    "aidl_hals": [],
+    "hidl_hals": [],
+    "matrix_levels": [],
+    "vendor_interface_levels": [],
+    "has_vintf_manifest": false,
+    "has_vintf_compatibility_matrix": false
+  },
+  "init_summary": {
+    "rc_files": [],
+    "service_count": 0,
+    "services": [],
+    "service_prefix_groups": [],
+    "vendor_service_names": [],
+    "service_binaries": [],
+    "import_count": 0
+  },
+  "fstab_summary": {
+    "fstab_files": [],
+    "mount_points": [],
+    "logical_partitions": [],
+    "slotselect_entries": 0,
+    "avb_mounts": [],
+    "fileencryption_hints": [],
+    "metadata_partition_present": false
+  },
+  "selinux_summary": {
+    "policy_files": [],
+    "has_platform_policy": false,
+    "has_vendor_policy": false,
+    "has_odm_policy": false,
+    "has_mapping_files": false
+  },
+  "framework_feature_summary": {
+    "hardware_features": [
+      "android.hardware.bluetooth",
+      "android.hardware.camera",
+      "android.hardware.camera.autofocus",
+      "android.hardware.camera.flash",
+      "android.hardware.faketouch",
+      "android.hardware.location",
+      "android.hardware.location.gps",
+      "android.hardware.location.network",
+      "android.hardware.microphone",
+      "android.hardware.screen.landscape",
+      "android.hardware.screen.portrait",
+      "android.hardware.sensor.accelerometer",
+      "android.hardware.sensor.light",
+      "android.hardware.sensor.proximity",
+      "android.hardware.telephony",
+      "android.hardware.telephony.gsm",
+      "android.hardware.touchscreen",
+      "android.hardware.touchscreen.multitouch",
+      "android.hardware.touchscreen.multitouch.distinct",
+      "android.hardware.usb.accessory",
+      "android.hardware.wifi",
+      "android.hardware.wifi.direct"
+    ],
+    "software_features": [
+      "android.software.live_wallpaper",
+      "android.software.sip",
+      "android.software.sip.voip",
+      "com.cisco.anyconnect.permissions.patch.htc",
+      "com.htc.android.rosie.widget",
+      "com.htc.lockscreen.fusion",
+      "com.htc.software.HTC",
+      "com.htc.software.MagniDS",
+      "com.htc.software.PlayGroup1",
+      "com.htc.software.Sense4.0",
+      "com.htc.software.WWE"
+    ],
+    "feature_categories": {
+      "audio": [
+        "android.hardware.microphone"
+      ],
+      "camera": [
+        "android.hardware.camera",
+        "android.hardware.camera.autofocus",
+        "android.hardware.camera.flash"
+      ],
+      "connectivity": [
+        "android.hardware.bluetooth",
+        "android.hardware.usb.accessory",
+        "android.hardware.wifi",
+        "android.hardware.wifi.direct"
+      ],
+      "location": [
+        "android.hardware.location",
+        "android.hardware.location.gps",
+        "android.hardware.location.network"
+      ],
+      "other": [
+        "android.hardware.faketouch",
+        "android.hardware.screen.landscape",
+        "android.hardware.screen.portrait",
+        "android.hardware.touchscreen",
+        "android.hardware.touchscreen.multitouch",
+        "android.hardware.touchscreen.multitouch.distinct",
+        "android.software.live_wallpaper",
+        "com.cisco.anyconnect.permissions.patch.htc",
+        "com.htc.android.rosie.widget",
+        "com.htc.lockscreen.fusion",
+        "com.htc.software.HTC",
+        "com.htc.software.MagniDS",
+        "com.htc.software.PlayGroup1",
+        "com.htc.software.Sense4.0",
+        "com.htc.software.WWE"
+      ],
+      "sensors": [
+        "android.hardware.sensor.accelerometer",
+        "android.hardware.sensor.light",
+        "android.hardware.sensor.proximity"
+      ],
+      "telephony": [
+        "android.hardware.telephony",
+        "android.hardware.telephony.gsm",
+        "android.software.sip",
+        "android.software.sip.voip"
+      ]
+    },
+    "graphics_features": [],
+    "biometric_features": [],
+    "connectivity_features": [
+      "android.hardware.bluetooth",
+      "android.hardware.telephony",
+      "android.hardware.telephony.gsm",
+      "android.hardware.usb.accessory",
+      "android.hardware.wifi",
+      "android.hardware.wifi.direct"
+    ],
+    "form_factor_features": [],
+    "feature_source_files": [
+      "system/system/etc/permissions/android.hardware.camera.flash-autofocus.xml",
+      "system/system/etc/permissions/android.hardware.location.gps.xml",
+      "system/system/etc/permissions/android.hardware.sensor.accelerometer.xml",
+      "system/system/etc/permissions/android.hardware.sensor.light.xml",
+      "system/system/etc/permissions/android.hardware.sensor.proximity.xml",
+      "system/system/etc/permissions/android.hardware.telephony.gsm.xml",
+      "system/system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml",
+      "system/system/etc/permissions/android.hardware.usb.accessory.xml",
+      "system/system/etc/permissions/android.hardware.wifi.direct.xml",
+      "system/system/etc/permissions/android.hardware.wifi.xml",
+      "system/system/etc/permissions/android.software.live_wallpaper.xml",
+      "system/system/etc/permissions/android.software.sip.voip.xml",
+      "system/system/etc/permissions/com.cisco.anyconnect.permissions.patch.htc.xml",
+      "system/system/etc/permissions/com.htc.android.rosie.xml",
+      "system/system/etc/permissions/com.htc.lockscreen.fusion.xml",
+      "system/system/etc/permissions/com.htc.software.market.xml",
+      "system/system/etc/permissions/handheld_core_hardware_no_compass.xml"
+    ]
+  },
+  "privileged_permission_summary": {
+    "privapp_permission_files": [],
+    "default_permission_files": [],
+    "sysconfig_files": [],
+    "privileged_permission_names": [
+      "android.permission.ACCESS_AUTOBOT_FILENODE",
+      "android.permission.ACCESS_CACHE_FILESYSTEM",
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_CW_FOLDER",
+      "android.permission.ACCESS_DRM",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+      "android.permission.ACCESS_MTP",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_RECOVERY_FOLDER",
+      "android.permission.ACCESS_SURFACE_FLINGER",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.BACKUP",
+      "android.permission.BATTERY_STATS",
+      "android.permission.BLUETOOTH",
+      "android.permission.BLUETOOTH_ADMIN",
+      "android.permission.BROADCAST_STICKY",
+      "android.permission.CALL_PHONE",
+      "android.permission.CAMERA",
+      "android.permission.CHANGE_CONFIGURATION",
+      "android.permission.CLEAR_APP_USER_DATA",
+      "android.permission.DELETE_CACHE_FILES",
+      "android.permission.DELETE_PACKAGES",
+      "android.permission.DEVICE_POWER",
+      "android.permission.DIAGNOSTIC",
+      "android.permission.DUMP",
+      "android.permission.FORCE_BACK",
+      "android.permission.FORCE_STOP_PACKAGES",
+      "android.permission.GET_TASKS",
+      "android.permission.INJECT_EVENTS",
+      "android.permission.INSTALL_LOCATION_PROVIDER",
+      "android.permission.INSTALL_PACKAGES",
+      "android.permission.INTERNAL_SYSTEM_WINDOW",
+      "android.permission.INTERNET",
+      "android.permission.KILL_BACKGROUND_PROCESSES",
+      "android.permission.MODIFY_AUDIO_SETTINGS",
+      "android.permission.MODIFY_NETWORK_ACCOUNTING",
+      "android.permission.NET_ADMIN",
+      "android.permission.NET_RAW",
+      "android.permission.READ_CALENDAR",
+      "android.permission.READ_CONTACTS",
+      "android.permission.READ_FRAME_BUFFER",
+      "android.permission.READ_INPUT_STATE",
+      "android.permission.READ_LOGS",
+      "android.permission.READ_NETWORK_USAGE_HISTORY",
+      "android.permission.READ_USER_DICTIONARY",
+      "android.permission.READ_WRITE_OMA_DRM",
+      "android.permission.REORDER_TASKS",
+      "android.permission.RETRIEVE_WINDOW_CONTENT",
+      "android.permission.SEND_SMS",
+      "android.permission.SET_ACTIVITY_WATCHER",
+      "android.permission.SET_ALWAYS_FINISH",
+      "android.permission.SET_ANIMATION_SCALE",
+      "android.permission.SET_DEBUG_APP",
+      "android.permission.SET_ORIENTATION",
+      "android.permission.SET_PREFERRED_APPLICATIONS",
+      "android.permission.SET_PROCESS_LIMIT",
+      "android.permission.SIGNAL_PERSISTENT_PROCESSES",
+      "android.permission.STOP_APP_SWITCHES",
+      "android.permission.VPN",
+      "android.permission.WAKE_LOCK",
+      "android.permission.WRITE_CALENDAR",
+      "android.permission.WRITE_CONTACTS",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.WRITE_MEDIA_STORAGE",
+      "android.permission.WRITE_SECURE_SETTINGS",
+      "android.permission.WRITE_SETTINGS",
+      "android.permission.WRITE_USER_DICTIONARY"
+    ],
+    "privileged_permission_namespaces": [
+      "android.permission (68)"
+    ],
+    "oem_permission_namespaces": [
+      "com.android.future.usb",
+      "com.android.location",
+      "com.cisco.anyconnect.permissions.patch",
+      "com.google.android",
+      "com.google.android.media",
+      "com.google.widevine.software",
+      "com.htc.android",
+      "com.htc.android.rosie",
+      "com.htc.fusion",
+      "com.htc.lockscreen",
+      "com.htc.software",
+      "com.htc.software.Sense4",
+      "com.orange.authentication",
+      "javax"
+    ]
+  },
+  "media_codec_summary": {
+    "codec_files": [],
+    "codec_names": [],
+    "has_codec2": false,
+    "has_omx": false
+  },
+  "audio_policy_summary": {
+    "policy_files": [],
+    "modules": [],
+    "mix_ports": []
+  },
+  "graphics_ml_summary": {
+    "gles_versions": [
+      "131072"
+    ],
+    "vulkan_features": [],
+    "nnapi_present": false,
+    "codec2_present": false,
+    "omx_present": false,
+    "camera2_capability_features": [],
+    "gpu_firmware_hints": [
+      "ContrastCurveSet.bmp",
+      "CurveCold.bmp",
+      "CurveCross.bmp",
+      "CurveSepia.bmp",
+      "CurveWarm.bmp",
+      "adreno_config.txt",
+      "dot_mask.bmp",
+      "dot_mask_0.bmp",
+      "dot_mask_1.bmp",
+      "dot_mask_128x128.bmp",
+      "dot_mask_16x16.bmp",
+      "dot_mask_2.bmp",
+      "dot_mask_3.bmp",
+      "header32bpp.bmp",
+      "header8bpp.bmp",
+      "init.goldfish.rc",
+      "init.goldfish.sh",
+      "libEGL_adreno200.so",
+      "libGLESv1_CM_adreno200.so",
+      "libGLESv2_adreno200.so",
+      "libq3dtools_adreno200.so",
+      "mask_vignette_legacy.bmp",
+      "mask_vignette_wide.bmp",
+      "stylizeColorRamp.bmp",
+      "stylizeContrastRamp.bmp",
+      "twoToneMaskH.bmp",
+      "twoToneMaskV.bmp",
+      "ueventd.goldfish.rc"
+    ]
+  },
+  "radio_summary": {
+    "capability_hints": [
+      "qualcomm-platform"
+    ]
+  },
+  "overlay_summary": {
+    "overlay_file_count": 0,
+    "overlay_namespaces": []
+  },
+  "locale_region_defaults": {
+    "default_locale": "hdpi",
+    "locale_language": "hdpi",
+    "region_props": [],
+    "region_overlay_hints": []
+  },
+  "carrier_market_hints": {
+    "carrier_tokens": [],
+    "operator_variant_tokens": [],
+    "apn_files_present": [],
+    "carrier_customization_dirs": [
+      "system"
+    ],
+    "market_hints": []
+  },
+  "firmware_component_summary": {
+    "modem_version_strings": [],
+    "camera_component_names": [
+      "android.hardware.camera.flash-autofocus.xml"
+    ],
+    "touch_panel_hints": [
+      "himax-touchscreen.idc",
+      "himax-touchscreen.kl",
+      "sr_touchscreen.kl",
+      "touch"
+    ],
+    "fingerprint_component_hints": [],
+    "nfc_component_hints": [
+      "libnfc_ndef.so"
+    ],
+    "charger_battery_hints": [
+      "LowBattery.ogg"
+    ],
+    "gpu_firmware_hints": [
+      "ContrastCurveSet.bmp",
+      "CurveCold.bmp",
+      "CurveCross.bmp",
+      "CurveSepia.bmp",
+      "CurveWarm.bmp",
+      "adreno_config.txt",
+      "dot_mask.bmp",
+      "dot_mask_0.bmp",
+      "dot_mask_1.bmp",
+      "dot_mask_128x128.bmp",
+      "dot_mask_16x16.bmp",
+      "dot_mask_2.bmp",
+      "dot_mask_3.bmp",
+      "header32bpp.bmp",
+      "header8bpp.bmp",
+      "libEGL_adreno200.so",
+      "libGLESv1_CM_adreno200.so",
+      "libGLESv2_adreno200.so",
+      "libq3dtools_adreno200.so",
+      "mask_vignette_legacy.bmp",
+      "mask_vignette_wide.bmp",
+      "stylizeColorRamp.bmp",
+      "stylizeContrastRamp.bmp",
+      "twoToneMaskH.bmp",
+      "twoToneMaskV.bmp"
+    ],
+    "dsp_firmware_hints": [
+      "libmm-adspsvc.so"
+    ],
+    "firmware_file_groups": [
+      "system"
+    ]
+  },
+  "library_inventory_summary": {
+    "shared_library_names": [
+      "audio.a2dp.default.so",
+      "audio.primary.default.so",
+      "audio.so",
+      "audio_policy.default.so",
+      "bluetooth-health.so",
+      "camera.msm7k.so",
+      "copybit.msm7k.so",
+      "eglsubAndroid.so",
+      "gps.default.so",
+      "gralloc.default.so",
+      "gralloc.msm7k.so",
+      "hwcomposer.msm7k.so",
+      "input.so",
+      "libAdobeReader.so",
+      "libAudioTrimmer.so",
+      "libChange.so",
+      "libEGL.so",
+      "libEGL_adreno200.so",
+      "libETC1.so",
+      "libFFTEm.so",
+      "libGLES_android.so",
+      "libGLESv1_CM.so",
+      "libGLESv1_CM_adreno200.so",
+      "libGLESv2.so",
+      "libGLESv2_adreno200.so",
+      "libGLESv2_dbg.so",
+      "libHTC_DIS.so",
+      "libLaputaEngine.so",
+      "libLaputaLbJni.so",
+      "libLaputaLbProviderJni.so",
+      "libLaputaLogJni.so",
+      "libMLTransition.so",
+      "libOlaEngine.so",
+      "libOlaEngineNew.so",
+      "libOmxCore.so",
+      "libOmxH264Dec.so",
+      "libOmxIttiamVenc.so",
+      "libOmxMpeg4Dec.so",
+      "libOmxVidEnc.so",
+      "libOpenMAXAL.so",
+      "libOpenSLES.so",
+      "libOpenVG.so",
+      "libQcomUI.so",
+      "libRS.so",
+      "libSR_AudioIn.so",
+      "libTRIM.so",
+      "libWVStreamControlAPI_L3.so",
+      "libWVphoneAPI.so",
+      "libacc.so",
+      "libaddrsdetection.so",
+      "libalbum_util2e.so",
+      "libandroid.so",
+      "libandroid_runtime.so",
+      "libandroid_servers.so",
+      "libandroid_simlock.so",
+      "libaricentomxplugin.so",
+      "libaudioeffect_jni.so",
+      "libaudioeq.so",
+      "libaudioflinger.so",
+      "libaudiopreprocessing.so",
+      "libauth.so",
+      "libbcc.so",
+      "libbcinfo.so",
+      "libbinder.so",
+      "libbluedroid.so",
+      "libbluetooth.so",
+      "libbluetoothd.so",
+      "libbt-aptx-4.0.3.so",
+      "libbtio.so",
+      "libbundlewrapper.so",
+      "libc.so",
+      "libcamera_client.so",
+      "libcameraface.so",
+      "libcamerapp.so",
+      "libcameraservice.so",
+      "libcapsjava.so",
+      "libcentralZoomTransition.so",
+      "libchromatix_ov5693_default_video.so",
+      "libchromatix_ov5693_hdr.so",
+      "libchromatix_ov5693_preview.so",
+      "libchromatix_s5k3h2yx_default_video.so",
+      "libchromatix_s5k3h2yx_hdr.so",
+      "libchromatix_s5k3h2yx_preview.so",
+      "libchromatix_s5k4e1_default_video.so",
+      "libchromatix_s5k4e1_preview.so",
+      "libchromatix_s5k4e5yx_default_video.so",
+      "libchromatix_s5k4e5yx_hdr.so",
+      "libchromatix_s5k4e5yx_preview.so",
+      "libchromeview.so",
+      "libchromium_net.so",
+      "libcm.so",
+      "libcontentZoomTransition.so",
+      "libcpt9.so",
+      "libcpt9core.so",
+      "libcpt9provider.so",
+      "libcrypto.so",
+      "libctest.so",
+      "libcubicRotateTransition.so",
+      "libcutils.so",
+      "libdbus.so",
+      "libdefcontainer_jni.so",
+      "libdiag.so",
+      "libdiskconfig.so",
+      "libdivxdrmdecrypt.so",
+      "libdl.so",
+      "libdnshostprio.so",
+      "libdrm1.so",
+      "libdrm1_jni.so",
+      "libdrmframework.so",
+      "libdrmframework_jni.so",
+      "libdrmwvmplugin.so",
+      "libdsi_netctrl.so",
+      "libdsm.so",
+      "libdsutils.so",
+      "libdumppcm.so",
+      "libdvm.so",
+      "libeffects.so",
+      "libemoji.so",
+      "libexif.so",
+      "libexpat.so",
+      "libext2_blkid.so",
+      "libext2_com_err.so",
+      "libext2_e2p.so",
+      "libext2_profile.so",
+      "libext2_uuid.so",
+      "libext2fs.so",
+      "libext4_utils.so",
+      "libfacelock_jni.so",
+      "libfilterfw.so",
+      "libfilterpack_facedetect.so",
+      "libfilterpack_imageproc.so",
+      "libflashplayer.so",
+      "libflint_engine_jni_api.so",
+      "libfrsdk.so",
+      "libfuse.so",
+      "libgabi++.so",
+      "libgcomm_jni.so",
+      "libgemini.so",
+      "libgenlock.so",
+      "libglib.so",
+      "libgnmc_aactag.2.5.9.4.so",
+      "libgnmc_decoder.2.5.9.4.so",
+      "libgnmc_fpx.2.5.9.4.so",
+      "libgnmc_id3tag.2.5.9.4.so",
+      "libgsl.so",
+      "libgui.so",
+      "libhardware.so",
+      "libhardware_legacy.so",
+      "libharfbuzz.so",
+      "libhtc_acoustic.so",
+      "libhtc_ril.so",
+      "libhtc_rilhook.so",
+      "libhtcanipluginmanager.so",
+      "libhtccamera.so",
+      "libhtcflag-jni.so",
+      "libhtcsunny2engine.so",
+      "libhtcsunnyengine.so",
+      "libhwui.so",
+      "libicui18n.so",
+      "libicule.so",
+      "libiculx.so",
+      "libicuuc.so",
+      "libidl.so",
+      "libimage-jpeg-enc-omx-comp.so",
+      "libimage-omx-common.so",
+      "libinput.so",
+      "libiprouteutil.so",
+      "libjnigraphics.so",
+      "libjpeg.so",
+      "liblog.so",
+      "liblz.so",
+      "libm.so",
+      "libmedia.so",
+      "libmedia_jni.so",
+      "libmediaplayerservice.so",
+      "libmemalloc.so",
+      "libmm-adspsvc.so",
+      "libmm-omxcore.so",
+      "libmmcamera_faceproc.so",
+      "libmmcamera_frameproc.so",
+      "libmmcamera_hdr_lib.so",
+      "libmmcamera_image_stab.so",
+      "libmmcamera_interface2.so",
+      "libmmcamera_rawchipproc.so",
+      "libmmcamera_statsproc31.so",
+      "libmmcamera_wavelet_lib.so",
+      "libmmipl.so",
+      "libmmjpeg.so",
+      "libmmosal.so",
+      "libmmparser.so",
+      "libmmparser_divxdrmlib.so",
+      "libmmstillomx.so",
+      "libmode10.so",
+      "libmode10AutoTest.so",
+      "libmode10GLES20.so",
+      "libmode10fx.so",
+      "libmtp.so",
+      "libnativedocviewer.so",
+      "libnativehelper.so",
+      "libnetlink.so",
+      "libnetmgr.so",
+      "libnetmonitor.so",
+      "libnetutils.so",
+      "libnfc_ndef.so",
+      "libnv.so",
+      "liboem_rapi.so",
+      "liboemcamera.so",
+      "liboma-drm1-fs.so",
+      "liboncrpc.so",
+      "liboverlay.so",
+      "libpagecurl.so",
+      "libpbmlib.so",
+      "libpicowrapper.so",
+      "libpixelflinger.so",
+      "libpng.so",
+      "libpolarisoffice_Clipboard.so",
+      "libposteffect.so",
+      "libpower.so",
+      "libpowermanager.so",
+      "libpphwr.so",
+      "libpphwrcore.so",
+      "libpphwrprovider.so",
+      "libprojector.so",
+      "libq3dtools_adreno200.so",
+      "libqc-opt.so",
+      "libqdi.so",
+      "libqdp.so",
+      "libqmi.so",
+      "libqmi_client_qmux.so",
+      "libqmiservices.so",
+      "libqueue.so",
+      "librecentappZoomTransition.so",
+      "libreverbwrapper.so",
+      "libril-qc-1.so",
+      "libril-qcril-hook-oem.so",
+      "libril.so",
+      "librpc.so",
+      "librs_jni.so",
+      "librtp_jni.so",
+      "libsc-a2xx.so",
+      "libscalado_htcalbum2.so",
+      "libscaladoapi.so",
+      "libscaladoutil.so",
+      "libsensorservice.so",
+      "libskia.so",
+      "libsonivox.so",
+      "libsoundpool.so",
+      "libspeex_sh.so",
+      "libspeexresampler.so",
+      "libspeexwrapper.so"
+    ],
+    "library_prefix_groups": [
+      "libchromatix (11)",
+      "libmmcamera (8)",
+      "libext2 (5)",
+      "audio (4)",
+      "libandroid (4)",
+      "libgnmc (4)",
+      "libhtc (4)",
+      "libglesv2 (3)",
+      "libril (3)",
+      "gralloc (2)",
+      "libdrm1 (2)",
+      "libdrmframework (2)",
+      "libegl (2)",
+      "libfilterpack (2)",
+      "libglesv1 (2)",
+      "libhardware (2)",
+      "libimage (2)",
+      "libmedia (2)",
+      "libmm (2)",
+      "libmmparser (2)",
+      "libqmi (2)",
+      "librs (2)",
+      "bluetooth",
+      "camera",
+      "copybit",
+      "eglsubandroid",
+      "gps",
+      "hwcomposer",
+      "input",
+      "libacc",
+      "libaddrsdetection",
+      "libadobereader",
+      "libalbum",
+      "libaricentomxplugin",
+      "libaudioeffect",
+      "libaudioeq",
+      "libaudioflinger",
+      "libaudiopreprocessing",
+      "libaudiotrimmer",
+      "libauth",
+      "libbcc",
+      "libbcinfo",
+      "libbinder",
+      "libbluedroid",
+      "libbluetooth",
+      "libbluetoothd",
+      "libbt",
+      "libbtio",
+      "libbundlewrapper",
+      "libc"
+    ],
+    "oem_library_prefixes": [
+      "audio (4)",
+      "gralloc (2)",
+      "bluetooth",
+      "camera",
+      "copybit",
+      "eglsubandroid",
+      "gps",
+      "hwcomposer",
+      "input"
+    ],
+    "framework_jar_names": [
+      "HTCCommonctrl.jar",
+      "HTCDev.jar",
+      "HTCExtension.jar",
+      "am.jar",
+      "android.policy.jar",
+      "android.test.runner.jar",
+      "apache-xml.jar",
+      "bmgr.jar",
+      "bouncycastle.jar",
+      "bu.jar",
+      "com.android.future.usb.accessory.jar",
+      "com.android.location.provider.jar",
+      "com.google.android.maps.jar",
+      "com.google.android.media.effects.jar",
+      "com.google.widevine.software.drm.jar",
+      "com.htc.android.bluetooth.jar",
+      "com.htc.android.rosie.jar",
+      "com.htc.fusion.fx.jar",
+      "com.htc.lockscreen.fusion.jar",
+      "com.orange.authentication.simcard.jar",
+      "com.scalado.caps.jar",
+      "com.scalado.util.ScaladoUtil.jar",
+      "core-junit.jar",
+      "core.jar",
+      "ext.jar",
+      "filterfw.jar",
+      "framework.jar",
+      "framework2.jar",
+      "ime.jar",
+      "input.jar",
+      "javax.obex.jar",
+      "modemwarmup.jar",
+      "monkey.jar",
+      "pm.jar",
+      "services.jar",
+      "svc.jar",
+      "usbnet.jar",
+      "wimax.jar"
+    ],
+    "apex_names": [],
+    "vendor_bin_names": []
+  },
+  "security_boot_summary": {
+    "signing_tags": "release-keys",
+    "selinux_summary": {
+      "policy_files": [],
+      "has_platform_policy": false,
+      "has_vendor_policy": false,
+      "has_odm_policy": false,
+      "has_mapping_files": false
+    },
+    "avb_enabled": null,
+    "dm_verity": null
+  },
+  "region_sku_hints": {
+    "value": [],
+    "heuristic": true,
+    "basis": []
+  },
+  "gms_oem_summary": {
+    "value": [
+      "brand:htc"
+    ],
+    "heuristic": true,
+    "basis": [
+      "permissions",
+      "brand"
+    ]
+  },
+  "gsi_readiness_signals": {
+    "value": [],
+    "heuristic": true,
+    "basis": []
+  },
+  "modding_signals": {
+    "value": [],
+    "heuristic": true,
+    "basis": []
+  },
+  "app_compatibility_summary": {
+    "api_levels": [
+      "15"
+    ],
+    "abis": [],
+    "graphics_ml": [
+      "131072"
+    ],
+    "hardware_features": [
+      "android.hardware.bluetooth",
+      "android.hardware.camera",
+      "android.hardware.camera.autofocus",
+      "android.hardware.camera.flash",
+      "android.hardware.faketouch",
+      "android.hardware.location",
+      "android.hardware.location.gps",
+      "android.hardware.location.network",
+      "android.hardware.microphone",
+      "android.hardware.screen.landscape",
+      "android.hardware.screen.portrait",
+      "android.hardware.sensor.accelerometer",
+      "android.hardware.sensor.light",
+      "android.hardware.sensor.proximity",
+      "android.hardware.telephony",
+      "android.hardware.telephony.gsm",
+      "android.hardware.touchscreen",
+      "android.hardware.touchscreen.multitouch",
+      "android.hardware.touchscreen.multitouch.distinct",
+      "android.hardware.usb.accessory",
+      "android.hardware.wifi",
+      "android.hardware.wifi.direct"
+    ],
+    "media_audio": [],
+    "ecosystem_hints": [
+      "brand:htc"
+    ]
+  },
+  "device_bringup_summary": {
+    "partition_model": [
+      "system"
+    ],
+    "treble_vintf": [],
+    "hal_domains": [],
+    "service_groups": [],
+    "fstab_hints": [],
+    "selinux_split": []
+  },
+  "security_trust_summary": {
+    "security_patch": null,
+    "boot_security": [],
+    "signing_debug": [
+      "release-keys"
+    ],
+    "privileged_surface": [
+      "android.permission (68)",
+      "com.android.future.usb",
+      "com.android.location",
+      "com.cisco.anyconnect.permissions.patch",
+      "com.google.android",
+      "com.google.android.media",
+      "com.google.widevine.software",
+      "com.htc.android",
+      "com.htc.android.rosie",
+      "com.htc.fusion",
+      "com.htc.lockscreen",
+      "com.htc.software",
+      "com.htc.software.Sense4",
+      "com.orange.authentication",
+      "javax"
+    ],
+    "build_freshness": [
+      "system"
+    ]
+  },
+  "vendor_stack_summary": {
+    "platform_family": "qualcomm",
+    "radio_hints": [
+      "qualcomm-platform"
+    ],
+    "firmware_components": [
+      "himax-touchscreen.idc",
+      "himax-touchscreen.kl",
+      "sr_touchscreen.kl",
+      "touch",
+      "libnfc_ndef.so"
+    ],
+    "library_groups": [
+      "libchromatix (11)",
+      "libmmcamera (8)",
+      "libext2 (5)",
+      "audio (4)",
+      "libandroid (4)",
+      "libgnmc (4)",
+      "libhtc (4)",
+      "libglesv2 (3)",
+      "libril (3)",
+      "gralloc (2)",
+      "libdrm1 (2)",
+      "libdrmframework (2)",
+      "libegl (2)",
+      "libfilterpack (2)",
+      "libglesv1 (2)",
+      "libhardware (2)",
+      "libimage (2)",
+      "libmedia (2)",
+      "libmm (2)",
+      "libmmparser (2)",
+      "libqmi (2)",
+      "librs (2)",
+      "bluetooth",
+      "camera",
+      "copybit",
+      "eglsubandroid",
+      "gps",
+      "hwcomposer",
+      "input",
+      "libacc",
+      "libaddrsdetection",
+      "libadobereader",
+      "libalbum",
+      "libaricentomxplugin",
+      "libaudioeffect",
+      "libaudioeq",
+      "libaudioflinger",
+      "libaudiopreprocessing",
+      "libaudiotrimmer",
+      "libauth"
+    ],
+    "overlay_namespaces": []
+  },
+  "variant_timeline_summary": {
+    "region_sku": [],
+    "pushed_at": "2019-10-19T09:31:41Z",
+    "partition_build_dates": [
+      "2013-01-14T07:53:56+00:00"
+    ],
+    "locale": [
+      "hdpi"
+    ]
+  },
+  "user_facing_feature_summary": {
+    "biometrics": [],
+    "connectivity": [
+      "android.hardware.bluetooth",
+      "android.hardware.telephony",
+      "android.hardware.telephony.gsm",
+      "android.hardware.usb.accessory",
+      "android.hardware.wifi",
+      "android.hardware.wifi.direct"
+    ],
+    "form_factor": [],
+    "sensors": [
+      "android.hardware.sensor.accelerometer",
+      "android.hardware.sensor.light",
+      "android.hardware.sensor.proximity"
+    ],
+    "audio_media": [],
+    "camera": [
+      "OV5693",
+      "S5K3H2YX",
+      "S5K4E1",
+      "S5K4E5YX"
+    ]
+  },
+  "extracted_at": "2026-03-29T15:23:32.088276+00:00",
+  "cpu_family": "qualcomm",
+  "gpu_label": "adreno"
+}

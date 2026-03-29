@@ -1,0 +1,2803 @@
+{
+  "schema_version": 2,
+  "repo_id": 5090,
+  "path_brand": "google",
+  "path_device": "crespo",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/google/crespo.git",
+  "repo_url": "https://dumps.tadiphone.dev/dumps/google/crespo",
+  "repo_size_bytes": 97410578,
+  "storage_size_bytes": 97363289,
+  "default_branch": "soju-user-2.3.6-GRK39F-189904-release-keys",
+  "branches": [
+    "soju-user-2.3.6-GRK39F-189904-release-keys"
+  ],
+  "branch_count": 1,
+  "branch_summaries": [
+    {
+      "branch": "soju-user-2.3.6-GRK39F-189904-release-keys",
+      "is_default": true,
+      "tip_commit": "1494602b3d8aa486da09882541a8688c74a84c8f",
+      "pushed_at": "2019-07-31T20:21:23+02:00",
+      "clone_url": "https://dumps.tadiphone.dev/dumps/google/crespo.git",
+      "repo_url": "https://dumps.tadiphone.dev/dumps/google/crespo",
+      "fingerprint": "google/soju/crespo:2.3.6/GRK39F/189904:user/release-keys",
+      "brand": "google",
+      "brand_norm": "google",
+      "codename": "crespo",
+      "top_codename": "crespo",
+      "manufacturer": "samsung",
+      "manufacturer_norm": "samsung",
+      "platform": "s5pc110",
+      "platform_norm": "s5pc110",
+      "platform_family": "exynos",
+      "release": "2.3.6",
+      "description": "soju-user 2.3.6 GRK39F 189904 release-keys",
+      "derived_branch": "soju-user-2.3.6-GRK39F-189904-release-keys",
+      "is_ab": false,
+      "tags": "release-keys",
+      "build_id": "GRK39F",
+      "incremental": "189904",
+      "flavor": "user",
+      "cpu_abilist": null,
+      "cpu_abilist32": null,
+      "cpu_abilist64": null,
+      "primary_abi": null,
+      "secondary_abi": null,
+      "zygote_mode": null,
+      "userspace_bitness": null,
+      "binder_bitness": null,
+      "sdk_version": "10",
+      "product_first_api_level": null,
+      "board_first_api_level": null,
+      "security_patch": null,
+      "security_patch_levels": [],
+      "prop_sources": {
+        "flavor": "system/build.prop",
+        "release": "system/build.prop",
+        "build_id": "system/build.prop",
+        "incremental": "system/build.prop",
+        "tags": "system/build.prop",
+        "platform": "system/build.prop",
+        "manufacturer": "system/build.prop",
+        "fingerprint": "system/build.prop",
+        "codename": "system/build.prop",
+        "brand": "system/build.prop",
+        "description": "system/build.prop",
+        "sdk_version": "system/build.prop",
+        "gles_versions": "system/build.prop",
+        "default_locale": "system/build.prop",
+        "timezone_hints": "system/build.prop",
+        "region_props": "system/build.prop"
+      },
+      "build_prop_files_found": [
+        "system/build.prop"
+      ],
+      "permission_files_found": [
+        "system/etc/permissions/android.hardware.camera.flash-autofocus.xml",
+        "system/etc/permissions/android.hardware.camera.front.xml",
+        "system/etc/permissions/android.hardware.location.gps.xml",
+        "system/etc/permissions/android.hardware.nfc.xml",
+        "system/etc/permissions/android.hardware.sensor.gyroscope.xml",
+        "system/etc/permissions/android.hardware.sensor.light.xml",
+        "system/etc/permissions/android.hardware.sensor.proximity.xml",
+        "system/etc/permissions/android.hardware.telephony.gsm.xml",
+        "system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml",
+        "system/etc/permissions/android.hardware.usb.accessory.xml",
+        "system/etc/permissions/android.hardware.wifi.xml",
+        "system/etc/permissions/android.software.live_wallpaper.xml",
+        "system/etc/permissions/android.software.sip.voip.xml",
+        "system/etc/permissions/com.android.location.provider.xml",
+        "system/etc/permissions/com.google.android.maps.xml",
+        "system/etc/permissions/com.google.android.nfc_extras.xml",
+        "system/etc/permissions/com.nxp.mifare.xml",
+        "system/etc/permissions/features.xml",
+        "system/etc/permissions/handheld_core_hardware.xml",
+        "system/etc/permissions/platform.xml"
+      ],
+      "partition_build_dates": [
+        {
+          "partition": "system",
+          "property": "ro.build.date.utc",
+          "value": "1316544229",
+          "iso": "2011-09-20T18:43:49+00:00",
+          "source_file": "system/build.prop"
+        }
+      ],
+      "partition_inventory": {
+        "present_partitions": [
+          "system"
+        ],
+        "partition_file_counts": {
+          "system": 619,
+          "vendor": 0,
+          "odm": 0,
+          "product": 0,
+          "system_ext": 0,
+          "vendor_dlkm": 0,
+          "odm_dlkm": 0,
+          "system_dlkm": 0
+        },
+        "has_vendor_partition": false,
+        "has_product_partition": false,
+        "has_odm_partition": false,
+        "has_system_ext_partition": false,
+        "likely_treble": false
+      },
+      "partitioning_flags": {
+        "vendor_boot_present": false,
+        "super_partition_present": false,
+        "recovery_as_boot": false,
+        "first_stage_init": false
+      },
+      "vintf_summary": {
+        "manifest_files": [],
+        "compatibility_matrix_files": [],
+        "hal_names": [],
+        "hal_by_domain": {},
+        "aidl_hals": [],
+        "hidl_hals": [],
+        "matrix_levels": [],
+        "vendor_interface_levels": [],
+        "has_vintf_manifest": false,
+        "has_vintf_compatibility_matrix": false
+      },
+      "init_summary": {
+        "rc_files": [],
+        "service_count": 0,
+        "services": [],
+        "service_prefix_groups": [],
+        "vendor_service_names": [],
+        "service_binaries": [],
+        "import_count": 0
+      },
+      "fstab_summary": {
+        "fstab_files": [],
+        "mount_points": [],
+        "logical_partitions": [],
+        "slotselect_entries": 0,
+        "avb_mounts": [],
+        "fileencryption_hints": [],
+        "metadata_partition_present": false
+      },
+      "selinux_summary": {
+        "policy_files": [],
+        "has_platform_policy": false,
+        "has_vendor_policy": false,
+        "has_odm_policy": false,
+        "has_mapping_files": false
+      },
+      "framework_feature_summary": {
+        "hardware_features": [
+          "android.hardware.bluetooth",
+          "android.hardware.camera",
+          "android.hardware.camera.autofocus",
+          "android.hardware.camera.flash",
+          "android.hardware.camera.front",
+          "android.hardware.location",
+          "android.hardware.location.gps",
+          "android.hardware.location.network",
+          "android.hardware.microphone",
+          "android.hardware.nfc",
+          "android.hardware.sensor.accelerometer",
+          "android.hardware.sensor.compass",
+          "android.hardware.sensor.gyroscope",
+          "android.hardware.sensor.light",
+          "android.hardware.sensor.proximity",
+          "android.hardware.telephony",
+          "android.hardware.telephony.gsm",
+          "android.hardware.touchscreen",
+          "android.hardware.touchscreen.multitouch",
+          "android.hardware.touchscreen.multitouch.distinct",
+          "android.hardware.touchscreen.multitouch.jazzhand",
+          "android.hardware.usb.accessory",
+          "android.hardware.wifi"
+        ],
+        "software_features": [
+          "android.software.live_wallpaper",
+          "android.software.sip",
+          "android.software.sip.voip",
+          "com.google.android.feature.GOOGLE_BUILD",
+          "com.nxp.mifare"
+        ],
+        "feature_categories": {
+          "audio": [
+            "android.hardware.microphone"
+          ],
+          "camera": [
+            "android.hardware.camera",
+            "android.hardware.camera.autofocus",
+            "android.hardware.camera.flash",
+            "android.hardware.camera.front"
+          ],
+          "connectivity": [
+            "android.hardware.bluetooth",
+            "android.hardware.usb.accessory",
+            "android.hardware.wifi"
+          ],
+          "location": [
+            "android.hardware.location",
+            "android.hardware.location.gps",
+            "android.hardware.location.network"
+          ],
+          "nfc": [
+            "android.hardware.nfc"
+          ],
+          "other": [
+            "android.hardware.touchscreen",
+            "android.hardware.touchscreen.multitouch",
+            "android.hardware.touchscreen.multitouch.distinct",
+            "android.hardware.touchscreen.multitouch.jazzhand",
+            "android.software.live_wallpaper",
+            "com.google.android.feature.GOOGLE_BUILD",
+            "com.nxp.mifare"
+          ],
+          "sensors": [
+            "android.hardware.sensor.accelerometer",
+            "android.hardware.sensor.compass",
+            "android.hardware.sensor.gyroscope",
+            "android.hardware.sensor.light",
+            "android.hardware.sensor.proximity"
+          ],
+          "telephony": [
+            "android.hardware.telephony",
+            "android.hardware.telephony.gsm",
+            "android.software.sip",
+            "android.software.sip.voip"
+          ]
+        },
+        "graphics_features": [],
+        "biometric_features": [],
+        "connectivity_features": [
+          "android.hardware.bluetooth",
+          "android.hardware.nfc",
+          "android.hardware.telephony",
+          "android.hardware.telephony.gsm",
+          "android.hardware.usb.accessory",
+          "android.hardware.wifi"
+        ],
+        "form_factor_features": [],
+        "feature_source_files": [
+          "system/etc/permissions/android.hardware.camera.flash-autofocus.xml",
+          "system/etc/permissions/android.hardware.camera.front.xml",
+          "system/etc/permissions/android.hardware.location.gps.xml",
+          "system/etc/permissions/android.hardware.nfc.xml",
+          "system/etc/permissions/android.hardware.sensor.gyroscope.xml",
+          "system/etc/permissions/android.hardware.sensor.light.xml",
+          "system/etc/permissions/android.hardware.sensor.proximity.xml",
+          "system/etc/permissions/android.hardware.telephony.gsm.xml",
+          "system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml",
+          "system/etc/permissions/android.hardware.usb.accessory.xml",
+          "system/etc/permissions/android.hardware.wifi.xml",
+          "system/etc/permissions/android.software.live_wallpaper.xml",
+          "system/etc/permissions/android.software.sip.voip.xml",
+          "system/etc/permissions/com.nxp.mifare.xml",
+          "system/etc/permissions/features.xml",
+          "system/etc/permissions/handheld_core_hardware.xml"
+        ]
+      },
+      "privileged_permission_summary": {
+        "privapp_permission_files": [],
+        "default_permission_files": [],
+        "sysconfig_files": [],
+        "privileged_permission_names": [
+          "android.permission.ACCESS_CACHE_FILESYSTEM",
+          "android.permission.ACCESS_COARSE_LOCATION",
+          "android.permission.ACCESS_DRM",
+          "android.permission.ACCESS_FINE_LOCATION",
+          "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+          "android.permission.ACCESS_NETWORK_STATE",
+          "android.permission.ACCESS_SURFACE_FLINGER",
+          "android.permission.ACCESS_WIFI_STATE",
+          "android.permission.BACKUP",
+          "android.permission.BATTERY_STATS",
+          "android.permission.BLUETOOTH",
+          "android.permission.BLUETOOTH_ADMIN",
+          "android.permission.BROADCAST_STICKY",
+          "android.permission.CALL_PHONE",
+          "android.permission.CAMERA",
+          "android.permission.CHANGE_CONFIGURATION",
+          "android.permission.CLEAR_APP_USER_DATA",
+          "android.permission.DELETE_CACHE_FILES",
+          "android.permission.DELETE_PACKAGES",
+          "android.permission.DEVICE_POWER",
+          "android.permission.DIAGNOSTIC",
+          "android.permission.DUMP",
+          "android.permission.FORCE_BACK",
+          "android.permission.GET_TASKS",
+          "android.permission.INJECT_EVENTS",
+          "android.permission.INSTALL_LOCATION_PROVIDER",
+          "android.permission.INSTALL_PACKAGES",
+          "android.permission.INTERNAL_SYSTEM_WINDOW",
+          "android.permission.INTERNET",
+          "android.permission.MODIFY_AUDIO_SETTINGS",
+          "android.permission.READ_CALENDAR",
+          "android.permission.READ_CONTACTS",
+          "android.permission.READ_FRAME_BUFFER",
+          "android.permission.READ_INPUT_STATE",
+          "android.permission.READ_LOGS",
+          "android.permission.READ_USER_DICTIONARY",
+          "android.permission.REORDER_TASKS",
+          "android.permission.SEND_SMS",
+          "android.permission.SET_ACTIVITY_WATCHER",
+          "android.permission.SET_ALWAYS_FINISH",
+          "android.permission.SET_ANIMATION_SCALE",
+          "android.permission.SET_DEBUG_APP",
+          "android.permission.SET_ORIENTATION",
+          "android.permission.SET_PREFERRED_APPLICATIONS",
+          "android.permission.SET_PROCESS_LIMIT",
+          "android.permission.SIGNAL_PERSISTENT_PROCESSES",
+          "android.permission.WRITE_CALENDAR",
+          "android.permission.WRITE_CONTACTS",
+          "android.permission.WRITE_EXTERNAL_STORAGE",
+          "android.permission.WRITE_SECURE_SETTINGS",
+          "android.permission.WRITE_SETTINGS",
+          "android.permission.WRITE_USER_DICTIONARY"
+        ],
+        "privileged_permission_namespaces": [
+          "android.permission (52)"
+        ],
+        "oem_permission_namespaces": [
+          "com.android.future.usb",
+          "com.android.location",
+          "com.google.android",
+          "com.google.android.feature",
+          "com.nxp",
+          "javax"
+        ]
+      },
+      "qcom_ver_info": null,
+      "camera_hardware": {
+        "camera_config_files": [
+          "android.hardware.camera.flash-autofocus.xml",
+          "android.hardware.camera.front.xml"
+        ],
+        "hardware_config_files": [
+          "20-dns.conf",
+          "android.hardware.location.gps.xml",
+          "android.hardware.nfc.xml",
+          "android.hardware.sensor.gyroscope.xml",
+          "android.hardware.sensor.light.xml",
+          "android.hardware.sensor.proximity.xml",
+          "android.hardware.telephony.gsm.xml",
+          "android.hardware.touchscreen.multitouch.jazzhand.xml",
+          "android.hardware.usb.accessory.xml",
+          "android.hardware.wifi.xml",
+          "android.software.live_wallpaper.xml",
+          "android.software.sip.voip.xml",
+          "apns-conf.xml",
+          "audio.conf",
+          "auto_pairing.conf",
+          "blacklist.conf",
+          "com.android.location.provider.xml",
+          "com.google.android.maps.xml",
+          "com.google.android.nfc_extras.xml",
+          "com.nxp.mifare.xml",
+          "dbus.conf",
+          "dhcpcd.conf",
+          "features.xml",
+          "google_generic_update.txt",
+          "gps.conf",
+          "gps.xml",
+          "handheld_core_hardware.xml",
+          "input.conf",
+          "main.conf",
+          "media_profiles.xml",
+          "migrate_nfc.txt",
+          "platform.xml",
+          "wpa_supplicant.conf"
+        ],
+        "camera_sensors": [],
+        "camera_eeproms": [],
+        "camera_flashes": [],
+        "camera_actuators": [],
+        "camera_ois": []
+      },
+      "media_codec_summary": {
+        "codec_files": [],
+        "codec_names": [],
+        "has_codec2": false,
+        "has_omx": false
+      },
+      "audio_policy_summary": {
+        "policy_files": [],
+        "modules": [],
+        "mix_ports": []
+      },
+      "graphics_ml_summary": {
+        "gles_versions": [
+          "131072"
+        ],
+        "vulkan_features": [],
+        "nnapi_present": false,
+        "codec2_present": false,
+        "omx_present": false,
+        "camera2_capability_features": [],
+        "gpu_firmware_hints": [
+          "init.goldfish.sh",
+          "libEGL_POWERVR_SGX540_120.so",
+          "libGLESv1_CM_POWERVR_SGX540_120.so",
+          "libGLESv2_POWERVR_SGX540_120.so",
+          "libPVRScopeServices.so",
+          "libpvr2d.so",
+          "libpvrANDROID_WSEGL.so",
+          "pvrsrvinit"
+        ],
+        "gpu_evidence_strings": [
+          "0 1 POWERVR_SGX540_120",
+          "gpu0",
+          "_Z19gglRecipQNormalizediPi",
+          "eglGetDisplay",
+          "eglGetCurrentContext",
+          "eglGetCurrentDisplay",
+          "eglWaitGL",
+          "eglWaitNative",
+          "eglQueryAPI",
+          "eglReleaseThread",
+          "eglLockSurfaceKHR",
+          "eglUnlockSurfaceKHR",
+          "eglGetProcAddress",
+          "eglWaitClient",
+          "eglGetError",
+          "eglQueryString",
+          "eglDestroySurface",
+          "eglMakeCurrent",
+          "eglSwapBuffers",
+          "eglSetSwapRectangleANDROID",
+          "eglInitialize",
+          "eglTerminate",
+          "eglDestroyContext",
+          "eglGetConfigs",
+          "eglCopyBuffers",
+          "eglSurfaceAttrib",
+          "eglBindTexImage",
+          "eglReleaseTexImage",
+          "eglSwapInterval",
+          "eglBindAPI",
+          "eglDestroyImageKHR",
+          "eglCreateContext",
+          "eglGetCurrentSurface",
+          "eglCreatePbufferFromClientBuffer",
+          "eglCreateImageKHR",
+          "eglQueryContext",
+          "eglGetConfigAttrib",
+          "eglQuerySurface",
+          "eglCreatePbufferSurface",
+          "eglCreatePixmapSurface",
+          "eglCreateWindowSurface",
+          "eglChooseConfig",
+          "glEGLImageTargetTexture2DOES",
+          "glEGLImageTargetRenderbufferStorageOES",
+          "libGLES_android.so",
+          "invalid EGLSurface (%p)",
+          "EGL_KHR_image_base EGL_ANDROID_image_native_buffer EGL_ANDROID_swap_rectangle",
+          "eglSwapBuffers() failed to lock buffer %p (%ux%u)",
+          "GL_OES_byte_coordinates GL_OES_fixed_point GL_OES_single_precision GL_OES_read_format GL_OES_compressed_paletted_texture GL_OES_draw_texture GL_OES_matrix_get GL_OES_query_matrix GL_OES_EGL_image GL_OES_compressed_ETC1_RGB8_texture GL_ARB_texture_compression GL_ARB_texture_non_power_of_two GL_ANDROID_user_clip_plane GL_ANDROID_vertex_buffer_object GL_ANDROID_generate_mipmap",
+          "_ZN7android33egl_get_image_for_current_contextEPv",
+          "libEGL.so",
+          "EGL_NOT_INITIALIZED",
+          "EGL_SUCCESS",
+          "EGL_BAD_ACCESS",
+          "EGL_BAD_ALLOC",
+          "EGL_BAD_ATTRIBUTE",
+          "EGL_BAD_CONFIG",
+          "EGL_BAD_CONTEXT",
+          "EGL_BAD_CURRENT_SURFACE",
+          "EGL_BAD_DISPLAY",
+          "EGL_BAD_MATCH",
+          "EGL_BAD_NATIVE_PIXMAP",
+          "EGL_BAD_NATIVE_WINDOW",
+          "EGL_BAD_PARAMETER",
+          "EGL_BAD_SURFACE",
+          "EGL_CONTEXT_LOST",
+          "libEGL",
+          "call to OpenGL ES API with no current context (logged once per thread)",
+          "1.4 Android META-EGL",
+          "EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_ANDROID_image_native_buffer EGL_ANDROID_swap_rectangle",
+          "%d: eglTerminate(%p) failed (%s)",
+          "%d: eglInitialize(%p) failed (%s)",
+          "No EGLDisplay for software EGL!",
+          "debug.egl.hw",
+          "No EGLDisplay for hardware EGL!",
+          "no more slots for eglGetProcAddress(\"%s\")",
+          "glClipPlanefIMG",
+          "glClipPlanexIMG",
+          "glFramebufferTexture2DMultisampleIMG",
+          "glRenderbufferStorageMultisampleIMG",
+          "eglGetRenderBufferANDROID",
+          "/vendor/lib/egl/lib%s_%s.so",
+          "/system/lib/egl/lib%s_%s.so",
+          "can't find eglGetProcAddress() in %s",
+          "GLES",
+          "GLESv1_CM",
+          "GLESv2",
+          "/system/lib/egl/egl.cfg",
+          "egl.cfg not found, using default config",
+          "libGLESv2.so",
+          "libGLESv1_CM.so"
+        ],
+        "gpu_api_hints": [
+          "GL_OES_byte_coordinates",
+          "GL_OES_fixed_point",
+          "GL_OES_single_precision",
+          "GL_OES_read_format",
+          "GL_OES_compressed_paletted_texture",
+          "GL_OES_draw_texture",
+          "GL_OES_matrix_get",
+          "GL_OES_query_matrix",
+          "GL_OES_EGL_image",
+          "GL_OES_compressed_ETC1_RGB8_texture",
+          "GL_ARB_texture_compression",
+          "GL_ARB_texture_non_power_of_two",
+          "GL_ANDROID_user_clip_plane",
+          "GL_ANDROID_vertex_buffer_object",
+          "GL_ANDROID_generate_mipmap"
+        ]
+      },
+      "gpu_family": "mali",
+      "radio_summary": {
+        "capability_hints": []
+      },
+      "overlay_summary": {
+        "overlay_file_count": 0,
+        "overlay_namespaces": []
+      },
+      "locale_region_defaults": {
+        "default_locale": "en",
+        "locale_language": "en",
+        "timezone_hints": [
+          "US"
+        ],
+        "region_props": [
+          "ro.product.locale.region=US"
+        ],
+        "region_overlay_hints": []
+      },
+      "carrier_market_hints": {
+        "carrier_tokens": [],
+        "operator_variant_tokens": [],
+        "apn_files_present": [
+          "system/etc/apns-conf.xml"
+        ],
+        "carrier_customization_dirs": [
+          "system"
+        ],
+        "market_hints": []
+      },
+      "firmware_component_summary": {
+        "modem_version_strings": [],
+        "camera_component_names": [
+          "android.hardware.camera.flash-autofocus.xml",
+          "android.hardware.camera.front.xml"
+        ],
+        "touch_panel_hints": [
+          "cypress-touchkey.bin",
+          "cypress-touchkey.kcm.bin",
+          "cypress-touchkey.kl"
+        ],
+        "fingerprint_component_hints": [
+          "secomxregistry"
+        ],
+        "nfc_component_hints": [
+          "NfcGoogle.apk",
+          "NfcGoogle.odex",
+          "com.android.nfc_extras.jar",
+          "com.android.nfc_extras.odex",
+          "libnfc.so",
+          "libnfc_jni.so",
+          "libnfc_ndef.so",
+          "migrate_nfc.txt"
+        ],
+        "charger_battery_hints": [
+          "LowBattery.ogg"
+        ],
+        "gpu_firmware_hints": [
+          "libEGL_POWERVR_SGX540_120.so",
+          "libGLESv1_CM_POWERVR_SGX540_120.so",
+          "libGLESv2_POWERVR_SGX540_120.so"
+        ],
+        "dsp_firmware_hints": [],
+        "firmware_file_groups": [
+          "system"
+        ]
+      },
+      "library_inventory_summary": {
+        "shared_library_names": [
+          "audio.so",
+          "gps.s5pc110.so",
+          "gralloc.default.so",
+          "gralloc.s5pc110.so",
+          "input.so",
+          "libEGL.so",
+          "libEGL_POWERVR_SGX540_120.so",
+          "libETC1.so",
+          "libFFTEm.so",
+          "libGLES_android.so",
+          "libGLESv1_CM.so",
+          "libGLESv1_CM_POWERVR_SGX540_120.so",
+          "libGLESv2.so",
+          "libGLESv2_POWERVR_SGX540_120.so",
+          "libIMGegl.so",
+          "libOMX.SEC.AVC.Decoder.so",
+          "libOMX.SEC.AVC.Encoder.so",
+          "libOMX.SEC.M4V.Decoder.so",
+          "libOMX.SEC.M4V.Encoder.so",
+          "libOpenSLES.so",
+          "libPVRScopeServices.so",
+          "libRS.so",
+          "libSEC_OMX_Core.so",
+          "libSR_AudioIn.so",
+          "liba2dp.so",
+          "libacc.so",
+          "libakm.so",
+          "libandroid.so",
+          "libandroid_runtime.so",
+          "libandroid_servers.so",
+          "libaudio.so",
+          "libaudioeffect_jni.so",
+          "libaudioflinger.so",
+          "libaudiopolicy.so",
+          "libbinder.so",
+          "libbluedroid.so",
+          "libbluetooth.so",
+          "libbluetoothd.so",
+          "libbundlewrapper.so",
+          "libc.so",
+          "libcamera.so",
+          "libcamera_client.so",
+          "libcameraservice.so",
+          "libcrypto.so",
+          "libctest.so",
+          "libcutils.so",
+          "libdbus.so",
+          "libdiskconfig.so",
+          "libdl.so",
+          "libdrm1.so",
+          "libdrm1_jni.so",
+          "libdvm.so",
+          "libearthmobile.so",
+          "libeffects.so",
+          "libemoji.so",
+          "libexif.so",
+          "libexpat.so",
+          "libext4_utils.so",
+          "libglslcompiler.so",
+          "libgui.so",
+          "libhardware.so",
+          "libhardware_legacy.so",
+          "libicui18n.so",
+          "libicuuc.so",
+          "libiprouteutil.so",
+          "libjni_latinime.so",
+          "libjni_pinyinime.so",
+          "libjnigraphics.so",
+          "libjpeg.so",
+          "liblog.so",
+          "libm.so",
+          "libmedia.so",
+          "libmedia_jni.so",
+          "libmediaplayerservice.so",
+          "libmicrobes_jni.so",
+          "libnativehelper.so",
+          "libnetlink.so",
+          "libnetutils.so",
+          "libnfc.so",
+          "libnfc_jni.so",
+          "libnfc_ndef.so",
+          "libpixelflinger.so",
+          "libpn544_fw.so",
+          "libpvr2d.so",
+          "libpvrANDROID_WSEGL.so",
+          "libreference-cdma-sms.so",
+          "libreference-ril.so",
+          "libreverbwrapper.so",
+          "libril.so",
+          "librs_jni.so",
+          "librtp_jni.so",
+          "libs3cjpeg.so",
+          "libsec-ril.so",
+          "libsecril-client.so",
+          "libsensorservice.so",
+          "libskia.so",
+          "libskiagl.so",
+          "libsonivox.so",
+          "libsoundpool.so",
+          "libsqlite.so",
+          "libsqlite_jni.so",
+          "libsrec_jni.so",
+          "libsrv_init.so",
+          "libsrv_um.so",
+          "libssl.so",
+          "libstagefright.so",
+          "libstagefright_amrnb_common.so",
+          "libstagefright_avc_common.so",
+          "libstagefright_color_conversion.so",
+          "libstagefright_enc_common.so",
+          "libstagefright_foundation.so",
+          "libstagefright_omx.so",
+          "libstagefrighthw.so",
+          "libstdc++.so",
+          "libstlport.so",
+          "libsurfaceflinger.so",
+          "libsurfaceflinger_client.so",
+          "libsystem_server.so",
+          "libsysutils.so",
+          "libtalk_jni.so",
+          "libthread_db.so",
+          "libttspico.so",
+          "libttssynthproxy.so",
+          "libui.so",
+          "libusc.so",
+          "libutils.so",
+          "libvisualizer.so",
+          "libvoicesearch.so",
+          "libvorbisidec.so",
+          "libwebcore.so",
+          "libwpa_client.so",
+          "libz.so",
+          "lights.s5pc110.so",
+          "overlay.s5pc110.so",
+          "sensors.herring.so"
+        ],
+        "library_prefix_groups": [
+          "libstagefright (7)",
+          "libomx (4)",
+          "libandroid (3)",
+          "libnfc (3)",
+          "gralloc (2)",
+          "libcamera (2)",
+          "libdrm1 (2)",
+          "libegl (2)",
+          "libglesv1 (2)",
+          "libglesv2 (2)",
+          "libhardware (2)",
+          "libjni (2)",
+          "libmedia (2)",
+          "libreference (2)",
+          "librs (2)",
+          "libsec (2)",
+          "libsqlite (2)",
+          "libsrv (2)",
+          "libsurfaceflinger (2)",
+          "audio",
+          "gps",
+          "input",
+          "liba2dp",
+          "libacc",
+          "libakm",
+          "libaudio",
+          "libaudioeffect",
+          "libaudioflinger",
+          "libaudiopolicy",
+          "libbinder",
+          "libbluedroid",
+          "libbluetooth",
+          "libbluetoothd",
+          "libbundlewrapper",
+          "libc",
+          "libcameraservice",
+          "libcrypto",
+          "libctest",
+          "libcutils",
+          "libdbus",
+          "libdiskconfig",
+          "libdl",
+          "libdvm",
+          "libearthmobile",
+          "libeffects",
+          "libemoji",
+          "libetc1",
+          "libexif",
+          "libexpat",
+          "libext4"
+        ],
+        "oem_library_prefixes": [
+          "gralloc (2)",
+          "audio",
+          "gps",
+          "input"
+        ],
+        "framework_jar_names": [
+          "am.jar",
+          "android.policy.jar",
+          "android.test.runner.jar",
+          "bmgr.jar",
+          "bouncycastle.jar",
+          "com.android.future.usb.accessory.jar",
+          "com.android.location.provider.jar",
+          "com.android.nfc_extras.jar",
+          "com.google.android.maps.jar",
+          "core-junit.jar",
+          "core.jar",
+          "ext.jar",
+          "framework.jar",
+          "ime.jar",
+          "input.jar",
+          "javax.obex.jar",
+          "monkey.jar",
+          "pm.jar",
+          "services.jar",
+          "sqlite-jdbc.jar",
+          "svc.jar"
+        ],
+        "apex_names": [],
+        "vendor_bin_names": [
+          "am",
+          "app_process",
+          "applypatch",
+          "bluetoothd",
+          "bmgr",
+          "bootanimation",
+          "brcm_patchram_plus",
+          "bugreport",
+          "cat",
+          "chmod",
+          "chown",
+          "cmp",
+          "dalvikvm",
+          "date",
+          "dbus-daemon",
+          "dd",
+          "debuggerd",
+          "dexopt",
+          "df",
+          "dhcpcd",
+          "dmesg",
+          "dnsmasq",
+          "dumpstate",
+          "dumpsys",
+          "dvz",
+          "fsck_msdos",
+          "getevent",
+          "getprop",
+          "gzip",
+          "hciattach",
+          "hd",
+          "id",
+          "ifconfig",
+          "iftop",
+          "ime",
+          "input",
+          "insmod",
+          "installd",
+          "ioctl",
+          "ionice",
+          "iptables",
+          "keystore",
+          "kill",
+          "linker",
+          "ln",
+          "log",
+          "logcat",
+          "logwrapper",
+          "ls",
+          "lsmod",
+          "lsof",
+          "make_ext4fs",
+          "mediaserver",
+          "mkdir",
+          "monkey",
+          "mount",
+          "mtpd",
+          "mv",
+          "nandread",
+          "ndc",
+          "netcfg",
+          "netd",
+          "netstat",
+          "newfs_msdos",
+          "notify",
+          "omx_tests",
+          "pand",
+          "ping",
+          "pm",
+          "pppd",
+          "printenv",
+          "ps",
+          "racoon",
+          "reboot",
+          "renice",
+          "rild",
+          "rm",
+          "rmdir",
+          "rmmod",
+          "route",
+          "run-as",
+          "schedtest",
+          "schedtop",
+          "sdcard",
+          "sdptool",
+          "sendevent",
+          "service",
+          "servicemanager",
+          "setconsole",
+          "setprop",
+          "setup_fs",
+          "sh",
+          "sleep",
+          "smd",
+          "start",
+          "stop",
+          "surfaceflinger",
+          "svc",
+          "sync",
+          "system_server",
+          "tc",
+          "toolbox",
+          "top",
+          "umount",
+          "uptime",
+          "vdc",
+          "vmstat",
+          "vold",
+          "watchprops",
+          "wipe",
+          "wpa_supplicant"
+        ]
+      },
+      "security_boot_summary": {
+        "signing_tags": "release-keys",
+        "selinux_summary": {
+          "policy_files": [],
+          "has_platform_policy": false,
+          "has_vendor_policy": false,
+          "has_odm_policy": false,
+          "has_mapping_files": false
+        },
+        "avb_enabled": null,
+        "dm_verity": null
+      },
+      "supported_hardware_features": [
+        "android.hardware.bluetooth",
+        "android.hardware.camera",
+        "android.hardware.camera.autofocus",
+        "android.hardware.camera.flash",
+        "android.hardware.camera.front",
+        "android.hardware.location",
+        "android.hardware.location.gps",
+        "android.hardware.location.network",
+        "android.hardware.microphone",
+        "android.hardware.nfc",
+        "android.hardware.sensor.accelerometer",
+        "android.hardware.sensor.compass",
+        "android.hardware.sensor.gyroscope",
+        "android.hardware.sensor.light",
+        "android.hardware.sensor.proximity",
+        "android.hardware.telephony",
+        "android.hardware.telephony.gsm",
+        "android.hardware.touchscreen",
+        "android.hardware.touchscreen.multitouch",
+        "android.hardware.touchscreen.multitouch.distinct",
+        "android.hardware.touchscreen.multitouch.jazzhand",
+        "android.hardware.usb.accessory",
+        "android.hardware.wifi"
+      ],
+      "declared_permissions": [
+        "android.permission.ACCESS_CACHE_FILESYSTEM",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_DRM",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_SURFACE_FLINGER",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.BACKUP",
+        "android.permission.BATTERY_STATS",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BROADCAST_STICKY",
+        "android.permission.CALL_PHONE",
+        "android.permission.CAMERA",
+        "android.permission.CHANGE_CONFIGURATION",
+        "android.permission.CLEAR_APP_USER_DATA",
+        "android.permission.DELETE_CACHE_FILES",
+        "android.permission.DELETE_PACKAGES",
+        "android.permission.DEVICE_POWER",
+        "android.permission.DIAGNOSTIC",
+        "android.permission.DUMP",
+        "android.permission.FORCE_BACK",
+        "android.permission.GET_TASKS",
+        "android.permission.INJECT_EVENTS",
+        "android.permission.INSTALL_LOCATION_PROVIDER",
+        "android.permission.INSTALL_PACKAGES",
+        "android.permission.INTERNAL_SYSTEM_WINDOW",
+        "android.permission.INTERNET",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.READ_CALENDAR",
+        "android.permission.READ_CONTACTS",
+        "android.permission.READ_FRAME_BUFFER",
+        "android.permission.READ_INPUT_STATE",
+        "android.permission.READ_LOGS",
+        "android.permission.READ_USER_DICTIONARY",
+        "android.permission.REORDER_TASKS",
+        "android.permission.SEND_SMS",
+        "android.permission.SET_ACTIVITY_WATCHER",
+        "android.permission.SET_ALWAYS_FINISH",
+        "android.permission.SET_ANIMATION_SCALE",
+        "android.permission.SET_DEBUG_APP",
+        "android.permission.SET_ORIENTATION",
+        "android.permission.SET_PREFERRED_APPLICATIONS",
+        "android.permission.SET_PROCESS_LIMIT",
+        "android.permission.SIGNAL_PERSISTENT_PROCESSES",
+        "android.permission.WRITE_CALENDAR",
+        "android.permission.WRITE_CONTACTS",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.WRITE_SECURE_SETTINGS",
+        "android.permission.WRITE_SETTINGS",
+        "android.permission.WRITE_USER_DICTIONARY"
+      ],
+      "hardware_feature_sources": [
+        {
+          "name": "android.hardware.bluetooth",
+          "files": [
+            "system/etc/permissions/handheld_core_hardware.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.camera",
+          "files": [
+            "system/etc/permissions/android.hardware.camera.flash-autofocus.xml",
+            "system/etc/permissions/handheld_core_hardware.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.camera.autofocus",
+          "files": [
+            "system/etc/permissions/android.hardware.camera.flash-autofocus.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.camera.flash",
+          "files": [
+            "system/etc/permissions/android.hardware.camera.flash-autofocus.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.camera.front",
+          "files": [
+            "system/etc/permissions/android.hardware.camera.front.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.location",
+          "files": [
+            "system/etc/permissions/android.hardware.location.gps.xml",
+            "system/etc/permissions/handheld_core_hardware.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.location.gps",
+          "files": [
+            "system/etc/permissions/android.hardware.location.gps.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.location.network",
+          "files": [
+            "system/etc/permissions/android.hardware.location.gps.xml",
+            "system/etc/permissions/handheld_core_hardware.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.microphone",
+          "files": [
+            "system/etc/permissions/handheld_core_hardware.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.nfc",
+          "files": [
+            "system/etc/permissions/android.hardware.nfc.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.sensor.accelerometer",
+          "files": [
+            "system/etc/permissions/handheld_core_hardware.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.sensor.compass",
+          "files": [
+            "system/etc/permissions/handheld_core_hardware.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.sensor.gyroscope",
+          "files": [
+            "system/etc/permissions/android.hardware.sensor.gyroscope.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.sensor.light",
+          "files": [
+            "system/etc/permissions/android.hardware.sensor.light.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.sensor.proximity",
+          "files": [
+            "system/etc/permissions/android.hardware.sensor.proximity.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.telephony",
+          "files": [
+            "system/etc/permissions/android.hardware.telephony.gsm.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.telephony.gsm",
+          "files": [
+            "system/etc/permissions/android.hardware.telephony.gsm.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.touchscreen",
+          "files": [
+            "system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml",
+            "system/etc/permissions/handheld_core_hardware.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.touchscreen.multitouch",
+          "files": [
+            "system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.touchscreen.multitouch.distinct",
+          "files": [
+            "system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.touchscreen.multitouch.jazzhand",
+          "files": [
+            "system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.usb.accessory",
+          "files": [
+            "system/etc/permissions/android.hardware.usb.accessory.xml"
+          ]
+        },
+        {
+          "name": "android.hardware.wifi",
+          "files": [
+            "system/etc/permissions/android.hardware.wifi.xml"
+          ]
+        },
+        {
+          "name": "android.software.live_wallpaper",
+          "files": [
+            "system/etc/permissions/android.software.live_wallpaper.xml"
+          ]
+        },
+        {
+          "name": "android.software.sip",
+          "files": [
+            "system/etc/permissions/android.software.sip.voip.xml"
+          ]
+        },
+        {
+          "name": "android.software.sip.voip",
+          "files": [
+            "system/etc/permissions/android.software.sip.voip.xml"
+          ]
+        },
+        {
+          "name": "com.google.android.feature.GOOGLE_BUILD",
+          "files": [
+            "system/etc/permissions/features.xml"
+          ]
+        },
+        {
+          "name": "com.nxp.mifare",
+          "files": [
+            "system/etc/permissions/com.nxp.mifare.xml"
+          ]
+        }
+      ],
+      "region_sku_hints": {
+        "value": [],
+        "heuristic": true,
+        "basis": []
+      },
+      "gms_oem_summary": {
+        "value": [
+          "brand:google"
+        ],
+        "heuristic": true,
+        "basis": [
+          "permissions",
+          "brand"
+        ]
+      },
+      "gsi_readiness_signals": {
+        "value": [],
+        "heuristic": true,
+        "basis": []
+      },
+      "modding_signals": {
+        "value": [],
+        "heuristic": true,
+        "basis": []
+      },
+      "app_compatibility_summary": {
+        "api_levels": [
+          "10"
+        ],
+        "abis": [],
+        "graphics_ml": [
+          "131072"
+        ],
+        "hardware_features": [
+          "android.hardware.bluetooth",
+          "android.hardware.camera",
+          "android.hardware.camera.autofocus",
+          "android.hardware.camera.flash",
+          "android.hardware.camera.front",
+          "android.hardware.location",
+          "android.hardware.location.gps",
+          "android.hardware.location.network",
+          "android.hardware.microphone",
+          "android.hardware.nfc",
+          "android.hardware.sensor.accelerometer",
+          "android.hardware.sensor.compass",
+          "android.hardware.sensor.gyroscope",
+          "android.hardware.sensor.light",
+          "android.hardware.sensor.proximity",
+          "android.hardware.telephony",
+          "android.hardware.telephony.gsm",
+          "android.hardware.touchscreen",
+          "android.hardware.touchscreen.multitouch",
+          "android.hardware.touchscreen.multitouch.distinct",
+          "android.hardware.touchscreen.multitouch.jazzhand",
+          "android.hardware.usb.accessory",
+          "android.hardware.wifi"
+        ],
+        "media_audio": [],
+        "ecosystem_hints": [
+          "brand:google"
+        ]
+      },
+      "device_bringup_summary": {
+        "partition_model": [
+          "system"
+        ],
+        "treble_vintf": [],
+        "hal_domains": [],
+        "service_groups": [],
+        "fstab_hints": [],
+        "selinux_split": []
+      },
+      "security_trust_summary": {
+        "security_patch": null,
+        "boot_security": [],
+        "signing_debug": [
+          "release-keys"
+        ],
+        "privileged_surface": [
+          "android.permission (52)",
+          "com.android.future.usb",
+          "com.android.location",
+          "com.google.android",
+          "com.google.android.feature",
+          "com.nxp",
+          "javax"
+        ],
+        "build_freshness": [
+          "system"
+        ]
+      },
+      "vendor_stack_summary": {
+        "platform_family": "exynos",
+        "radio_hints": [],
+        "firmware_components": [
+          "cypress-touchkey.bin",
+          "cypress-touchkey.kcm.bin",
+          "cypress-touchkey.kl",
+          "secomxregistry",
+          "NfcGoogle.apk",
+          "NfcGoogle.odex",
+          "com.android.nfc_extras.jar",
+          "com.android.nfc_extras.odex",
+          "libnfc.so",
+          "libnfc_jni.so",
+          "libnfc_ndef.so",
+          "migrate_nfc.txt"
+        ],
+        "library_groups": [
+          "libstagefright (7)",
+          "libomx (4)",
+          "libandroid (3)",
+          "libnfc (3)",
+          "gralloc (2)",
+          "libcamera (2)",
+          "libdrm1 (2)",
+          "libegl (2)",
+          "libglesv1 (2)",
+          "libglesv2 (2)",
+          "libhardware (2)",
+          "libjni (2)",
+          "libmedia (2)",
+          "libreference (2)",
+          "librs (2)",
+          "libsec (2)",
+          "libsqlite (2)",
+          "libsrv (2)",
+          "libsurfaceflinger (2)",
+          "audio",
+          "gps",
+          "input",
+          "liba2dp",
+          "libacc",
+          "libakm",
+          "libaudio",
+          "libaudioeffect",
+          "libaudioflinger",
+          "libaudiopolicy",
+          "libbinder",
+          "libbluedroid",
+          "libbluetooth",
+          "libbluetoothd",
+          "libbundlewrapper",
+          "libc",
+          "libcameraservice",
+          "libcrypto",
+          "libctest",
+          "libcutils",
+          "libdbus"
+        ],
+        "overlay_namespaces": []
+      },
+      "variant_timeline_summary": {
+        "region_sku": [],
+        "pushed_at": "2019-07-31T20:21:23+02:00",
+        "partition_build_dates": [
+          "2011-09-20T18:43:49+00:00"
+        ],
+        "locale": [
+          "en",
+          "US"
+        ]
+      },
+      "user_facing_feature_summary": {
+        "biometrics": [],
+        "connectivity": [
+          "android.hardware.bluetooth",
+          "android.hardware.nfc",
+          "android.hardware.telephony",
+          "android.hardware.telephony.gsm",
+          "android.hardware.usb.accessory",
+          "android.hardware.wifi"
+        ],
+        "form_factor": [],
+        "sensors": [
+          "android.hardware.sensor.accelerometer",
+          "android.hardware.sensor.compass",
+          "android.hardware.sensor.gyroscope",
+          "android.hardware.sensor.light",
+          "android.hardware.sensor.proximity"
+        ],
+        "audio_media": [],
+        "camera": []
+      }
+    }
+  ],
+  "android_versions": [
+    "2.3.6"
+  ],
+  "platforms_seen": [
+    "s5pc110"
+  ],
+  "platform_families_seen": [
+    "exynos"
+  ],
+  "gpu_families_seen": [
+    "mali"
+  ],
+  "sdk_versions": [
+    "10"
+  ],
+  "security_patches": [],
+  "userspace_modes": [],
+  "binder_modes": [],
+  "hardware_summary": {
+    "camera_config_files": [
+      "android.hardware.camera.flash-autofocus.xml",
+      "android.hardware.camera.front.xml"
+    ],
+    "hardware_config_files": [
+      "20-dns.conf",
+      "android.hardware.location.gps.xml",
+      "android.hardware.nfc.xml",
+      "android.hardware.sensor.gyroscope.xml",
+      "android.hardware.sensor.light.xml",
+      "android.hardware.sensor.proximity.xml",
+      "android.hardware.telephony.gsm.xml",
+      "android.hardware.touchscreen.multitouch.jazzhand.xml",
+      "android.hardware.usb.accessory.xml",
+      "android.hardware.wifi.xml",
+      "android.software.live_wallpaper.xml",
+      "android.software.sip.voip.xml",
+      "apns-conf.xml",
+      "audio.conf",
+      "auto_pairing.conf",
+      "blacklist.conf",
+      "com.android.location.provider.xml",
+      "com.google.android.maps.xml",
+      "com.google.android.nfc_extras.xml",
+      "com.nxp.mifare.xml",
+      "dbus.conf",
+      "dhcpcd.conf",
+      "features.xml",
+      "google_generic_update.txt",
+      "gps.conf",
+      "gps.xml",
+      "handheld_core_hardware.xml",
+      "input.conf",
+      "main.conf",
+      "media_profiles.xml",
+      "migrate_nfc.txt",
+      "platform.xml",
+      "wpa_supplicant.conf"
+    ],
+    "camera_sensors": [],
+    "camera_eeproms": [],
+    "camera_flashes": [],
+    "camera_actuators": [],
+    "camera_ois": []
+  },
+  "supported_hardware_features": [
+    "android.hardware.bluetooth",
+    "android.hardware.camera",
+    "android.hardware.camera.autofocus",
+    "android.hardware.camera.flash",
+    "android.hardware.camera.front",
+    "android.hardware.location",
+    "android.hardware.location.gps",
+    "android.hardware.location.network",
+    "android.hardware.microphone",
+    "android.hardware.nfc",
+    "android.hardware.sensor.accelerometer",
+    "android.hardware.sensor.compass",
+    "android.hardware.sensor.gyroscope",
+    "android.hardware.sensor.light",
+    "android.hardware.sensor.proximity",
+    "android.hardware.telephony",
+    "android.hardware.telephony.gsm",
+    "android.hardware.touchscreen",
+    "android.hardware.touchscreen.multitouch",
+    "android.hardware.touchscreen.multitouch.distinct",
+    "android.hardware.touchscreen.multitouch.jazzhand",
+    "android.hardware.usb.accessory",
+    "android.hardware.wifi"
+  ],
+  "media_codecs": [],
+  "region_hints": [],
+  "hal_domains_seen": [],
+  "graphics_ml_union": [
+    "131072"
+  ],
+  "carrier_market_union": [],
+  "service_prefixes_seen": [],
+  "library_prefix_union": [
+    "audio",
+    "gps",
+    "gralloc (2)",
+    "input",
+    "liba2dp",
+    "libacc",
+    "libakm",
+    "libandroid (3)",
+    "libaudio",
+    "libaudioeffect",
+    "libaudioflinger",
+    "libaudiopolicy",
+    "libbinder",
+    "libbluedroid",
+    "libbluetooth",
+    "libbluetoothd",
+    "libbundlewrapper",
+    "libc",
+    "libcamera (2)",
+    "libcameraservice",
+    "libcrypto",
+    "libctest",
+    "libcutils",
+    "libdbus",
+    "libdiskconfig",
+    "libdl",
+    "libdrm1 (2)",
+    "libdvm",
+    "libearthmobile",
+    "libeffects",
+    "libegl (2)",
+    "libemoji",
+    "libetc1",
+    "libexif",
+    "libexpat",
+    "libext4",
+    "libglesv1 (2)",
+    "libglesv2 (2)",
+    "libhardware (2)",
+    "libjni (2)",
+    "libmedia (2)",
+    "libnfc (3)",
+    "libomx (4)",
+    "libreference (2)",
+    "librs (2)",
+    "libsec (2)",
+    "libsqlite (2)",
+    "libsrv (2)",
+    "libstagefright (7)",
+    "libsurfaceflinger (2)"
+  ],
+  "firmware_component_union": [
+    "NfcGoogle.apk",
+    "NfcGoogle.odex",
+    "android.hardware.camera.flash-autofocus.xml",
+    "android.hardware.camera.front.xml",
+    "com.android.nfc_extras.jar",
+    "com.android.nfc_extras.odex",
+    "cypress-touchkey.bin",
+    "cypress-touchkey.kcm.bin",
+    "cypress-touchkey.kl",
+    "libnfc.so",
+    "libnfc_jni.so",
+    "libnfc_ndef.so",
+    "migrate_nfc.txt",
+    "secomxregistry"
+  ],
+  "timeline_summary": {
+    "branch_push_dates": [
+      {
+        "branch": "soju-user-2.3.6-GRK39F-189904-release-keys",
+        "pushed_at": "2019-07-31T20:21:23+02:00"
+      }
+    ],
+    "earliest_branch_push": "2019-07-31T20:21:23+02:00",
+    "latest_branch_push": "2019-07-31T20:21:23+02:00",
+    "earliest_partition_build_date": "2011-09-20T18:43:49+00:00",
+    "latest_partition_build_date": "2011-09-20T18:43:49+00:00",
+    "branch_push_span_days": 0,
+    "build_date_span_days": 0
+  },
+  "variant_delta_summary": {
+    "varying_android_versions": [],
+    "varying_sdk_versions": [],
+    "varying_security_patches": [],
+    "varying_platforms": [],
+    "varying_partition_models": [],
+    "varying_hardware_features": [],
+    "varying_hal_domains": [],
+    "varying_radio_hints": [],
+    "varying_region_sku_hints": [],
+    "branch_count": 1,
+    "default_branch": "soju-user-2.3.6-GRK39F-189904-release-keys"
+  },
+  "audience_summaries": {
+    "app_compatibility_summary": {
+      "api_levels": [
+        "10"
+      ],
+      "graphics_ml": [
+        "131072"
+      ],
+      "hardware_features": [
+        "android.hardware.bluetooth",
+        "android.hardware.camera",
+        "android.hardware.camera.autofocus",
+        "android.hardware.camera.flash",
+        "android.hardware.camera.front",
+        "android.hardware.location",
+        "android.hardware.location.gps",
+        "android.hardware.location.network",
+        "android.hardware.microphone",
+        "android.hardware.nfc",
+        "android.hardware.sensor.accelerometer",
+        "android.hardware.sensor.compass",
+        "android.hardware.sensor.gyroscope",
+        "android.hardware.sensor.light",
+        "android.hardware.sensor.proximity",
+        "android.hardware.telephony",
+        "android.hardware.telephony.gsm",
+        "android.hardware.touchscreen",
+        "android.hardware.touchscreen.multitouch",
+        "android.hardware.touchscreen.multitouch.distinct",
+        "android.hardware.touchscreen.multitouch.jazzhand",
+        "android.hardware.usb.accessory",
+        "android.hardware.wifi"
+      ],
+      "ecosystem_hints": [
+        "brand:google"
+      ]
+    },
+    "device_bringup_summary": {
+      "partition_model": [
+        "system"
+      ]
+    },
+    "security_trust_summary": {
+      "signing_debug": [
+        "release-keys"
+      ],
+      "privileged_surface": [
+        "android.permission (52)",
+        "com.android.future.usb",
+        "com.android.location",
+        "com.google.android",
+        "com.google.android.feature",
+        "com.nxp",
+        "javax"
+      ],
+      "build_freshness": [
+        "system"
+      ]
+    },
+    "vendor_stack_summary": {
+      "platform_family": [
+        "exynos"
+      ],
+      "firmware_components": [
+        "cypress-touchkey.bin",
+        "cypress-touchkey.kcm.bin",
+        "cypress-touchkey.kl",
+        "secomxregistry",
+        "NfcGoogle.apk",
+        "NfcGoogle.odex",
+        "com.android.nfc_extras.jar",
+        "com.android.nfc_extras.odex",
+        "libnfc.so",
+        "libnfc_jni.so",
+        "libnfc_ndef.so",
+        "migrate_nfc.txt"
+      ],
+      "library_groups": [
+        "libstagefright (7)",
+        "libomx (4)",
+        "libandroid (3)",
+        "libnfc (3)",
+        "gralloc (2)",
+        "libcamera (2)",
+        "libdrm1 (2)",
+        "libegl (2)",
+        "libglesv1 (2)",
+        "libglesv2 (2)",
+        "libhardware (2)",
+        "libjni (2)",
+        "libmedia (2)",
+        "libreference (2)",
+        "librs (2)",
+        "libsec (2)",
+        "libsqlite (2)",
+        "libsrv (2)",
+        "libsurfaceflinger (2)",
+        "audio",
+        "gps",
+        "input",
+        "liba2dp",
+        "libacc",
+        "libakm",
+        "libaudio",
+        "libaudioeffect",
+        "libaudioflinger",
+        "libaudiopolicy",
+        "libbinder",
+        "libbluedroid",
+        "libbluetooth",
+        "libbluetoothd",
+        "libbundlewrapper",
+        "libc",
+        "libcameraservice",
+        "libcrypto",
+        "libctest",
+        "libcutils",
+        "libdbus"
+      ]
+    },
+    "variant_timeline_summary": {
+      "pushed_at": [
+        "2019-07-31T20:21:23+02:00"
+      ],
+      "partition_build_dates": [
+        "2011-09-20T18:43:49+00:00"
+      ],
+      "locale": [
+        "en",
+        "US"
+      ]
+    },
+    "user_facing_feature_summary": {
+      "connectivity": [
+        "android.hardware.bluetooth",
+        "android.hardware.nfc",
+        "android.hardware.telephony",
+        "android.hardware.telephony.gsm",
+        "android.hardware.usb.accessory",
+        "android.hardware.wifi"
+      ],
+      "sensors": [
+        "android.hardware.sensor.accelerometer",
+        "android.hardware.sensor.compass",
+        "android.hardware.sensor.gyroscope",
+        "android.hardware.sensor.light",
+        "android.hardware.sensor.proximity"
+      ]
+    }
+  },
+  "community_summary": {
+    "gsi_readiness_signals": [],
+    "modding_signals": []
+  },
+  "qcom_ver_info_groups": [],
+  "fingerprint": "google/soju/crespo:2.3.6/GRK39F/189904:user/release-keys",
+  "brand": "google",
+  "brand_norm": "google",
+  "codename": "crespo",
+  "top_codename": "crespo",
+  "manufacturer": "samsung",
+  "manufacturer_norm": "samsung",
+  "platform": "s5pc110",
+  "platform_norm": "s5pc110",
+  "platform_family": "exynos",
+  "gpu_family": "mali",
+  "release": "2.3.6",
+  "description": "soju-user 2.3.6 GRK39F 189904 release-keys",
+  "derived_branch": "soju-user-2.3.6-GRK39F-189904-release-keys",
+  "is_ab": false,
+  "tags": "release-keys",
+  "build_id": "GRK39F",
+  "incremental": "189904",
+  "flavor": "user",
+  "cpu_abilist": null,
+  "cpu_abilist32": null,
+  "cpu_abilist64": null,
+  "primary_abi": null,
+  "secondary_abi": null,
+  "zygote_mode": null,
+  "userspace_bitness": null,
+  "binder_bitness": null,
+  "sdk_version": "10",
+  "product_first_api_level": null,
+  "board_first_api_level": null,
+  "security_patch": null,
+  "security_patch_levels": [],
+  "prop_sources": {
+    "flavor": "system/build.prop",
+    "release": "system/build.prop",
+    "build_id": "system/build.prop",
+    "incremental": "system/build.prop",
+    "tags": "system/build.prop",
+    "platform": "system/build.prop",
+    "manufacturer": "system/build.prop",
+    "fingerprint": "system/build.prop",
+    "codename": "system/build.prop",
+    "brand": "system/build.prop",
+    "description": "system/build.prop",
+    "sdk_version": "system/build.prop",
+    "gles_versions": "system/build.prop",
+    "default_locale": "system/build.prop",
+    "timezone_hints": "system/build.prop",
+    "region_props": "system/build.prop"
+  },
+  "build_prop_files_found": [
+    "system/build.prop"
+  ],
+  "permission_files_found": [
+    "system/etc/permissions/android.hardware.camera.flash-autofocus.xml",
+    "system/etc/permissions/android.hardware.camera.front.xml",
+    "system/etc/permissions/android.hardware.location.gps.xml",
+    "system/etc/permissions/android.hardware.nfc.xml",
+    "system/etc/permissions/android.hardware.sensor.gyroscope.xml",
+    "system/etc/permissions/android.hardware.sensor.light.xml",
+    "system/etc/permissions/android.hardware.sensor.proximity.xml",
+    "system/etc/permissions/android.hardware.telephony.gsm.xml",
+    "system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml",
+    "system/etc/permissions/android.hardware.usb.accessory.xml",
+    "system/etc/permissions/android.hardware.wifi.xml",
+    "system/etc/permissions/android.software.live_wallpaper.xml",
+    "system/etc/permissions/android.software.sip.voip.xml",
+    "system/etc/permissions/com.android.location.provider.xml",
+    "system/etc/permissions/com.google.android.maps.xml",
+    "system/etc/permissions/com.google.android.nfc_extras.xml",
+    "system/etc/permissions/com.nxp.mifare.xml",
+    "system/etc/permissions/features.xml",
+    "system/etc/permissions/handheld_core_hardware.xml",
+    "system/etc/permissions/platform.xml"
+  ],
+  "partition_build_dates": [
+    {
+      "partition": "system",
+      "property": "ro.build.date.utc",
+      "value": "1316544229",
+      "iso": "2011-09-20T18:43:49+00:00",
+      "source_file": "system/build.prop"
+    }
+  ],
+  "partition_inventory": {
+    "present_partitions": [
+      "system"
+    ],
+    "partition_file_counts": {
+      "system": 619,
+      "vendor": 0,
+      "odm": 0,
+      "product": 0,
+      "system_ext": 0,
+      "vendor_dlkm": 0,
+      "odm_dlkm": 0,
+      "system_dlkm": 0
+    },
+    "has_vendor_partition": false,
+    "has_product_partition": false,
+    "has_odm_partition": false,
+    "has_system_ext_partition": false,
+    "likely_treble": false
+  },
+  "partitioning_flags": {
+    "vendor_boot_present": false,
+    "super_partition_present": false,
+    "recovery_as_boot": false,
+    "first_stage_init": false
+  },
+  "vintf_summary": {
+    "manifest_files": [],
+    "compatibility_matrix_files": [],
+    "hal_names": [],
+    "hal_by_domain": {},
+    "aidl_hals": [],
+    "hidl_hals": [],
+    "matrix_levels": [],
+    "vendor_interface_levels": [],
+    "has_vintf_manifest": false,
+    "has_vintf_compatibility_matrix": false
+  },
+  "init_summary": {
+    "rc_files": [],
+    "service_count": 0,
+    "services": [],
+    "service_prefix_groups": [],
+    "vendor_service_names": [],
+    "service_binaries": [],
+    "import_count": 0
+  },
+  "fstab_summary": {
+    "fstab_files": [],
+    "mount_points": [],
+    "logical_partitions": [],
+    "slotselect_entries": 0,
+    "avb_mounts": [],
+    "fileencryption_hints": [],
+    "metadata_partition_present": false
+  },
+  "selinux_summary": {
+    "policy_files": [],
+    "has_platform_policy": false,
+    "has_vendor_policy": false,
+    "has_odm_policy": false,
+    "has_mapping_files": false
+  },
+  "framework_feature_summary": {
+    "hardware_features": [
+      "android.hardware.bluetooth",
+      "android.hardware.camera",
+      "android.hardware.camera.autofocus",
+      "android.hardware.camera.flash",
+      "android.hardware.camera.front",
+      "android.hardware.location",
+      "android.hardware.location.gps",
+      "android.hardware.location.network",
+      "android.hardware.microphone",
+      "android.hardware.nfc",
+      "android.hardware.sensor.accelerometer",
+      "android.hardware.sensor.compass",
+      "android.hardware.sensor.gyroscope",
+      "android.hardware.sensor.light",
+      "android.hardware.sensor.proximity",
+      "android.hardware.telephony",
+      "android.hardware.telephony.gsm",
+      "android.hardware.touchscreen",
+      "android.hardware.touchscreen.multitouch",
+      "android.hardware.touchscreen.multitouch.distinct",
+      "android.hardware.touchscreen.multitouch.jazzhand",
+      "android.hardware.usb.accessory",
+      "android.hardware.wifi"
+    ],
+    "software_features": [
+      "android.software.live_wallpaper",
+      "android.software.sip",
+      "android.software.sip.voip",
+      "com.google.android.feature.GOOGLE_BUILD",
+      "com.nxp.mifare"
+    ],
+    "feature_categories": {
+      "audio": [
+        "android.hardware.microphone"
+      ],
+      "camera": [
+        "android.hardware.camera",
+        "android.hardware.camera.autofocus",
+        "android.hardware.camera.flash",
+        "android.hardware.camera.front"
+      ],
+      "connectivity": [
+        "android.hardware.bluetooth",
+        "android.hardware.usb.accessory",
+        "android.hardware.wifi"
+      ],
+      "location": [
+        "android.hardware.location",
+        "android.hardware.location.gps",
+        "android.hardware.location.network"
+      ],
+      "nfc": [
+        "android.hardware.nfc"
+      ],
+      "other": [
+        "android.hardware.touchscreen",
+        "android.hardware.touchscreen.multitouch",
+        "android.hardware.touchscreen.multitouch.distinct",
+        "android.hardware.touchscreen.multitouch.jazzhand",
+        "android.software.live_wallpaper",
+        "com.google.android.feature.GOOGLE_BUILD",
+        "com.nxp.mifare"
+      ],
+      "sensors": [
+        "android.hardware.sensor.accelerometer",
+        "android.hardware.sensor.compass",
+        "android.hardware.sensor.gyroscope",
+        "android.hardware.sensor.light",
+        "android.hardware.sensor.proximity"
+      ],
+      "telephony": [
+        "android.hardware.telephony",
+        "android.hardware.telephony.gsm",
+        "android.software.sip",
+        "android.software.sip.voip"
+      ]
+    },
+    "graphics_features": [],
+    "biometric_features": [],
+    "connectivity_features": [
+      "android.hardware.bluetooth",
+      "android.hardware.nfc",
+      "android.hardware.telephony",
+      "android.hardware.telephony.gsm",
+      "android.hardware.usb.accessory",
+      "android.hardware.wifi"
+    ],
+    "form_factor_features": [],
+    "feature_source_files": [
+      "system/etc/permissions/android.hardware.camera.flash-autofocus.xml",
+      "system/etc/permissions/android.hardware.camera.front.xml",
+      "system/etc/permissions/android.hardware.location.gps.xml",
+      "system/etc/permissions/android.hardware.nfc.xml",
+      "system/etc/permissions/android.hardware.sensor.gyroscope.xml",
+      "system/etc/permissions/android.hardware.sensor.light.xml",
+      "system/etc/permissions/android.hardware.sensor.proximity.xml",
+      "system/etc/permissions/android.hardware.telephony.gsm.xml",
+      "system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml",
+      "system/etc/permissions/android.hardware.usb.accessory.xml",
+      "system/etc/permissions/android.hardware.wifi.xml",
+      "system/etc/permissions/android.software.live_wallpaper.xml",
+      "system/etc/permissions/android.software.sip.voip.xml",
+      "system/etc/permissions/com.nxp.mifare.xml",
+      "system/etc/permissions/features.xml",
+      "system/etc/permissions/handheld_core_hardware.xml"
+    ]
+  },
+  "privileged_permission_summary": {
+    "privapp_permission_files": [],
+    "default_permission_files": [],
+    "sysconfig_files": [],
+    "privileged_permission_names": [
+      "android.permission.ACCESS_CACHE_FILESYSTEM",
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_DRM",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_SURFACE_FLINGER",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.BACKUP",
+      "android.permission.BATTERY_STATS",
+      "android.permission.BLUETOOTH",
+      "android.permission.BLUETOOTH_ADMIN",
+      "android.permission.BROADCAST_STICKY",
+      "android.permission.CALL_PHONE",
+      "android.permission.CAMERA",
+      "android.permission.CHANGE_CONFIGURATION",
+      "android.permission.CLEAR_APP_USER_DATA",
+      "android.permission.DELETE_CACHE_FILES",
+      "android.permission.DELETE_PACKAGES",
+      "android.permission.DEVICE_POWER",
+      "android.permission.DIAGNOSTIC",
+      "android.permission.DUMP",
+      "android.permission.FORCE_BACK",
+      "android.permission.GET_TASKS",
+      "android.permission.INJECT_EVENTS",
+      "android.permission.INSTALL_LOCATION_PROVIDER",
+      "android.permission.INSTALL_PACKAGES",
+      "android.permission.INTERNAL_SYSTEM_WINDOW",
+      "android.permission.INTERNET",
+      "android.permission.MODIFY_AUDIO_SETTINGS",
+      "android.permission.READ_CALENDAR",
+      "android.permission.READ_CONTACTS",
+      "android.permission.READ_FRAME_BUFFER",
+      "android.permission.READ_INPUT_STATE",
+      "android.permission.READ_LOGS",
+      "android.permission.READ_USER_DICTIONARY",
+      "android.permission.REORDER_TASKS",
+      "android.permission.SEND_SMS",
+      "android.permission.SET_ACTIVITY_WATCHER",
+      "android.permission.SET_ALWAYS_FINISH",
+      "android.permission.SET_ANIMATION_SCALE",
+      "android.permission.SET_DEBUG_APP",
+      "android.permission.SET_ORIENTATION",
+      "android.permission.SET_PREFERRED_APPLICATIONS",
+      "android.permission.SET_PROCESS_LIMIT",
+      "android.permission.SIGNAL_PERSISTENT_PROCESSES",
+      "android.permission.WRITE_CALENDAR",
+      "android.permission.WRITE_CONTACTS",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.WRITE_SECURE_SETTINGS",
+      "android.permission.WRITE_SETTINGS",
+      "android.permission.WRITE_USER_DICTIONARY"
+    ],
+    "privileged_permission_namespaces": [
+      "android.permission (52)"
+    ],
+    "oem_permission_namespaces": [
+      "com.android.future.usb",
+      "com.android.location",
+      "com.google.android",
+      "com.google.android.feature",
+      "com.nxp",
+      "javax"
+    ]
+  },
+  "media_codec_summary": {
+    "codec_files": [],
+    "codec_names": [],
+    "has_codec2": false,
+    "has_omx": false
+  },
+  "audio_policy_summary": {
+    "policy_files": [],
+    "modules": [],
+    "mix_ports": []
+  },
+  "graphics_ml_summary": {
+    "gles_versions": [
+      "131072"
+    ],
+    "vulkan_features": [],
+    "nnapi_present": false,
+    "codec2_present": false,
+    "omx_present": false,
+    "camera2_capability_features": [],
+    "gpu_firmware_hints": [
+      "init.goldfish.sh",
+      "libEGL_POWERVR_SGX540_120.so",
+      "libGLESv1_CM_POWERVR_SGX540_120.so",
+      "libGLESv2_POWERVR_SGX540_120.so",
+      "libPVRScopeServices.so",
+      "libpvr2d.so",
+      "libpvrANDROID_WSEGL.so",
+      "pvrsrvinit"
+    ],
+    "gpu_evidence_strings": [
+      "0 1 POWERVR_SGX540_120",
+      "gpu0",
+      "_Z19gglRecipQNormalizediPi",
+      "eglGetDisplay",
+      "eglGetCurrentContext",
+      "eglGetCurrentDisplay",
+      "eglWaitGL",
+      "eglWaitNative",
+      "eglQueryAPI",
+      "eglReleaseThread",
+      "eglLockSurfaceKHR",
+      "eglUnlockSurfaceKHR",
+      "eglGetProcAddress",
+      "eglWaitClient",
+      "eglGetError",
+      "eglQueryString",
+      "eglDestroySurface",
+      "eglMakeCurrent",
+      "eglSwapBuffers",
+      "eglSetSwapRectangleANDROID",
+      "eglInitialize",
+      "eglTerminate",
+      "eglDestroyContext",
+      "eglGetConfigs",
+      "eglCopyBuffers",
+      "eglSurfaceAttrib",
+      "eglBindTexImage",
+      "eglReleaseTexImage",
+      "eglSwapInterval",
+      "eglBindAPI",
+      "eglDestroyImageKHR",
+      "eglCreateContext",
+      "eglGetCurrentSurface",
+      "eglCreatePbufferFromClientBuffer",
+      "eglCreateImageKHR",
+      "eglQueryContext",
+      "eglGetConfigAttrib",
+      "eglQuerySurface",
+      "eglCreatePbufferSurface",
+      "eglCreatePixmapSurface",
+      "eglCreateWindowSurface",
+      "eglChooseConfig",
+      "glEGLImageTargetTexture2DOES",
+      "glEGLImageTargetRenderbufferStorageOES",
+      "libGLES_android.so",
+      "invalid EGLSurface (%p)",
+      "EGL_KHR_image_base EGL_ANDROID_image_native_buffer EGL_ANDROID_swap_rectangle",
+      "eglSwapBuffers() failed to lock buffer %p (%ux%u)",
+      "GL_OES_byte_coordinates GL_OES_fixed_point GL_OES_single_precision GL_OES_read_format GL_OES_compressed_paletted_texture GL_OES_draw_texture GL_OES_matrix_get GL_OES_query_matrix GL_OES_EGL_image GL_OES_compressed_ETC1_RGB8_texture GL_ARB_texture_compression GL_ARB_texture_non_power_of_two GL_ANDROID_user_clip_plane GL_ANDROID_vertex_buffer_object GL_ANDROID_generate_mipmap",
+      "_ZN7android33egl_get_image_for_current_contextEPv",
+      "libEGL.so",
+      "EGL_NOT_INITIALIZED",
+      "EGL_SUCCESS",
+      "EGL_BAD_ACCESS",
+      "EGL_BAD_ALLOC",
+      "EGL_BAD_ATTRIBUTE",
+      "EGL_BAD_CONFIG",
+      "EGL_BAD_CONTEXT",
+      "EGL_BAD_CURRENT_SURFACE",
+      "EGL_BAD_DISPLAY",
+      "EGL_BAD_MATCH",
+      "EGL_BAD_NATIVE_PIXMAP",
+      "EGL_BAD_NATIVE_WINDOW",
+      "EGL_BAD_PARAMETER",
+      "EGL_BAD_SURFACE",
+      "EGL_CONTEXT_LOST",
+      "libEGL",
+      "call to OpenGL ES API with no current context (logged once per thread)",
+      "1.4 Android META-EGL",
+      "EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_ANDROID_image_native_buffer EGL_ANDROID_swap_rectangle",
+      "%d: eglTerminate(%p) failed (%s)",
+      "%d: eglInitialize(%p) failed (%s)",
+      "No EGLDisplay for software EGL!",
+      "debug.egl.hw",
+      "No EGLDisplay for hardware EGL!",
+      "no more slots for eglGetProcAddress(\"%s\")",
+      "glClipPlanefIMG",
+      "glClipPlanexIMG",
+      "glFramebufferTexture2DMultisampleIMG",
+      "glRenderbufferStorageMultisampleIMG",
+      "eglGetRenderBufferANDROID",
+      "/vendor/lib/egl/lib%s_%s.so",
+      "/system/lib/egl/lib%s_%s.so",
+      "can't find eglGetProcAddress() in %s",
+      "GLES",
+      "GLESv1_CM",
+      "GLESv2",
+      "/system/lib/egl/egl.cfg",
+      "egl.cfg not found, using default config",
+      "libGLESv2.so",
+      "libGLESv1_CM.so"
+    ],
+    "gpu_api_hints": [
+      "GL_OES_byte_coordinates",
+      "GL_OES_fixed_point",
+      "GL_OES_single_precision",
+      "GL_OES_read_format",
+      "GL_OES_compressed_paletted_texture",
+      "GL_OES_draw_texture",
+      "GL_OES_matrix_get",
+      "GL_OES_query_matrix",
+      "GL_OES_EGL_image",
+      "GL_OES_compressed_ETC1_RGB8_texture",
+      "GL_ARB_texture_compression",
+      "GL_ARB_texture_non_power_of_two",
+      "GL_ANDROID_user_clip_plane",
+      "GL_ANDROID_vertex_buffer_object",
+      "GL_ANDROID_generate_mipmap"
+    ]
+  },
+  "radio_summary": {
+    "capability_hints": []
+  },
+  "overlay_summary": {
+    "overlay_file_count": 0,
+    "overlay_namespaces": []
+  },
+  "locale_region_defaults": {
+    "default_locale": "en",
+    "locale_language": "en",
+    "timezone_hints": [
+      "US"
+    ],
+    "region_props": [
+      "ro.product.locale.region=US"
+    ],
+    "region_overlay_hints": []
+  },
+  "carrier_market_hints": {
+    "carrier_tokens": [],
+    "operator_variant_tokens": [],
+    "apn_files_present": [
+      "system/etc/apns-conf.xml"
+    ],
+    "carrier_customization_dirs": [
+      "system"
+    ],
+    "market_hints": []
+  },
+  "firmware_component_summary": {
+    "modem_version_strings": [],
+    "camera_component_names": [
+      "android.hardware.camera.flash-autofocus.xml",
+      "android.hardware.camera.front.xml"
+    ],
+    "touch_panel_hints": [
+      "cypress-touchkey.bin",
+      "cypress-touchkey.kcm.bin",
+      "cypress-touchkey.kl"
+    ],
+    "fingerprint_component_hints": [
+      "secomxregistry"
+    ],
+    "nfc_component_hints": [
+      "NfcGoogle.apk",
+      "NfcGoogle.odex",
+      "com.android.nfc_extras.jar",
+      "com.android.nfc_extras.odex",
+      "libnfc.so",
+      "libnfc_jni.so",
+      "libnfc_ndef.so",
+      "migrate_nfc.txt"
+    ],
+    "charger_battery_hints": [
+      "LowBattery.ogg"
+    ],
+    "gpu_firmware_hints": [
+      "libEGL_POWERVR_SGX540_120.so",
+      "libGLESv1_CM_POWERVR_SGX540_120.so",
+      "libGLESv2_POWERVR_SGX540_120.so"
+    ],
+    "dsp_firmware_hints": [],
+    "firmware_file_groups": [
+      "system"
+    ]
+  },
+  "library_inventory_summary": {
+    "shared_library_names": [
+      "audio.so",
+      "gps.s5pc110.so",
+      "gralloc.default.so",
+      "gralloc.s5pc110.so",
+      "input.so",
+      "libEGL.so",
+      "libEGL_POWERVR_SGX540_120.so",
+      "libETC1.so",
+      "libFFTEm.so",
+      "libGLES_android.so",
+      "libGLESv1_CM.so",
+      "libGLESv1_CM_POWERVR_SGX540_120.so",
+      "libGLESv2.so",
+      "libGLESv2_POWERVR_SGX540_120.so",
+      "libIMGegl.so",
+      "libOMX.SEC.AVC.Decoder.so",
+      "libOMX.SEC.AVC.Encoder.so",
+      "libOMX.SEC.M4V.Decoder.so",
+      "libOMX.SEC.M4V.Encoder.so",
+      "libOpenSLES.so",
+      "libPVRScopeServices.so",
+      "libRS.so",
+      "libSEC_OMX_Core.so",
+      "libSR_AudioIn.so",
+      "liba2dp.so",
+      "libacc.so",
+      "libakm.so",
+      "libandroid.so",
+      "libandroid_runtime.so",
+      "libandroid_servers.so",
+      "libaudio.so",
+      "libaudioeffect_jni.so",
+      "libaudioflinger.so",
+      "libaudiopolicy.so",
+      "libbinder.so",
+      "libbluedroid.so",
+      "libbluetooth.so",
+      "libbluetoothd.so",
+      "libbundlewrapper.so",
+      "libc.so",
+      "libcamera.so",
+      "libcamera_client.so",
+      "libcameraservice.so",
+      "libcrypto.so",
+      "libctest.so",
+      "libcutils.so",
+      "libdbus.so",
+      "libdiskconfig.so",
+      "libdl.so",
+      "libdrm1.so",
+      "libdrm1_jni.so",
+      "libdvm.so",
+      "libearthmobile.so",
+      "libeffects.so",
+      "libemoji.so",
+      "libexif.so",
+      "libexpat.so",
+      "libext4_utils.so",
+      "libglslcompiler.so",
+      "libgui.so",
+      "libhardware.so",
+      "libhardware_legacy.so",
+      "libicui18n.so",
+      "libicuuc.so",
+      "libiprouteutil.so",
+      "libjni_latinime.so",
+      "libjni_pinyinime.so",
+      "libjnigraphics.so",
+      "libjpeg.so",
+      "liblog.so",
+      "libm.so",
+      "libmedia.so",
+      "libmedia_jni.so",
+      "libmediaplayerservice.so",
+      "libmicrobes_jni.so",
+      "libnativehelper.so",
+      "libnetlink.so",
+      "libnetutils.so",
+      "libnfc.so",
+      "libnfc_jni.so",
+      "libnfc_ndef.so",
+      "libpixelflinger.so",
+      "libpn544_fw.so",
+      "libpvr2d.so",
+      "libpvrANDROID_WSEGL.so",
+      "libreference-cdma-sms.so",
+      "libreference-ril.so",
+      "libreverbwrapper.so",
+      "libril.so",
+      "librs_jni.so",
+      "librtp_jni.so",
+      "libs3cjpeg.so",
+      "libsec-ril.so",
+      "libsecril-client.so",
+      "libsensorservice.so",
+      "libskia.so",
+      "libskiagl.so",
+      "libsonivox.so",
+      "libsoundpool.so",
+      "libsqlite.so",
+      "libsqlite_jni.so",
+      "libsrec_jni.so",
+      "libsrv_init.so",
+      "libsrv_um.so",
+      "libssl.so",
+      "libstagefright.so",
+      "libstagefright_amrnb_common.so",
+      "libstagefright_avc_common.so",
+      "libstagefright_color_conversion.so",
+      "libstagefright_enc_common.so",
+      "libstagefright_foundation.so",
+      "libstagefright_omx.so",
+      "libstagefrighthw.so",
+      "libstdc++.so",
+      "libstlport.so",
+      "libsurfaceflinger.so",
+      "libsurfaceflinger_client.so",
+      "libsystem_server.so",
+      "libsysutils.so",
+      "libtalk_jni.so",
+      "libthread_db.so",
+      "libttspico.so",
+      "libttssynthproxy.so",
+      "libui.so",
+      "libusc.so",
+      "libutils.so",
+      "libvisualizer.so",
+      "libvoicesearch.so",
+      "libvorbisidec.so",
+      "libwebcore.so",
+      "libwpa_client.so",
+      "libz.so",
+      "lights.s5pc110.so",
+      "overlay.s5pc110.so",
+      "sensors.herring.so"
+    ],
+    "library_prefix_groups": [
+      "libstagefright (7)",
+      "libomx (4)",
+      "libandroid (3)",
+      "libnfc (3)",
+      "gralloc (2)",
+      "libcamera (2)",
+      "libdrm1 (2)",
+      "libegl (2)",
+      "libglesv1 (2)",
+      "libglesv2 (2)",
+      "libhardware (2)",
+      "libjni (2)",
+      "libmedia (2)",
+      "libreference (2)",
+      "librs (2)",
+      "libsec (2)",
+      "libsqlite (2)",
+      "libsrv (2)",
+      "libsurfaceflinger (2)",
+      "audio",
+      "gps",
+      "input",
+      "liba2dp",
+      "libacc",
+      "libakm",
+      "libaudio",
+      "libaudioeffect",
+      "libaudioflinger",
+      "libaudiopolicy",
+      "libbinder",
+      "libbluedroid",
+      "libbluetooth",
+      "libbluetoothd",
+      "libbundlewrapper",
+      "libc",
+      "libcameraservice",
+      "libcrypto",
+      "libctest",
+      "libcutils",
+      "libdbus",
+      "libdiskconfig",
+      "libdl",
+      "libdvm",
+      "libearthmobile",
+      "libeffects",
+      "libemoji",
+      "libetc1",
+      "libexif",
+      "libexpat",
+      "libext4"
+    ],
+    "oem_library_prefixes": [
+      "gralloc (2)",
+      "audio",
+      "gps",
+      "input"
+    ],
+    "framework_jar_names": [
+      "am.jar",
+      "android.policy.jar",
+      "android.test.runner.jar",
+      "bmgr.jar",
+      "bouncycastle.jar",
+      "com.android.future.usb.accessory.jar",
+      "com.android.location.provider.jar",
+      "com.android.nfc_extras.jar",
+      "com.google.android.maps.jar",
+      "core-junit.jar",
+      "core.jar",
+      "ext.jar",
+      "framework.jar",
+      "ime.jar",
+      "input.jar",
+      "javax.obex.jar",
+      "monkey.jar",
+      "pm.jar",
+      "services.jar",
+      "sqlite-jdbc.jar",
+      "svc.jar"
+    ],
+    "apex_names": [],
+    "vendor_bin_names": [
+      "am",
+      "app_process",
+      "applypatch",
+      "bluetoothd",
+      "bmgr",
+      "bootanimation",
+      "brcm_patchram_plus",
+      "bugreport",
+      "cat",
+      "chmod",
+      "chown",
+      "cmp",
+      "dalvikvm",
+      "date",
+      "dbus-daemon",
+      "dd",
+      "debuggerd",
+      "dexopt",
+      "df",
+      "dhcpcd",
+      "dmesg",
+      "dnsmasq",
+      "dumpstate",
+      "dumpsys",
+      "dvz",
+      "fsck_msdos",
+      "getevent",
+      "getprop",
+      "gzip",
+      "hciattach",
+      "hd",
+      "id",
+      "ifconfig",
+      "iftop",
+      "ime",
+      "input",
+      "insmod",
+      "installd",
+      "ioctl",
+      "ionice",
+      "iptables",
+      "keystore",
+      "kill",
+      "linker",
+      "ln",
+      "log",
+      "logcat",
+      "logwrapper",
+      "ls",
+      "lsmod",
+      "lsof",
+      "make_ext4fs",
+      "mediaserver",
+      "mkdir",
+      "monkey",
+      "mount",
+      "mtpd",
+      "mv",
+      "nandread",
+      "ndc",
+      "netcfg",
+      "netd",
+      "netstat",
+      "newfs_msdos",
+      "notify",
+      "omx_tests",
+      "pand",
+      "ping",
+      "pm",
+      "pppd",
+      "printenv",
+      "ps",
+      "racoon",
+      "reboot",
+      "renice",
+      "rild",
+      "rm",
+      "rmdir",
+      "rmmod",
+      "route",
+      "run-as",
+      "schedtest",
+      "schedtop",
+      "sdcard",
+      "sdptool",
+      "sendevent",
+      "service",
+      "servicemanager",
+      "setconsole",
+      "setprop",
+      "setup_fs",
+      "sh",
+      "sleep",
+      "smd",
+      "start",
+      "stop",
+      "surfaceflinger",
+      "svc",
+      "sync",
+      "system_server",
+      "tc",
+      "toolbox",
+      "top",
+      "umount",
+      "uptime",
+      "vdc",
+      "vmstat",
+      "vold",
+      "watchprops",
+      "wipe",
+      "wpa_supplicant"
+    ]
+  },
+  "security_boot_summary": {
+    "signing_tags": "release-keys",
+    "selinux_summary": {
+      "policy_files": [],
+      "has_platform_policy": false,
+      "has_vendor_policy": false,
+      "has_odm_policy": false,
+      "has_mapping_files": false
+    },
+    "avb_enabled": null,
+    "dm_verity": null
+  },
+  "region_sku_hints": {
+    "value": [],
+    "heuristic": true,
+    "basis": []
+  },
+  "gms_oem_summary": {
+    "value": [
+      "brand:google"
+    ],
+    "heuristic": true,
+    "basis": [
+      "permissions",
+      "brand"
+    ]
+  },
+  "gsi_readiness_signals": {
+    "value": [],
+    "heuristic": true,
+    "basis": []
+  },
+  "modding_signals": {
+    "value": [],
+    "heuristic": true,
+    "basis": []
+  },
+  "app_compatibility_summary": {
+    "api_levels": [
+      "10"
+    ],
+    "abis": [],
+    "graphics_ml": [
+      "131072"
+    ],
+    "hardware_features": [
+      "android.hardware.bluetooth",
+      "android.hardware.camera",
+      "android.hardware.camera.autofocus",
+      "android.hardware.camera.flash",
+      "android.hardware.camera.front",
+      "android.hardware.location",
+      "android.hardware.location.gps",
+      "android.hardware.location.network",
+      "android.hardware.microphone",
+      "android.hardware.nfc",
+      "android.hardware.sensor.accelerometer",
+      "android.hardware.sensor.compass",
+      "android.hardware.sensor.gyroscope",
+      "android.hardware.sensor.light",
+      "android.hardware.sensor.proximity",
+      "android.hardware.telephony",
+      "android.hardware.telephony.gsm",
+      "android.hardware.touchscreen",
+      "android.hardware.touchscreen.multitouch",
+      "android.hardware.touchscreen.multitouch.distinct",
+      "android.hardware.touchscreen.multitouch.jazzhand",
+      "android.hardware.usb.accessory",
+      "android.hardware.wifi"
+    ],
+    "media_audio": [],
+    "ecosystem_hints": [
+      "brand:google"
+    ]
+  },
+  "device_bringup_summary": {
+    "partition_model": [
+      "system"
+    ],
+    "treble_vintf": [],
+    "hal_domains": [],
+    "service_groups": [],
+    "fstab_hints": [],
+    "selinux_split": []
+  },
+  "security_trust_summary": {
+    "security_patch": null,
+    "boot_security": [],
+    "signing_debug": [
+      "release-keys"
+    ],
+    "privileged_surface": [
+      "android.permission (52)",
+      "com.android.future.usb",
+      "com.android.location",
+      "com.google.android",
+      "com.google.android.feature",
+      "com.nxp",
+      "javax"
+    ],
+    "build_freshness": [
+      "system"
+    ]
+  },
+  "vendor_stack_summary": {
+    "platform_family": "exynos",
+    "radio_hints": [],
+    "firmware_components": [
+      "cypress-touchkey.bin",
+      "cypress-touchkey.kcm.bin",
+      "cypress-touchkey.kl",
+      "secomxregistry",
+      "NfcGoogle.apk",
+      "NfcGoogle.odex",
+      "com.android.nfc_extras.jar",
+      "com.android.nfc_extras.odex",
+      "libnfc.so",
+      "libnfc_jni.so",
+      "libnfc_ndef.so",
+      "migrate_nfc.txt"
+    ],
+    "library_groups": [
+      "libstagefright (7)",
+      "libomx (4)",
+      "libandroid (3)",
+      "libnfc (3)",
+      "gralloc (2)",
+      "libcamera (2)",
+      "libdrm1 (2)",
+      "libegl (2)",
+      "libglesv1 (2)",
+      "libglesv2 (2)",
+      "libhardware (2)",
+      "libjni (2)",
+      "libmedia (2)",
+      "libreference (2)",
+      "librs (2)",
+      "libsec (2)",
+      "libsqlite (2)",
+      "libsrv (2)",
+      "libsurfaceflinger (2)",
+      "audio",
+      "gps",
+      "input",
+      "liba2dp",
+      "libacc",
+      "libakm",
+      "libaudio",
+      "libaudioeffect",
+      "libaudioflinger",
+      "libaudiopolicy",
+      "libbinder",
+      "libbluedroid",
+      "libbluetooth",
+      "libbluetoothd",
+      "libbundlewrapper",
+      "libc",
+      "libcameraservice",
+      "libcrypto",
+      "libctest",
+      "libcutils",
+      "libdbus"
+    ],
+    "overlay_namespaces": []
+  },
+  "variant_timeline_summary": {
+    "region_sku": [],
+    "pushed_at": "2019-07-31T20:21:23+02:00",
+    "partition_build_dates": [
+      "2011-09-20T18:43:49+00:00"
+    ],
+    "locale": [
+      "en",
+      "US"
+    ]
+  },
+  "user_facing_feature_summary": {
+    "biometrics": [],
+    "connectivity": [
+      "android.hardware.bluetooth",
+      "android.hardware.nfc",
+      "android.hardware.telephony",
+      "android.hardware.telephony.gsm",
+      "android.hardware.usb.accessory",
+      "android.hardware.wifi"
+    ],
+    "form_factor": [],
+    "sensors": [
+      "android.hardware.sensor.accelerometer",
+      "android.hardware.sensor.compass",
+      "android.hardware.sensor.gyroscope",
+      "android.hardware.sensor.light",
+      "android.hardware.sensor.proximity"
+    ],
+    "audio_media": [],
+    "camera": []
+  },
+  "extracted_at": "2026-03-29T15:45:58.747192+00:00",
+  "cpu_family": "exynos",
+  "gpu_label": "mali"
+}

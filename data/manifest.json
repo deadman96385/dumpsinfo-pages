@@ -1,0 +1,113 @@
+{
+  "shards": {
+    "_": {
+      "file": "_.json",
+      "count": 3
+    },
+    "a": {
+      "file": "a.json",
+      "count": 103
+    },
+    "b": {
+      "file": "b.json",
+      "count": 51
+    },
+    "c": {
+      "file": "c.json",
+      "count": 50
+    },
+    "d": {
+      "file": "d.json",
+      "count": 74
+    },
+    "e": {
+      "file": "e.json",
+      "count": 18
+    },
+    "f": {
+      "file": "f.json",
+      "count": 42
+    },
+    "g": {
+      "file": "g.json",
+      "count": 42
+    },
+    "h": {
+      "file": "h.json",
+      "count": 59
+    },
+    "i": {
+      "file": "i.json",
+      "count": 81
+    },
+    "j": {
+      "file": "j.json",
+      "count": 5
+    },
+    "k": {
+      "file": "k.json",
+      "count": 20
+    },
+    "l": {
+      "file": "l.json",
+      "count": 75
+    },
+    "m": {
+      "file": "m.json",
+      "count": 47
+    },
+    "n": {
+      "file": "n.json",
+      "count": 113
+    },
+    "o": {
+      "file": "o.json",
+      "count": 52
+    },
+    "p": {
+      "file": "p.json",
+      "count": 23
+    },
+    "q": {
+      "file": "q.json",
+      "count": 33
+    },
+    "r": {
+      "file": "r.json",
+      "count": 45
+    },
+    "s": {
+      "file": "s.json",
+      "count": 80
+    },
+    "t": {
+      "file": "t.json",
+      "count": 48
+    },
+    "u": {
+      "file": "u.json",
+      "count": 49
+    },
+    "v": {
+      "file": "v.json",
+      "count": 30
+    },
+    "w": {
+      "file": "w.json",
+      "count": 21
+    },
+    "x": {
+      "file": "x.json",
+      "count": 28
+    },
+    "y": {
+      "file": "y.json",
+      "count": 8
+    },
+    "z": {
+      "file": "z.json",
+      "count": 37
+    }
+  },
+  "total_records": 1237
+}

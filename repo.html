@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repo Detail - AndroidDumps</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="index.html" style="color:inherit">AndroidDumps</a> <span>Search</span></h1>
+    </div>
+  </header>
+
+  <div class="container detail" id="detail">
+    <div class="loading">Loading repo details...</div>
+  </div>
+
+  <script>
+  (function() {
+    "use strict";
+
+    const params = new URLSearchParams(location.search);
+    const repoId = params.get("id");
+    const $detail = document.getElementById("detail");
+    let currentRecord = null;
+    const state = {
+      activeBranch: "",
+    };
+
+    if (!repoId) {
+      $detail.innerHTML = '<div class="empty">No repo ID specified. <a href="index.html">Back to search</a></div>';
+      return;
+    }
+
+    fetchJson(`data/repo/${repoId}.json`)
+      .then(render)
+      .catch((e) => {
+        console.error("Failed to load repo detail", e);
+        $detail.innerHTML = renderLoadError();
+      });
+
+    function render(rec) {
+      if (!Array.isArray(rec.branch_summaries)) {
+        throw new Error("Repo metadata does not use the new branch-aware schema");
+      }
+
+      currentRecord = rec;
+      const primary = rec.branch_summaries.find((b) => b.is_default) || rec.branch_summaries[0];
+      state.activeBranch = state.activeBranch || primary.branch;
+      document.title = `${rec.brand || rec.path_brand} ${rec.codename || rec.path_device} - AndroidDumps`;
+
+      let html = `
+        <a href="index.html" class="back-link">&larr; Back to search</a>
+        <h2>${esc(rec.brand || rec.path_brand)} ${esc(rec.codename || rec.path_device)}</h2>
+        <div class="subtitle">${esc(rec.path_brand)}/${esc(rec.path_device)}</div>
+        <div class="meta-grid">
+          ${metaCard("Brand", rec.brand)}
+          ${metaCard("Codename", rec.codename)}
+          ${metaCard("Manufacturer", rec.manufacturer)}
+          ${metaCard("Platform Families", rec.platform_families_seen)}
+          ${metaCard("Android Versions", listOrValue(rec.android_versions, primary.release))}
+          ${metaCard("SDK Versions", listOrValue(rec.sdk_versions, rec.sdk_version))}
+          ${metaCard("Platforms", listOrValue(rec.platforms_seen, primary.platform_norm))}
+          ${metaCard("Default Branch", rec.default_branch || "N/A")}
+          ${metaCard("Size", humanSize(rec.repo_size_bytes || 0))}
+          ${metaCard("A/B Partition", primary.is_ab ? "Yes" : "No")}
+        </div>
+        <div class="meta-grid">
+          ${metaCardMono("Fingerprint", primary.fingerprint, true)}
+          ${metaCardMono("Public Clone URL", rec.clone_url, true)}
+          ${rec.repo_url ? metaCardLink("Repository", rec.repo_url) : ""}
+        </div>
+      `;
+
+      html += renderTopSections(rec);
+      html += renderTimelineSummary(rec.timeline_summary || {});
+      html += renderVariantDeltas(rec.variant_delta_summary || {});
+      html += renderBranchSelector(rec.branch_summaries);
+      html += '<div id="branch-panel"></div>';
+
+      $detail.innerHTML = html;
+      renderActiveBranchPanel();
+      bindBranchSelector();
+    }
+
+    function renderTopSections(rec) {
+      return [
+        renderSection("Treble & Partitions", [
+          ["Partitions", (rec.partition_inventory || {}).present_partitions],
+          ["Platform Family", rec.platform_families_seen],
+          ["Treble", (rec.partition_inventory || {}).likely_treble ? "Likely Treble" : ""],
+          ["VINTF", summarizeVintf(rec.vintf_summary || {})],
+          ["VINTF Level", (rec.vintf_summary || {}).vendor_interface_levels],
+          ["Partitioning", summarizeFlags(rec.partitioning_flags || {})],
+        ]),
+      ].join("");
+    }
+
+    function renderSection(title, items) {
+      const filtered = items.filter(([, value]) => hasValue(value));
+      if (!filtered.length) return "";
+      return `
+        <h3 style="margin:1.5rem 0 .5rem">${esc(title)}</h3>
+        <div class="meta-grid meta-grid--dense">
+          ${filtered.map(([label, value]) => metaCard(label, value)).join("")}
+        </div>
+      `;
+    }
+
+    function renderAudienceSection(title, summary) {
+      const entries = Object.entries(summary || {}).filter(([, value]) => hasValue(value));
+      if (!entries.length) return "";
+      return `
+        <h3 style="margin:1.5rem 0 .5rem">${esc(title)}</h3>
+        <div class="meta-grid meta-grid--dense">
+          ${entries.map(([label, value]) => metaCard(humanizeKey(label), value)).join("")}
+        </div>
+      `;
+    }
+
+    function renderBranchSelector(branches) {
+      const active = state.activeBranch || ((branches[0] || {}).branch || "");
+      return `
+        <h3 style="margin:1.5rem 0 .5rem">Branches (${branches.length})</h3>
+        <div class="branch-selector-wrap">
+          <div class="branch-selector">
+            ${branches.map((branch) => `
+              <button class="branch-tab${branch.branch === active ? " active" : ""}" type="button" data-branch="${escAttr(branch.branch)}">
+                <span class="branch-tab__name">${esc(branch.branch)}</span>
+                <span class="branch-tab__badges">
+                  ${branch.is_default ? '<span class="branch-badge branch-badge--default">Default</span>' : ""}
+                  ${branch.release ? `<span class="branch-badge">Android ${esc(branch.release)}</span>` : ""}
+                  ${branch.sdk_version ? `<span class="branch-badge">SDK ${esc(branch.sdk_version)}</span>` : ""}
+                </span>
+                <span class="branch-tab__meta">${esc(renderBranchMeta(branch))}</span>
+              </button>
+            `).join("")}
+          </div>
+          <label class="branch-picker-label">
+            <span>Selected Branch</span>
+            <select id="branch-select" class="branch-picker">
+              ${branches.map((branch) => `
+                <option value="${escAttr(branch.branch)}"${branch.branch === active ? " selected" : ""}>
+                  ${esc(renderBranchMeta(branch, true))}
+                </option>
+              `).join("")}
+            </select>
+          </label>
+        </div>
+      `;
+    }
+
+    function renderBranchMeta(branch, includeName) {
+      const parts = [];
+      if (includeName) parts.push(branch.branch);
+      if (branch.is_default) parts.push("default");
+      if (branch.release) parts.push(`Android ${branch.release}`);
+      if (branch.sdk_version) parts.push(`SDK ${branch.sdk_version}`);
+      if (branch.platform_family) parts.push(branch.platform_family);
+      if (branch.pushed_at) parts.push(formatDate(branch.pushed_at));
+      return parts.join(" | ");
+    }
+
+    function renderActiveBranchPanel() {
+      if (!currentRecord) return;
+      const $panel = document.getElementById("branch-panel");
+      if (!$panel) return;
+      const branch = currentRecord.branch_summaries.find((item) => item.branch === state.activeBranch) || currentRecord.branch_summaries[0];
+      if (!branch) {
+        $panel.innerHTML = "";
+        return;
+      }
+      state.activeBranch = branch.branch;
+      $panel.innerHTML = renderBranchCard(branch);
+      syncBranchControls();
+    }
+
+    function bindBranchSelector() {
+      document.querySelectorAll(".branch-tab").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.activeBranch = button.getAttribute("data-branch") || state.activeBranch;
+          renderActiveBranchPanel();
+        });
+      });
+      const select = document.getElementById("branch-select");
+      if (select) {
+        select.addEventListener("change", (event) => {
+          state.activeBranch = event.target.value || state.activeBranch;
+          renderActiveBranchPanel();
+        });
+      }
+    }
+
+    function syncBranchControls() {
+      document.querySelectorAll(".branch-tab").forEach((button) => {
+        button.classList.toggle("active", button.getAttribute("data-branch") === state.activeBranch);
+      });
+      const select = document.getElementById("branch-select");
+      if (select) select.value = state.activeBranch;
+    }
+
+    function renderBranchCard(branch) {
+      const branchMeta = [
+        branch.release ? `Android ${branch.release}` : "",
+        branch.sdk_version ? `SDK ${branch.sdk_version}` : "",
+        branch.platform_norm || "",
+        branch.platform_family || "",
+        branch.is_ab ? "A/B" : "A-only",
+        branch.pushed_at ? `Pushed ${formatDate(branch.pushed_at)}` : "",
+      ].filter(Boolean).join(" | ");
+
+      return `
+        <section class="branch-panel">
+          <h4 style="display:flex;justify-content:space-between;gap:1rem;align-items:flex-start">
+            <span>${esc(branch.branch)}${branch.is_default ? ' <span style="color:var(--green)">(default)</span>' : ""}</span>
+            <span style="font-weight:400;color:var(--fg3)">${esc(branchMeta)}</span>
+          </h4>
+          <div class="meta-grid meta-grid--dense">
+            ${metaCard("Description", branch.description)}
+            ${metaCard("Build ID", branch.build_id)}
+            ${metaCard("Incremental", branch.incremental)}
+            ${metaCard("Flavor", branch.flavor)}
+            ${metaCard("Tags", branch.tags)}
+            ${metaCardMono("Fingerprint", branch.fingerprint)}
+          </div>
+          ${renderSection("Research Signals", [
+            ["Partitions", (branch.partition_inventory || {}).present_partitions],
+            ["Treble", (branch.partition_inventory || {}).likely_treble ? "Likely Treble" : ""],
+            ["VINTF", summarizeVintf(branch.vintf_summary || {})],
+            ["VINTF Level", (branch.vintf_summary || {}).vendor_interface_levels],
+            ["Userspace", formatHeuristic(branch.userspace_bitness)],
+            ["Binder", formatHeuristic(branch.binder_bitness)],
+            ["ABI List", branch.cpu_abilist],
+            ["ABI 32", branch.cpu_abilist32],
+            ["ABI 64", branch.cpu_abilist64],
+            ["Security Patch", branch.security_patch],
+            ["Product First API", branch.product_first_api_level],
+            ["Board First API", branch.board_first_api_level],
+            ["SELinux", summarizeSelinux(branch.selinux_summary || {})],
+            ["Partitioning", summarizeFlags(branch.partitioning_flags || {})],
+            ["GSI Readiness", formatHeuristic(branch.gsi_readiness_signals)],
+            ["Modding Signals", formatHeuristic(branch.modding_signals)],
+            ["Region/SKU", formatHeuristic(branch.region_sku_hints)],
+            ["GMS/OEM", formatHeuristic(branch.gms_oem_summary)],
+          ])}
+          ${renderSection("App Compatibility", buildAppCompatibilityItems(branch))}
+          ${renderAudienceSection("Device Bring-Up", branch.device_bringup_summary)}
+          ${renderSection("Security & Trust", buildSecurityTrustItems(branch))}
+          ${renderSection("Vendor Stack", buildVendorStackItems(branch))}
+          ${renderVariantTimelineSection(branch)}
+          ${renderUserFacingSection(branch)}
+          ${renderSecurityPatchLevels(branch.security_patch_levels || [])}
+          ${renderPartitionBuildDates(branch.partition_build_dates || [])}
+          ${renderVintf(branch.vintf_summary || {})}
+          ${renderInitSummary(branch.init_summary || {})}
+          ${renderSelinux(branch.selinux_summary || {})}
+          ${renderSection("Hardware & Media", buildHardwareMediaItems(branch))}
+          ${renderSection("Platform & Regional Signals", buildPlatformSignalItems(branch))}
+          ${branch.qcom_ver_info ? renderExpandableList("Qualcomm ver_info", branch.qcom_ver_info.lines || [], { mono: true, collapsed: false, columns: false }) : ""}
+          ${renderBranchSources(branch)}
+        </section>
+      `;
+    }
+
+    function renderBranchSources(branch) {
+      const hasPropSources = hasValue(branch.prop_sources);
+      const hasFeatureSources = Array.isArray(branch.hardware_feature_sources) && branch.hardware_feature_sources.length;
+      const hasPermissionFiles = Array.isArray(branch.permission_files_found) && branch.permission_files_found.length;
+      const hasBuildPropFiles = Array.isArray(branch.build_prop_files_found) && branch.build_prop_files_found.length;
+      const hasDeclaredPermissions = Array.isArray(branch.declared_permissions) && branch.declared_permissions.length;
+      if (!hasPropSources && !hasFeatureSources && !hasPermissionFiles && !hasBuildPropFiles && !hasDeclaredPermissions) return "";
+      return `
+        <details class="expand-block expand-block--sources">
+          <summary>
+            <span class="value-preview value-preview--single">Sources & Provenance</span>
+            <span class="count-badge">details</span>
+          </summary>
+          <div class="expand-content">
+            ${hasDeclaredPermissions ? renderExpandableList("Declared Permissions", branch.declared_permissions || [], { mono: true, collapsed: true }) : ""}
+            ${hasFeatureSources ? renderExpandableTable("Feature Sources", branch.hardware_feature_sources.map((entry) => ({
+              Feature: entry.name,
+              "Source Files": entry.files.join(", "),
+            })), { collapsed: true }) : ""}
+            ${hasPropSources ? renderPropertySources(branch.prop_sources || {}) : ""}
+            ${hasPermissionFiles ? renderFileList("Permission XML Files", branch.permission_files_found || []) : ""}
+            ${hasBuildPropFiles ? renderFileList("Build.prop Files Found", branch.build_prop_files_found || []) : ""}
+          </div>
+        </details>
+      `;
+    }
+
+    function renderPartitionBuildDates(entries) {
+      if (!entries.length) return "";
+      return renderExpandableTable("Partition Build Dates", entries.map((entry) => ({
+        Partition: entry.partition,
+        Date: formatDate(entry.iso || entry.value),
+        Property: entry.property,
+        Source: entry.source_file,
+      })), { collapsed: entries.length > 8 });
+    }
+
+    function renderVariantTimelineSection(branch) {
+      const summary = branch.variant_timeline_summary || {};
+      const topCards = [
+        ["Region / SKU", summary.region_sku],
+        ["Pushed At", summary.pushed_at],
+        ["Locale", summary.locale],
+      ].filter(([, value]) => hasValue(value));
+      const buildDateRows = (branch.partition_build_dates || []).map((entry) => ({
+        Partition: entry.partition,
+        "Build Date": formatDate(entry.iso || entry.value),
+        Property: entry.property,
+        Source: entry.source_file,
+      }));
+      if (!topCards.length && !buildDateRows.length) return "";
+      return `
+        <h3 style="margin:1.5rem 0 .5rem">Variants & Timeline</h3>
+        ${topCards.length ? `<div class="meta-grid meta-grid--dense">${topCards.map(([label, value]) => metaCard(label, value)).join("")}</div>` : ""}
+        ${buildDateRows.length ? renderExpandableTable("Partition Build Dates", buildDateRows, { collapsed: buildDateRows.length > 8 }) : ""}
+      `;
+    }
+
+    function renderSecurityPatchLevels(entries) {
+      if (!entries.length) return "";
+      return renderExpandableTable("Security Patch Levels", entries.map((entry) => ({
+        Partition: entry.partition,
+        "Patch Level": entry.value,
+        Property: entry.property,
+        Source: entry.source_file,
+      })), { collapsed: entries.length > 8 });
+    }
+
+    function renderVintf(vintf) {
+      if (!hasValue(vintf.manifest_files) && !hasValue(vintf.compatibility_matrix_files)) return "";
+      return renderSection("VINTF Detail", [
+        ["Manifest Files", vintf.manifest_files],
+        ["Compatibility Matrices", vintf.compatibility_matrix_files],
+        ["HALs", vintf.hal_names],
+        ["Matrix Levels", vintf.matrix_levels],
+        ["Vendor Interface Levels", vintf.vendor_interface_levels],
+      ]);
+    }
+
+    function renderInitSummary(init) {
+      if (!hasValue(init.rc_files)) return "";
+      return renderSection("Init Summary", [
+        ["RC Files", init.rc_files],
+        ["Service Count", init.service_count],
+        ["Import Count", init.import_count],
+        ["Services", init.services],
+      ]);
+    }
+
+    function renderSelinux(selinux) {
+      if (!hasValue(selinux.policy_files)) return "";
+      return renderSection("SELinux Detail", [
+        ["Mode", selinux.selinux_mode || "Unknown"],
+        ["Platform Policy", yesNo(selinux.has_platform_policy)],
+        ["Vendor Policy", yesNo(selinux.has_vendor_policy)],
+        ["ODM Policy", yesNo(selinux.has_odm_policy)],
+        ["Mapping Files", yesNo(selinux.has_mapping_files)],
+        ["Policy Files", selinux.policy_files],
+      ]);
+    }
+
+    function renderPropertySources(propSources) {
+      const entries = Object.entries(propSources);
+      if (!entries.length) return "";
+      return renderExpandableTable("Property Sources", entries.map(([key, value]) => ({
+        Field: key,
+        "Source File": value,
+      })), { collapsed: entries.length > 8 });
+    }
+
+    function renderTimelineSummary(summary) {
+      if (!summary || !hasValue(summary.branch_push_dates)) return "";
+      const branchPushCount = (summary.branch_push_dates || []).length;
+      const showPushSpan = branchPushCount > 1 && Number(summary.branch_push_span_days || 0) > 0;
+      const showBuildSpan = branchPushCount > 1 && Number(summary.build_date_span_days || 0) > 0;
+      return `
+        <h3 style="margin:1.5rem 0 .5rem">Timeline</h3>
+        <div class="meta-grid meta-grid--dense">
+          ${metaCard("Earliest Branch Push", formatDate(summary.earliest_branch_push))}
+          ${metaCard("Latest Branch Push", formatDate(summary.latest_branch_push))}
+          ${metaCard("Earliest Partition Build", formatDate(summary.earliest_partition_build_date))}
+          ${metaCard("Latest Partition Build", formatDate(summary.latest_partition_build_date))}
+          ${showPushSpan ? metaCard("Push Span Days", summary.branch_push_span_days) : ""}
+          ${showBuildSpan ? metaCard("Build Span Days", summary.build_date_span_days) : ""}
+        </div>
+        ${renderExpandableTable("Branch Push Dates", (summary.branch_push_dates || []).map((entry) => ({
+          Branch: entry.branch,
+          "Pushed At": formatDate(entry.pushed_at),
+        })), { collapsed: (summary.branch_push_dates || []).length > 8 })}
+      `;
+    }
+
+    function renderVariantDeltas(summary) {
+      const entries = Object.entries(summary || {}).filter(([, value]) => Array.isArray(value) && value.length);
+      if (!entries.length) return "";
+      return `
+        <h3 style="margin:1.5rem 0 .5rem">Cross-Branch Deltas</h3>
+        ${entries.map(([label, rows]) => `
+          ${renderDeltaSection(label, rows)}
+        `).join("")}
+      `;
+    }
+
+    function renderDeltaSection(label, rows) {
+      if (label === "varying_partition_models") {
+        return renderPartitionModelDeltas(rows);
+      }
+      if (label === "varying_hardware_features") {
+        return renderHardwareFeatureDeltas(rows);
+      }
+      if (label === "varying_radio_hints") {
+        return renderRadioHintDeltas(rows);
+      }
+      const hasStructuredValue = rows.some((row) => Array.isArray(row.value) || (row.value && typeof row.value === "object"));
+      if (hasStructuredValue) {
+        return `
+          <h4 style="margin:1rem 0 .5rem">${esc(humanizeKey(label))}</h4>
+          <div class="meta-grid meta-grid--dense">
+            ${rows.map((row) => renderDeltaValueCard(row)).join("")}
+          </div>
+        `;
+      }
+      return renderExpandableTable(humanizeKey(label), rows.map((row) => ({
+        Branch: row.branch,
+        Value: formatValue(row.value),
+      })), { collapsed: rows.length > 6 });
+    }
+
+    function renderHardwareFeatureDeltas(rows) {
+      if (!rows.length) return "";
+      const featureLists = rows.map((row) => uniqueList(Array.isArray(row.value) ? row.value : []));
+      const common = featureLists.reduce((acc, list, index) => {
+        if (index === 0) return list.slice();
+        const set = new Set(list.map((item) => String(item).trim().toLowerCase()));
+        return acc.filter((item) => set.has(String(item).trim().toLowerCase()));
+      }, []);
+      const commonSet = new Set(common.map((item) => String(item).trim().toLowerCase()));
+
+      return `
+        <h4 style="margin:1rem 0 .5rem">Varying Hardware Features</h4>
+        ${common.length ? `<div class="meta-card meta-card--summary meta-card--wide" style="margin-bottom:.75rem"><h4>Shared Across Compared Branches</h4>${renderValueBlock(common)}</div>` : ""}
+        <div class="meta-grid meta-grid--dense">
+          ${rows.map((row) => renderHardwareFeatureDeltaCard(row, commonSet)).join("")}
+        </div>
+      `;
+    }
+
+    function renderRadioHintDeltas(rows) {
+      if (!rows.length) return "";
+      const hintLists = rows.map((row) => uniqueList(Array.isArray(row.value) ? row.value : []));
+      const common = hintLists.reduce((acc, list, index) => {
+        if (index === 0) return list.slice();
+        const set = new Set(list.map((item) => String(item).trim().toLowerCase()));
+        return acc.filter((item) => set.has(String(item).trim().toLowerCase()));
+      }, []);
+      const commonSet = new Set(common.map((item) => String(item).trim().toLowerCase()));
+
+      return `
+        <h4 style="margin:1rem 0 .5rem">Varying Radio Hints</h4>
+        ${common.length ? `<div class="meta-card meta-card--summary meta-card--wide" style="margin-bottom:.75rem"><h4>Shared Across Compared Branches</h4>${renderValueBlock(common.map(explainRadioHint))}</div>` : ""}
+        <div class="meta-grid meta-grid--dense">
+          ${rows.map((row) => renderRadioHintDeltaCard(row, commonSet)).join("")}
+        </div>
+      `;
+    }
+
+    function renderRadioHintDeltaCard(row, commonSet) {
+      const hints = uniqueList(Array.isArray(row.value) ? row.value : []);
+      const uniqueHints = hints.filter((item) => !commonSet.has(String(item).trim().toLowerCase()));
+      return `
+        <div class="meta-card meta-card--summary meta-card--wide">
+          <h4>${esc(row.branch)}</h4>
+          ${uniqueHints.length ? renderValueBlock(uniqueHints.map(explainRadioHint)) : `<p>No branch-specific radio hint differences</p>`}
+        </div>
+      `;
+    }
+
+    function renderHardwareFeatureDeltaCard(row, commonSet) {
+      const features = uniqueList(Array.isArray(row.value) ? row.value : []);
+      const uniqueFeatures = features.filter((item) => !commonSet.has(String(item).trim().toLowerCase()));
+      return `
+        <div class="meta-card meta-card--summary meta-card--wide">
+          <h4>${esc(row.branch)}</h4>
+          ${uniqueFeatures.length ? renderValueBlock(uniqueFeatures) : `<p>No branch-specific hardware feature differences</p>`}
+        </div>
+      `;
+    }
+
+    function renderPartitionModelDeltas(rows) {
+      if (!rows.length) return "";
+      return `
+        <h4 style="margin:1rem 0 .5rem">Varying Partition Models</h4>
+        <div class="meta-grid meta-grid--dense">
+          ${rows.map((row) => renderPartitionModelCard(row)).join("")}
+        </div>
+      `;
+    }
+
+    function renderDeltaValueCard(row) {
+      return `
+        <div class="meta-card meta-card--summary meta-card--wide${isLargeValue(row.value) ? " meta-card--expandable" : ""}">
+          <h4>${esc(row.branch)}</h4>
+          ${renderValueBlock(row.value)}
+        </div>
+      `;
+    }
+
+    function renderPartitionModelCard(row) {
+      const flags = row.value || {};
+      const enabled = Object.entries(flags)
+        .filter(([, value]) => value === true)
+        .map(([key]) => humanizeKey(key));
+      const numeric = Object.entries(flags)
+        .filter(([, value]) => value !== true && value !== false && value != null && String(value).trim() !== "")
+        .map(([key, value]) => `${humanizeKey(key)}: ${value}`);
+      const disabled = Object.entries(flags)
+        .filter(([, value]) => value === false)
+        .map(([key]) => humanizeKey(key));
+      return `
+        <div class="meta-card meta-card--summary meta-card--wide">
+          <h4>${esc(row.branch)}</h4>
+          ${enabled.length ? `<div class="chip-list">${enabled.map((item) => `<span class="chip">${esc(item)}</span>`).join("")}</div>` : `<p>No enabled partition flags</p>`}
+          ${numeric.length ? `<p style="margin-top:.65rem">${esc(numeric.join(", "))}</p>` : ""}
+          ${disabled.length ? `<details class="expand-block" style="margin-top:.65rem"><summary><span class="value-preview value-preview--single">Disabled Flags</span><span class="count-badge">${disabled.length}</span></summary><div class="expand-content"><div class="chip-list">${disabled.map((item) => `<span class="chip">${esc(item)}</span>`).join("")}</div></div></details>` : ""}
+        </div>
+      `;
+    }
+
+    function renderFileList(title, files) {
+      if (!files.length) return "";
+      return renderExpandableList(title, files, { mono: true, collapsed: files.length > 8 });
+    }
+
+    function renderKeyValue(obj, opts) {
+      const entries = Object.entries(obj || {});
+      if (!entries.length) return '<p class="mono">No parsed key/value pairs</p>';
+      return renderExpandableTable((opts && opts.collapseLabel) || "Fields", entries.map(([key, value]) => ({
+        Key: key,
+        Value: value,
+      })), { collapsed: !opts || opts.collapsed !== false });
+    }
+
+    function metaCard(label, value) {
+      const classes = ["meta-card", "meta-card--summary"];
+      if (isLargeValue(value)) classes.push("meta-card--wide", "meta-card--expandable");
+      return `<div class="${classes.join(" ")}"><h4>${esc(label)}</h4>${renderValueBlock(value)}</div>`;
+    }
+
+    function metaCardMono(label, value, copyable) {
+      const val = value || "N/A";
+      const safe = String(value || "").replace(/\\/g, "\\\\").replace(/'/g, "\\'");
+      const copyBtn = copyable && value ? ` <button class="copy-btn" onclick="navigator.clipboard.writeText('${safe}')">Copy</button>` : "";
+      return `<div class="meta-card meta-card--summary meta-card--wide"><h4>${esc(label)}${copyBtn}</h4>${renderValueBlock(val, { mono: true })}</div>`;
+    }
+
+    function metaCardLink(label, url) {
+      return `<div class="meta-card meta-card--summary meta-card--wide"><h4>${esc(label)}</h4>${renderValueBlock(url, { link: true, mono: true })}</div>`;
+    }
+
+    function renderValueBlock(value, opts) {
+      const options = opts || {};
+      if (!hasValue(value)) {
+        return `<p class="${options.mono ? "mono" : ""}">N/A</p>`;
+      }
+      if (Array.isArray(value)) {
+        if (value.length === 1) {
+          return renderValueBlock(value[0], options);
+        }
+        const joined = value.map((item) => String(item)).join(", ");
+        if (value.length <= 8 && joined.length <= 160) {
+          return `<p class="${options.mono ? "mono" : ""}">${esc(joined)}</p>`;
+        }
+        return value.length > 5 ? renderExpandableList("", value, options) : renderPreviewList(value, options);
+      }
+      if (typeof value === "object") {
+        if (Object.prototype.hasOwnProperty.call(value, "value") && value.heuristic && hasValue(value.value)) {
+          const rendered = Array.isArray(value.value) ? value.value : [value.value];
+          return `${renderValueBlock(rendered, options)}<div class="count-badge">heuristic</div>`;
+        }
+        if (Object.prototype.hasOwnProperty.call(value, "value") && hasValue(value.value)) {
+          return renderValueBlock(value.value, options);
+        }
+        return renderKeyValuePreview(value, options);
+      }
+      const text = String(value);
+      if (options.link) {
+        return `<p class="${options.mono ? "mono" : ""}"><a href="${esc(text)}" target="_blank" rel="noopener">${esc(text)}</a></p>`;
+      }
+      if (text.length > 140) {
+        return renderExpandableText(text, options);
+      }
+      return `<p class="${options.mono ? "mono" : ""}">${esc(text)}</p>`;
+    }
+
+    function renderPreviewList(items, opts) {
+      const options = opts || {};
+      const chips = items.slice(0, 5).map((item) => `<span class="chip${options.mono ? " chip--mono" : ""}">${esc(String(item))}</span>`).join("");
+      return `<div class="chip-list">${chips}</div>`;
+    }
+
+    function renderExpandableText(text, opts) {
+      const options = opts || {};
+      return `
+        <details class="expand-block"${options.collapsed === false ? " open" : ""}>
+          <summary><span class="value-preview${options.mono ? " mono" : ""}">${esc(text.slice(0, 120))}${text.length > 120 ? "..." : ""}</span><span class="count-badge">${text.length} chars</span></summary>
+          <div class="expand-content"><p class="${options.mono ? "mono" : ""}">${esc(text)}</p></div>
+        </details>
+      `;
+    }
+
+    function renderExpandableList(title, items, opts) {
+      const options = opts || {};
+      const preview = items.slice(0, 8);
+      const previewText = preview.map((item) => String(item)).join(", ");
+      const singleLine = previewText.length <= 180;
+      const useColumns = options.columns !== false && items.length >= 8;
+      return `
+        <details class="expand-block"${options.collapsed === false ? " open" : ""}>
+          <summary>
+            ${title ? `<span class="value-preview${singleLine ? " value-preview--single" : ""}">${esc(title)}</span>` : `<span class="value-preview${singleLine ? " value-preview--single" : ""}">${esc(previewText)}${items.length > preview.length ? ", ..." : ""}</span>`}
+            <span class="count-badge">${items.length} items</span>
+          </summary>
+          <div class="expand-content">
+            <ul class="branches-list${options.mono ? " branches-list--mono" : ""}${useColumns ? " branches-list--columns" : ""}">
+              ${items.map((item) => `<li>${esc(String(item))}</li>`).join("")}
+            </ul>
+          </div>
+        </details>
+      `;
+    }
+
+    function renderExpandableTable(title, rows, opts) {
+      if (!rows.length) return "";
+      const options = opts || {};
+      const columns = Object.keys(rows[0] || {});
+      const table = `
+        <div class="table-wrap">
+          <table class="prop-table">
+            <tr>${columns.map((column) => `<th>${esc(column)}</th>`).join("")}</tr>
+            ${rows.map((row) => `<tr>${columns.map((column) => `<td>${esc(String(row[column] == null ? "" : row[column]))}</td>`).join("")}</tr>`).join("")}
+          </table>
+        </div>
+      `;
+      return `
+        <details class="expand-block"${options.collapsed === false ? " open" : ""}>
+          <summary><span>${esc(title)}</span><span class="count-badge">${rows.length} rows</span></summary>
+          <div class="expand-content">${table}</div>
+        </details>
+      `;
+    }
+
+    function renderKeyValuePreview(obj, opts) {
+      const entries = Object.entries(obj || {});
+      if (!entries.length) return "<p>N/A</p>";
+      if (entries.length <= 4 && entries.every(([, value]) => String(value).length < 40)) {
+        return `<div class="chip-list">${entries.map(([key, value]) => `<span class="chip">${esc(`${humanizeKey(key)}: ${value}`)}</span>`).join("")}</div>`;
+      }
+      return renderExpandableTable("Fields", entries.map(([key, value]) => ({
+        Key: humanizeKey(key),
+        Value: formatValue(value),
+      })), { collapsed: true });
+    }
+
+    function isLargeValue(value) {
+      if (Array.isArray(value)) return value.length > 5;
+      if (typeof value === "object" && value) return Object.keys(value).length > 4;
+      return typeof value === "string" && value.length > 140;
+    }
+
+    function hasValue(value) {
+      if (value == null) return false;
+      if (Array.isArray(value)) return value.length > 0;
+      if (typeof value === "object") {
+        if (Object.prototype.hasOwnProperty.call(value, "value")) {
+          return hasValue(value.value);
+        }
+        return Object.keys(value).length > 0;
+      }
+      return String(value).trim() !== "";
+    }
+
+    function formatValue(value) {
+      if (value == null) return "";
+      if (Array.isArray(value)) return value.join(", ");
+      if (typeof value === "object") {
+        if (Object.prototype.hasOwnProperty.call(value, "value")) {
+          if (!hasValue(value.value)) return "";
+          const rendered = [].concat(value.value).join(", ");
+          if (value.heuristic) return `${rendered} (heuristic)`;
+          return rendered;
+        }
+        return JSON.stringify(value);
+      }
+      return String(value);
+    }
+
+    function renderUserFacingSection(branch) {
+      const summary = branch.user_facing_feature_summary || {};
+      const supported = uniqueList(branch.supported_hardware_features || []);
+      const audioMedia = uniqueList(summary.audio_media || []);
+      const audioCodecs = audioMedia.filter((item) => /audio|aac|amr|ape|flac|g711|gsm|mp3|raw|vorbis|wma/i.test(String(item)));
+      const videoCodecs = audioMedia.filter((item) => /video|avc|divx|h263|hevc|mpeg|vc1|xvid|vp8|vp9/i.test(String(item)));
+      const order = [
+        ["Cameras", buildCameraFeatures(branch)],
+        ["Sensors & Input", uniqueList([
+          ...(summary.sensors || []),
+          ...supported.filter((item) => /touchscreen|faketouch|microphone|screen\./i.test(String(item))),
+        ])],
+        ["Connectivity", uniqueList([
+          ...(summary.connectivity || []),
+          ...supported.filter((item) => /telephony|nfc|wifi|bluetooth|usb|ethernet|ir/i.test(String(item))),
+        ])],
+        ["Location & Navigation", supported.filter((item) => /location|gps/i.test(String(item)))],
+        ["Audio Hardware", supported.filter((item) => /audio/i.test(String(item)))],
+        ["Display & Form Factor", uniqueList([
+          ...(summary.form_factor || []),
+          ...supported.filter((item) => /screen\.|display|leanback|vr/i.test(String(item))),
+        ])],
+        ["Biometrics", summary.biometrics],
+        ["Audio Codecs", audioCodecs],
+        ["Video Codecs", videoCodecs],
+        ["Media Stack", subtractList(audioMedia, [...audioCodecs, ...videoCodecs])],
+        ["Permission Namespaces", permissionNamespaces((branch.privileged_permission_summary || {}).privileged_permission_names || [])],
+      ].filter(([, value]) => hasValue(value));
+      if (!order.length) return "";
+      return `
+        <h3 style="margin:1.5rem 0 .5rem">User-Facing Features</h3>
+        <div class="meta-grid meta-grid--dense">
+          ${order.map(([label, value]) => metaCard(label, value)).join("")}
+        </div>
+      `;
+    }
+
+    function buildAppCompatibilityItems(branch) {
+      const summary = branch.app_compatibility_summary || {};
+      return [
+        ["API Levels", summary.api_levels],
+        ["ABIs", summary.abis],
+        ["Graphics / ML", summary.graphics_ml],
+        ["Ecosystem Hints", summary.ecosystem_hints],
+      ];
+    }
+
+    function buildSecurityTrustItems(branch) {
+      const summary = branch.security_trust_summary || {};
+      return [
+        ["Security Patch", summary.security_patch],
+        ["Boot Security", summary.boot_security],
+        ["Signing / Debug", summary.signing_debug],
+        ["Build Freshness", summary.build_freshness],
+      ];
+    }
+
+    function buildVendorStackItems(branch) {
+      const summary = branch.vendor_stack_summary || {};
+      return [
+        ["Platform Family", summary.platform_family],
+        ["Radio Hints", summary.radio_hints],
+        ["Firmware Components", cleanFirmwareComponents(summary.firmware_components)],
+        ["Library Groups", summary.library_groups],
+        ["Overlay Namespaces", summary.overlay_namespaces],
+      ];
+    }
+
+    function buildPlatformSignalItems(branch) {
+      const platformSignals = [];
+      const platformId = branch.platform_norm || branch.platform || "";
+      const platformFamily = branch.platform_family || "";
+      const radioHints = (branch.radio_summary || {}).capability_hints;
+      const overlayNamespaces = (branch.overlay_summary || {}).overlay_namespaces;
+      const vendorOverlayNamespaces = (branch.vendor_stack_summary || {}).overlay_namespaces;
+      const regionHints = (branch.region_sku_hints || {}).value;
+
+      if (platformId) platformSignals.push(["Platform ID", platformId]);
+      if (platformFamily) platformSignals.push(["Chipset Family", platformFamily]);
+      if (hasValue(radioHints)) platformSignals.push(["Radio Capability Hints", radioHints]);
+      if (hasDistinctList(overlayNamespaces, vendorOverlayNamespaces)) {
+        platformSignals.push(["Resource Overlay Namespaces", overlayNamespaces]);
+      }
+      if (hasValue(regionHints)) platformSignals.push(["Region / SKU Hints", regionHints]);
+
+      return platformSignals;
+    }
+
+    function buildHardwareMediaItems(branch) {
+      const userFacingPermissions = permissionNamespaces((branch.privileged_permission_summary || {}).privileged_permission_names || []);
+
+      return [
+        ["Camera EEPROM", (branch.camera_hardware || {}).camera_eeproms],
+        ["Camera Flash", (branch.camera_hardware || {}).camera_flashes],
+        ["Audio Mix Ports", (branch.audio_policy_summary || {}).mix_ports],
+        ["Declared Permission Namespaces", subtractList(permissionNamespaces(branch.declared_permissions || []), userFacingPermissions)],
+      ];
+    }
+
+    function formatHeuristic(value) {
+      if (!hasValue(value)) return "";
+      return formatValue(value);
+    }
+
+    function hasDistinctList(value, baseline) {
+      if (!hasValue(value)) return false;
+      if (!hasValue(baseline)) return true;
+      const left = [].concat(value).map((item) => String(item)).sort();
+      const right = [].concat(baseline).map((item) => String(item)).sort();
+      if (left.length !== right.length) return true;
+      return left.some((item, index) => item !== right[index]);
+    }
+
+    function subtractList(value, itemsToRemove) {
+      if (!Array.isArray(value) || !value.length) return value;
+      if (!Array.isArray(itemsToRemove) || !itemsToRemove.length) return uniqueList(value);
+      const removed = new Set(itemsToRemove.map((item) => String(item).trim().toLowerCase()).filter(Boolean));
+      return uniqueList(value).filter((item) => !removed.has(String(item).trim().toLowerCase()));
+    }
+
+    function uniqueList(value) {
+      if (!Array.isArray(value)) return value;
+      const seen = new Set();
+      const out = [];
+      value.forEach((item) => {
+        const normalized = String(item).trim().toLowerCase();
+        if (!normalized || seen.has(normalized)) return;
+        seen.add(normalized);
+        out.push(item);
+      });
+      return out;
+    }
+
+    function buildCameraFeatures(branch) {
+      const summary = branch.user_facing_feature_summary || {};
+      const supported = branch.supported_hardware_features || [];
+      const hardware = branch.camera_hardware || {};
+      return uniqueList([
+        ...(summary.camera || []),
+        ...supported.filter((item) => /camera/i.test(String(item))),
+        ...(hardware.camera_sensors || []),
+        ...(hardware.camera_flashes || []),
+        ...(hardware.camera_eeproms || []),
+        ...(hardware.camera_actuators || []),
+        ...(hardware.camera_ois || []),
+      ]);
+    }
+
+    function cleanFirmwareComponents(items) {
+      if (!Array.isArray(items)) return items;
+      return uniqueList(items).filter((item) => !looksLikePermissionArtifact(item));
+    }
+
+    function explainRadioHint(hint) {
+      const map = {
+        "qualcomm-platform": "Qualcomm radio stack inferred from SoC/platform",
+        "qualcomm-modem-metadata": "Explicit Qualcomm modem metadata files present",
+        "ims": "IMS-related radio services or config present",
+        "volte": "VoLTE-related config present",
+        "vowifi": "VoWiFi-related config present",
+        "radio": "Generic radio-related components detected",
+      };
+      return map[String(hint)] || humanizeKey(String(hint));
+    }
+
+    function looksLikePermissionArtifact(item) {
+      const text = String(item || "").toLowerCase();
+      return text.endsWith(".xml") && (
+        text.startsWith("android.hardware.") ||
+        text.startsWith("android.software.") ||
+        text.startsWith("com.android.") ||
+        text.startsWith("com.google.") ||
+        text === "platform.xml" ||
+        text.includes("permission")
+      );
+    }
+
+    function permissionNamespaces(permissions) {
+      if (!Array.isArray(permissions)) return [];
+      const namespaces = permissions.map((item) => {
+        const parts = String(item).split(".");
+        return parts.length > 1 ? parts.slice(0, 2).join(".") : String(item);
+      });
+      return uniqueList(namespaces);
+    }
+
+    function listOrValue(list, fallback) {
+      return Array.isArray(list) && list.length ? list.join(", ") : (fallback || "");
+    }
+
+    function summarizeVintf(vintf) {
+      if (!vintf || (!vintf.has_vintf_manifest && !vintf.has_vintf_compatibility_matrix)) return "";
+      const parts = [];
+      if (vintf.has_vintf_manifest) parts.push("manifest");
+      if (vintf.has_vintf_compatibility_matrix) parts.push("matrix");
+      if ((vintf.hal_names || []).length) parts.push(`${vintf.hal_names.length} HALs`);
+      return parts.join(", ");
+    }
+
+    function summarizeSelinux(selinux) {
+      if (!selinux || !(selinux.policy_files || []).length) return "";
+      const parts = [];
+      if (selinux.selinux_mode) parts.push(selinux.selinux_mode);
+      if (selinux.has_platform_policy) parts.push("plat");
+      if (selinux.has_vendor_policy) parts.push("vendor");
+      if (selinux.has_odm_policy) parts.push("odm");
+      return parts.join(", ");
+    }
+
+    function summarizeFlags(flags) {
+      if (!flags) return "";
+      const parts = [];
+      if (flags.virtual_ab) parts.push(`virtual_ab=${flags.virtual_ab}`);
+      if (flags.retrofit_virtual_ab) parts.push(`retrofit_virtual_ab=${flags.retrofit_virtual_ab}`);
+      if (flags.dynamic_partitions) parts.push(`dynamic_partitions=${flags.dynamic_partitions}`);
+      if (flags.system_root_image) parts.push(`system_root_image=${flags.system_root_image}`);
+      if (flags.vendor_interface_level) parts.push(`vendor_interface_level=${flags.vendor_interface_level}`);
+      if (flags.avb_enabled) parts.push(`avb=${flags.avb_enabled}`);
+      if (flags.dm_verity) parts.push(`verity=${flags.dm_verity}`);
+      if (flags.vendor_boot_present) parts.push("vendor_boot");
+      if (flags.super_partition_present) parts.push("super");
+      if (flags.recovery_as_boot) parts.push("recovery_as_boot");
+      if (flags.first_stage_init) parts.push("first_stage_init");
+      if (flags.slot_count) parts.push(`slots=${flags.slot_count}`);
+      return parts.join(", ");
+    }
+
+    function yesNo(v) {
+      return v ? "Yes" : "No";
+    }
+
+    function humanizeKey(key) {
+      return String(key).replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+    }
+
+    function esc(s) {
+      if (s == null) return "";
+      const d = document.createElement("div");
+      d.textContent = String(s);
+      return d.innerHTML;
+    }
+
+    function escAttr(s) {
+      return esc(s).replace(/"/g, "&quot;");
+    }
+
+    function humanSize(bytes) {
+      const units = ["B", "KB", "MB", "GB", "TB"];
+      let i = 0;
+      let b = bytes;
+      while (b >= 1024 && i < units.length - 1) { b /= 1024; i++; }
+      return i === 0 ? `${b} B` : `${b.toFixed(1)} ${units[i]}`;
+    }
+
+    function formatDate(value) {
+      if (!value) return "N/A";
+      const parsed = new Date(value);
+      if (Number.isNaN(parsed.getTime())) return value;
+      const year = parsed.getUTCFullYear();
+      const month = String(parsed.getUTCMonth() + 1).padStart(2, "0");
+      const day = String(parsed.getUTCDate()).padStart(2, "0");
+      const hours = String(parsed.getUTCHours()).padStart(2, "0");
+      const minutes = String(parsed.getUTCMinutes()).padStart(2, "0");
+      const seconds = String(parsed.getUTCSeconds()).padStart(2, "0");
+      return `${year}-${month}-${day} ${hours}:${minutes}:${seconds} GMT`;
+    }
+
+    async function fetchJson(url) {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`HTTP ${response.status} for ${url}`);
+      return response.json();
+    }
+
+    function renderLoadError() {
+      if (location.protocol === "file:") {
+        return '<div class="empty">Failed to load repo details. This page must be served over HTTP, not opened directly from disk. From the <code>site</code> folder, run <code>python -m http.server 8000</code> and open <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a>.</div>';
+      }
+      return '<div class="empty">Repo not found or failed to load. <a href="index.html">Back to search</a></div>';
+    }
+  })();
+  </script>
+</body>
+</html>

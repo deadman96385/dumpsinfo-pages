@@ -1,0 +1,910 @@
+{
+  "schema_version": 2,
+  "repo_id": 866,
+  "path_brand": "dumps",
+  "path_device": "dumpyara",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/dumpyara.git",
+  "repo_url": "https://dumps.tadiphone.dev/dumps/dumpyara",
+  "repo_size_bytes": 140967,
+  "storage_size_bytes": 233978,
+  "default_branch": "master",
+  "branches": [
+    "master",
+    "axel-spam"
+  ],
+  "branch_count": 2,
+  "branch_summaries": [
+    {
+      "branch": "master",
+      "is_default": true,
+      "tip_commit": "fe0fb1ab02ef007cc671a279fc820d819f4f0e75",
+      "pushed_at": "2020-06-01T16:59:58+05:30",
+      "clone_url": "https://dumps.tadiphone.dev/dumps/dumpyara.git",
+      "repo_url": "https://dumps.tadiphone.dev/dumps/dumpyara",
+      "fingerprint": null,
+      "brand": "dumps",
+      "brand_norm": "dumps",
+      "codename": "dumpyara",
+      "top_codename": "",
+      "manufacturer": null,
+      "manufacturer_norm": "",
+      "platform": "",
+      "platform_norm": "",
+      "platform_family": null,
+      "release": null,
+      "description": "",
+      "derived_branch": "",
+      "is_ab": false,
+      "tags": null,
+      "build_id": null,
+      "incremental": null,
+      "flavor": null,
+      "cpu_abilist": null,
+      "cpu_abilist32": null,
+      "cpu_abilist64": null,
+      "primary_abi": null,
+      "secondary_abi": null,
+      "zygote_mode": null,
+      "userspace_bitness": null,
+      "binder_bitness": null,
+      "sdk_version": null,
+      "product_first_api_level": null,
+      "board_first_api_level": null,
+      "security_patch": null,
+      "security_patch_levels": [],
+      "prop_sources": {
+        "description": "derived:constructed"
+      },
+      "build_prop_files_found": [],
+      "permission_files_found": [],
+      "partition_build_dates": [],
+      "partition_inventory": {
+        "present_partitions": [],
+        "partition_file_counts": {
+          "system": 0,
+          "vendor": 0,
+          "odm": 0,
+          "product": 0,
+          "system_ext": 0,
+          "vendor_dlkm": 0,
+          "odm_dlkm": 0,
+          "system_dlkm": 0
+        },
+        "has_vendor_partition": false,
+        "has_product_partition": false,
+        "has_odm_partition": false,
+        "has_system_ext_partition": false,
+        "likely_treble": false
+      },
+      "partitioning_flags": {
+        "vendor_boot_present": false,
+        "super_partition_present": false,
+        "recovery_as_boot": false,
+        "first_stage_init": false
+      },
+      "vintf_summary": {
+        "manifest_files": [],
+        "compatibility_matrix_files": [],
+        "hal_names": [],
+        "hal_by_domain": {},
+        "aidl_hals": [],
+        "hidl_hals": [],
+        "matrix_levels": [],
+        "vendor_interface_levels": [],
+        "has_vintf_manifest": false,
+        "has_vintf_compatibility_matrix": false
+      },
+      "init_summary": {
+        "rc_files": [],
+        "service_count": 0,
+        "services": [],
+        "service_prefix_groups": [],
+        "vendor_service_names": [],
+        "service_binaries": [],
+        "import_count": 0
+      },
+      "fstab_summary": {
+        "fstab_files": [],
+        "mount_points": [],
+        "logical_partitions": [],
+        "slotselect_entries": 0,
+        "avb_mounts": [],
+        "fileencryption_hints": [],
+        "metadata_partition_present": false
+      },
+      "selinux_summary": {
+        "policy_files": [],
+        "has_platform_policy": false,
+        "has_vendor_policy": false,
+        "has_odm_policy": false,
+        "has_mapping_files": false
+      },
+      "framework_feature_summary": {
+        "hardware_features": [],
+        "software_features": [],
+        "feature_categories": {},
+        "graphics_features": [],
+        "biometric_features": [],
+        "connectivity_features": [],
+        "form_factor_features": [],
+        "feature_source_files": []
+      },
+      "privileged_permission_summary": {
+        "privapp_permission_files": [],
+        "default_permission_files": [],
+        "sysconfig_files": [],
+        "privileged_permission_names": [],
+        "privileged_permission_namespaces": [],
+        "oem_permission_namespaces": []
+      },
+      "qcom_ver_info": null,
+      "camera_hardware": {
+        "camera_config_files": [],
+        "hardware_config_files": [],
+        "camera_sensors": [],
+        "camera_eeproms": [],
+        "camera_flashes": [],
+        "camera_actuators": [],
+        "camera_ois": []
+      },
+      "media_codec_summary": {
+        "codec_files": [],
+        "codec_names": [],
+        "has_codec2": false,
+        "has_omx": false
+      },
+      "audio_policy_summary": {
+        "policy_files": [],
+        "modules": [],
+        "mix_ports": []
+      },
+      "graphics_ml_summary": {
+        "vulkan_features": [],
+        "nnapi_present": false,
+        "codec2_present": false,
+        "omx_present": false,
+        "camera2_capability_features": [],
+        "gpu_firmware_hints": []
+      },
+      "gpu_family": null,
+      "radio_summary": {
+        "capability_hints": []
+      },
+      "overlay_summary": {
+        "overlay_file_count": 0,
+        "overlay_namespaces": []
+      },
+      "locale_region_defaults": {
+        "region_props": [],
+        "region_overlay_hints": []
+      },
+      "carrier_market_hints": {
+        "carrier_tokens": [],
+        "operator_variant_tokens": [],
+        "apn_files_present": [],
+        "carrier_customization_dirs": [],
+        "market_hints": []
+      },
+      "firmware_component_summary": {
+        "modem_version_strings": [],
+        "camera_component_names": [],
+        "touch_panel_hints": [],
+        "fingerprint_component_hints": [],
+        "nfc_component_hints": [],
+        "charger_battery_hints": [],
+        "gpu_firmware_hints": [],
+        "dsp_firmware_hints": [],
+        "firmware_file_groups": []
+      },
+      "library_inventory_summary": {
+        "shared_library_names": [],
+        "library_prefix_groups": [],
+        "oem_library_prefixes": [],
+        "framework_jar_names": [],
+        "apex_names": [],
+        "vendor_bin_names": []
+      },
+      "security_boot_summary": {
+        "signing_tags": "",
+        "selinux_summary": {
+          "policy_files": [],
+          "has_platform_policy": false,
+          "has_vendor_policy": false,
+          "has_odm_policy": false,
+          "has_mapping_files": false
+        },
+        "avb_enabled": null,
+        "dm_verity": null
+      },
+      "supported_hardware_features": [],
+      "declared_permissions": [],
+      "hardware_feature_sources": [],
+      "region_sku_hints": {
+        "value": [],
+        "heuristic": true,
+        "basis": []
+      },
+      "gms_oem_summary": {
+        "value": [
+          "brand:dumps"
+        ],
+        "heuristic": true,
+        "basis": [
+          "permissions",
+          "brand"
+        ]
+      },
+      "gsi_readiness_signals": {
+        "value": [],
+        "heuristic": true,
+        "basis": []
+      },
+      "modding_signals": {
+        "value": [],
+        "heuristic": true,
+        "basis": []
+      },
+      "app_compatibility_summary": {
+        "api_levels": [],
+        "abis": [],
+        "graphics_ml": [],
+        "hardware_features": [],
+        "media_audio": [],
+        "ecosystem_hints": [
+          "brand:dumps"
+        ]
+      },
+      "device_bringup_summary": {
+        "partition_model": [],
+        "treble_vintf": [],
+        "hal_domains": [],
+        "service_groups": [],
+        "fstab_hints": [],
+        "selinux_split": []
+      },
+      "security_trust_summary": {
+        "security_patch": null,
+        "boot_security": [],
+        "signing_debug": [],
+        "privileged_surface": [],
+        "build_freshness": []
+      },
+      "vendor_stack_summary": {
+        "platform_family": null,
+        "radio_hints": [],
+        "firmware_components": [],
+        "library_groups": [],
+        "overlay_namespaces": []
+      },
+      "variant_timeline_summary": {
+        "region_sku": [],
+        "pushed_at": "2020-06-01T16:59:58+05:30",
+        "partition_build_dates": [],
+        "locale": []
+      },
+      "user_facing_feature_summary": {
+        "biometrics": [],
+        "connectivity": [],
+        "form_factor": [],
+        "sensors": [],
+        "audio_media": [],
+        "camera": []
+      }
+    },
+    {
+      "branch": "axel-spam",
+      "is_default": false,
+      "tip_commit": "90df2c99ab5ad1342ecbd36d2357b0e1b2962b68",
+      "pushed_at": "2019-08-05T22:30:55+05:30",
+      "clone_url": "https://dumps.tadiphone.dev/dumps/dumpyara.git",
+      "repo_url": "https://dumps.tadiphone.dev/dumps/dumpyara",
+      "fingerprint": null,
+      "brand": "dumps",
+      "brand_norm": "dumps",
+      "codename": "dumpyara",
+      "top_codename": "",
+      "manufacturer": null,
+      "manufacturer_norm": "",
+      "platform": "",
+      "platform_norm": "",
+      "platform_family": null,
+      "release": null,
+      "description": "",
+      "derived_branch": "",
+      "is_ab": false,
+      "tags": null,
+      "build_id": null,
+      "incremental": null,
+      "flavor": null,
+      "cpu_abilist": null,
+      "cpu_abilist32": null,
+      "cpu_abilist64": null,
+      "primary_abi": null,
+      "secondary_abi": null,
+      "zygote_mode": null,
+      "userspace_bitness": null,
+      "binder_bitness": null,
+      "sdk_version": null,
+      "product_first_api_level": null,
+      "board_first_api_level": null,
+      "security_patch": null,
+      "security_patch_levels": [],
+      "prop_sources": {
+        "description": "derived:constructed"
+      },
+      "build_prop_files_found": [],
+      "permission_files_found": [],
+      "partition_build_dates": [],
+      "partition_inventory": {
+        "present_partitions": [],
+        "partition_file_counts": {
+          "system": 0,
+          "vendor": 0,
+          "odm": 0,
+          "product": 0,
+          "system_ext": 0,
+          "vendor_dlkm": 0,
+          "odm_dlkm": 0,
+          "system_dlkm": 0
+        },
+        "has_vendor_partition": false,
+        "has_product_partition": false,
+        "has_odm_partition": false,
+        "has_system_ext_partition": false,
+        "likely_treble": false
+      },
+      "partitioning_flags": {
+        "vendor_boot_present": false,
+        "super_partition_present": false,
+        "recovery_as_boot": false,
+        "first_stage_init": false
+      },
+      "vintf_summary": {
+        "manifest_files": [],
+        "compatibility_matrix_files": [],
+        "hal_names": [],
+        "hal_by_domain": {},
+        "aidl_hals": [],
+        "hidl_hals": [],
+        "matrix_levels": [],
+        "vendor_interface_levels": [],
+        "has_vintf_manifest": false,
+        "has_vintf_compatibility_matrix": false
+      },
+      "init_summary": {
+        "rc_files": [],
+        "service_count": 0,
+        "services": [],
+        "service_prefix_groups": [],
+        "vendor_service_names": [],
+        "service_binaries": [],
+        "import_count": 0
+      },
+      "fstab_summary": {
+        "fstab_files": [],
+        "mount_points": [],
+        "logical_partitions": [],
+        "slotselect_entries": 0,
+        "avb_mounts": [],
+        "fileencryption_hints": [],
+        "metadata_partition_present": false
+      },
+      "selinux_summary": {
+        "policy_files": [],
+        "has_platform_policy": false,
+        "has_vendor_policy": false,
+        "has_odm_policy": false,
+        "has_mapping_files": false
+      },
+      "framework_feature_summary": {
+        "hardware_features": [],
+        "software_features": [],
+        "feature_categories": {},
+        "graphics_features": [],
+        "biometric_features": [],
+        "connectivity_features": [],
+        "form_factor_features": [],
+        "feature_source_files": []
+      },
+      "privileged_permission_summary": {
+        "privapp_permission_files": [],
+        "default_permission_files": [],
+        "sysconfig_files": [],
+        "privileged_permission_names": [],
+        "privileged_permission_namespaces": [],
+        "oem_permission_namespaces": []
+      },
+      "qcom_ver_info": null,
+      "camera_hardware": {
+        "camera_config_files": [],
+        "hardware_config_files": [],
+        "camera_sensors": [],
+        "camera_eeproms": [],
+        "camera_flashes": [],
+        "camera_actuators": [],
+        "camera_ois": []
+      },
+      "media_codec_summary": {
+        "codec_files": [],
+        "codec_names": [],
+        "has_codec2": false,
+        "has_omx": false
+      },
+      "audio_policy_summary": {
+        "policy_files": [],
+        "modules": [],
+        "mix_ports": []
+      },
+      "graphics_ml_summary": {
+        "vulkan_features": [],
+        "nnapi_present": false,
+        "codec2_present": false,
+        "omx_present": false,
+        "camera2_capability_features": [],
+        "gpu_firmware_hints": []
+      },
+      "gpu_family": null,
+      "radio_summary": {
+        "capability_hints": []
+      },
+      "overlay_summary": {
+        "overlay_file_count": 0,
+        "overlay_namespaces": []
+      },
+      "locale_region_defaults": {
+        "region_props": [],
+        "region_overlay_hints": []
+      },
+      "carrier_market_hints": {
+        "carrier_tokens": [],
+        "operator_variant_tokens": [],
+        "apn_files_present": [],
+        "carrier_customization_dirs": [],
+        "market_hints": []
+      },
+      "firmware_component_summary": {
+        "modem_version_strings": [],
+        "camera_component_names": [],
+        "touch_panel_hints": [],
+        "fingerprint_component_hints": [],
+        "nfc_component_hints": [],
+        "charger_battery_hints": [],
+        "gpu_firmware_hints": [],
+        "dsp_firmware_hints": [],
+        "firmware_file_groups": []
+      },
+      "library_inventory_summary": {
+        "shared_library_names": [],
+        "library_prefix_groups": [],
+        "oem_library_prefixes": [],
+        "framework_jar_names": [],
+        "apex_names": [],
+        "vendor_bin_names": []
+      },
+      "security_boot_summary": {
+        "signing_tags": "",
+        "selinux_summary": {
+          "policy_files": [],
+          "has_platform_policy": false,
+          "has_vendor_policy": false,
+          "has_odm_policy": false,
+          "has_mapping_files": false
+        },
+        "avb_enabled": null,
+        "dm_verity": null
+      },
+      "supported_hardware_features": [],
+      "declared_permissions": [],
+      "hardware_feature_sources": [],
+      "region_sku_hints": {
+        "value": [],
+        "heuristic": true,
+        "basis": []
+      },
+      "gms_oem_summary": {
+        "value": [
+          "brand:dumps"
+        ],
+        "heuristic": true,
+        "basis": [
+          "permissions",
+          "brand"
+        ]
+      },
+      "gsi_readiness_signals": {
+        "value": [],
+        "heuristic": true,
+        "basis": []
+      },
+      "modding_signals": {
+        "value": [],
+        "heuristic": true,
+        "basis": []
+      },
+      "app_compatibility_summary": {
+        "api_levels": [],
+        "abis": [],
+        "graphics_ml": [],
+        "hardware_features": [],
+        "media_audio": [],
+        "ecosystem_hints": [
+          "brand:dumps"
+        ]
+      },
+      "device_bringup_summary": {
+        "partition_model": [],
+        "treble_vintf": [],
+        "hal_domains": [],
+        "service_groups": [],
+        "fstab_hints": [],
+        "selinux_split": []
+      },
+      "security_trust_summary": {
+        "security_patch": null,
+        "boot_security": [],
+        "signing_debug": [],
+        "privileged_surface": [],
+        "build_freshness": []
+      },
+      "vendor_stack_summary": {
+        "platform_family": null,
+        "radio_hints": [],
+        "firmware_components": [],
+        "library_groups": [],
+        "overlay_namespaces": []
+      },
+      "variant_timeline_summary": {
+        "region_sku": [],
+        "pushed_at": "2019-08-05T22:30:55+05:30",
+        "partition_build_dates": [],
+        "locale": []
+      },
+      "user_facing_feature_summary": {
+        "biometrics": [],
+        "connectivity": [],
+        "form_factor": [],
+        "sensors": [],
+        "audio_media": [],
+        "camera": []
+      }
+    }
+  ],
+  "android_versions": [],
+  "platforms_seen": [],
+  "platform_families_seen": [],
+  "gpu_families_seen": [],
+  "sdk_versions": [],
+  "security_patches": [],
+  "userspace_modes": [],
+  "binder_modes": [],
+  "hardware_summary": {
+    "camera_config_files": [],
+    "hardware_config_files": [],
+    "camera_sensors": [],
+    "camera_eeproms": [],
+    "camera_flashes": [],
+    "camera_actuators": [],
+    "camera_ois": []
+  },
+  "supported_hardware_features": [],
+  "media_codecs": [],
+  "region_hints": [],
+  "hal_domains_seen": [],
+  "graphics_ml_union": [],
+  "carrier_market_union": [],
+  "service_prefixes_seen": [],
+  "library_prefix_union": [],
+  "firmware_component_union": [],
+  "timeline_summary": {
+    "branch_push_dates": [
+      {
+        "branch": "master",
+        "pushed_at": "2020-06-01T16:59:58+05:30"
+      },
+      {
+        "branch": "axel-spam",
+        "pushed_at": "2019-08-05T22:30:55+05:30"
+      }
+    ],
+    "earliest_branch_push": "2019-08-05T22:30:55+05:30",
+    "latest_branch_push": "2020-06-01T16:59:58+05:30",
+    "earliest_partition_build_date": "",
+    "latest_partition_build_date": "",
+    "branch_push_span_days": 300,
+    "build_date_span_days": 0
+  },
+  "variant_delta_summary": {
+    "varying_android_versions": [],
+    "varying_sdk_versions": [],
+    "varying_security_patches": [],
+    "varying_platforms": [],
+    "varying_partition_models": [],
+    "varying_hardware_features": [],
+    "varying_hal_domains": [],
+    "varying_radio_hints": [],
+    "varying_region_sku_hints": [],
+    "branch_count": 2,
+    "default_branch": "master"
+  },
+  "audience_summaries": {
+    "app_compatibility_summary": {
+      "ecosystem_hints": [
+        "brand:dumps"
+      ]
+    },
+    "device_bringup_summary": {},
+    "security_trust_summary": {},
+    "vendor_stack_summary": {},
+    "variant_timeline_summary": {
+      "pushed_at": [
+        "2020-06-01T16:59:58+05:30",
+        "2019-08-05T22:30:55+05:30"
+      ]
+    },
+    "user_facing_feature_summary": {}
+  },
+  "community_summary": {
+    "gsi_readiness_signals": [],
+    "modding_signals": []
+  },
+  "qcom_ver_info_groups": [],
+  "fingerprint": null,
+  "brand": "dumps",
+  "brand_norm": "dumps",
+  "codename": "dumpyara",
+  "top_codename": "",
+  "manufacturer": null,
+  "manufacturer_norm": "",
+  "platform": "",
+  "platform_norm": "",
+  "platform_family": "unknown",
+  "gpu_family": "unknown",
+  "release": null,
+  "description": "",
+  "derived_branch": "",
+  "is_ab": false,
+  "tags": null,
+  "build_id": null,
+  "incremental": null,
+  "flavor": null,
+  "cpu_abilist": null,
+  "cpu_abilist32": null,
+  "cpu_abilist64": null,
+  "primary_abi": null,
+  "secondary_abi": null,
+  "zygote_mode": null,
+  "userspace_bitness": null,
+  "binder_bitness": null,
+  "sdk_version": null,
+  "product_first_api_level": null,
+  "board_first_api_level": null,
+  "security_patch": null,
+  "security_patch_levels": [],
+  "prop_sources": {
+    "description": "derived:constructed"
+  },
+  "build_prop_files_found": [],
+  "permission_files_found": [],
+  "partition_build_dates": [],
+  "partition_inventory": {
+    "present_partitions": [],
+    "partition_file_counts": {
+      "system": 0,
+      "vendor": 0,
+      "odm": 0,
+      "product": 0,
+      "system_ext": 0,
+      "vendor_dlkm": 0,
+      "odm_dlkm": 0,
+      "system_dlkm": 0
+    },
+    "has_vendor_partition": false,
+    "has_product_partition": false,
+    "has_odm_partition": false,
+    "has_system_ext_partition": false,
+    "likely_treble": false
+  },
+  "partitioning_flags": {
+    "vendor_boot_present": false,
+    "super_partition_present": false,
+    "recovery_as_boot": false,
+    "first_stage_init": false
+  },
+  "vintf_summary": {
+    "manifest_files": [],
+    "compatibility_matrix_files": [],
+    "hal_names": [],
+    "hal_by_domain": {},
+    "aidl_hals": [],
+    "hidl_hals": [],
+    "matrix_levels": [],
+    "vendor_interface_levels": [],
+    "has_vintf_manifest": false,
+    "has_vintf_compatibility_matrix": false
+  },
+  "init_summary": {
+    "rc_files": [],
+    "service_count": 0,
+    "services": [],
+    "service_prefix_groups": [],
+    "vendor_service_names": [],
+    "service_binaries": [],
+    "import_count": 0
+  },
+  "fstab_summary": {
+    "fstab_files": [],
+    "mount_points": [],
+    "logical_partitions": [],
+    "slotselect_entries": 0,
+    "avb_mounts": [],
+    "fileencryption_hints": [],
+    "metadata_partition_present": false
+  },
+  "selinux_summary": {
+    "policy_files": [],
+    "has_platform_policy": false,
+    "has_vendor_policy": false,
+    "has_odm_policy": false,
+    "has_mapping_files": false
+  },
+  "framework_feature_summary": {
+    "hardware_features": [],
+    "software_features": [],
+    "feature_categories": {},
+    "graphics_features": [],
+    "biometric_features": [],
+    "connectivity_features": [],
+    "form_factor_features": [],
+    "feature_source_files": []
+  },
+  "privileged_permission_summary": {
+    "privapp_permission_files": [],
+    "default_permission_files": [],
+    "sysconfig_files": [],
+    "privileged_permission_names": [],
+    "privileged_permission_namespaces": [],
+    "oem_permission_namespaces": []
+  },
+  "media_codec_summary": {
+    "codec_files": [],
+    "codec_names": [],
+    "has_codec2": false,
+    "has_omx": false
+  },
+  "audio_policy_summary": {
+    "policy_files": [],
+    "modules": [],
+    "mix_ports": []
+  },
+  "graphics_ml_summary": {
+    "vulkan_features": [],
+    "nnapi_present": false,
+    "codec2_present": false,
+    "omx_present": false,
+    "camera2_capability_features": [],
+    "gpu_firmware_hints": []
+  },
+  "radio_summary": {
+    "capability_hints": []
+  },
+  "overlay_summary": {
+    "overlay_file_count": 0,
+    "overlay_namespaces": []
+  },
+  "locale_region_defaults": {
+    "region_props": [],
+    "region_overlay_hints": []
+  },
+  "carrier_market_hints": {
+    "carrier_tokens": [],
+    "operator_variant_tokens": [],
+    "apn_files_present": [],
+    "carrier_customization_dirs": [],
+    "market_hints": []
+  },
+  "firmware_component_summary": {
+    "modem_version_strings": [],
+    "camera_component_names": [],
+    "touch_panel_hints": [],
+    "fingerprint_component_hints": [],
+    "nfc_component_hints": [],
+    "charger_battery_hints": [],
+    "gpu_firmware_hints": [],
+    "dsp_firmware_hints": [],
+    "firmware_file_groups": []
+  },
+  "library_inventory_summary": {
+    "shared_library_names": [],
+    "library_prefix_groups": [],
+    "oem_library_prefixes": [],
+    "framework_jar_names": [],
+    "apex_names": [],
+    "vendor_bin_names": []
+  },
+  "security_boot_summary": {
+    "signing_tags": "",
+    "selinux_summary": {
+      "policy_files": [],
+      "has_platform_policy": false,
+      "has_vendor_policy": false,
+      "has_odm_policy": false,
+      "has_mapping_files": false
+    },
+    "avb_enabled": null,
+    "dm_verity": null
+  },
+  "region_sku_hints": {
+    "value": [],
+    "heuristic": true,
+    "basis": []
+  },
+  "gms_oem_summary": {
+    "value": [
+      "brand:dumps"
+    ],
+    "heuristic": true,
+    "basis": [
+      "permissions",
+      "brand"
+    ]
+  },
+  "gsi_readiness_signals": {
+    "value": [],
+    "heuristic": true,
+    "basis": []
+  },
+  "modding_signals": {
+    "value": [],
+    "heuristic": true,
+    "basis": []
+  },
+  "app_compatibility_summary": {
+    "api_levels": [],
+    "abis": [],
+    "graphics_ml": [],
+    "hardware_features": [],
+    "media_audio": [],
+    "ecosystem_hints": [
+      "brand:dumps"
+    ]
+  },
+  "device_bringup_summary": {
+    "partition_model": [],
+    "treble_vintf": [],
+    "hal_domains": [],
+    "service_groups": [],
+    "fstab_hints": [],
+    "selinux_split": []
+  },
+  "security_trust_summary": {
+    "security_patch": null,
+    "boot_security": [],
+    "signing_debug": [],
+    "privileged_surface": [],
+    "build_freshness": []
+  },
+  "vendor_stack_summary": {
+    "platform_family": null,
+    "radio_hints": [],
+    "firmware_components": [],
+    "library_groups": [],
+    "overlay_namespaces": []
+  },
+  "variant_timeline_summary": {
+    "region_sku": [],
+    "pushed_at": "2020-06-01T16:59:58+05:30",
+    "partition_build_dates": [],
+    "locale": []
+  },
+  "user_facing_feature_summary": {
+    "biometrics": [],
+    "connectivity": [],
+    "form_factor": [],
+    "sensors": [],
+    "audio_media": [],
+    "camera": []
+  },
+  "extracted_at": "2026-03-29T15:22:10.566150+00:00",
+  "cpu_family": "unknown",
+  "gpu_label": "unknown"
+}

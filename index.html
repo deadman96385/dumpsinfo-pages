@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AndroidDumps Search</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>AndroidDumps <span>Search</span></h1>
+      <div class="search-wrap">
+        <input type="text" id="search" placeholder="Search by brand, codename, platform, fingerprint...">
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="stats-banner" id="stats-banner"></div>
+    <button class="filter-toggle" id="filter-toggle" type="button" aria-expanded="false" aria-controls="filters-panel">
+      <span>Filters</span>
+      <span class="filter-toggle-count" id="filter-toggle-count">0 active</span>
+    </button>
+
+    <div class="main-grid">
+      <!-- Filters sidebar -->
+      <aside class="filters" id="filters-panel">
+        <details class="filter-group filter-group--section" open>
+          <summary>Brand</summary>
+          <div class="filter-group__body">
+            <select id="filter-brand"></select>
+          </div>
+        </details>
+        <details class="filter-group filter-group--section" open>
+          <summary>Android Version</summary>
+          <div class="filter-group__body" id="filter-release"></div>
+        </details>
+        <details class="filter-group filter-group--section" open>
+          <summary>CPU / SoC Family</summary>
+          <div class="filter-group__body" id="filter-cpu"></div>
+        </details>
+        <details class="filter-group filter-group--section">
+          <summary>Platform</summary>
+          <div class="filter-group__body" id="filter-platform"></div>
+        </details>
+        <details class="filter-group filter-group--section">
+          <summary>GPU</summary>
+          <div class="filter-group__body" id="filter-gpu"></div>
+        </details>
+        <details class="filter-group filter-group--section">
+          <summary>Size</summary>
+          <div class="filter-group__body" id="filter-size"></div>
+        </details>
+        <details class="filter-group filter-group--section">
+          <summary>Partitioning</summary>
+          <div class="filter-group__body">
+            <select id="filter-ab">
+              <option value="">All</option>
+              <option value="true">A/B only</option>
+              <option value="false">A-only</option>
+            </select>
+          </div>
+        </details>
+      </aside>
+
+      <!-- Results -->
+      <main>
+        <div class="sort-bar">
+          <span>Sort by</span>
+          <select id="sort-select">
+            <option value="brand">Brand A-Z</option>
+            <option value="release">Newest Android</option>
+            <option value="size">Largest</option>
+            <option value="branches">Most branches</option>
+          </select>
+          <span id="result-count"></span>
+        </div>
+        <div class="results" id="results">
+          <div class="loading">Loading search index...</div>
+        </div>
+        <div class="pagination" id="pagination"></div>
+      </main>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

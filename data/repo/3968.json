@@ -1,0 +1,1820 @@
+{
+  "schema_version": 2,
+  "repo_id": 3968,
+  "path_brand": "android",
+  "path_device": "generic_riscv64",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/android/generic_riscv64.git",
+  "repo_url": "https://dumps.tadiphone.dev/dumps/android/generic_riscv64",
+  "repo_size_bytes": 35976591,
+  "storage_size_bytes": 35976591,
+  "default_branch": "aosp_riscv64-userdebug-UpsideDownCake-AOSP.MASTER-9354155-test-keys",
+  "branches": [
+    "aosp_riscv64-userdebug-UpsideDownCake-AOSP.MASTER-9354155-test-keys"
+  ],
+  "branch_count": 1,
+  "branch_summaries": [
+    {
+      "branch": "aosp_riscv64-userdebug-UpsideDownCake-AOSP.MASTER-9354155-test-keys",
+      "is_default": true,
+      "tip_commit": "821cb6bc0f2dc0140ced49dbce3e87779ff7cfe9",
+      "pushed_at": "2022-12-01T02:00:21+03:00",
+      "clone_url": "https://dumps.tadiphone.dev/dumps/android/generic_riscv64.git",
+      "repo_url": "https://dumps.tadiphone.dev/dumps/android/generic_riscv64",
+      "fingerprint": "Android/aosp_riscv64/generic_riscv64:UpsideDownCake/AOSP.MASTER/9354155:userdebug/test-keys",
+      "brand": "Android",
+      "brand_norm": "android",
+      "codename": "generic_riscv64",
+      "top_codename": "generic-riscv64",
+      "manufacturer": "unknown",
+      "manufacturer_norm": "unknown",
+      "platform": "",
+      "platform_norm": "",
+      "platform_family": "virtual",
+      "release": "13",
+      "description": "aosp_riscv64-userdebug UpsideDownCake AOSP.MASTER 9354155 test-keys",
+      "derived_branch": "aosp_riscv64-userdebug-UpsideDownCake-AOSP.MASTER-9354155-test-keys",
+      "is_ab": false,
+      "tags": "test-keys",
+      "build_id": "AOSP.MASTER",
+      "incremental": "9354155",
+      "flavor": "aosp_riscv64-userdebug",
+      "cpu_abilist": "riscv64",
+      "cpu_abilist32": null,
+      "cpu_abilist64": "riscv64",
+      "primary_abi": "riscv64",
+      "secondary_abi": null,
+      "zygote_mode": null,
+      "userspace_bitness": {
+        "value": "64-bit",
+        "heuristic": true,
+        "basis": [
+          "cpu_abilist64"
+        ]
+      },
+      "binder_bitness": null,
+      "sdk_version": "33",
+      "product_first_api_level": null,
+      "board_first_api_level": null,
+      "security_patch": "2022-11-05",
+      "security_patch_levels": [
+        {
+          "partition": "system",
+          "value": "2022-11-05",
+          "property": "ro.build.version.security_patch",
+          "source_file": "system/system/build.prop"
+        }
+      ],
+      "prop_sources": {
+        "flavor": "system/system/build.prop",
+        "release": "system/system/build.prop",
+        "build_id": "system/system/build.prop",
+        "incremental": "system/system/build.prop",
+        "tags": "system/system/build.prop",
+        "manufacturer": "system/system/build.prop",
+        "fingerprint": "system/system/build.prop",
+        "codename": "system/system/build.prop",
+        "brand": "system/system/build.prop",
+        "description": "system/system/build.prop",
+        "sdk_version": "system/system/build.prop",
+        "security_patch": "system/system/build.prop",
+        "cpu_abilist": "system/system/build.prop",
+        "cpu_abilist64": "system/system/build.prop",
+        "ro_debuggable": "system/system/build.prop",
+        "ro_secure": "system/system/build.prop"
+      },
+      "build_prop_files_found": [
+        "system/system/build.prop"
+      ],
+      "permission_files_found": [],
+      "partition_build_dates": [
+        {
+          "partition": "system",
+          "property": "ro.system.build.date.utc",
+          "value": "1669847421",
+          "iso": "2022-11-30T22:30:21+00:00",
+          "source_file": "system/system/build.prop"
+        }
+      ],
+      "partition_inventory": {
+        "present_partitions": [
+          "system"
+        ],
+        "partition_file_counts": {
+          "system": 804,
+          "vendor": 0,
+          "odm": 0,
+          "product": 0,
+          "system_ext": 0,
+          "vendor_dlkm": 0,
+          "odm_dlkm": 0,
+          "system_dlkm": 0
+        },
+        "has_vendor_partition": false,
+        "has_product_partition": false,
+        "has_odm_partition": false,
+        "has_system_ext_partition": false,
+        "likely_treble": false
+      },
+      "partitioning_flags": {
+        "vendor_boot_present": false,
+        "super_partition_present": false,
+        "recovery_as_boot": false,
+        "first_stage_init": false
+      },
+      "vintf_summary": {
+        "manifest_files": [],
+        "compatibility_matrix_files": [],
+        "hal_names": [],
+        "hal_by_domain": {},
+        "aidl_hals": [],
+        "hidl_hals": [],
+        "matrix_levels": [],
+        "vendor_interface_levels": [],
+        "has_vintf_manifest": false,
+        "has_vintf_compatibility_matrix": false
+      },
+      "init_summary": {
+        "rc_files": [
+          "system/system/etc/init/hw/init.rc",
+          "system/system/etc/init/hw/init.zygote64.rc"
+        ],
+        "service_count": 7,
+        "services": [
+          "boringssl_self_test32",
+          "boringssl_self_test64",
+          "boringssl_self_test_apex32",
+          "boringssl_self_test_apex64",
+          "ueventd",
+          "console",
+          "zygote"
+        ],
+        "service_prefix_groups": [
+          "boringssl (4)",
+          "console",
+          "ueventd",
+          "zygote"
+        ],
+        "vendor_service_names": [],
+        "service_binaries": [
+          "/system/bin/boringssl_self_test32",
+          "/system/bin/boringssl_self_test64",
+          "/apex/com.android.conscrypt/bin/boringssl_self_test32",
+          "/apex/com.android.conscrypt/bin/boringssl_self_test64",
+          "/system/bin/ueventd",
+          "/system/bin/sh",
+          "/system/bin/app_process64"
+        ],
+        "import_count": 6
+      },
+      "fstab_summary": {
+        "fstab_files": [],
+        "mount_points": [],
+        "logical_partitions": [],
+        "slotselect_entries": 0,
+        "avb_mounts": [],
+        "fileencryption_hints": [],
+        "metadata_partition_present": false
+      },
+      "selinux_summary": {
+        "policy_files": [
+          "system/system/etc/selinux/bug_map",
+          "system/system/etc/selinux/mapping/10000.0.cil",
+          "system/system/etc/selinux/mapping/28.0.cil",
+          "system/system/etc/selinux/mapping/28.0.compat.cil",
+          "system/system/etc/selinux/mapping/29.0.cil",
+          "system/system/etc/selinux/mapping/29.0.compat.cil",
+          "system/system/etc/selinux/mapping/30.0.cil",
+          "system/system/etc/selinux/mapping/30.0.compat.cil",
+          "system/system/etc/selinux/mapping/31.0.cil",
+          "system/system/etc/selinux/mapping/31.0.compat.cil",
+          "system/system/etc/selinux/mapping/32.0.cil",
+          "system/system/etc/selinux/mapping/32.0.compat.cil",
+          "system/system/etc/selinux/mapping/33.0.cil",
+          "system/system/etc/selinux/mapping/33.0.compat.cil",
+          "system/system/etc/selinux/plat_file_contexts",
+          "system/system/etc/selinux/plat_hwservice_contexts",
+          "system/system/etc/selinux/plat_keystore2_key_contexts",
+          "system/system/etc/selinux/plat_mac_permissions.xml",
+          "system/system/etc/selinux/plat_property_contexts",
+          "system/system/etc/selinux/plat_seapp_contexts",
+          "system/system/etc/selinux/plat_sepolicy.cil",
+          "system/system/etc/selinux/plat_sepolicy_and_mapping.sha256",
+          "system/system/etc/selinux/plat_service_contexts"
+        ],
+        "has_platform_policy": true,
+        "has_vendor_policy": false,
+        "has_odm_policy": false,
+        "has_mapping_files": true
+      },
+      "framework_feature_summary": {
+        "hardware_features": [],
+        "software_features": [],
+        "feature_categories": {},
+        "graphics_features": [],
+        "biometric_features": [],
+        "connectivity_features": [],
+        "form_factor_features": [],
+        "feature_source_files": []
+      },
+      "privileged_permission_summary": {
+        "privapp_permission_files": [],
+        "default_permission_files": [],
+        "sysconfig_files": [],
+        "privileged_permission_names": [],
+        "privileged_permission_namespaces": [],
+        "oem_permission_namespaces": []
+      },
+      "qcom_ver_info": null,
+      "camera_hardware": {
+        "camera_config_files": [],
+        "hardware_config_files": [
+          "android.software.verified_boot.xml",
+          "apns-conf.xml",
+          "config.xml",
+          "llndk.libraries.UpsideDownCake.txt",
+          "mke2fs.conf",
+          "plat_mac_permissions.xml",
+          "privapp-permissions-goldfish.xml",
+          "vndkcore.libraries.UpsideDownCake.txt",
+          "vndkcorevariant.libraries.txt",
+          "vndkprivate.libraries.UpsideDownCake.txt",
+          "vndkproduct.libraries.UpsideDownCake.txt",
+          "vndksp.libraries.UpsideDownCake.txt"
+        ],
+        "camera_sensors": [],
+        "camera_eeproms": [],
+        "camera_flashes": [],
+        "camera_actuators": [],
+        "camera_ois": []
+      },
+      "media_codec_summary": {
+        "codec_files": [],
+        "codec_names": [],
+        "has_codec2": false,
+        "has_omx": false
+      },
+      "audio_policy_summary": {
+        "policy_files": [],
+        "modules": [],
+        "mix_ports": []
+      },
+      "graphics_ml_summary": {
+        "vulkan_features": [],
+        "nnapi_present": false,
+        "codec2_present": false,
+        "omx_present": false,
+        "camera2_capability_features": [],
+        "gpu_firmware_hints": [
+          "privapp-permissions-goldfish.xml"
+        ]
+      },
+      "gpu_family": "virtual",
+      "radio_summary": {
+        "capability_hints": []
+      },
+      "overlay_summary": {
+        "overlay_file_count": 1,
+        "overlay_namespaces": [
+          "config"
+        ]
+      },
+      "locale_region_defaults": {
+        "region_props": [],
+        "region_overlay_hints": [
+          "config"
+        ]
+      },
+      "carrier_market_hints": {
+        "carrier_tokens": [],
+        "operator_variant_tokens": [],
+        "apn_files_present": [
+          "system/system/product/etc/apns-conf.xml"
+        ],
+        "carrier_customization_dirs": [
+          "system"
+        ],
+        "market_hints": []
+      },
+      "firmware_component_summary": {
+        "modem_version_strings": [],
+        "camera_component_names": [],
+        "touch_panel_hints": [
+          "touch"
+        ],
+        "fingerprint_component_hints": [],
+        "nfc_component_hints": [
+          "NFCFailure.ogg",
+          "NFCInitiated.ogg",
+          "NFCSuccess.ogg",
+          "NFCTransferComplete.ogg",
+          "NFCTransferInitiated.ogg"
+        ],
+        "charger_battery_hints": [
+          "LowBattery.ogg"
+        ],
+        "gpu_firmware_hints": [],
+        "dsp_firmware_hints": [],
+        "firmware_file_groups": [
+          "system"
+        ]
+      },
+      "library_inventory_summary": {
+        "shared_library_names": [
+          "android.hardware.audio.common@2.0.so",
+          "android.hardware.cas.native@1.0.so",
+          "android.hardware.cas@1.0.so",
+          "android.hardware.common-V2-ndk.so",
+          "android.hardware.common.fmq-V1-ndk.so",
+          "android.hardware.configstore-utils.so",
+          "android.hardware.configstore@1.0.so",
+          "android.hardware.configstore@1.1.so",
+          "android.hardware.confirmationui-support-lib.so",
+          "android.hardware.drm-V1-ndk.so",
+          "android.hardware.drm@1.0.so",
+          "android.hardware.drm@1.1.so",
+          "android.hardware.drm@1.2.so",
+          "android.hardware.drm@1.3.so",
+          "android.hardware.drm@1.4.so",
+          "android.hardware.graphics.allocator-V1-ndk.so",
+          "android.hardware.graphics.allocator@2.0.so",
+          "android.hardware.graphics.allocator@3.0.so",
+          "android.hardware.graphics.allocator@4.0.so",
+          "android.hardware.graphics.bufferqueue@1.0.so",
+          "android.hardware.graphics.bufferqueue@2.0.so",
+          "android.hardware.graphics.common-V3-ndk.so",
+          "android.hardware.graphics.common@1.0.so",
+          "android.hardware.graphics.common@1.1.so",
+          "android.hardware.graphics.common@1.2.so",
+          "android.hardware.graphics.composer3-V1-ndk.so",
+          "android.hardware.graphics.mapper@2.0.so",
+          "android.hardware.graphics.mapper@2.1.so",
+          "android.hardware.graphics.mapper@3.0.so",
+          "android.hardware.graphics.mapper@4.0.so",
+          "android.hardware.media.bufferpool@2.0.so",
+          "android.hardware.media.c2@1.0.so",
+          "android.hardware.media.c2@1.1.so",
+          "android.hardware.media.c2@1.2.so",
+          "android.hardware.media.omx@1.0.so",
+          "android.hardware.media@1.0.so",
+          "android.hardware.memtrack-V1-ndk.so",
+          "android.hardware.memtrack@1.0.so",
+          "android.hardware.renderscript@1.0.so",
+          "android.hardware.soundtrigger@2.0-core.so",
+          "android.hardware.soundtrigger@2.0.so",
+          "android.hidl.allocator@1.0.so",
+          "android.hidl.memory.token@1.0.so",
+          "android.hidl.memory@1.0-impl.so",
+          "android.hidl.memory@1.0.so",
+          "android.hidl.safe_union@1.0.so",
+          "android.hidl.token@1.0-utils.so",
+          "android.hidl.token@1.0.so",
+          "android.media.audio.common.types-V2-cpp.so",
+          "android.system.suspend-V1-ndk.so",
+          "android.system.suspend@1.0.so",
+          "audioclient-types-aidl-cpp.so",
+          "audioflinger-aidl-cpp.so",
+          "audiopolicy-aidl-cpp.so",
+          "audiopolicy-types-aidl-cpp.so",
+          "av-types-aidl-cpp.so",
+          "capture_state_listener-aidl-cpp.so",
+          "effect-aidl-cpp.so",
+          "framework-permission-aidl-cpp.so",
+          "ld-android.so",
+          "libEGL.so",
+          "libGLESv1_CM.so",
+          "libGLESv2.so",
+          "libGLESv3.so",
+          "libRScpp.so",
+          "libSurfaceFlingerProp.so",
+          "libandroid_net.so",
+          "libandroid_runtime_lazy.so",
+          "libaudioclient.so",
+          "libaudioclient_aidl_conversion.so",
+          "libaudiofoundation.so",
+          "libaudiomanager.so",
+          "libaudiopolicy.so",
+          "libaudioroute.so",
+          "libaudioutils.so",
+          "libbase.so",
+          "libbinder.so",
+          "libbinder_ndk.so",
+          "libblas.so",
+          "libbufferqueueconverter.so",
+          "libc++.so",
+          "libc.so",
+          "libcamera_client.so",
+          "libcamera_metadata.so",
+          "libcap.so",
+          "libcgrouprc.so",
+          "libclang_rt.asan-riscv64-android.so",
+          "libclang_rt.ubsan_standalone-riscv64-android.so",
+          "libcn-cbor.so",
+          "libcodec2.so",
+          "libcodec2_client.so",
+          "libcodec2_hidl_client@1.0.so",
+          "libcodec2_hidl_client@1.1.so",
+          "libcodec2_hidl_client@1.2.so",
+          "libcodec2_vndk.so",
+          "libcompiler_rt.so",
+          "libcrypto.so",
+          "libcrypto_utils.so",
+          "libcurl.so",
+          "libcutils.so",
+          "libdatasource.so",
+          "libdiskconfig.so",
+          "libdl.so",
+          "libdl_android.so",
+          "libdmabufheap.so",
+          "libdumpstateutil.so",
+          "libevent.so",
+          "libexif.so",
+          "libexpat.so",
+          "libext2_blkid.so",
+          "libext2_com_err.so",
+          "libext2_e2p.so",
+          "libext2_misc.so",
+          "libext2_quota.so",
+          "libext2_uuid.so",
+          "libext2fs.so",
+          "libext4_utils.so",
+          "libfec.so",
+          "libfmq.so",
+          "libfs_mgr.so",
+          "libft2.so",
+          "libgatekeeper.so",
+          "libgralloctypes.so",
+          "libgraphicsenv.so",
+          "libgsi.so",
+          "libgui.so",
+          "libhardware.so",
+          "libhardware_legacy.so",
+          "libhidl-gen-utils.so",
+          "libhidlallocatorutils.so",
+          "libhidlbase.so",
+          "libhidlmemory.so",
+          "libion.so",
+          "libjpeg.so",
+          "libjsoncpp.so",
+          "libkeyutils.so",
+          "libldacBT_abr.so",
+          "libldacBT_enc.so",
+          "liblog.so",
+          "liblogwrap.so",
+          "liblp.so",
+          "liblz4.so",
+          "liblzma.so",
+          "libm.so",
+          "libmedia.so",
+          "libmedia_codeclist.so",
+          "libmedia_helper.so",
+          "libmedia_jni_utils.so",
+          "libmedia_omx.so",
+          "libmedia_omx_client.so",
+          "libmediadrm.so",
+          "libmediadrmmetrics_lite.so",
+          "libmediametrics.so",
+          "libmediandk.so",
+          "libmediandk_utils.so",
+          "libmediautils.so",
+          "libmediautils_delayed.so",
+          "libmemtrack.so",
+          "libminijail.so",
+          "libmkbootimg_abi_check.so",
+          "libnativebridge_lazy.so",
+          "libnativeloader_lazy.so",
+          "libnativewindow.so",
+          "libnblog.so",
+          "libnetd_client.so",
+          "libnetutils.so",
+          "libnl.so",
+          "libpackagelistparser.so",
+          "libpcap.so",
+          "libpcre2.so",
+          "libpermission.so",
+          "libpiex.so",
+          "libpng.so",
+          "libpower.so",
+          "libprocessgroup.so",
+          "libprocessgroup_setup.so",
+          "libprocinfo.so",
+          "libprotobuf-cpp-lite.so",
+          "libradio_metadata.so",
+          "libselinux.so",
+          "libsfplugin_ccodec.so",
+          "libsfplugin_ccodec_utils.so",
+          "libshmemcompat.so",
+          "libshmemutil.so",
+          "libsparse.so",
+          "libspeexresampler.so",
+          "libsqlite.so",
+          "libsquashfs_utils.so",
+          "libssl.so",
+          "libstagefright.so",
+          "libstagefright_bufferpool@2.0.1.so",
+          "libstagefright_bufferpool@2.0.so",
+          "libstagefright_bufferqueue_helper.so",
+          "libstagefright_codecbase.so",
+          "libstagefright_foundation.so",
+          "libstagefright_framecapture_utils.so",
+          "libstagefright_omx.so",
+          "libstagefright_omx_utils.so",
+          "libstagefright_surface_utils.so",
+          "libstagefright_xmlparser.so",
+          "libsync.so",
+          "libsysutils.so",
+          "libtinyalsa.so",
+          "libtinyxml2.so",
+          "libui.so",
+          "libunwindstack.so",
+          "libusbhost.so",
+          "libutils.so",
+          "libutilscallstack.so",
+          "libvndksupport.so",
+          "libvulkan.so",
+          "libwifi-system-iface.so",
+          "libxml2.so",
+          "libyuv.so",
+          "libz.so",
+          "libziparchive.so",
+          "mediametricsservice-aidl-cpp.so",
+          "packagemanager_aidl-cpp.so",
+          "shared-file-region-aidl-cpp.so",
+          "spatializer-aidl-cpp.so"
+        ],
+        "library_prefix_groups": [
+          "android.hardware (41)",
+          "libstagefright (11)",
+          "android.hidl (7)",
+          "libcodec2 (6)",
+          "libext2 (6)",
+          "libmedia (6)",
+          "android.system (2)",
+          "audiopolicy (2)",
+          "libandroid (2)",
+          "libaudioclient (2)",
+          "libbinder (2)",
+          "libcamera (2)",
+          "libclang (2)",
+          "libcrypto (2)",
+          "libdl (2)",
+          "libhardware (2)",
+          "libldacbt (2)",
+          "libmediandk (2)",
+          "libmediautils (2)",
+          "libprocessgroup (2)",
+          "libsfplugin (2)",
+          "android.media",
+          "audioclient",
+          "audioflinger",
+          "av",
+          "capture",
+          "effect",
+          "framework",
+          "ld",
+          "libaudiofoundation",
+          "libaudiomanager",
+          "libaudiopolicy",
+          "libaudioroute",
+          "libaudioutils",
+          "libbase",
+          "libblas",
+          "libbufferqueueconverter",
+          "libc",
+          "libc++",
+          "libcap",
+          "libcgrouprc",
+          "libcn",
+          "libcompiler",
+          "libcurl",
+          "libcutils",
+          "libdatasource",
+          "libdiskconfig",
+          "libdmabufheap",
+          "libdumpstateutil",
+          "libegl"
+        ],
+        "oem_library_prefixes": [
+          "audiopolicy (2)",
+          "audioclient",
+          "audioflinger",
+          "av",
+          "capture",
+          "effect",
+          "framework",
+          "ld"
+        ],
+        "framework_jar_names": [],
+        "apex_names": [],
+        "vendor_bin_names": []
+      },
+      "security_boot_summary": {
+        "signing_tags": "test-keys",
+        "selinux_summary": {
+          "policy_files": [
+            "system/system/etc/selinux/bug_map",
+            "system/system/etc/selinux/mapping/10000.0.cil",
+            "system/system/etc/selinux/mapping/28.0.cil",
+            "system/system/etc/selinux/mapping/28.0.compat.cil",
+            "system/system/etc/selinux/mapping/29.0.cil",
+            "system/system/etc/selinux/mapping/29.0.compat.cil",
+            "system/system/etc/selinux/mapping/30.0.cil",
+            "system/system/etc/selinux/mapping/30.0.compat.cil",
+            "system/system/etc/selinux/mapping/31.0.cil",
+            "system/system/etc/selinux/mapping/31.0.compat.cil",
+            "system/system/etc/selinux/mapping/32.0.cil",
+            "system/system/etc/selinux/mapping/32.0.compat.cil",
+            "system/system/etc/selinux/mapping/33.0.cil",
+            "system/system/etc/selinux/mapping/33.0.compat.cil",
+            "system/system/etc/selinux/plat_file_contexts",
+            "system/system/etc/selinux/plat_hwservice_contexts",
+            "system/system/etc/selinux/plat_keystore2_key_contexts",
+            "system/system/etc/selinux/plat_mac_permissions.xml",
+            "system/system/etc/selinux/plat_property_contexts",
+            "system/system/etc/selinux/plat_seapp_contexts",
+            "system/system/etc/selinux/plat_sepolicy.cil",
+            "system/system/etc/selinux/plat_sepolicy_and_mapping.sha256",
+            "system/system/etc/selinux/plat_service_contexts"
+          ],
+          "has_platform_policy": true,
+          "has_vendor_policy": false,
+          "has_odm_policy": false,
+          "has_mapping_files": true
+        },
+        "ro_debuggable": true,
+        "ro_secure": true,
+        "avb_enabled": null,
+        "dm_verity": null
+      },
+      "supported_hardware_features": [],
+      "declared_permissions": [],
+      "hardware_feature_sources": [],
+      "region_sku_hints": {
+        "value": [],
+        "heuristic": true,
+        "basis": []
+      },
+      "gms_oem_summary": {
+        "value": [
+          "brand:android"
+        ],
+        "heuristic": true,
+        "basis": [
+          "permissions",
+          "brand"
+        ]
+      },
+      "gsi_readiness_signals": {
+        "value": [
+          "64-bit-userspace"
+        ],
+        "heuristic": true,
+        "basis": [
+          "userspace_bitness"
+        ]
+      },
+      "modding_signals": {
+        "value": [
+          "non-release-keys",
+          "64-bit"
+        ],
+        "heuristic": true,
+        "basis": [
+          "tags",
+          "userspace_bitness"
+        ]
+      },
+      "app_compatibility_summary": {
+        "api_levels": [
+          "33"
+        ],
+        "abis": [
+          "riscv64"
+        ],
+        "graphics_ml": [],
+        "hardware_features": [],
+        "media_audio": [],
+        "ecosystem_hints": [
+          "brand:android"
+        ]
+      },
+      "device_bringup_summary": {
+        "partition_model": [
+          "system"
+        ],
+        "treble_vintf": [],
+        "hal_domains": [],
+        "service_groups": [
+          "boringssl (4)",
+          "console",
+          "ueventd",
+          "zygote"
+        ],
+        "fstab_hints": [],
+        "selinux_split": [
+          "plat"
+        ]
+      },
+      "security_trust_summary": {
+        "security_patch": "2022-11-05",
+        "boot_security": [],
+        "signing_debug": [
+          "test-keys",
+          "True"
+        ],
+        "privileged_surface": [],
+        "build_freshness": [
+          "2022-11-05",
+          "system"
+        ]
+      },
+      "vendor_stack_summary": {
+        "platform_family": "virtual",
+        "radio_hints": [],
+        "firmware_components": [
+          "touch",
+          "NFCFailure.ogg",
+          "NFCInitiated.ogg",
+          "NFCSuccess.ogg",
+          "NFCTransferComplete.ogg",
+          "NFCTransferInitiated.ogg"
+        ],
+        "library_groups": [
+          "android.hardware (41)",
+          "libstagefright (11)",
+          "android.hidl (7)",
+          "libcodec2 (6)",
+          "libext2 (6)",
+          "libmedia (6)",
+          "android.system (2)",
+          "audiopolicy (2)",
+          "libandroid (2)",
+          "libaudioclient (2)",
+          "libbinder (2)",
+          "libcamera (2)",
+          "libclang (2)",
+          "libcrypto (2)",
+          "libdl (2)",
+          "libhardware (2)",
+          "libldacbt (2)",
+          "libmediandk (2)",
+          "libmediautils (2)",
+          "libprocessgroup (2)",
+          "libsfplugin (2)",
+          "android.media",
+          "audioclient",
+          "audioflinger",
+          "av",
+          "capture",
+          "effect",
+          "framework",
+          "ld",
+          "libaudiofoundation",
+          "libaudiomanager",
+          "libaudiopolicy",
+          "libaudioroute",
+          "libaudioutils",
+          "libbase",
+          "libblas",
+          "libbufferqueueconverter",
+          "libc",
+          "libc++",
+          "libcap"
+        ],
+        "overlay_namespaces": [
+          "config"
+        ]
+      },
+      "variant_timeline_summary": {
+        "region_sku": [],
+        "pushed_at": "2022-12-01T02:00:21+03:00",
+        "partition_build_dates": [
+          "2022-11-30T22:30:21+00:00"
+        ],
+        "locale": []
+      },
+      "user_facing_feature_summary": {
+        "biometrics": [],
+        "connectivity": [],
+        "form_factor": [],
+        "sensors": [],
+        "audio_media": [],
+        "camera": []
+      }
+    }
+  ],
+  "android_versions": [
+    "13"
+  ],
+  "platforms_seen": [],
+  "platform_families_seen": [
+    "virtual"
+  ],
+  "gpu_families_seen": [
+    "virtual"
+  ],
+  "sdk_versions": [
+    "33"
+  ],
+  "security_patches": [
+    "2022-11-05"
+  ],
+  "userspace_modes": [
+    "64-bit"
+  ],
+  "binder_modes": [],
+  "hardware_summary": {
+    "camera_config_files": [],
+    "hardware_config_files": [
+      "android.software.verified_boot.xml",
+      "apns-conf.xml",
+      "config.xml",
+      "llndk.libraries.UpsideDownCake.txt",
+      "mke2fs.conf",
+      "plat_mac_permissions.xml",
+      "privapp-permissions-goldfish.xml",
+      "vndkcore.libraries.UpsideDownCake.txt",
+      "vndkcorevariant.libraries.txt",
+      "vndkprivate.libraries.UpsideDownCake.txt",
+      "vndkproduct.libraries.UpsideDownCake.txt",
+      "vndksp.libraries.UpsideDownCake.txt"
+    ],
+    "camera_sensors": [],
+    "camera_eeproms": [],
+    "camera_flashes": [],
+    "camera_actuators": [],
+    "camera_ois": []
+  },
+  "supported_hardware_features": [],
+  "media_codecs": [],
+  "region_hints": [],
+  "hal_domains_seen": [],
+  "graphics_ml_union": [],
+  "carrier_market_union": [],
+  "service_prefixes_seen": [
+    "boringssl (4)",
+    "console",
+    "ueventd",
+    "zygote"
+  ],
+  "library_prefix_union": [
+    "android.hardware (41)",
+    "android.hidl (7)",
+    "android.media",
+    "android.system (2)",
+    "audioclient",
+    "audioflinger",
+    "audiopolicy (2)",
+    "av",
+    "capture",
+    "effect",
+    "framework",
+    "ld",
+    "libandroid (2)",
+    "libaudioclient (2)",
+    "libaudiofoundation",
+    "libaudiomanager",
+    "libaudiopolicy",
+    "libaudioroute",
+    "libaudioutils",
+    "libbase",
+    "libbinder (2)",
+    "libblas",
+    "libbufferqueueconverter",
+    "libc",
+    "libc++",
+    "libcamera (2)",
+    "libcap",
+    "libcgrouprc",
+    "libclang (2)",
+    "libcn",
+    "libcodec2 (6)",
+    "libcompiler",
+    "libcrypto (2)",
+    "libcurl",
+    "libcutils",
+    "libdatasource",
+    "libdiskconfig",
+    "libdl (2)",
+    "libdmabufheap",
+    "libdumpstateutil",
+    "libegl",
+    "libext2 (6)",
+    "libhardware (2)",
+    "libldacbt (2)",
+    "libmedia (6)",
+    "libmediandk (2)",
+    "libmediautils (2)",
+    "libprocessgroup (2)",
+    "libsfplugin (2)",
+    "libstagefright (11)"
+  ],
+  "firmware_component_union": [
+    "NFCFailure.ogg",
+    "NFCInitiated.ogg",
+    "NFCSuccess.ogg",
+    "NFCTransferComplete.ogg",
+    "NFCTransferInitiated.ogg",
+    "touch"
+  ],
+  "timeline_summary": {
+    "branch_push_dates": [
+      {
+        "branch": "aosp_riscv64-userdebug-UpsideDownCake-AOSP.MASTER-9354155-test-keys",
+        "pushed_at": "2022-12-01T02:00:21+03:00"
+      }
+    ],
+    "earliest_branch_push": "2022-12-01T02:00:21+03:00",
+    "latest_branch_push": "2022-12-01T02:00:21+03:00",
+    "earliest_partition_build_date": "2022-11-30T22:30:21+00:00",
+    "latest_partition_build_date": "2022-11-30T22:30:21+00:00",
+    "branch_push_span_days": 0,
+    "build_date_span_days": 0
+  },
+  "variant_delta_summary": {
+    "varying_android_versions": [],
+    "varying_sdk_versions": [],
+    "varying_security_patches": [],
+    "varying_platforms": [],
+    "varying_partition_models": [],
+    "varying_hardware_features": [],
+    "varying_hal_domains": [],
+    "varying_radio_hints": [],
+    "varying_region_sku_hints": [],
+    "branch_count": 1,
+    "default_branch": "aosp_riscv64-userdebug-UpsideDownCake-AOSP.MASTER-9354155-test-keys"
+  },
+  "audience_summaries": {
+    "app_compatibility_summary": {
+      "api_levels": [
+        "33"
+      ],
+      "abis": [
+        "riscv64"
+      ],
+      "ecosystem_hints": [
+        "brand:android"
+      ]
+    },
+    "device_bringup_summary": {
+      "partition_model": [
+        "system"
+      ],
+      "service_groups": [
+        "boringssl (4)",
+        "console",
+        "ueventd",
+        "zygote"
+      ],
+      "selinux_split": [
+        "plat"
+      ]
+    },
+    "security_trust_summary": {
+      "security_patch": [
+        "2022-11-05"
+      ],
+      "signing_debug": [
+        "test-keys",
+        "True"
+      ],
+      "build_freshness": [
+        "2022-11-05",
+        "system"
+      ]
+    },
+    "vendor_stack_summary": {
+      "platform_family": [
+        "virtual"
+      ],
+      "firmware_components": [
+        "touch",
+        "NFCFailure.ogg",
+        "NFCInitiated.ogg",
+        "NFCSuccess.ogg",
+        "NFCTransferComplete.ogg",
+        "NFCTransferInitiated.ogg"
+      ],
+      "library_groups": [
+        "android.hardware (41)",
+        "libstagefright (11)",
+        "android.hidl (7)",
+        "libcodec2 (6)",
+        "libext2 (6)",
+        "libmedia (6)",
+        "android.system (2)",
+        "audiopolicy (2)",
+        "libandroid (2)",
+        "libaudioclient (2)",
+        "libbinder (2)",
+        "libcamera (2)",
+        "libclang (2)",
+        "libcrypto (2)",
+        "libdl (2)",
+        "libhardware (2)",
+        "libldacbt (2)",
+        "libmediandk (2)",
+        "libmediautils (2)",
+        "libprocessgroup (2)",
+        "libsfplugin (2)",
+        "android.media",
+        "audioclient",
+        "audioflinger",
+        "av",
+        "capture",
+        "effect",
+        "framework",
+        "ld",
+        "libaudiofoundation",
+        "libaudiomanager",
+        "libaudiopolicy",
+        "libaudioroute",
+        "libaudioutils",
+        "libbase",
+        "libblas",
+        "libbufferqueueconverter",
+        "libc",
+        "libc++",
+        "libcap"
+      ],
+      "overlay_namespaces": [
+        "config"
+      ]
+    },
+    "variant_timeline_summary": {
+      "pushed_at": [
+        "2022-12-01T02:00:21+03:00"
+      ],
+      "partition_build_dates": [
+        "2022-11-30T22:30:21+00:00"
+      ]
+    },
+    "user_facing_feature_summary": {}
+  },
+  "community_summary": {
+    "gsi_readiness_signals": [
+      "64-bit-userspace"
+    ],
+    "modding_signals": [
+      "64-bit",
+      "non-release-keys"
+    ]
+  },
+  "qcom_ver_info_groups": [],
+  "fingerprint": "Android/aosp_riscv64/generic_riscv64:UpsideDownCake/AOSP.MASTER/9354155:userdebug/test-keys",
+  "brand": "Android",
+  "brand_norm": "android",
+  "codename": "generic_riscv64",
+  "top_codename": "generic-riscv64",
+  "manufacturer": "unknown",
+  "manufacturer_norm": "unknown",
+  "platform": "",
+  "platform_norm": "",
+  "platform_family": "virtual",
+  "gpu_family": "virtual",
+  "release": "13",
+  "description": "aosp_riscv64-userdebug UpsideDownCake AOSP.MASTER 9354155 test-keys",
+  "derived_branch": "aosp_riscv64-userdebug-UpsideDownCake-AOSP.MASTER-9354155-test-keys",
+  "is_ab": false,
+  "tags": "test-keys",
+  "build_id": "AOSP.MASTER",
+  "incremental": "9354155",
+  "flavor": "aosp_riscv64-userdebug",
+  "cpu_abilist": "riscv64",
+  "cpu_abilist32": null,
+  "cpu_abilist64": "riscv64",
+  "primary_abi": "riscv64",
+  "secondary_abi": null,
+  "zygote_mode": null,
+  "userspace_bitness": {
+    "value": "64-bit",
+    "heuristic": true,
+    "basis": [
+      "cpu_abilist64"
+    ]
+  },
+  "binder_bitness": null,
+  "sdk_version": "33",
+  "product_first_api_level": null,
+  "board_first_api_level": null,
+  "security_patch": "2022-11-05",
+  "security_patch_levels": [
+    {
+      "partition": "system",
+      "value": "2022-11-05",
+      "property": "ro.build.version.security_patch",
+      "source_file": "system/system/build.prop"
+    }
+  ],
+  "prop_sources": {
+    "flavor": "system/system/build.prop",
+    "release": "system/system/build.prop",
+    "build_id": "system/system/build.prop",
+    "incremental": "system/system/build.prop",
+    "tags": "system/system/build.prop",
+    "manufacturer": "system/system/build.prop",
+    "fingerprint": "system/system/build.prop",
+    "codename": "system/system/build.prop",
+    "brand": "system/system/build.prop",
+    "description": "system/system/build.prop",
+    "sdk_version": "system/system/build.prop",
+    "security_patch": "system/system/build.prop",
+    "cpu_abilist": "system/system/build.prop",
+    "cpu_abilist64": "system/system/build.prop",
+    "ro_debuggable": "system/system/build.prop",
+    "ro_secure": "system/system/build.prop"
+  },
+  "build_prop_files_found": [
+    "system/system/build.prop"
+  ],
+  "permission_files_found": [],
+  "partition_build_dates": [
+    {
+      "partition": "system",
+      "property": "ro.system.build.date.utc",
+      "value": "1669847421",
+      "iso": "2022-11-30T22:30:21+00:00",
+      "source_file": "system/system/build.prop"
+    }
+  ],
+  "partition_inventory": {
+    "present_partitions": [
+      "system"
+    ],
+    "partition_file_counts": {
+      "system": 804,
+      "vendor": 0,
+      "odm": 0,
+      "product": 0,
+      "system_ext": 0,
+      "vendor_dlkm": 0,
+      "odm_dlkm": 0,
+      "system_dlkm": 0
+    },
+    "has_vendor_partition": false,
+    "has_product_partition": false,
+    "has_odm_partition": false,
+    "has_system_ext_partition": false,
+    "likely_treble": false
+  },
+  "partitioning_flags": {
+    "vendor_boot_present": false,
+    "super_partition_present": false,
+    "recovery_as_boot": false,
+    "first_stage_init": false
+  },
+  "vintf_summary": {
+    "manifest_files": [],
+    "compatibility_matrix_files": [],
+    "hal_names": [],
+    "hal_by_domain": {},
+    "aidl_hals": [],
+    "hidl_hals": [],
+    "matrix_levels": [],
+    "vendor_interface_levels": [],
+    "has_vintf_manifest": false,
+    "has_vintf_compatibility_matrix": false
+  },
+  "init_summary": {
+    "rc_files": [
+      "system/system/etc/init/hw/init.rc",
+      "system/system/etc/init/hw/init.zygote64.rc"
+    ],
+    "service_count": 7,
+    "services": [
+      "boringssl_self_test32",
+      "boringssl_self_test64",
+      "boringssl_self_test_apex32",
+      "boringssl_self_test_apex64",
+      "ueventd",
+      "console",
+      "zygote"
+    ],
+    "service_prefix_groups": [
+      "boringssl (4)",
+      "console",
+      "ueventd",
+      "zygote"
+    ],
+    "vendor_service_names": [],
+    "service_binaries": [
+      "/system/bin/boringssl_self_test32",
+      "/system/bin/boringssl_self_test64",
+      "/apex/com.android.conscrypt/bin/boringssl_self_test32",
+      "/apex/com.android.conscrypt/bin/boringssl_self_test64",
+      "/system/bin/ueventd",
+      "/system/bin/sh",
+      "/system/bin/app_process64"
+    ],
+    "import_count": 6
+  },
+  "fstab_summary": {
+    "fstab_files": [],
+    "mount_points": [],
+    "logical_partitions": [],
+    "slotselect_entries": 0,
+    "avb_mounts": [],
+    "fileencryption_hints": [],
+    "metadata_partition_present": false
+  },
+  "selinux_summary": {
+    "policy_files": [
+      "system/system/etc/selinux/bug_map",
+      "system/system/etc/selinux/mapping/10000.0.cil",
+      "system/system/etc/selinux/mapping/28.0.cil",
+      "system/system/etc/selinux/mapping/28.0.compat.cil",
+      "system/system/etc/selinux/mapping/29.0.cil",
+      "system/system/etc/selinux/mapping/29.0.compat.cil",
+      "system/system/etc/selinux/mapping/30.0.cil",
+      "system/system/etc/selinux/mapping/30.0.compat.cil",
+      "system/system/etc/selinux/mapping/31.0.cil",
+      "system/system/etc/selinux/mapping/31.0.compat.cil",
+      "system/system/etc/selinux/mapping/32.0.cil",
+      "system/system/etc/selinux/mapping/32.0.compat.cil",
+      "system/system/etc/selinux/mapping/33.0.cil",
+      "system/system/etc/selinux/mapping/33.0.compat.cil",
+      "system/system/etc/selinux/plat_file_contexts",
+      "system/system/etc/selinux/plat_hwservice_contexts",
+      "system/system/etc/selinux/plat_keystore2_key_contexts",
+      "system/system/etc/selinux/plat_mac_permissions.xml",
+      "system/system/etc/selinux/plat_property_contexts",
+      "system/system/etc/selinux/plat_seapp_contexts",
+      "system/system/etc/selinux/plat_sepolicy.cil",
+      "system/system/etc/selinux/plat_sepolicy_and_mapping.sha256",
+      "system/system/etc/selinux/plat_service_contexts"
+    ],
+    "has_platform_policy": true,
+    "has_vendor_policy": false,
+    "has_odm_policy": false,
+    "has_mapping_files": true
+  },
+  "framework_feature_summary": {
+    "hardware_features": [],
+    "software_features": [],
+    "feature_categories": {},
+    "graphics_features": [],
+    "biometric_features": [],
+    "connectivity_features": [],
+    "form_factor_features": [],
+    "feature_source_files": []
+  },
+  "privileged_permission_summary": {
+    "privapp_permission_files": [],
+    "default_permission_files": [],
+    "sysconfig_files": [],
+    "privileged_permission_names": [],
+    "privileged_permission_namespaces": [],
+    "oem_permission_namespaces": []
+  },
+  "media_codec_summary": {
+    "codec_files": [],
+    "codec_names": [],
+    "has_codec2": false,
+    "has_omx": false
+  },
+  "audio_policy_summary": {
+    "policy_files": [],
+    "modules": [],
+    "mix_ports": []
+  },
+  "graphics_ml_summary": {
+    "vulkan_features": [],
+    "nnapi_present": false,
+    "codec2_present": false,
+    "omx_present": false,
+    "camera2_capability_features": [],
+    "gpu_firmware_hints": [
+      "privapp-permissions-goldfish.xml"
+    ]
+  },
+  "radio_summary": {
+    "capability_hints": []
+  },
+  "overlay_summary": {
+    "overlay_file_count": 1,
+    "overlay_namespaces": [
+      "config"
+    ]
+  },
+  "locale_region_defaults": {
+    "region_props": [],
+    "region_overlay_hints": [
+      "config"
+    ]
+  },
+  "carrier_market_hints": {
+    "carrier_tokens": [],
+    "operator_variant_tokens": [],
+    "apn_files_present": [
+      "system/system/product/etc/apns-conf.xml"
+    ],
+    "carrier_customization_dirs": [
+      "system"
+    ],
+    "market_hints": []
+  },
+  "firmware_component_summary": {
+    "modem_version_strings": [],
+    "camera_component_names": [],
+    "touch_panel_hints": [
+      "touch"
+    ],
+    "fingerprint_component_hints": [],
+    "nfc_component_hints": [
+      "NFCFailure.ogg",
+      "NFCInitiated.ogg",
+      "NFCSuccess.ogg",
+      "NFCTransferComplete.ogg",
+      "NFCTransferInitiated.ogg"
+    ],
+    "charger_battery_hints": [
+      "LowBattery.ogg"
+    ],
+    "gpu_firmware_hints": [],
+    "dsp_firmware_hints": [],
+    "firmware_file_groups": [
+      "system"
+    ]
+  },
+  "library_inventory_summary": {
+    "shared_library_names": [
+      "android.hardware.audio.common@2.0.so",
+      "android.hardware.cas.native@1.0.so",
+      "android.hardware.cas@1.0.so",
+      "android.hardware.common-V2-ndk.so",
+      "android.hardware.common.fmq-V1-ndk.so",
+      "android.hardware.configstore-utils.so",
+      "android.hardware.configstore@1.0.so",
+      "android.hardware.configstore@1.1.so",
+      "android.hardware.confirmationui-support-lib.so",
+      "android.hardware.drm-V1-ndk.so",
+      "android.hardware.drm@1.0.so",
+      "android.hardware.drm@1.1.so",
+      "android.hardware.drm@1.2.so",
+      "android.hardware.drm@1.3.so",
+      "android.hardware.drm@1.4.so",
+      "android.hardware.graphics.allocator-V1-ndk.so",
+      "android.hardware.graphics.allocator@2.0.so",
+      "android.hardware.graphics.allocator@3.0.so",
+      "android.hardware.graphics.allocator@4.0.so",
+      "android.hardware.graphics.bufferqueue@1.0.so",
+      "android.hardware.graphics.bufferqueue@2.0.so",
+      "android.hardware.graphics.common-V3-ndk.so",
+      "android.hardware.graphics.common@1.0.so",
+      "android.hardware.graphics.common@1.1.so",
+      "android.hardware.graphics.common@1.2.so",
+      "android.hardware.graphics.composer3-V1-ndk.so",
+      "android.hardware.graphics.mapper@2.0.so",
+      "android.hardware.graphics.mapper@2.1.so",
+      "android.hardware.graphics.mapper@3.0.so",
+      "android.hardware.graphics.mapper@4.0.so",
+      "android.hardware.media.bufferpool@2.0.so",
+      "android.hardware.media.c2@1.0.so",
+      "android.hardware.media.c2@1.1.so",
+      "android.hardware.media.c2@1.2.so",
+      "android.hardware.media.omx@1.0.so",
+      "android.hardware.media@1.0.so",
+      "android.hardware.memtrack-V1-ndk.so",
+      "android.hardware.memtrack@1.0.so",
+      "android.hardware.renderscript@1.0.so",
+      "android.hardware.soundtrigger@2.0-core.so",
+      "android.hardware.soundtrigger@2.0.so",
+      "android.hidl.allocator@1.0.so",
+      "android.hidl.memory.token@1.0.so",
+      "android.hidl.memory@1.0-impl.so",
+      "android.hidl.memory@1.0.so",
+      "android.hidl.safe_union@1.0.so",
+      "android.hidl.token@1.0-utils.so",
+      "android.hidl.token@1.0.so",
+      "android.media.audio.common.types-V2-cpp.so",
+      "android.system.suspend-V1-ndk.so",
+      "android.system.suspend@1.0.so",
+      "audioclient-types-aidl-cpp.so",
+      "audioflinger-aidl-cpp.so",
+      "audiopolicy-aidl-cpp.so",
+      "audiopolicy-types-aidl-cpp.so",
+      "av-types-aidl-cpp.so",
+      "capture_state_listener-aidl-cpp.so",
+      "effect-aidl-cpp.so",
+      "framework-permission-aidl-cpp.so",
+      "ld-android.so",
+      "libEGL.so",
+      "libGLESv1_CM.so",
+      "libGLESv2.so",
+      "libGLESv3.so",
+      "libRScpp.so",
+      "libSurfaceFlingerProp.so",
+      "libandroid_net.so",
+      "libandroid_runtime_lazy.so",
+      "libaudioclient.so",
+      "libaudioclient_aidl_conversion.so",
+      "libaudiofoundation.so",
+      "libaudiomanager.so",
+      "libaudiopolicy.so",
+      "libaudioroute.so",
+      "libaudioutils.so",
+      "libbase.so",
+      "libbinder.so",
+      "libbinder_ndk.so",
+      "libblas.so",
+      "libbufferqueueconverter.so",
+      "libc++.so",
+      "libc.so",
+      "libcamera_client.so",
+      "libcamera_metadata.so",
+      "libcap.so",
+      "libcgrouprc.so",
+      "libclang_rt.asan-riscv64-android.so",
+      "libclang_rt.ubsan_standalone-riscv64-android.so",
+      "libcn-cbor.so",
+      "libcodec2.so",
+      "libcodec2_client.so",
+      "libcodec2_hidl_client@1.0.so",
+      "libcodec2_hidl_client@1.1.so",
+      "libcodec2_hidl_client@1.2.so",
+      "libcodec2_vndk.so",
+      "libcompiler_rt.so",
+      "libcrypto.so",
+      "libcrypto_utils.so",
+      "libcurl.so",
+      "libcutils.so",
+      "libdatasource.so",
+      "libdiskconfig.so",
+      "libdl.so",
+      "libdl_android.so",
+      "libdmabufheap.so",
+      "libdumpstateutil.so",
+      "libevent.so",
+      "libexif.so",
+      "libexpat.so",
+      "libext2_blkid.so",
+      "libext2_com_err.so",
+      "libext2_e2p.so",
+      "libext2_misc.so",
+      "libext2_quota.so",
+      "libext2_uuid.so",
+      "libext2fs.so",
+      "libext4_utils.so",
+      "libfec.so",
+      "libfmq.so",
+      "libfs_mgr.so",
+      "libft2.so",
+      "libgatekeeper.so",
+      "libgralloctypes.so",
+      "libgraphicsenv.so",
+      "libgsi.so",
+      "libgui.so",
+      "libhardware.so",
+      "libhardware_legacy.so",
+      "libhidl-gen-utils.so",
+      "libhidlallocatorutils.so",
+      "libhidlbase.so",
+      "libhidlmemory.so",
+      "libion.so",
+      "libjpeg.so",
+      "libjsoncpp.so",
+      "libkeyutils.so",
+      "libldacBT_abr.so",
+      "libldacBT_enc.so",
+      "liblog.so",
+      "liblogwrap.so",
+      "liblp.so",
+      "liblz4.so",
+      "liblzma.so",
+      "libm.so",
+      "libmedia.so",
+      "libmedia_codeclist.so",
+      "libmedia_helper.so",
+      "libmedia_jni_utils.so",
+      "libmedia_omx.so",
+      "libmedia_omx_client.so",
+      "libmediadrm.so",
+      "libmediadrmmetrics_lite.so",
+      "libmediametrics.so",
+      "libmediandk.so",
+      "libmediandk_utils.so",
+      "libmediautils.so",
+      "libmediautils_delayed.so",
+      "libmemtrack.so",
+      "libminijail.so",
+      "libmkbootimg_abi_check.so",
+      "libnativebridge_lazy.so",
+      "libnativeloader_lazy.so",
+      "libnativewindow.so",
+      "libnblog.so",
+      "libnetd_client.so",
+      "libnetutils.so",
+      "libnl.so",
+      "libpackagelistparser.so",
+      "libpcap.so",
+      "libpcre2.so",
+      "libpermission.so",
+      "libpiex.so",
+      "libpng.so",
+      "libpower.so",
+      "libprocessgroup.so",
+      "libprocessgroup_setup.so",
+      "libprocinfo.so",
+      "libprotobuf-cpp-lite.so",
+      "libradio_metadata.so",
+      "libselinux.so",
+      "libsfplugin_ccodec.so",
+      "libsfplugin_ccodec_utils.so",
+      "libshmemcompat.so",
+      "libshmemutil.so",
+      "libsparse.so",
+      "libspeexresampler.so",
+      "libsqlite.so",
+      "libsquashfs_utils.so",
+      "libssl.so",
+      "libstagefright.so",
+      "libstagefright_bufferpool@2.0.1.so",
+      "libstagefright_bufferpool@2.0.so",
+      "libstagefright_bufferqueue_helper.so",
+      "libstagefright_codecbase.so",
+      "libstagefright_foundation.so",
+      "libstagefright_framecapture_utils.so",
+      "libstagefright_omx.so",
+      "libstagefright_omx_utils.so",
+      "libstagefright_surface_utils.so",
+      "libstagefright_xmlparser.so",
+      "libsync.so",
+      "libsysutils.so",
+      "libtinyalsa.so",
+      "libtinyxml2.so",
+      "libui.so",
+      "libunwindstack.so",
+      "libusbhost.so",
+      "libutils.so",
+      "libutilscallstack.so",
+      "libvndksupport.so",
+      "libvulkan.so",
+      "libwifi-system-iface.so",
+      "libxml2.so",
+      "libyuv.so",
+      "libz.so",
+      "libziparchive.so",
+      "mediametricsservice-aidl-cpp.so",
+      "packagemanager_aidl-cpp.so",
+      "shared-file-region-aidl-cpp.so",
+      "spatializer-aidl-cpp.so"
+    ],
+    "library_prefix_groups": [
+      "android.hardware (41)",
+      "libstagefright (11)",
+      "android.hidl (7)",
+      "libcodec2 (6)",
+      "libext2 (6)",
+      "libmedia (6)",
+      "android.system (2)",
+      "audiopolicy (2)",
+      "libandroid (2)",
+      "libaudioclient (2)",
+      "libbinder (2)",
+      "libcamera (2)",
+      "libclang (2)",
+      "libcrypto (2)",
+      "libdl (2)",
+      "libhardware (2)",
+      "libldacbt (2)",
+      "libmediandk (2)",
+      "libmediautils (2)",
+      "libprocessgroup (2)",
+      "libsfplugin (2)",
+      "android.media",
+      "audioclient",
+      "audioflinger",
+      "av",
+      "capture",
+      "effect",
+      "framework",
+      "ld",
+      "libaudiofoundation",
+      "libaudiomanager",
+      "libaudiopolicy",
+      "libaudioroute",
+      "libaudioutils",
+      "libbase",
+      "libblas",
+      "libbufferqueueconverter",
+      "libc",
+      "libc++",
+      "libcap",
+      "libcgrouprc",
+      "libcn",
+      "libcompiler",
+      "libcurl",
+      "libcutils",
+      "libdatasource",
+      "libdiskconfig",
+      "libdmabufheap",
+      "libdumpstateutil",
+      "libegl"
+    ],
+    "oem_library_prefixes": [
+      "audiopolicy (2)",
+      "audioclient",
+      "audioflinger",
+      "av",
+      "capture",
+      "effect",
+      "framework",
+      "ld"
+    ],
+    "framework_jar_names": [],
+    "apex_names": [],
+    "vendor_bin_names": []
+  },
+  "security_boot_summary": {
+    "signing_tags": "test-keys",
+    "selinux_summary": {
+      "policy_files": [
+        "system/system/etc/selinux/bug_map",
+        "system/system/etc/selinux/mapping/10000.0.cil",
+        "system/system/etc/selinux/mapping/28.0.cil",
+        "system/system/etc/selinux/mapping/28.0.compat.cil",
+        "system/system/etc/selinux/mapping/29.0.cil",
+        "system/system/etc/selinux/mapping/29.0.compat.cil",
+        "system/system/etc/selinux/mapping/30.0.cil",
+        "system/system/etc/selinux/mapping/30.0.compat.cil",
+        "system/system/etc/selinux/mapping/31.0.cil",
+        "system/system/etc/selinux/mapping/31.0.compat.cil",
+        "system/system/etc/selinux/mapping/32.0.cil",
+        "system/system/etc/selinux/mapping/32.0.compat.cil",
+        "system/system/etc/selinux/mapping/33.0.cil",
+        "system/system/etc/selinux/mapping/33.0.compat.cil",
+        "system/system/etc/selinux/plat_file_contexts",
+        "system/system/etc/selinux/plat_hwservice_contexts",
+        "system/system/etc/selinux/plat_keystore2_key_contexts",
+        "system/system/etc/selinux/plat_mac_permissions.xml",
+        "system/system/etc/selinux/plat_property_contexts",
+        "system/system/etc/selinux/plat_seapp_contexts",
+        "system/system/etc/selinux/plat_sepolicy.cil",
+        "system/system/etc/selinux/plat_sepolicy_and_mapping.sha256",
+        "system/system/etc/selinux/plat_service_contexts"
+      ],
+      "has_platform_policy": true,
+      "has_vendor_policy": false,
+      "has_odm_policy": false,
+      "has_mapping_files": true
+    },
+    "ro_debuggable": true,
+    "ro_secure": true,
+    "avb_enabled": null,
+    "dm_verity": null
+  },
+  "region_sku_hints": {
+    "value": [],
+    "heuristic": true,
+    "basis": []
+  },
+  "gms_oem_summary": {
+    "value": [
+      "brand:android"
+    ],
+    "heuristic": true,
+    "basis": [
+      "permissions",
+      "brand"
+    ]
+  },
+  "gsi_readiness_signals": {
+    "value": [
+      "64-bit-userspace"
+    ],
+    "heuristic": true,
+    "basis": [
+      "userspace_bitness"
+    ]
+  },
+  "modding_signals": {
+    "value": [
+      "non-release-keys",
+      "64-bit"
+    ],
+    "heuristic": true,
+    "basis": [
+      "tags",
+      "userspace_bitness"
+    ]
+  },
+  "app_compatibility_summary": {
+    "api_levels": [
+      "33"
+    ],
+    "abis": [
+      "riscv64"
+    ],
+    "graphics_ml": [],
+    "hardware_features": [],
+    "media_audio": [],
+    "ecosystem_hints": [
+      "brand:android"
+    ]
+  },
+  "device_bringup_summary": {
+    "partition_model": [
+      "system"
+    ],
+    "treble_vintf": [],
+    "hal_domains": [],
+    "service_groups": [
+      "boringssl (4)",
+      "console",
+      "ueventd",
+      "zygote"
+    ],
+    "fstab_hints": [],
+    "selinux_split": [
+      "plat"
+    ]
+  },
+  "security_trust_summary": {
+    "security_patch": "2022-11-05",
+    "boot_security": [],
+    "signing_debug": [
+      "test-keys",
+      "True"
+    ],
+    "privileged_surface": [],
+    "build_freshness": [
+      "2022-11-05",
+      "system"
+    ]
+  },
+  "vendor_stack_summary": {
+    "platform_family": "virtual",
+    "radio_hints": [],
+    "firmware_components": [
+      "touch",
+      "NFCFailure.ogg",
+      "NFCInitiated.ogg",
+      "NFCSuccess.ogg",
+      "NFCTransferComplete.ogg",
+      "NFCTransferInitiated.ogg"
+    ],
+    "library_groups": [
+      "android.hardware (41)",
+      "libstagefright (11)",
+      "android.hidl (7)",
+      "libcodec2 (6)",
+      "libext2 (6)",
+      "libmedia (6)",
+      "android.system (2)",
+      "audiopolicy (2)",
+      "libandroid (2)",
+      "libaudioclient (2)",
+      "libbinder (2)",
+      "libcamera (2)",
+      "libclang (2)",
+      "libcrypto (2)",
+      "libdl (2)",
+      "libhardware (2)",
+      "libldacbt (2)",
+      "libmediandk (2)",
+      "libmediautils (2)",
+      "libprocessgroup (2)",
+      "libsfplugin (2)",
+      "android.media",
+      "audioclient",
+      "audioflinger",
+      "av",
+      "capture",
+      "effect",
+      "framework",
+      "ld",
+      "libaudiofoundation",
+      "libaudiomanager",
+      "libaudiopolicy",
+      "libaudioroute",
+      "libaudioutils",
+      "libbase",
+      "libblas",
+      "libbufferqueueconverter",
+      "libc",
+      "libc++",
+      "libcap"
+    ],
+    "overlay_namespaces": [
+      "config"
+    ]
+  },
+  "variant_timeline_summary": {
+    "region_sku": [],
+    "pushed_at": "2022-12-01T02:00:21+03:00",
+    "partition_build_dates": [
+      "2022-11-30T22:30:21+00:00"
+    ],
+    "locale": []
+  },
+  "user_facing_feature_summary": {
+    "biometrics": [],
+    "connectivity": [],
+    "form_factor": [],
+    "sensors": [],
+    "audio_media": [],
+    "camera": []
+  },
+  "extracted_at": "2026-03-29T15:38:05.593089+00:00",
+  "cpu_family": "virtual",
+  "gpu_label": "virtual"
+}
