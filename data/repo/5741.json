@@ -13706,5 +13706,11 @@
   },
   "extracted_at": "2026-03-29T15:57:43.250726+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Find X9",
+  "market_name_candidates": [
+    "Find X9"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Find X9"
 }

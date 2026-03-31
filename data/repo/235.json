@@ -5837,5 +5837,14 @@
   },
   "extracted_at": "2026-03-29T15:21:24.579526+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "N10",
+  "market_name_candidates": [
+    "N10",
+    "N10_EEA",
+    "Y7",
+    "Neffos Y7"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "N10"
 }

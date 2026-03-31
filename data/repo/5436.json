@@ -9489,5 +9489,11 @@
   },
   "extracted_at": "2026-03-29T15:50:22.621122+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "ZTE 7540N",
+  "market_name_candidates": [
+    "ZTE 7540N"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "ZTE 7540N"
 }

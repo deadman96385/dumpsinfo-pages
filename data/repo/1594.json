@@ -21150,5 +21150,11 @@
   },
   "extracted_at": "2026-03-29T15:28:56.352486+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno200"
+  "gpu_label": "adreno200",
+  "market_name": "Joy 4",
+  "market_name_candidates": [
+    "Joy 4"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Joy 4"
 }

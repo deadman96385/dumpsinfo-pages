@@ -10940,5 +10940,11 @@
   },
   "extracted_at": "2026-03-29T14:37:47.346058+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Ascom Myco 4",
+  "market_name_candidates": [
+    "Ascom Myco 4"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Ascom Myco 4"
 }

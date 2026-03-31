@@ -4577,5 +4577,11 @@
   },
   "extracted_at": "2026-03-29T15:51:07.791113+00:00",
   "cpu_family": "exynos",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Galaxy View",
+  "market_name_candidates": [
+    "Galaxy View"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Galaxy View"
 }

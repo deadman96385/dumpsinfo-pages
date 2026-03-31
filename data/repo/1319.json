@@ -5791,5 +5791,9 @@
   },
   "extracted_at": "2026-03-29T15:24:54.644861+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "",
+  "market_name_candidates": [],
+  "market_name_brand_aligned": false,
+  "display_name": "BLU x6335_blu_walmart_80_o1_go"
 }

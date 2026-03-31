@@ -9133,5 +9133,12 @@
   },
   "extracted_at": "2026-03-29T15:52:46.912075+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "powervr"
+  "gpu_label": "powervr",
+  "market_name": "HMD ARC",
+  "market_name_candidates": [
+    "HMD ARC",
+    "M-KOPA M10"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "HMD ARC"
 }

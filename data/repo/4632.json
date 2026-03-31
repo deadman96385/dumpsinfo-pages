@@ -9097,5 +9097,14 @@
   },
   "extracted_at": "2026-03-29T15:42:47.017446+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "G7 fit",
+  "market_name_candidates": [
+    "Falcon",
+    "G7 fit",
+    "LG G7 fit",
+    "LG Q9"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "G7 fit"
 }

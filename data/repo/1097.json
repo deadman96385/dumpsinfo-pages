@@ -6350,5 +6350,11 @@
   },
   "extracted_at": "2026-03-29T15:23:29.574498+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Plume L3",
+  "market_name_candidates": [
+    "Plume L3"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Plume L3"
 }

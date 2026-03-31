@@ -13129,5 +13129,11 @@
   },
   "extracted_at": "2026-03-29T15:20:59.465130+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "HydrogenONE",
+  "market_name_candidates": [
+    "HydrogenONE"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "HydrogenONE"
 }

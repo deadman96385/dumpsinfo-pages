@@ -21770,5 +21770,12 @@
   },
   "extracted_at": "2026-03-29T15:34:15.900880+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Redmi K40",
+  "market_name_candidates": [
+    "POCO F3",
+    "Redmi K40"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Redmi K40"
 }

@@ -13873,5 +13873,13 @@
   },
   "extracted_at": "2026-03-29T15:57:56.226097+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "motorola edge 70 fusion",
+  "market_name_candidates": [
+    "MARVEL",
+    "Wildfire S",
+    "motorola edge 70 fusion"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "motorola edge 70 fusion"
 }

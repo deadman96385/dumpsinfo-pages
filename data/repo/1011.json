@@ -5508,5 +5508,11 @@
   },
   "extracted_at": "2026-03-29T15:22:59.719039+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "P410",
+  "market_name_candidates": [
+    "P410"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "P410"
 }

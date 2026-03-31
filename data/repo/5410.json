@@ -21062,5 +21062,11 @@
   },
   "extracted_at": "2026-03-29T15:50:22.046211+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "POVA 5 Pro 5G",
+  "market_name_candidates": [
+    "POVA 5 Pro 5G"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "POVA 5 Pro 5G"
 }

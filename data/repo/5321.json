@@ -7454,5 +7454,14 @@
   },
   "extracted_at": "2026-03-29T15:49:16.600600+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Gentle",
+  "market_name_candidates": [
+    "Gentle",
+    "LG Wine Smart",
+    "LG Wine Smart Jazz",
+    "Wine Smart"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Gentle"
 }

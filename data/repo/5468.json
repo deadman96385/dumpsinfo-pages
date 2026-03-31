@@ -10133,5 +10133,12 @@
   },
   "extracted_at": "2026-03-29T15:51:18.643483+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "T Phone Pro (2023)",
+  "market_name_candidates": [
+    "T Phone Pro (2023)",
+    "Impress Tiger"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "T Phone Pro (2023)"
 }

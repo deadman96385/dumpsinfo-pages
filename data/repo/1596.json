@@ -5683,5 +5683,11 @@
   },
   "extracted_at": "2026-03-29T15:26:48.935805+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "MUZE V3",
+  "market_name_candidates": [
+    "MUZE V3"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "MUZE V3"
 }

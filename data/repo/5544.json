@@ -5805,5 +5805,11 @@
   },
   "extracted_at": "2026-03-29T15:52:49.946588+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "YUHO_Y1_StarS",
+  "market_name_candidates": [
+    "YUHO_Y1_StarS"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "YUHO_Y1_StarS"
 }

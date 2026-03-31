@@ -6271,5 +6271,13 @@
   },
   "extracted_at": "2026-03-29T15:32:53.269395+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Acer Holo360",
+  "market_name_candidates": [
+    "Acer Holo360",
+    "C01",
+    "C01 (PA)"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Acer Holo360"
 }

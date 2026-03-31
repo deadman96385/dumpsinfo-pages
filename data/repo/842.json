@@ -4689,5 +4689,11 @@
   },
   "extracted_at": "2026-03-29T15:22:05.766224+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "",
+  "market_name_candidates": [
+    "N855D"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "Hope Hope"
 }

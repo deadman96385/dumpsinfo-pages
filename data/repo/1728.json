@@ -5505,5 +5505,11 @@
   },
   "extracted_at": "2026-03-29T15:34:14.532205+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "",
+  "market_name_candidates": [
+    "iX"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "iKU ix"
 }

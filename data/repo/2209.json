@@ -9234,5 +9234,11 @@
   },
   "extracted_at": "2026-03-29T15:31:32.932166+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Power Armor 13",
+  "market_name_candidates": [
+    "Power Armor 13"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Power Armor 13"
 }

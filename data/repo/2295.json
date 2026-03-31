@@ -5455,5 +5455,11 @@
   },
   "extracted_at": "2026-03-29T15:32:26.722892+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Srtphone",
+  "market_name_candidates": [
+    "Srtphone"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Srtphone"
 }

@@ -8394,5 +8394,9 @@
   },
   "extracted_at": "2026-03-29T15:43:16.267682+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno200"
+  "gpu_label": "adreno200",
+  "market_name": "",
+  "market_name_candidates": [],
+  "market_name_brand_aligned": false,
+  "display_name": "Nokia Nokia_2780"
 }

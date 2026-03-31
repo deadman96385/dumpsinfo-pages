@@ -13432,5 +13432,13 @@
   },
   "extracted_at": "2026-03-29T15:38:39.786288+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "P60",
+  "market_name_candidates": [
+    "PRIDE 5E",
+    "P60",
+    "PD60"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "P60"
 }

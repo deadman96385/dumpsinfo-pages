@@ -9757,5 +9757,11 @@
   },
   "extracted_at": "2026-03-29T15:41:30.347273+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno200"
+  "gpu_label": "adreno200",
+  "market_name": "Cat S22 FLIP",
+  "market_name_candidates": [
+    "Cat S22 FLIP"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Cat S22 FLIP"
 }

@@ -10333,5 +10333,11 @@
   },
   "extracted_at": "2026-03-29T15:31:26.931889+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Galaxy J4 Core",
+  "market_name_candidates": [
+    "Galaxy J4 Core"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Galaxy J4 Core"
 }

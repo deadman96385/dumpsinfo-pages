@@ -5510,5 +5510,12 @@
   },
   "extracted_at": "2026-03-29T15:42:32.160849+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "M9",
+  "market_name_candidates": [
+    "M9",
+    "One M9"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "M9"
 }

@@ -5523,5 +5523,11 @@
   },
   "extracted_at": "2026-03-29T15:25:56.307885+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "S280",
+  "market_name_candidates": [
+    "S280"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "S280"
 }

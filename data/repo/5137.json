@@ -6104,5 +6104,11 @@
   },
   "extracted_at": "2026-03-29T15:46:36.482550+00:00",
   "cpu_family": "amlogic",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "ADT-2",
+  "market_name_candidates": [
+    "ADT-2"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "ADT-2"
 }

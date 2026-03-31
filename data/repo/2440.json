@@ -11810,5 +11810,11 @@
   },
   "extracted_at": "2026-03-29T15:35:19.378779+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Xiaomi 12T Pro",
+  "market_name_candidates": [
+    "Xiaomi 12T Pro"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Xiaomi 12T Pro"
 }

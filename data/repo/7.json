@@ -21594,5 +21594,12 @@
   },
   "extracted_at": "2026-03-29T15:21:01.107777+00:00",
   "cpu_family": "nvidia",
-  "gpu_label": "tegra.so"
+  "gpu_label": "tegra.so",
+  "market_name": "SHIELD TV",
+  "market_name_candidates": [
+    "SHIELD TV",
+    "Z850"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "SHIELD TV"
 }

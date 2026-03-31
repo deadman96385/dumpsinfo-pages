@@ -7722,5 +7722,12 @@
   },
   "extracted_at": "2026-03-29T15:38:15.832114+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "S3_Pro",
+  "market_name_candidates": [
+    "S3pro",
+    "S3_Pro"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "S3_Pro"
 }

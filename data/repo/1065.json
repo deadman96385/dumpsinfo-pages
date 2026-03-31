@@ -6444,5 +6444,11 @@
   },
   "extracted_at": "2026-03-29T15:23:15.544249+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "DIGMA LINX PAY 4G LS5053ML",
+  "market_name_candidates": [
+    "DIGMA LINX PAY 4G LS5053ML"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "DIGMA LINX PAY 4G LS5053ML"
 }

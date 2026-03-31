@@ -19458,5 +19458,11 @@
   },
   "extracted_at": "2026-03-29T15:46:37.452865+00:00",
   "cpu_family": "nvidia",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "SHIELD Tablet",
+  "market_name_candidates": [
+    "SHIELD Tablet"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "SHIELD Tablet"
 }

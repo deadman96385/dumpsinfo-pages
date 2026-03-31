@@ -9440,5 +9440,13 @@
   },
   "extracted_at": "2026-03-29T15:49:22.945014+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno200"
+  "gpu_label": "adreno200",
+  "market_name": "HP BRIDGE",
+  "market_name_candidates": [
+    "4K Smart TV",
+    "Smart TV",
+    "HP BRIDGE"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "HP BRIDGE"
 }

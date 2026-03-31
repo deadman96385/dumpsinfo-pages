@@ -6557,5 +6557,12 @@
   },
   "extracted_at": "2026-03-29T15:31:51.285535+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "S50 Pro",
+  "market_name_candidates": [
+    "S50-pro",
+    "S50 Pro"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "S50 Pro"
 }

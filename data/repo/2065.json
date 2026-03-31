@@ -10335,5 +10335,12 @@
   },
   "extracted_at": "2026-03-29T15:47:41.410730+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno200"
+  "gpu_label": "adreno200",
+  "market_name": "ZTE A20 5G",
+  "market_name_candidates": [
+    "ZTE A20 5G",
+    "ZTE Axon 20 5G"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "ZTE A20 5G"
 }

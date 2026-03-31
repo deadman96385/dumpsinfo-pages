@@ -5526,5 +5526,11 @@
   },
   "extracted_at": "2026-03-29T15:22:07.851625+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "",
+  "market_name_candidates": [
+    "Slate 21 Pro"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "alps ranger"
 }

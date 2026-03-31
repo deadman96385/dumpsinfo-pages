@@ -8561,5 +8561,11 @@
   },
   "extracted_at": "2026-03-29T15:56:17.686017+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "",
+  "market_name_candidates": [
+    "A25"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "iku A25"
 }

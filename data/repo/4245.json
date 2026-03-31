@@ -14423,5 +14423,11 @@
   },
   "extracted_at": "2026-03-29T15:40:44.808477+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "NOTE 12",
+  "market_name_candidates": [
+    "NOTE 12"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "NOTE 12"
 }

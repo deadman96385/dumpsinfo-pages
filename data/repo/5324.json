@@ -11080,5 +11080,15 @@
   },
   "extracted_at": "2026-03-29T15:49:19.290234+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "G Vista",
+  "market_name_candidates": [
+    "X10",
+    "FPT X10",
+    "G Vista",
+    "M1-101RT-A1",
+    "QSmart X10"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "G Vista"
 }

@@ -4740,5 +4740,11 @@
   },
   "extracted_at": "2026-03-29T15:24:20.802689+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "VOTO V2",
+  "market_name_candidates": [
+    "VOTO V2"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "VOTO V2"
 }

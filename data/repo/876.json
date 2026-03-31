@@ -4788,5 +4788,13 @@
   },
   "extracted_at": "2026-03-29T15:22:15.831234+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "BLADE V0820",
+  "market_name_candidates": [
+    "BLADE V0820",
+    "BLADE V8 SE",
+    "ZTE BLADE V0820"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "BLADE V0820"
 }

@@ -5952,5 +5952,11 @@
   },
   "extracted_at": "2026-03-29T15:23:44.152266+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "DIGMA CITI 1578 4G CS1196ML",
+  "market_name_candidates": [
+    "DIGMA CITI 1578 4G CS1196ML"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "DIGMA CITI 1578 4G CS1196ML"
 }

@@ -13135,5 +13135,13 @@
   },
   "extracted_at": "2026-03-29T15:57:54.430552+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "REDMI Note 15R",
+  "market_name_candidates": [
+    "POCO M7 Plus 5G",
+    "REDMI Note 15R",
+    "Redmi 15 5G"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "REDMI Note 15R"
 }

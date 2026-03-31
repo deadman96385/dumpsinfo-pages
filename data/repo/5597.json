@@ -9903,5 +9903,11 @@
   },
   "extracted_at": "2026-03-29T15:54:21.260789+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Agni 3",
+  "market_name_candidates": [
+    "Agni 3"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Agni 3"
 }

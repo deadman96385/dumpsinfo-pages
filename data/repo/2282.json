@@ -6992,5 +6992,12 @@
   },
   "extracted_at": "2026-03-29T15:32:18.631947+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "TCL L10",
+  "market_name_candidates": [
+    "TCL L10",
+    "Alcatel 1S"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "TCL L10"
 }

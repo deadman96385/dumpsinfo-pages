@@ -6993,5 +6993,11 @@
   },
   "extracted_at": "2026-03-29T15:24:27.677231+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Primo R6 Max",
+  "market_name_candidates": [
+    "Primo R6 Max"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Primo R6 Max"
 }

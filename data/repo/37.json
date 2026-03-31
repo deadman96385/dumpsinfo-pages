@@ -5957,5 +5957,11 @@
   },
   "extracted_at": "2026-03-29T15:21:01.547817+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Q Infinity D",
+  "market_name_candidates": [
+    "Q Infinity D"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Q Infinity D"
 }

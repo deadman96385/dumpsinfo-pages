@@ -4143,5 +4143,11 @@
   },
   "extracted_at": "2026-03-29T15:25:44.482702+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "",
+  "market_name_candidates": [
+    "R50A"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "R50A R50A"
 }

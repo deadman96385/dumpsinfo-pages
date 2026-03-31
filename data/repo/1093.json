@@ -4655,5 +4655,11 @@
   },
   "extracted_at": "2026-03-29T15:23:24.450568+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Hero H9",
+  "market_name_candidates": [
+    "Hero H9"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Hero H9"
 }

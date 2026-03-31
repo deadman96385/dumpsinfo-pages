@@ -3860,5 +3860,11 @@
   },
   "extracted_at": "2026-03-29T15:22:16.902876+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Y5II",
+  "market_name_candidates": [
+    "Y5II"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Y5II"
 }

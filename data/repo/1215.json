@@ -5639,5 +5639,11 @@
   },
   "extracted_at": "2026-03-29T15:24:17.425447+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Digma Plane 1585S 4G PS1502PL",
+  "market_name_candidates": [
+    "Digma Plane 1585S 4G PS1502PL"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Digma Plane 1585S 4G PS1502PL"
 }

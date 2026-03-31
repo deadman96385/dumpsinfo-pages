@@ -7085,5 +7085,11 @@
   },
   "extracted_at": "2026-03-29T15:40:39.550215+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "V20",
+  "market_name_candidates": [
+    "V20"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "V20"
 }

@@ -4950,5 +4950,22 @@
   },
   "extracted_at": "2026-03-29T15:31:31.454291+00:00",
   "cpu_family": "amlogic",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "TVB-100",
+  "market_name_candidates": [
+    "AX-117ATV",
+    "PureKTV",
+    "RSTV-A4K-16",
+    "Perseo TV Home 2nd Generation Ranger",
+    "DV8219_SFR",
+    "FR",
+    "TekSavvy_DV8219",
+    "TVB-100",
+    "Telkom",
+    "Telkom  Indonesia",
+    "Play TV",
+    "Flix  TV  Box"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "TVB-100"
 }

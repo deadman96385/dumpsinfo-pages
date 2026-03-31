@@ -5514,5 +5514,11 @@
   },
   "extracted_at": "2026-03-29T15:37:34.416055+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Life Jet",
+  "market_name_candidates": [
+    "Life Jet"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Life Jet"
 }

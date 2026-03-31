@@ -6620,5 +6620,12 @@
   },
   "extracted_at": "2026-03-29T15:24:05.619085+00:00",
   "cpu_family": "virtual",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "",
+  "market_name_candidates": [
+    "A10M2",
+    "Zebra Technologies MC2200"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "Android generic_arm64"
 }

@@ -11150,5 +11150,11 @@
   },
   "extracted_at": "2026-03-29T15:52:56.685779+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "LG V60 ThinQ 5G",
+  "market_name_candidates": [
+    "LG V60 ThinQ 5G"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "LG V60 ThinQ 5G"
 }

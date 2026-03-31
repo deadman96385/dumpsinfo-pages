@@ -8830,5 +8830,11 @@
   },
   "extracted_at": "2026-03-29T15:42:23.470166+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "10.4“ Tablet Pro",
+  "market_name_candidates": [
+    "10.4“ Tablet Pro"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "10.4“ Tablet Pro"
 }

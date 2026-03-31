@@ -5809,5 +5809,11 @@
   },
   "extracted_at": "2026-03-29T15:26:04.241759+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "CUBOT_J3",
+  "market_name_candidates": [
+    "CUBOT_J3"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "CUBOT_J3"
 }

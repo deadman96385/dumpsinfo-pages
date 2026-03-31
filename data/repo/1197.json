@@ -6210,5 +6210,12 @@
   },
   "extracted_at": "2026-03-29T15:24:13.863670+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Fly View Max",
+  "market_name_candidates": [
+    "Fly View Max",
+    "View Max"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Fly View Max"
 }

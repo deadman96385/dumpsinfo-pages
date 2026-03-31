@@ -4159,5 +4159,11 @@
   },
   "extracted_at": "2026-03-29T15:46:20.028240+00:00",
   "cpu_family": "nvidia",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Project Tango Tablet Development Kit",
+  "market_name_candidates": [
+    "Project Tango Tablet Development Kit"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Project Tango Tablet Development Kit"
 }

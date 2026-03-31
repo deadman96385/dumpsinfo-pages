@@ -5701,5 +5701,11 @@
   },
   "extracted_at": "2026-03-29T15:23:41.432152+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Vox V40 3G VT4055MG",
+  "market_name_candidates": [
+    "Vox V40 3G VT4055MG"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Vox V40 3G VT4055MG"
 }

@@ -9617,5 +9617,11 @@
   },
   "extracted_at": "2026-03-29T15:26:50.644714+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "",
+  "market_name_candidates": [
+    "Nokia 6"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "FIH D1C"
 }

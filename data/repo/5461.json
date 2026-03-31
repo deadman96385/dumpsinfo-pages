@@ -4691,5 +4691,25 @@
   },
   "extracted_at": "2026-03-29T15:50:46.821735+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "",
+  "market_name_candidates": [
+    "Trekker- M1",
+    "HS- G610",
+    "HS- L682",
+    "HS-G610",
+    "I635T",
+    "L635E_1",
+    "L678",
+    "L681",
+    "L682",
+    "M821",
+    "M821H",
+    "M821T",
+    "Andromax C46B2G",
+    "G36C1G",
+    "I46D1G"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "Android HS8916QC"
 }

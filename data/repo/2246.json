@@ -6660,5 +6660,12 @@
   },
   "extracted_at": "2026-03-29T15:31:55.460771+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "S80",
+  "market_name_candidates": [
+    "S80",
+    "S80_RU"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "S80"
 }

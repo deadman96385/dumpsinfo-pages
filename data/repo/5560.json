@@ -9046,5 +9046,11 @@
   },
   "extracted_at": "2026-03-29T15:52:49.640828+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "itel VistaTab  30",
+  "market_name_candidates": [
+    "itel VistaTab  30"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "itel VistaTab  30"
 }

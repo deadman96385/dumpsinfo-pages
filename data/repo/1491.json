@@ -7133,5 +7133,12 @@
   },
   "extracted_at": "2026-03-29T15:25:59.146279+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "SPARK 4 Lite",
+  "market_name_candidates": [
+    "SPARK 4 Lite",
+    "SPARK Go Plus"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "SPARK 4 Lite"
 }

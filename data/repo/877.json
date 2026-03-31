@@ -6633,5 +6633,11 @@
   },
   "extracted_at": "2026-03-29T15:22:18.150663+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Nokia C2",
+  "market_name_candidates": [
+    "Nokia C2"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Nokia C2"
 }

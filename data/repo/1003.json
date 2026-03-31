@@ -5790,5 +5790,11 @@
   },
   "extracted_at": "2026-03-29T15:22:54.364587+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Linx X1 PRO 3G LS4051MG",
+  "market_name_candidates": [
+    "Linx X1 PRO 3G LS4051MG"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Linx X1 PRO 3G LS4051MG"
 }

@@ -5702,5 +5702,16 @@
   },
   "extracted_at": "2026-03-29T15:26:27.522484+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Alpha A1",
+  "market_name_candidates": [
+    "A1",
+    "Liquid",
+    "A1_EEA",
+    "Alpha A1",
+    "iris atom",
+    "UN-MT300"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Alpha A1"
 }

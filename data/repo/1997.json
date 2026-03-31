@@ -7722,5 +7722,11 @@
   },
   "extracted_at": "2026-03-29T15:43:53.626998+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "SHARP AQUOS S3",
+  "market_name_candidates": [
+    "SHARP AQUOS S3"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "SHARP AQUOS S3"
 }

@@ -4323,5 +4323,11 @@
   },
   "extracted_at": "2026-03-29T15:24:39.217056+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Wear",
+  "market_name_candidates": [
+    "Wear"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Wear"
 }

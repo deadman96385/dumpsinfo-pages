@@ -6171,5 +6171,11 @@
   },
   "extracted_at": "2026-03-29T15:24:27.852100+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "W_K400",
+  "market_name_candidates": [
+    "W_K400"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "W_K400"
 }

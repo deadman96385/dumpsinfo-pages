@@ -6757,5 +6757,11 @@
   },
   "extracted_at": "2026-03-29T15:56:29.709215+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "U1006H",
+  "market_name_candidates": [
+    "U1006H"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "U1006H"
 }

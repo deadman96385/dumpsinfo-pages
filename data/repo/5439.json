@@ -13876,5 +13876,12 @@
   },
   "extracted_at": "2026-03-29T15:50:34.824195+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Infinix SMART 8 PRO",
+  "market_name_candidates": [
+    "Infinix SMART 8 PRO",
+    "SMRAT 8 PRO"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Infinix SMART 8 PRO"
 }

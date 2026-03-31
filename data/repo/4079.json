@@ -8108,5 +8108,11 @@
   },
   "extracted_at": "2026-03-29T15:39:24.132681+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Acer One 8 T4-82L",
+  "market_name_candidates": [
+    "Acer One 8 T4-82L"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Acer One 8 T4-82L"
 }

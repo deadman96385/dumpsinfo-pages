@@ -14944,5 +14944,11 @@
   },
   "extracted_at": "2026-03-29T15:40:44.665888+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno200"
+  "gpu_label": "adreno200",
+  "market_name": "ZTE Axon 10 Pro",
+  "market_name_candidates": [
+    "ZTE Axon 10 Pro"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "ZTE Axon 10 Pro"
 }

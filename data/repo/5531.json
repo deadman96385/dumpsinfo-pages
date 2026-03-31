@@ -5424,5 +5424,13 @@
   },
   "extracted_at": "2026-03-29T15:52:34.388700+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "G3 Beat",
+  "market_name_candidates": [
+    "G3 Beat",
+    "G3 S",
+    "G3 Vigor"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "G3 Beat"
 }

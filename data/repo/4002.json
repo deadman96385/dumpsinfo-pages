@@ -6721,5 +6721,11 @@
   },
   "extracted_at": "2026-03-29T15:38:26.942978+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "View",
+  "market_name_candidates": [
+    "View"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "View"
 }

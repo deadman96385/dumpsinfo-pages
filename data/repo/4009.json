@@ -4145,5 +4145,11 @@
   },
   "extracted_at": "2026-03-29T15:38:29.993856+00:00",
   "cpu_family": "exynos",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "WSD-F20",
+  "market_name_candidates": [
+    "WSD-F20"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "WSD-F20"
 }

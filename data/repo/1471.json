@@ -8353,5 +8353,11 @@
   },
   "extracted_at": "2026-03-29T15:25:54.099687+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Infinix HOT 9 Pro",
+  "market_name_candidates": [
+    "Infinix HOT 9 Pro"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Infinix HOT 9 Pro"
 }

@@ -4179,5 +4179,11 @@
   },
   "extracted_at": "2026-03-29T15:38:13.149089+00:00",
   "cpu_family": "allwinner",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Galaxy Tab3 7.0",
+  "market_name_candidates": [
+    "Galaxy Tab3 7.0"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Galaxy Tab3 7.0"
 }

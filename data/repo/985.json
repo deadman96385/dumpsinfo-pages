@@ -13440,5 +13440,11 @@
   },
   "extracted_at": "2026-03-29T15:23:00.800909+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Star 5",
+  "market_name_candidates": [
+    "Star 5"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Star 5"
 }

@@ -10642,7 +10642,13 @@
       "android.hardware.camera.level.full"
     ]
   },
-  "extracted_at": "2026-03-29T12:11:34.359385+00:00",
+  "extracted_at": "2026-03-31T04:49:13.874712+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "",
+  "market_name_candidates": [
+    "POCO X3 Pro"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "Xiaomi vayu"
 }

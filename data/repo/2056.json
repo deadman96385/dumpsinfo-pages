@@ -6222,5 +6222,11 @@
   },
   "extracted_at": "2026-03-29T15:46:55.619819+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Everest",
+  "market_name_candidates": [
+    "Everest"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Everest"
 }

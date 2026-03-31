@@ -13670,5 +13670,11 @@
   },
   "extracted_at": "2026-03-29T15:55:23.014370+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "iQOO 13",
+  "market_name_candidates": [
+    "iQOO 13"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "iQOO 13"
 }

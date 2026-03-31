@@ -6487,5 +6487,9 @@
   },
   "extracted_at": "2026-03-29T15:25:58.540479+00:00",
   "cpu_family": "rockchip",
-  "gpu_label": "powervr"
+  "gpu_label": "powervr",
+  "market_name": "",
+  "market_name_candidates": [],
+  "market_name_brand_aligned": false,
+  "display_name": "rockchip rk3368"
 }

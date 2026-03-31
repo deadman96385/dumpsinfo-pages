@@ -6336,5 +6336,11 @@
   },
   "extracted_at": "2026-03-29T15:49:28.089357+00:00",
   "cpu_family": "nxp",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "NW-A100",
+  "market_name_candidates": [
+    "NW-A100"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "NW-A100"
 }

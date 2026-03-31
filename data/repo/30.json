@@ -5721,5 +5721,11 @@
   },
   "extracted_at": "2026-03-29T15:20:53.385014+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Mito_A37_Z1",
+  "market_name_candidates": [
+    "Mito_A37_Z1"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Mito_A37_Z1"
 }

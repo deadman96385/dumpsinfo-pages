@@ -10500,5 +10500,12 @@
   },
   "extracted_at": "2026-03-29T15:33:58.018709+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Redmi Note 10 Pro",
+  "market_name_candidates": [
+    "Redmi Note 10 Pro",
+    "Redmi Note 10 Pro Max"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Redmi Note 10 Pro"
 }

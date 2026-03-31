@@ -6166,5 +6166,13 @@
   },
   "extracted_at": "2026-03-29T15:39:05.353800+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "G100",
+  "market_name_candidates": [
+    "GM 6 ds",
+    "G100",
+    "UMIDIGI G100"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "G100"
 }

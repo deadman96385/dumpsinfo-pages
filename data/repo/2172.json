@@ -17187,5 +17187,11 @@
   },
   "extracted_at": "2026-03-29T15:31:23.069679+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "F2",
+  "market_name_candidates": [
+    "F2"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "F2"
 }

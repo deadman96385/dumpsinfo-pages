@@ -12646,5 +12646,11 @@
   },
   "extracted_at": "2026-03-29T15:22:36.127863+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "",
+  "market_name_candidates": [
+    "OnePlus 9RT 5G"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "qti OP5155L1"
 }

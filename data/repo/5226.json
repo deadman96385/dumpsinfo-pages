@@ -11424,5 +11424,11 @@
   },
   "extracted_at": "2026-03-29T15:47:47.752091+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "ZTE A2023PG",
+  "market_name_candidates": [
+    "ZTE A2023PG"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "ZTE A2023PG"
 }

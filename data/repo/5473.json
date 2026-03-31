@@ -9698,5 +9698,11 @@
   },
   "extracted_at": "2026-03-29T15:51:16.699760+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "TicWatch Atlas;TicWatch Pro 5;TicWatch Pro 5 Enduro",
+  "market_name_candidates": [
+    "TicWatch Atlas;TicWatch Pro 5;TicWatch Pro 5 Enduro"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "TicWatch Atlas;TicWatch Pro 5;TicWatch Pro 5 Enduro"
 }

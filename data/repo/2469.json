@@ -6118,5 +6118,9 @@
   },
   "extracted_at": "2026-03-29T15:36:10.791991+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "",
+  "market_name_candidates": [],
+  "market_name_brand_aligned": false,
+  "display_name": "hp butler"
 }

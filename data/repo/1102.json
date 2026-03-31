@@ -6678,5 +6678,11 @@
   },
   "extracted_at": "2026-03-29T15:23:31.256924+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "PicassoTab_9",
+  "market_name_candidates": [
+    "PicassoTab_9"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "PicassoTab_9"
 }

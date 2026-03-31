@@ -12467,5 +12467,12 @@
   },
   "extracted_at": "2026-03-29T15:25:58.609520+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Joy 1 +",
+  "market_name_candidates": [
+    "Joy 1 +",
+    "Joy 1+"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Joy 1 +"
 }

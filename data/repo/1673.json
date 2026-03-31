@@ -6316,5 +6316,11 @@
   },
   "extracted_at": "2026-03-29T15:31:22.019282+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "LE9810",
+  "market_name_candidates": [
+    "LE9810"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "LE9810"
 }

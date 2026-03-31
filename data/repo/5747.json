@@ -12314,5 +12314,13 @@
   },
   "extracted_at": "2026-03-29T15:57:38.800070+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "T Phone 3",
+  "market_name_candidates": [
+    "T Phone 3",
+    "LYNX",
+    "Pixel 7a"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "T Phone 3"
 }

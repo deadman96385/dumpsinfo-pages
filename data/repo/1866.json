@@ -8979,5 +8979,13 @@
   },
   "extracted_at": "2026-03-29T15:38:48.710024+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "L70",
+  "market_name_candidates": [
+    "L70",
+    "L70 CDMA",
+    "Optimus Exceed 2"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "L70"
 }

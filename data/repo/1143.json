@@ -7900,5 +7900,11 @@
   },
   "extracted_at": "2026-03-29T15:23:48.618043+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "M40_EEA",
+  "market_name_candidates": [
+    "M40_EEA"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "M40_EEA"
 }

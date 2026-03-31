@@ -4027,5 +4027,12 @@
   },
   "extracted_at": "2026-03-29T15:31:37.400244+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "",
+  "market_name_candidates": [
+    "M2",
+    "MIX 2"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "Meizu m2"
 }

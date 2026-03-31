@@ -11582,5 +11582,12 @@
   },
   "extracted_at": "2026-03-29T15:58:10.642285+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "REDMI A7 Pro",
+  "market_name_candidates": [
+    "REDMI A7 Pro",
+    "ARCTIC"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "REDMI A7 Pro"
 }

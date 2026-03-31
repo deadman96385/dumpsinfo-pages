@@ -5866,5 +5866,12 @@
   },
   "extracted_at": "2026-03-29T15:32:35.527934+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Le s2",
+  "market_name_candidates": [
+    "Le 2",
+    "Le s2"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Le s2"
 }

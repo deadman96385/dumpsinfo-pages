@@ -10540,5 +10540,12 @@
   },
   "extracted_at": "2026-03-29T15:41:14.001718+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "SHARK PRS-A0",
+  "market_name_candidates": [
+    "SHARK PRS-A0",
+    "SHARK PRS-H0"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "SHARK PRS-A0"
 }

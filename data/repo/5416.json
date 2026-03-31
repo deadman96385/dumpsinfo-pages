@@ -8755,5 +8755,11 @@
   },
   "extracted_at": "2026-03-29T15:50:09.747133+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Z60 Plus",
+  "market_name_candidates": [
+    "Z60 Plus"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Z60 Plus"
 }

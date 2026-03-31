@@ -5639,5 +5639,11 @@
   },
   "extracted_at": "2026-03-29T15:26:22.107806+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "M55B",
+  "market_name_candidates": [
+    "M55B"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "M55B"
 }

@@ -8657,5 +8657,14 @@
   },
   "extracted_at": "2026-03-29T15:43:06.943129+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "HOT 10 Lite",
+  "market_name_candidates": [
+    "HOT 10 Lite",
+    "Infinix HOT 10 Lite",
+    "SMART",
+    "SMART 5(SMART 6)"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "HOT 10 Lite"
 }

@@ -18016,5 +18016,11 @@
   },
   "extracted_at": "2026-03-29T15:39:14.695531+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "BOLD N2",
+  "market_name_candidates": [
+    "BOLD N2"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "BOLD N2"
 }

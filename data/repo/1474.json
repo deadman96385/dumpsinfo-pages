@@ -5694,5 +5694,14 @@
   },
   "extracted_at": "2026-03-29T15:25:53.880728+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "M1",
+  "market_name_candidates": [
+    "M1",
+    "LG K7",
+    "LG Treasure",
+    "LG Tribute 5"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "M1"
 }

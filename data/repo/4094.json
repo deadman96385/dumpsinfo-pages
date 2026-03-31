@@ -16350,5 +16350,11 @@
   },
   "extracted_at": "2026-03-29T15:40:13.381773+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "Mali-T620"
+  "gpu_label": "Mali-T620",
+  "market_name": "Nokia C02",
+  "market_name_candidates": [
+    "Nokia C02"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Nokia C02"
 }

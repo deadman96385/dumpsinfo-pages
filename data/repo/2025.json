@@ -5798,5 +5798,11 @@
   },
   "extracted_at": "2026-03-29T15:45:02.766403+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "DIGMA LINX Joy 3G LT5048MG",
+  "market_name_candidates": [
+    "DIGMA LINX Joy 3G LT5048MG"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "DIGMA LINX Joy 3G LT5048MG"
 }

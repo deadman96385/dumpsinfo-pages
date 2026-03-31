@@ -5984,5 +5984,11 @@
   },
   "extracted_at": "2026-03-29T15:24:48.104535+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "U6A",
+  "market_name_candidates": [
+    "U6A"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "U6A"
 }

@@ -5685,5 +5685,11 @@
   },
   "extracted_at": "2026-03-29T15:23:25.353504+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "B340",
+  "market_name_candidates": [
+    "B340"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "B340"
 }

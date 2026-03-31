@@ -6045,5 +6045,11 @@
   },
   "extracted_at": "2026-03-29T15:40:22.249713+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "DIGMA LINX BASE 4G LT5052ML",
+  "market_name_candidates": [
+    "DIGMA LINX BASE 4G LT5052ML"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "DIGMA LINX BASE 4G LT5052ML"
 }

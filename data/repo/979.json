@@ -5914,5 +5914,11 @@
   },
   "extracted_at": "2026-03-29T15:22:51.949292+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Digma Plane 8580 4G PS8199ML",
+  "market_name_candidates": [
+    "Digma Plane 8580 4G PS8199ML"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Digma Plane 8580 4G PS8199ML"
 }

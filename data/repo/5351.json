@@ -8012,5 +8012,9 @@
   },
   "extracted_at": "2026-03-29T15:49:26.672303+00:00",
   "cpu_family": "rockchip",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "",
+  "market_name_candidates": [],
+  "market_name_brand_aligned": false,
+  "display_name": "Radxa RadxaCM5"
 }

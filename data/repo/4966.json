@@ -4044,5 +4044,11 @@
   },
   "extracted_at": "2026-03-29T15:45:54.058494+00:00",
   "cpu_family": "mstar",
-  "gpu_label": "unknown"
+  "gpu_label": "unknown",
+  "market_name": "MiTV",
+  "market_name_candidates": [
+    "MiTV"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "MiTV"
 }

@@ -11808,5 +11808,11 @@
   },
   "extracted_at": "2026-03-29T14:23:57.581645+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "iQOO 9T",
+  "market_name_candidates": [
+    "iQOO 9T"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "iQOO 9T"
 }

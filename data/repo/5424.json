@@ -9570,5 +9570,14 @@
   },
   "extracted_at": "2026-03-29T15:50:20.530287+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "P80",
+  "market_name_candidates": [
+    "P80",
+    "P80_EEA",
+    "P80_EUR",
+    "P80_ROW"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "P80"
 }

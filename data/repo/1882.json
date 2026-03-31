@@ -4459,5 +4459,11 @@
   },
   "extracted_at": "2026-03-29T15:39:03.006294+00:00",
   "cpu_family": "exynos",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Galaxy S3",
+  "market_name_candidates": [
+    "Galaxy S3"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Galaxy S3"
 }

@@ -5802,5 +5802,11 @@
   },
   "extracted_at": "2026-03-29T15:46:39.397285+00:00",
   "cpu_family": "rockchip",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Mediatek MT8183 Tablet",
+  "market_name_candidates": [
+    "Mediatek MT8183 Tablet"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Mediatek MT8183 Tablet"
 }

@@ -10387,5 +10387,12 @@
   },
   "extracted_at": "2026-03-29T15:57:11.209878+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Lenovo Idea Tab / Lenovo Tab K11 Gen 2",
+  "market_name_candidates": [
+    "Lenovo Idea Tab / Lenovo Tab K11 Gen 2",
+    "联想平板电脑 昭阳K11"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Lenovo Idea Tab / Lenovo Tab K11 Gen 2"
 }

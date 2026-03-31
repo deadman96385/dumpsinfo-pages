@@ -5287,5 +5287,12 @@
   },
   "extracted_at": "2026-03-29T15:21:28.385190+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "",
+  "market_name_candidates": [
+    "H910",
+    "H910-F01"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "AGM HS8939QC"
 }

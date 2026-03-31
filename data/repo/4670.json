@@ -9141,5 +9141,11 @@
   },
   "extracted_at": "2026-03-29T15:43:23.982984+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "G Pad 5 10.1 FHD",
+  "market_name_candidates": [
+    "G Pad 5 10.1 FHD"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "G Pad 5 10.1 FHD"
 }

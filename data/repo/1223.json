@@ -6010,5 +6010,11 @@
   },
   "extracted_at": "2026-03-29T15:24:19.380592+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "PRIMO NH4",
+  "market_name_candidates": [
+    "PRIMO NH4"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "PRIMO NH4"
 }

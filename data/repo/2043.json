@@ -19773,5 +19773,11 @@
   },
   "extracted_at": "2026-03-29T15:46:49.407157+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno200"
+  "gpu_label": "adreno200",
+  "market_name": "Nokia 8 Sirocco",
+  "market_name_candidates": [
+    "Nokia 8 Sirocco"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Nokia 8 Sirocco"
 }

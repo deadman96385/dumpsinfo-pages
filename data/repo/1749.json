@@ -4267,5 +4267,11 @@
   },
   "extracted_at": "2026-03-29T15:34:49.626805+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "XR6M10",
+  "market_name_candidates": [
+    "XR6M10"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "XR6M10"
 }

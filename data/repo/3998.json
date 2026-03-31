@@ -5612,5 +5612,12 @@
   },
   "extracted_at": "2026-03-29T15:38:39.309705+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "LT10",
+  "market_name_candidates": [
+    "LT10",
+    "ALCATEL 1T 10"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "LT10"
 }

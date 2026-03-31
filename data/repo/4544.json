@@ -16772,5 +16772,11 @@
   },
   "extracted_at": "2026-03-29T15:42:17.205052+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Nokia G400 5G",
+  "market_name_candidates": [
+    "Nokia G400 5G"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Nokia G400 5G"
 }

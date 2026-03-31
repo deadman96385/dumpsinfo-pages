@@ -54,6 +54,7 @@
     renderStats();
     renderFilters();
     syncFilterPanelForViewport();
+    syncFilterGroupsForViewport();
 
     // Load all shards (they're small enough)
     await loadAllShards();
@@ -75,12 +76,15 @@
     }
     if (mobileFiltersMedia.addEventListener) {
       mobileFiltersMedia.addEventListener("change", syncFilterPanelForViewport);
+      mobileFiltersMedia.addEventListener("change", syncFilterGroupsForViewport);
     } else if (mobileFiltersMedia.addListener) {
       mobileFiltersMedia.addListener(syncFilterPanelForViewport);
+      mobileFiltersMedia.addListener(syncFilterGroupsForViewport);
     }
     document
       .querySelectorAll("#filter-release input, #filter-cpu input, #filter-platform input, #filter-gpu input, #filter-size input")
       .forEach((el) => el.addEventListener("change", doSearch));
+    $results.addEventListener("click", handleResultClick);
 
     doSearch();
   }
@@ -299,28 +303,30 @@
         : rec.gpu_family;
       const tags = [];
       if (cpuFamily !== UNKNOWN_VALUE)
-        tags.push(`<span class="tag cpu">${esc(cpuFamily)}</span>`);
+        tags.push(renderFilterTag("cpu", cpuFamily, cpuFamily, "cpu"));
       if (rec.platform_norm && normalizeFacetValue(rec.platform_norm) !== cpuFamily)
-        tags.push(`<span class="tag">${esc(rec.platform_norm)}</span>`);
+        tags.push(renderFilterTag("platform", rec.platform_norm, rec.platform_norm));
       if (gpuLabel && normalizeFacetValue(gpuLabel) !== UNKNOWN_VALUE)
-        tags.push(`<span class="tag gpu">${esc(gpuLabel)}</span>`);
-      if (rec.is_ab) tags.push('<span class="tag partition">A/B</span>');
-      else tags.push('<span class="tag partition">A-only</span>');
+        tags.push(renderFilterTag("gpu", gpuLabel, gpuLabel, "gpu"));
+      if (rec.is_ab) tags.push(renderFilterTag("ab", "true", "A/B", "partition"));
+      else tags.push(renderFilterTag("ab", "false", "A-only", "partition"));
       if (release !== UNKNOWN_VALUE)
-        tags.push(`<span class="tag android">Android ${esc(release)}</span>`);
+        tags.push(renderFilterTag("release", release, `Android ${release}`, "android"));
       if (rec.size_human)
-        tags.push(`<span class="tag">${esc(rec.size_human)}</span>`);
+        tags.push(renderFilterTag("size", rec.size_bucket || rec.size_human, rec.size_human));
 
       html += `
-        <a href="repo.html?id=${rec.repo_id}" class="card">
+        <article class="card">
+          <a href="repo.html?id=${rec.repo_id}" class="card-link">
           <div class="card-header">
-            <span class="card-title">${esc(rec.brand || rec.path_brand)} ${esc(rec.codename || rec.path_device)}</span>
+            <span class="card-title">${esc(rec.display_name || `${rec.brand || rec.path_brand} ${rec.codename || rec.path_device}`)}</span>
             <span class="card-path">${esc(rec.path_brand)}/${esc(rec.path_device)}</span>
           </div>
           ${rec.branch_count > 1 ? `<div class="card-meta"><span>${rec.branch_count} branches</span></div>` : ""}
           ${fp ? `<div class="card-fp">${fp}</div>` : ""}
+          </a>
           <div class="card-tags">${tags.join("")}</div>
-        </a>`;
+        </article>`;
     }
     $results.innerHTML = html;
 
@@ -489,6 +495,21 @@
     syncFilterToggleState();
   }
 
+  function syncFilterGroupsForViewport() {
+    if (!$filtersPanel) return;
+    $filtersPanel.querySelectorAll("details.filter-group--section").forEach((group) => {
+      if (!Object.prototype.hasOwnProperty.call(group.dataset, "desktopOpen")) {
+        group.dataset.desktopOpen = group.hasAttribute("open") ? "true" : "false";
+      }
+      if (mobileFiltersMedia.matches) {
+        const mobileDefault = group.dataset.mobileDefaultOpen;
+        group.open = mobileDefault == null ? group.dataset.desktopOpen === "true" : mobileDefault === "true";
+      } else {
+        group.open = group.dataset.desktopOpen === "true";
+      }
+    });
+  }
+
   function syncFilterToggleState() {
     if (!$filterToggle || !$filtersPanel) return;
     const expanded = !mobileFiltersMedia.matches || $filtersPanel.classList.contains("is-open");
@@ -525,6 +546,63 @@
     return sorted
       .map(([value, count]) => `<label><input type="checkbox" value="${esc(normalizeFacetValue(value))}"> ${esc(formatter(value))} <span class="filter-count">${count}</span></label>`)
       .join("");
+  }
+
+  function renderFilterTag(type, value, label, extraClass = "") {
+    return `<button class="tag${extraClass ? ` ${esc(extraClass)}` : ""}" type="button" data-filter-type="${esc(type)}" data-filter-value="${esc(normalizeTagValue(type, value))}">${esc(label)}</button>`;
+  }
+
+  function handleResultClick(event) {
+    const tag = event.target.closest(".tag[data-filter-type]");
+    if (!tag || !$results.contains(tag)) return;
+    event.preventDefault();
+    event.stopPropagation();
+    applyTagFilter(tag.dataset.filterType || "", tag.dataset.filterValue || "");
+  }
+
+  function applyTagFilter(type, value) {
+    switch (type) {
+      case "cpu":
+        setCheckboxFilter("#filter-cpu", value);
+        break;
+      case "platform":
+        setCheckboxFilter("#filter-platform", value);
+        break;
+      case "gpu":
+        setCheckboxFilter("#filter-gpu", value);
+        break;
+      case "release":
+        setCheckboxFilter("#filter-release", value);
+        break;
+      case "size":
+        setCheckboxFilter("#filter-size", value);
+        break;
+      case "ab":
+        if ($filterAB) $filterAB.value = value;
+        break;
+      default:
+        return;
+    }
+    currentPage = 1;
+    doSearch();
+  }
+
+  function setCheckboxFilter(rootSelector, value) {
+    const input = document.querySelector(`${rootSelector} input[value="${cssEscape(value)}"]`);
+    if (input) input.checked = true;
+  }
+
+  function normalizeTagValue(type, value) {
+    if (type === "release") return normalizeRelease(value);
+    if (type === "ab") return String(value || "");
+    return normalizeFacetValue(value);
+  }
+
+  function cssEscape(value) {
+    if (window.CSS && typeof window.CSS.escape === "function") {
+      return window.CSS.escape(value);
+    }
+    return String(value).replace(/["\\]/g, "\\$&");
   }
 
   function normalizeFacetValue(value) {

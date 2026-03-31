@@ -7102,5 +7102,11 @@
   },
   "extracted_at": "2026-03-29T16:00:05.210007+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "U304AA",
+  "market_name_candidates": [
+    "U304AA"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "U304AA"
 }

@@ -5541,5 +5541,11 @@
   },
   "extracted_at": "2026-03-29T15:23:59.407752+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Forge TV",
+  "market_name_candidates": [
+    "Forge TV"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Forge TV"
 }

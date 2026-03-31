@@ -10778,5 +10778,13 @@
   },
   "extracted_at": "2026-03-29T15:36:04.386130+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "拯救者电竞手机2 Pro",
+  "market_name_candidates": [
+    "拯救者电竞手机2 Pro",
+    "拯救者电竞手机2Pro",
+    "拯救者电竞手机二代"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "拯救者电竞手机2 Pro"
 }

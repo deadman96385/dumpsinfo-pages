@@ -7328,5 +7328,11 @@
   },
   "extracted_at": "2026-03-29T15:25:09.318767+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "F10 Plus",
+  "market_name_candidates": [
+    "F10 Plus"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "F10 Plus"
 }

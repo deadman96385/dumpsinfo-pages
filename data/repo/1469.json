@@ -6358,5 +6358,11 @@
   },
   "extracted_at": "2026-03-29T15:25:51.584022+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "G55_LITE",
+  "market_name_candidates": [
+    "G55_LITE"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "G55_LITE"
 }

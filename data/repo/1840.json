@@ -5578,5 +5578,11 @@
   },
   "extracted_at": "2026-03-29T15:37:42.769103+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "K9_Smart_Plus",
+  "market_name_candidates": [
+    "K9_Smart_Plus"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "K9_Smart_Plus"
 }

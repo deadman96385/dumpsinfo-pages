@@ -3771,5 +3771,11 @@
   },
   "extracted_at": "2026-03-29T15:46:13.386046+00:00",
   "cpu_family": "nvidia",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Nexus 7 (2012)",
+  "market_name_candidates": [
+    "Nexus 7 (2012)"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Nexus 7 (2012)"
 }

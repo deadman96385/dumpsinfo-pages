@@ -5048,5 +5048,14 @@
   },
   "extracted_at": "2026-03-29T15:49:09.397152+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "LG Lucid 3",
+  "market_name_candidates": [
+    "X5",
+    "LG Lucid 3",
+    "LG Volt",
+    "LG-AS876"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "LG Lucid 3"
 }

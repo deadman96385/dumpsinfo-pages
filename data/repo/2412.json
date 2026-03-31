@@ -10389,5 +10389,12 @@
   },
   "extracted_at": "2026-03-29T15:33:46.344964+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Redmi 11 Prime",
+  "market_name_candidates": [
+    "POCO M5",
+    "Redmi 11 Prime"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Redmi 11 Prime"
 }

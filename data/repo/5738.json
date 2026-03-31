@@ -13648,5 +13648,12 @@
   },
   "extracted_at": "2026-03-29T15:57:13.935182+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "realme 14 5G",
+  "market_name_candidates": [
+    "realme 14 5G",
+    "realme P3 5G"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "realme 14 5G"
 }

@@ -6152,5 +6152,15 @@
   },
   "extracted_at": "2026-03-29T15:31:29.345201+00:00",
   "cpu_family": "mstar",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "EU",
+  "market_name_candidates": [
+    "Blaupunkt",
+    "Bush",
+    "polaroid",
+    "EU",
+    "Sharp"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "EU"
 }

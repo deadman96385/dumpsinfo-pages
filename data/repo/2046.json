@@ -7989,5 +7989,12 @@
   },
   "extracted_at": "2026-03-29T15:46:11.826873+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "A7S",
+  "market_name_candidates": [
+    "A7S",
+    "A7S EEA"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "A7S"
 }

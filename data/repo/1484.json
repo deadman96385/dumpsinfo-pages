@@ -4476,5 +4476,11 @@
   },
   "extracted_at": "2026-03-29T15:25:53.893848+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Moto E (1st Gen)",
+  "market_name_candidates": [
+    "Moto E (1st Gen)"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Moto E (1st Gen)"
 }

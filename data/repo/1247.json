@@ -6327,5 +6327,12 @@
   },
   "extracted_at": "2026-03-29T15:24:25.273083+00:00",
   "cpu_family": "virtual",
-  "gpu_label": "swiftshader"
+  "gpu_label": "swiftshader",
+  "market_name": "Polestar Emu",
+  "market_name_candidates": [
+    "Polestar Emu",
+    "Volvo XC40 Emulator"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Polestar Emu"
 }

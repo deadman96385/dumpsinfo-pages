@@ -40486,5 +40486,11 @@
   },
   "extracted_at": "2026-03-29T15:42:32.724870+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Fairphone 5 5G",
+  "market_name_candidates": [
+    "Fairphone 5 5G"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Fairphone 5 5G"
 }

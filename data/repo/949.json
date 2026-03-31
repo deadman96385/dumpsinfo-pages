@@ -14776,5 +14776,11 @@
   },
   "extracted_at": "2026-03-29T15:22:50.351427+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno200"
+  "gpu_label": "adreno200",
+  "market_name": "Black Shark 2",
+  "market_name_candidates": [
+    "Black Shark 2"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Black Shark 2"
 }

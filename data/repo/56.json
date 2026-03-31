@@ -13568,5 +13568,11 @@
   },
   "extracted_at": "2026-03-29T15:21:11.908143+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Fxtec QX1000",
+  "market_name_candidates": [
+    "Fxtec QX1000"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Fxtec QX1000"
 }

@@ -11219,5 +11219,11 @@
   },
   "extracted_at": "2026-03-29T15:43:09.998862+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "CPH2325",
+  "market_name_candidates": [
+    "CPH2325"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "CPH2325"
 }

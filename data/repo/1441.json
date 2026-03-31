@@ -22712,5 +22712,12 @@
   },
   "extracted_at": "2026-03-29T15:26:01.311757+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno200"
+  "gpu_label": "adreno200",
+  "market_name": "G8X ThinQ",
+  "market_name_candidates": [
+    "G8X ThinQ",
+    "V50S ThinQ"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "G8X ThinQ"
 }

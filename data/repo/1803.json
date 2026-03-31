@@ -4072,5 +4072,15 @@
   },
   "extracted_at": "2026-03-29T15:36:29.494582+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "",
+  "market_name_candidates": [
+    "Liquid S3",
+    "Liquid X1",
+    "S3",
+    "Emporia SMART 3",
+    "S3_ROW"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "O1 S3"
 }

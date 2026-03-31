@@ -10720,5 +10720,11 @@
   },
   "extracted_at": "2026-03-29T15:34:58.412647+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "",
+  "market_name_candidates": [
+    "NX709J"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "nubia NX709J"
 }

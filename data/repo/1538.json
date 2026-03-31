@@ -6356,5 +6356,11 @@
   },
   "extracted_at": "2026-03-29T15:26:19.488652+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Aquaris V Plus",
+  "market_name_candidates": [
+    "Aquaris V Plus"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Aquaris V Plus"
 }

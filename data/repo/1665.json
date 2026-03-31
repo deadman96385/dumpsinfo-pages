@@ -6714,5 +6714,12 @@
   },
   "extracted_at": "2026-03-29T15:30:50.867646+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Ulefone_S11",
+  "market_name_candidates": [
+    "Ulefone_S11",
+    "Ulfone_S11"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Ulefone_S11"
 }

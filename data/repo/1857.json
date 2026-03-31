@@ -7147,5 +7147,11 @@
   },
   "extracted_at": "2026-03-29T15:38:20.403508+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Pouvoir 3 Air",
+  "market_name_candidates": [
+    "Pouvoir 3 Air"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Pouvoir 3 Air"
 }

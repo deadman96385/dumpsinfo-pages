@@ -14574,5 +14574,11 @@
   },
   "extracted_at": "2026-03-29T15:35:53.414313+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno200"
+  "gpu_label": "adreno200",
+  "market_name": "Nokia 7.1",
+  "market_name_candidates": [
+    "Nokia 7.1"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Nokia 7.1"
 }

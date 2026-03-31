@@ -4060,5 +4060,12 @@
   },
   "extracted_at": "2026-03-29T15:45:35.136154+00:00",
   "cpu_family": "amlogic",
-  "gpu_label": "unknown"
+  "gpu_label": "unknown",
+  "market_name": "Formovie Laser TV 4K Cinema",
+  "market_name_candidates": [
+    "Formovie Laser TV 4K Cinema",
+    "Mi Laser Projector 4K"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Formovie Laser TV 4K Cinema"
 }

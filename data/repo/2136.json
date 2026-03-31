@@ -7078,5 +7078,14 @@
   },
   "extracted_at": "2026-03-29T15:50:49.436174+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "T30_EEA",
+  "market_name_candidates": [
+    "T30",
+    "T30_EEA",
+    "T30_ROW",
+    "T30_RU"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "T30_EEA"
 }

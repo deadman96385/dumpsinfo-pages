@@ -6940,5 +6940,11 @@
   },
   "extracted_at": "2026-03-29T15:24:56.489465+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "G5",
+  "market_name_candidates": [
+    "G5"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "G5"
 }

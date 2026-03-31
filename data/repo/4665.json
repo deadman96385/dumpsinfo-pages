@@ -8205,5 +8205,13 @@
   },
   "extracted_at": "2026-03-29T15:43:17.758430+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Note 15",
+  "market_name_candidates": [
+    "Note 15",
+    "Note 15 EEA",
+    "Note15"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Note 15"
 }

@@ -13150,5 +13150,11 @@
   },
   "extracted_at": "2026-03-29T15:48:29.338919+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Phone 2",
+  "market_name_candidates": [
+    "Phone 2"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Phone 2"
 }

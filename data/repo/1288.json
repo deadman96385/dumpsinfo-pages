@@ -17853,5 +17853,11 @@
   },
   "extracted_at": "2026-03-29T15:24:54.854976+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Atom_L",
+  "market_name_candidates": [
+    "Atom_L"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Atom_L"
 }

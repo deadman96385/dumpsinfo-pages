@@ -9631,5 +9631,13 @@
   },
   "extracted_at": "2026-03-29T15:42:42.070605+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Raptor LTD",
+  "market_name_candidates": [
+    "Raptor LTD",
+    "X6 Pro",
+    "RAPTOR"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Raptor LTD"
 }

@@ -9867,5 +9867,11 @@
   },
   "extracted_at": "2026-03-29T15:50:01.131360+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "TECNO SPARK 20",
+  "market_name_candidates": [
+    "TECNO SPARK 20"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "TECNO SPARK 20"
 }

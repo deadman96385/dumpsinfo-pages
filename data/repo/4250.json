@@ -9389,5 +9389,16 @@
   },
   "extracted_at": "2026-03-29T15:40:40.008282+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Luna",
+  "market_name_candidates": [
+    "Luna",
+    "Pixel watch 3",
+    "TE082M2",
+    "TCL TAB 8",
+    "TCL TAB 8 V",
+    "TCL TAB 8 Wi-Fi"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Luna"
 }

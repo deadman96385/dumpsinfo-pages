@@ -5625,5 +5625,11 @@
   },
   "extracted_at": "2026-03-29T15:49:15.495487+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "LG Smart Folder",
+  "market_name_candidates": [
+    "LG Smart Folder"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "LG Smart Folder"
 }

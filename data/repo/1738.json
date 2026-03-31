@@ -16832,5 +16832,11 @@
   },
   "extracted_at": "2026-03-29T15:35:47.566692+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "LG G8 ThinQ™",
+  "market_name_candidates": [
+    "LG G8 ThinQ™"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "LG G8 ThinQ™"
 }

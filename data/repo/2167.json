@@ -13070,5 +13070,11 @@
   },
   "extracted_at": "2026-03-29T15:31:12.118476+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Nokia 3.1 Plus",
+  "market_name_candidates": [
+    "Nokia 3.1 Plus"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Nokia 3.1 Plus"
 }

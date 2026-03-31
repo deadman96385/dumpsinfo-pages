@@ -9944,5 +9944,12 @@
   },
   "extracted_at": "2026-03-29T15:42:54.811444+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "FZ-N1",
+  "market_name_candidates": [
+    "FZ-N1",
+    "FZ-N1EVF"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "FZ-N1"
 }

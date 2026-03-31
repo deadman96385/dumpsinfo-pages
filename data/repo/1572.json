@@ -10159,5 +10159,12 @@
   },
   "extracted_at": "2026-03-29T15:26:46.463354+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "",
+  "market_name_candidates": [
+    "TCL 303",
+    "Alcatel 1B"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "iQOO kona"
 }

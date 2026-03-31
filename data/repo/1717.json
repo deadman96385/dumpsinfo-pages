@@ -7797,5 +7797,12 @@
   },
   "extracted_at": "2026-03-29T15:33:10.157961+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "XP8",
+  "market_name_candidates": [
+    "KWSA80K",
+    "XP8"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "XP8"
 }

@@ -22648,5 +22648,9 @@
   },
   "extracted_at": "2026-03-29T15:25:55.054962+00:00",
   "cpu_family": "hisilicon",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "",
+  "market_name_candidates": [],
+  "market_name_brand_aligned": false,
+  "display_name": "kirin980 kirin980"
 }

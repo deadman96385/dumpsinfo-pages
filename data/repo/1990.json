@@ -19408,5 +19408,11 @@
   },
   "extracted_at": "2026-03-29T15:44:49.997800+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno200"
+  "gpu_label": "adreno200",
+  "market_name": "Nokia 6.1 Plus",
+  "market_name_candidates": [
+    "Nokia 6.1 Plus"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Nokia 6.1 Plus"
 }

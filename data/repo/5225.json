@@ -9597,5 +9597,11 @@
   },
   "extracted_at": "2026-03-29T15:48:04.273623+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "V30Pro",
+  "market_name_candidates": [
+    "V30Pro"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "V30Pro"
 }

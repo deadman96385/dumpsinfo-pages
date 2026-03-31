@@ -6000,5 +6000,11 @@
   },
   "extracted_at": "2026-03-29T15:25:12.508095+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "W-K200",
+  "market_name_candidates": [
+    "W-K200"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "W-K200"
 }

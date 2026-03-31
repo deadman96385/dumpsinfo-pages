@@ -5345,5 +5345,17 @@
   },
   "extracted_at": "2026-03-29T15:24:59.683208+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "L-01F",
+  "market_name_candidates": [
+    "10or_G2",
+    "G2",
+    "Touch-Screen-Monitor",
+    "L-01F",
+    "LG G2",
+    "LGL22",
+    "G2-EEA"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "L-01F"
 }

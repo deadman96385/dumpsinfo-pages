@@ -13150,5 +13150,11 @@
   },
   "extracted_at": "2026-03-29T15:23:58.874914+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "U705AC",
+  "market_name_candidates": [
+    "U705AC"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "U705AC"
 }

@@ -23129,5 +23129,11 @@
   },
   "extracted_at": "2026-03-29T15:22:00.466978+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Nokia G10",
+  "market_name_candidates": [
+    "Nokia G10"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Nokia G10"
 }

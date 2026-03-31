@@ -7628,5 +7628,13 @@
   },
   "extracted_at": "2026-03-29T15:44:49.072281+00:00",
   "cpu_family": "mstar",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "",
+  "market_name_candidates": [
+    "L-EMENT TAB 1040",
+    "L-EMENT_TAB1040_BT",
+    "L-IXIR TAB 1041"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "Xming generic"
 }

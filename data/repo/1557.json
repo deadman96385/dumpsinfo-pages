@@ -6355,5 +6355,11 @@
   },
   "extracted_at": "2026-03-29T15:26:30.203425+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "AS0618",
+  "market_name_candidates": [
+    "AS0618"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "AS0618"
 }

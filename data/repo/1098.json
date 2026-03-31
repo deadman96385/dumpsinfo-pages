@@ -5527,5 +5527,11 @@
   },
   "extracted_at": "2026-03-29T15:23:28.394071+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Optima_8027_3G",
+  "market_name_candidates": [
+    "Optima_8027_3G"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Optima_8027_3G"
 }

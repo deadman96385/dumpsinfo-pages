@@ -9231,5 +9231,14 @@
   },
   "extracted_at": "2026-03-29T15:30:30.866937+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "BISON Pro",
+  "market_name_candidates": [
+    "BISON Pro",
+    "BISON Pro EEA",
+    "BISON_Pro_RU",
+    "BISON_Pro_TR"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "BISON Pro"
 }

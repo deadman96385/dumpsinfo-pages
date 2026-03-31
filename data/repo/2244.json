@@ -18406,5 +18406,22 @@
   },
   "extracted_at": "2026-03-29T15:32:01.126628+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "fushan_2",
+  "market_name_candidates": [
+    "fushan_akino",
+    "fushan_BGH",
+    "fushan_Guard",
+    "fushan_2",
+    "fushan_em",
+    "fushan_emeu",
+    "fushan_sa",
+    "fushan_panavox",
+    "Riviera",
+    "fushan_Toshiba",
+    "fushan_euT",
+    "fushan_vu"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "fushan_2"
 }

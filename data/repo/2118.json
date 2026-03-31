@@ -7962,5 +7962,11 @@
   },
   "extracted_at": "2026-03-29T15:49:59.401902+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "Mali-T860"
+  "gpu_label": "Mali-T860",
+  "market_name": "Nokia C1 Plus",
+  "market_name_candidates": [
+    "Nokia C1 Plus"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Nokia C1 Plus"
 }

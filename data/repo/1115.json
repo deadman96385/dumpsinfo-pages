@@ -2860,5 +2860,11 @@
   },
   "extracted_at": "2026-03-29T15:23:32.088276+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Desire SV",
+  "market_name_candidates": [
+    "Desire SV"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Desire SV"
 }

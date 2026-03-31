@@ -6536,5 +6536,11 @@
   },
   "extracted_at": "2026-03-29T15:49:05.920549+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Nokia 6",
+  "market_name_candidates": [
+    "Nokia 6"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Nokia 6"
 }

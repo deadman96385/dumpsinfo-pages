@@ -9640,5 +9640,11 @@
   },
   "extracted_at": "2026-03-29T15:47:38.359461+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "TANK MINI 1",
+  "market_name_candidates": [
+    "TANK MINI 1"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "TANK MINI 1"
 }

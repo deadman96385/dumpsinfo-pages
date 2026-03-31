@@ -7131,5 +7131,19 @@
   },
   "extracted_at": "2026-03-29T15:50:47.516008+00:00",
   "cpu_family": "realtek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "BeyondTV4",
+  "market_name_candidates": [
+    "BeyondTV4",
+    "BeyondTV6",
+    "BeyondTV7",
+    "C03_4K_NA",
+    "G03_4K_GB",
+    "G03_4K_GB_NF",
+    "G03_4K_US",
+    "G03_4K_US_NF",
+    "G03_4K_US_NF_DB"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "BeyondTV4"
 }

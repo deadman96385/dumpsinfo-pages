@@ -6223,5 +6223,9 @@
   },
   "extracted_at": "2026-03-29T15:43:22.033779+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "swiftshader"
+  "gpu_label": "swiftshader",
+  "market_name": "",
+  "market_name_candidates": [],
+  "market_name_brand_aligned": false,
+  "display_name": "oculus starlet"
 }

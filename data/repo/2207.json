@@ -8789,5 +8789,11 @@
   },
   "extracted_at": "2026-03-29T15:31:30.128216+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "C330",
+  "market_name_candidates": [
+    "C330"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "C330"
 }

@@ -17498,5 +17498,13 @@
   },
   "extracted_at": "2026-03-29T15:34:01.469522+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Xiaomi 12S Ultra",
+  "market_name_candidates": [
+    "Style Folder",
+    "THOR",
+    "Xiaomi 12S Ultra"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Xiaomi 12S Ultra"
 }

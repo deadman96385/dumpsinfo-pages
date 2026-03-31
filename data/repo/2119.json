@@ -9953,5 +9953,13 @@
   },
   "extracted_at": "2026-03-29T15:50:33.977727+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "",
+  "market_name_candidates": [
+    "ATVIO",
+    "ONN",
+    "ViewPad_M7_2_32"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "ONN mid7015_mk_32"
 }

@@ -8063,5 +8063,11 @@
   },
   "extracted_at": "2026-03-29T15:21:49.440209+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "A80Pro",
+  "market_name_candidates": [
+    "A80Pro"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "A80Pro"
 }

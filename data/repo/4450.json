@@ -9945,5 +9945,11 @@
   },
   "extracted_at": "2026-03-29T15:41:47.524900+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "BOOX",
+  "market_name_candidates": [
+    "BOOX"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "BOOX"
 }

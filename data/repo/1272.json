@@ -21468,5 +21468,11 @@
   },
   "extracted_at": "2026-03-29T15:25:01.551354+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "ZTE Axon 30 Pro 5G",
+  "market_name_candidates": [
+    "ZTE Axon 30 Pro 5G"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "ZTE Axon 30 Pro 5G"
 }

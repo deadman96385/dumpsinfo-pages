@@ -4630,5 +4630,11 @@
   },
   "extracted_at": "2026-03-29T15:32:31.194569+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "INTEX Aqua Selfie",
+  "market_name_candidates": [
+    "INTEX Aqua Selfie"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "INTEX Aqua Selfie"
 }

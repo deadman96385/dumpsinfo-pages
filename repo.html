@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="container">
-      <h1><a href="index.html" style="color:inherit">AndroidDumps</a> <span>Search</span></h1>
+      <h1><a href="index.html" style="color:inherit">AndroidDumps <span>Search</span></a></h1>
     </div>
   </header>
 
@@ -49,24 +49,30 @@
       currentRecord = rec;
       const primary = rec.branch_summaries.find((b) => b.is_default) || rec.branch_summaries[0];
       state.activeBranch = state.activeBranch || primary.branch;
-      document.title = `${rec.brand || rec.path_brand} ${rec.codename || rec.path_device} - AndroidDumps`;
+      const displayName = rec.display_name || `${rec.brand || rec.path_brand} ${rec.codename || rec.path_device}`;
 
       let html = `
         <a href="index.html" class="back-link">&larr; Back to search</a>
-        <h2>${esc(rec.brand || rec.path_brand)} ${esc(rec.codename || rec.path_device)}</h2>
-        <div class="subtitle">${esc(rec.path_brand)}/${esc(rec.path_device)}</div>
-        <div class="meta-grid">
-          ${metaCard("Brand", rec.brand)}
-          ${metaCard("Codename", rec.codename)}
-          ${metaCard("Manufacturer", rec.manufacturer)}
-          ${metaCard("Platform Families", rec.platform_families_seen)}
-          ${metaCard("Android Versions", listOrValue(rec.android_versions, primary.release))}
-          ${metaCard("SDK Versions", listOrValue(rec.sdk_versions, rec.sdk_version))}
-          ${metaCard("Platforms", listOrValue(rec.platforms_seen, primary.platform_norm))}
-          ${metaCard("Default Branch", rec.default_branch || "N/A")}
-          ${metaCard("Size", humanSize(rec.repo_size_bytes || 0))}
-          ${metaCard("A/B Partition", primary.is_ab ? "Yes" : "No")}
+        <div class="detail-header">
+          <div class="detail-header-copy">
+            <h2>${esc(displayName)}</h2>
+            <div class="subtitle">${esc(rec.path_brand)}/${esc(rec.path_device)}</div>
+          </div>
+          <a class="button-link" id="download-json" href="#" download>Download Raw JSON</a>
         </div>
+        <div class="meta-grid">
+          ${metaCard("Brand", rec.brand, { size: "compact" })}
+          ${metaCard("Codename", rec.codename, { size: "compact" })}
+          ${metaCard("Manufacturer", rec.manufacturer, { size: "compact" })}
+          ${rec.market_name ? metaCard("Market Name", rec.market_name, { size: "compact" }) : ""}
+          ${metaCard("Platform Families", rec.platform_families_seen, { size: "standard" })}
+          ${metaCard("Android Versions", listOrValue(rec.android_versions, primary.release), { size: "compact" })}
+          ${metaCard("SDK Versions", listOrValue(rec.sdk_versions, rec.sdk_version), { size: "compact" })}
+          ${metaCard("Platforms", listOrValue(rec.platforms_seen, primary.platform_norm), { size: "standard" })}
+          ${metaCard("Size", humanSize(rec.repo_size_bytes || 0), { size: "compact" })}
+          ${metaCard("A/B Partition", primary.is_ab ? "Yes" : "No", { size: "compact" })}
+        </div>
+        ${renderMarketNameCandidates(rec)}
         <div class="meta-grid">
           ${metaCardMono("Fingerprint", primary.fingerprint, true)}
           ${metaCardMono("Public Clone URL", rec.clone_url, true)}
@@ -74,6 +80,7 @@
         </div>
       `;
 
+      document.title = `${displayName} - AndroidDumps`;
       html += renderTopSections(rec);
       html += renderTimelineSummary(rec.timeline_summary || {});
       html += renderVariantDeltas(rec.variant_delta_summary || {});
@@ -81,6 +88,7 @@
       html += '<div id="branch-panel"></div>';
 
       $detail.innerHTML = html;
+      bindDownloadButton();
       renderActiveBranchPanel();
       bindBranchSelector();
     }
@@ -96,6 +104,21 @@
           ["Partitioning", summarizeFlags(rec.partitioning_flags || {})],
         ]),
       ].join("");
+    }
+
+    function renderMarketNameCandidates(rec) {
+      const selected = String(rec.market_name || "").trim().toLowerCase();
+      const candidates = uniqueList((rec.market_name_candidates || []).filter((value) => {
+        const text = String(value || "").trim();
+        return text && text.toLowerCase() !== selected;
+      }));
+      if (!candidates.length) return "";
+      return `
+        <div class="meta-card meta-card--summary meta-card--full">
+          <h4>Alternate Market Names</h4>
+          <div class="chip-list">${candidates.map((value) => `<span class="chip">${esc(String(value))}</span>`).join("")}</div>
+        </div>
+      `;
     }
 
     function renderSection(title, items) {
@@ -115,7 +138,7 @@
       return `
         <h3 style="margin:1.5rem 0 .5rem">${esc(title)}</h3>
         <div class="meta-grid meta-grid--dense">
-          ${entries.map(([label, value]) => metaCard(humanizeKey(label), value)).join("")}
+          ${entries.map(([label, value]) => metaCard(humanizeKey(label), value, { size: "standard" })).join("")}
         </div>
       `;
     }
@@ -201,6 +224,17 @@
       if (select) select.value = state.activeBranch;
     }
 
+    function bindDownloadButton() {
+      const button = document.getElementById("download-json");
+      if (!button || !currentRecord) return;
+      const brand = slugify(currentRecord.brand || currentRecord.path_brand || "device");
+      const codename = slugify(currentRecord.codename || currentRecord.path_device || repoId || "record");
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        downloadJson(`${brand}-${codename}-${repoId}.json`, currentRecord);
+      });
+    }
+
     function renderBranchCard(branch) {
       const branchMeta = [
         branch.release ? `Android ${branch.release}` : "",
@@ -218,11 +252,11 @@
             <span style="font-weight:400;color:var(--fg3)">${esc(branchMeta)}</span>
           </h4>
           <div class="meta-grid meta-grid--dense">
-            ${metaCard("Description", branch.description)}
-            ${metaCard("Build ID", branch.build_id)}
-            ${metaCard("Incremental", branch.incremental)}
-            ${metaCard("Flavor", branch.flavor)}
-            ${metaCard("Tags", branch.tags)}
+            ${metaCard("Description", branch.description, { size: "wide" })}
+            ${metaCard("Build ID", branch.build_id, { size: "compact" })}
+            ${metaCard("Incremental", branch.incremental, { size: "compact" })}
+            ${metaCard("Flavor", branch.flavor, { size: "compact" })}
+            ${metaCard("Tags", branch.tags, { size: "standard" })}
             ${metaCardMono("Fingerprint", branch.fingerprint)}
           </div>
           ${renderSection("Research Signals", [
@@ -317,7 +351,7 @@
       if (!topCards.length && !buildDateRows.length) return "";
       return `
         <h3 style="margin:1.5rem 0 .5rem">Variants & Timeline</h3>
-        ${topCards.length ? `<div class="meta-grid meta-grid--dense">${topCards.map(([label, value]) => metaCard(label, value)).join("")}</div>` : ""}
+          ${topCards.length ? `<div class="meta-grid meta-grid--dense">${topCards.map(([label, value]) => metaCard(label, value, { size: "compact" })).join("")}</div>` : ""}
         ${buildDateRows.length ? renderExpandableTable("Partition Build Dates", buildDateRows, { collapsed: buildDateRows.length > 8 }) : ""}
       `;
     }
@@ -546,21 +580,24 @@
       })), { collapsed: !opts || opts.collapsed !== false });
     }
 
-    function metaCard(label, value) {
-      const classes = ["meta-card", "meta-card--summary"];
-      if (isLargeValue(value)) classes.push("meta-card--wide", "meta-card--expandable");
-      return `<div class="${classes.join(" ")}"><h4>${esc(label)}</h4>${renderValueBlock(value)}</div>`;
+    function metaCard(label, value, opts) {
+      const options = opts || {};
+      const classes = ["meta-card", "meta-card--summary", classifyMetaCard(value, options)];
+      if (isLargeValue(value) || options.size === "wide" || options.size === "full") {
+        classes.push("meta-card--expandable");
+      }
+      return `<div class="${classes.join(" ")}"><h4>${esc(label)}</h4>${renderValueBlock(value, options)}</div>`;
     }
 
     function metaCardMono(label, value, copyable) {
       const val = value || "N/A";
       const safe = String(value || "").replace(/\\/g, "\\\\").replace(/'/g, "\\'");
       const copyBtn = copyable && value ? ` <button class="copy-btn" onclick="navigator.clipboard.writeText('${safe}')">Copy</button>` : "";
-      return `<div class="meta-card meta-card--summary meta-card--wide"><h4>${esc(label)}${copyBtn}</h4>${renderValueBlock(val, { mono: true })}</div>`;
+      return `<div class="meta-card meta-card--summary meta-card--wide meta-card--mono"><h4>${esc(label)}${copyBtn}</h4>${renderValueBlock(val, { mono: true })}</div>`;
     }
 
     function metaCardLink(label, url) {
-      return `<div class="meta-card meta-card--summary meta-card--wide"><h4>${esc(label)}</h4>${renderValueBlock(url, { link: true, mono: true })}</div>`;
+      return `<div class="meta-card meta-card--summary meta-card--wide meta-card--mono"><h4>${esc(label)}</h4>${renderValueBlock(url, { link: true, mono: true })}</div>`;
     }
 
     function renderValueBlock(value, opts) {
@@ -600,7 +637,7 @@
 
     function renderPreviewList(items, opts) {
       const options = opts || {};
-      const chips = items.slice(0, 5).map((item) => `<span class="chip${options.mono ? " chip--mono" : ""}">${esc(String(item))}</span>`).join("");
+      const chips = items.slice(0, 6).map((item) => `<span class="chip${options.mono ? " chip--mono" : ""}">${esc(String(item))}</span>`).join("");
       return `<div class="chip-list">${chips}</div>`;
     }
 
@@ -616,10 +653,10 @@
 
     function renderExpandableList(title, items, opts) {
       const options = opts || {};
-      const preview = items.slice(0, 8);
+      const preview = items.slice(0, 10);
       const previewText = preview.map((item) => String(item)).join(", ");
-      const singleLine = previewText.length <= 180;
-      const useColumns = options.columns !== false && items.length >= 8;
+      const singleLine = previewText.length <= 200;
+      const useColumns = options.columns !== false && items.length >= 10;
       return `
         <details class="expand-block"${options.collapsed === false ? " open" : ""}>
           <summary>
@@ -639,6 +676,19 @@
       if (!rows.length) return "";
       const options = opts || {};
       const columns = Object.keys(rows[0] || {});
+      if (shouldRenderCompactTable(rows, columns, options)) {
+        const cards = rows.map((row) => `
+          <div class="kv-card">
+            ${columns.map((column) => `<div class="kv-row"><span class="kv-row__label">${esc(column)}</span><span class="kv-row__value">${esc(String(row[column] == null ? "" : row[column]))}</span></div>`).join("")}
+          </div>
+        `).join("");
+        return `
+          <details class="expand-block"${options.collapsed === false ? " open" : ""}>
+            <summary><span>${esc(title)}</span><span class="count-badge">${rows.length} rows</span></summary>
+            <div class="expand-content"><div class="kv-grid">${cards}</div></div>
+          </details>
+        `;
+      }
       const table = `
         <div class="table-wrap">
           <table class="prop-table">
@@ -671,6 +721,32 @@
       if (Array.isArray(value)) return value.length > 5;
       if (typeof value === "object" && value) return Object.keys(value).length > 4;
       return typeof value === "string" && value.length > 140;
+    }
+
+    function classifyMetaCard(value, opts) {
+      const size = (opts || {}).size;
+      if (size === "compact") return "meta-card--compact";
+      if (size === "wide") return "meta-card--wide";
+      if (size === "full") return "meta-card--full";
+      if (Array.isArray(value)) {
+        const joined = value.map((item) => String(item)).join(", ");
+        if (value.length <= 2 && joined.length <= 18) return "meta-card--compact";
+        if (joined.length <= 72) return "meta-card--standard";
+        return "meta-card--wide";
+      }
+      if (typeof value === "object" && value) {
+        return Object.keys(value).length <= 3 ? "meta-card--standard" : "meta-card--wide";
+      }
+      const text = String(value || "");
+      if (text.length <= 16 && !/\s/.test(text)) return "meta-card--compact";
+      if (text.length <= 88) return "meta-card--standard";
+      return "meta-card--wide";
+    }
+
+    function shouldRenderCompactTable(rows, columns, opts) {
+      if ((opts || {}).forceTable) return false;
+      if (columns.length > 2 || rows.length > 6) return false;
+      return rows.every((row) => columns.every((column) => String(row[column] == null ? "" : row[column]).length <= 80));
     }
 
     function hasValue(value) {
@@ -732,7 +808,7 @@
       return `
         <h3 style="margin:1.5rem 0 .5rem">User-Facing Features</h3>
         <div class="meta-grid meta-grid--dense">
-          ${order.map(([label, value]) => metaCard(label, value)).join("")}
+          ${order.map(([label, value]) => metaCard(label, value, { size: Array.isArray(value) && value.length <= 3 ? "compact" : "standard" })).join("")}
         </div>
       `;
     }
@@ -965,6 +1041,26 @@
       const minutes = String(parsed.getUTCMinutes()).padStart(2, "0");
       const seconds = String(parsed.getUTCSeconds()).padStart(2, "0");
       return `${year}-${month}-${day} ${hours}:${minutes}:${seconds} GMT`;
+    }
+
+    function slugify(value) {
+      return String(value || "")
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "") || "device";
+    }
+
+    function downloadJson(filename, value) {
+      const blob = new Blob([`${JSON.stringify(value, null, 2)}\n`], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
     }
 
     async function fetchJson(url) {

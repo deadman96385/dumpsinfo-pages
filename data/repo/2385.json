@@ -7795,5 +7795,11 @@
   },
   "extracted_at": "2026-03-29T15:33:17.957308+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Z2",
+  "market_name_candidates": [
+    "Z2"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Z2"
 }

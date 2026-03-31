@@ -16686,5 +16686,11 @@
   },
   "extracted_at": "2026-03-29T15:32:30.196072+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Surface Duo 2",
+  "market_name_candidates": [
+    "Surface Duo 2"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Surface Duo 2"
 }

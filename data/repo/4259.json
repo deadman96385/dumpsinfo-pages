@@ -9030,5 +9030,11 @@
   },
   "extracted_at": "2026-03-29T15:40:41.006110+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "ROUVO V",
+  "market_name_candidates": [
+    "ROUVO V"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "ROUVO V"
 }

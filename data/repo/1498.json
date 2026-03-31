@@ -6167,5 +6167,13 @@
   },
   "extracted_at": "2026-03-29T15:26:01.872069+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Griffe T7",
+  "market_name_candidates": [
+    "Griffe T7",
+    "Griffe T7_TE",
+    "Griffe_T7"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Griffe T7"
 }

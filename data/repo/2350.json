@@ -3941,5 +3941,13 @@
   },
   "extracted_at": "2026-03-29T15:32:47.394333+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "unknown"
+  "gpu_label": "unknown",
+  "market_name": "Hisense Infinity E30 Lite",
+  "market_name_candidates": [
+    "Hisense Infinity E30 Lite",
+    "Hisense U40",
+    "Hisense U963"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Hisense Infinity E30 Lite"
 }

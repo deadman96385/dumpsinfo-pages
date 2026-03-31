@@ -15589,5 +15589,12 @@
   },
   "extracted_at": "2026-03-29T15:49:18.564114+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "DSB-0230",
+  "market_name_candidates": [
+    "DSB-0230",
+    "Doro 8050"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "DSB-0230"
 }

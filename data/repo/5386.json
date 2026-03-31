@@ -9653,5 +9653,11 @@
   },
   "extracted_at": "2026-03-29T15:49:38.973550+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Gigaset GX4 PRO",
+  "market_name_candidates": [
+    "Gigaset GX4 PRO"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Gigaset GX4 PRO"
 }

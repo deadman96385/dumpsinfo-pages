@@ -10406,7 +10406,13 @@
       "android.hardware.camera.level.full"
     ]
   },
-  "extracted_at": "2026-03-29T12:11:32.635054+00:00",
+  "extracted_at": "2026-03-31T04:49:01.136020+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "POCO M3",
+  "market_name_candidates": [
+    "POCO M3"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "POCO M3"
 }

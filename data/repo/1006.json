@@ -5790,5 +5790,11 @@
   },
   "extracted_at": "2026-03-29T15:22:57.358080+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Digma LINX Alfa 3G LT4047MG",
+  "market_name_candidates": [
+    "Digma LINX Alfa 3G LT4047MG"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Digma LINX Alfa 3G LT4047MG"
 }

@@ -5742,5 +5742,11 @@
   },
   "extracted_at": "2026-03-29T15:36:18.443401+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "i72",
+  "market_name_candidates": [
+    "i72"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "i72"
 }

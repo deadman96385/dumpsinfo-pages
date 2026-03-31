@@ -9118,5 +9118,14 @@
   },
   "extracted_at": "2026-03-29T15:48:57.952752+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "V10",
+  "market_name_candidates": [
+    "V10",
+    "LG Bello II",
+    "LG Max",
+    "LG Prime II"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "V10"
 }

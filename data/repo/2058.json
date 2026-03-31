@@ -8018,5 +8018,11 @@
   },
   "extracted_at": "2026-03-29T15:46:58.990444+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "A7",
+  "market_name_candidates": [
+    "A7"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "A7"
 }

@@ -8445,5 +8445,13 @@
   },
   "extracted_at": "2026-03-29T15:38:54.571248+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "A7 Pro",
+  "market_name_candidates": [
+    "A7PRO",
+    "A7 Pro",
+    "A7 Pro EEA"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "A7 Pro"
 }

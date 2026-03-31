@@ -68123,5 +68123,11 @@
   },
   "extracted_at": "2026-03-29T15:43:13.154051+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "LAVA LXX504",
+  "market_name_candidates": [
+    "LAVA LXX504"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "LAVA LXX504"
 }

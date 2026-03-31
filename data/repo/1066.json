@@ -5815,5 +5815,12 @@
   },
   "extracted_at": "2026-03-29T15:23:15.608578+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "X90",
+  "market_name_candidates": [
+    "X90",
+    "X90_EEA"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "X90"
 }

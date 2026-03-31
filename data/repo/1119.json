@@ -6156,5 +6156,11 @@
   },
   "extracted_at": "2026-03-29T15:23:34.575044+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Primo RX6",
+  "market_name_candidates": [
+    "Primo RX6"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Primo RX6"
 }

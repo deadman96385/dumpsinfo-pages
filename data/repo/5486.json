@@ -14434,5 +14434,13 @@
   },
   "extracted_at": "2026-03-29T15:51:35.761177+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "v1",
+  "market_name_candidates": [
+    "V1",
+    "LG Optimus L1II",
+    "Active"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "v1"
 }

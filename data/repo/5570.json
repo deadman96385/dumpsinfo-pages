@@ -16642,5 +16642,12 @@
   },
   "extracted_at": "2026-03-29T15:54:56.120517+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "",
+  "market_name_candidates": [
+    "55E82,49E82,50U3A,58U3A,70UD30A,60UD30A,80UD30A,65UR30A",
+    "Impress Sun"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "HONOR sun"
 }

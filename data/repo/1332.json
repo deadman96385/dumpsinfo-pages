@@ -19883,5 +19883,13 @@
   },
   "extracted_at": "2026-03-29T15:25:16.953258+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Nokia 1 Plus",
+  "market_name_candidates": [
+    "Nokia 1 Plus",
+    "TCL 505",
+    "TCL 505 S"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Nokia 1 Plus"
 }

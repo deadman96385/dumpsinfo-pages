@@ -6068,5 +6068,11 @@
   },
   "extracted_at": "2026-03-29T15:23:25.880897+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Infinix NOTE 5",
+  "market_name_candidates": [
+    "Infinix NOTE 5"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Infinix NOTE 5"
 }

@@ -8269,5 +8269,13 @@
   },
   "extracted_at": "2026-03-29T15:49:00.562741+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "Mali-T620"
+  "gpu_label": "Mali-T620",
+  "market_name": "itel A60",
+  "market_name_candidates": [
+    "itel A60",
+    "itel A60E",
+    "itel A662L"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "itel A60"
 }

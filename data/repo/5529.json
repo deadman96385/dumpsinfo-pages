@@ -5089,5 +5089,11 @@
   },
   "extracted_at": "2026-03-29T15:52:27.952827+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "L90",
+  "market_name_candidates": [
+    "L90"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "L90"
 }

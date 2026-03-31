@@ -5930,5 +5930,12 @@
   },
   "extracted_at": "2026-03-29T15:21:20.535124+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "DEXP S380",
+  "market_name_candidates": [
+    "DEXP S380",
+    "S380"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "DEXP S380"
 }

@@ -12826,5 +12826,11 @@
   },
   "extracted_at": "2026-03-29T15:23:06.954586+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "IN1b",
+  "market_name_candidates": [
+    "IN1b"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "IN1b"
 }

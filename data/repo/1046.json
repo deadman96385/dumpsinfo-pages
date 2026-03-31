@@ -10493,5 +10493,12 @@
   },
   "extracted_at": "2026-03-29T15:23:15.906819+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "G6Fit",
+  "market_name_candidates": [
+    "G6Fit",
+    "LG G6"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "G6Fit"
 }

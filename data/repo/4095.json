@@ -7214,5 +7214,12 @@
   },
   "extracted_at": "2026-03-29T14:24:39.351141+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "LG G5",
+  "market_name_candidates": [
+    "H1",
+    "LG G5"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "LG G5"
 }

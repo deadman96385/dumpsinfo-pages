@@ -12580,5 +12580,11 @@
   },
   "extracted_at": "2026-03-29T15:43:39.937710+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "HONOR X7a",
+  "market_name_candidates": [
+    "HONOR X7a"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "HONOR X7a"
 }

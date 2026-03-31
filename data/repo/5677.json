@@ -12089,5 +12089,11 @@
   },
   "extracted_at": "2026-03-29T15:56:23.191598+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "The Fairphone (Gen. 6)",
+  "market_name_candidates": [
+    "The Fairphone (Gen. 6)"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "The Fairphone (Gen. 6)"
 }

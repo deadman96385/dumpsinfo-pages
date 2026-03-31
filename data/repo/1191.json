@@ -5604,5 +5604,11 @@
   },
   "extracted_at": "2026-03-29T15:24:09.631818+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "V145",
+  "market_name_candidates": [
+    "V145"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "V145"
 }

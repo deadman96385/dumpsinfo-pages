@@ -6313,5 +6313,14 @@
   },
   "extracted_at": "2026-03-29T15:41:52.454509+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "C8",
+  "market_name_candidates": [
+    "Liquid Gallant E350",
+    "C8",
+    "C8_EEA",
+    "C8_ROW"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "C8"
 }

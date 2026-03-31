@@ -39834,5 +39834,11 @@
   },
   "extracted_at": "2026-03-29T15:37:56.738732+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Nokia G60 5G",
+  "market_name_candidates": [
+    "Nokia G60 5G"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Nokia G60 5G"
 }

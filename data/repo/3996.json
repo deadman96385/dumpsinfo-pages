@@ -4153,5 +4153,20 @@
   },
   "extracted_at": "2026-03-29T15:38:19.035199+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "",
+  "market_name_candidates": [
+    "Grand S II LTE",
+    "MF97B",
+    "MF97B_T",
+    "MF97E",
+    "MF97G",
+    "S2004",
+    "S2005",
+    "S2007",
+    "Spro 2",
+    "Spro2"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "qcom msm8974"
 }

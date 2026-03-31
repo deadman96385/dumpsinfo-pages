@@ -11670,5 +11670,11 @@
   },
   "extracted_at": "2026-03-29T14:43:54.706692+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "MEIZU Lucky 08",
+  "market_name_candidates": [
+    "MEIZU Lucky 08"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "MEIZU Lucky 08"
 }

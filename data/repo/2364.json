@@ -9165,5 +9165,11 @@
   },
   "extracted_at": "2026-03-29T15:33:05.499390+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Shahin_III",
+  "market_name_candidates": [
+    "Shahin_III"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Shahin_III"
 }

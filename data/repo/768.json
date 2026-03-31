@@ -4328,5 +4328,11 @@
   },
   "extracted_at": "2026-03-29T15:21:33.369874+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "unknown"
+  "gpu_label": "unknown",
+  "market_name": "Pixel XL",
+  "market_name_candidates": [
+    "Pixel XL"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Pixel XL"
 }

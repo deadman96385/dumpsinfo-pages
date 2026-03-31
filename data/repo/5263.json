@@ -10144,7 +10144,13 @@
       "android.hardware.camera.level.full"
     ]
   },
-  "extracted_at": "2026-03-29T12:27:12.700650+00:00",
+  "extracted_at": "2026-03-31T04:49:38.702451+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "Lenovo Tab Plus",
+  "market_name_candidates": [
+    "Lenovo Tab Plus"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Lenovo Tab Plus"
 }

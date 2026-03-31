@@ -22030,5 +22030,11 @@
   },
   "extracted_at": "2026-03-29T15:22:37.887888+00:00",
   "cpu_family": "nvidia",
-  "gpu_label": "tegra.so"
+  "gpu_label": "tegra.so",
+  "market_name": "SHIELD TV Pro",
+  "market_name_candidates": [
+    "SHIELD TV Pro"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "SHIELD TV Pro"
 }

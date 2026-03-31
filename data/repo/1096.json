@@ -5540,5 +5540,11 @@
   },
   "extracted_at": "2026-03-29T15:23:27.762559+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "B245",
+  "market_name_candidates": [
+    "B245"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "B245"
 }

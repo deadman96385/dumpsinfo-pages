@@ -9576,5 +9576,11 @@
   },
   "extracted_at": "2026-03-29T15:52:07.786942+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "TECNO SPARK 10",
+  "market_name_candidates": [
+    "TECNO SPARK 10"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "TECNO SPARK 10"
 }

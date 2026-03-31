@@ -12811,5 +12811,11 @@
   },
   "extracted_at": "2026-03-29T15:56:26.417285+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "OnePlus Ace 5 至尊版",
+  "market_name_candidates": [
+    "OnePlus Ace 5 至尊版"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "OnePlus Ace 5 至尊版"
 }

@@ -7611,5 +7611,12 @@
   },
   "extracted_at": "2026-03-29T15:56:42.141569+00:00",
   "cpu_family": "rockchip",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "",
+  "market_name_candidates": [
+    "F5281CH",
+    "Sero 8 pro"
+  ],
+  "market_name_brand_aligned": false,
+  "display_name": "Philips rk3288"
 }

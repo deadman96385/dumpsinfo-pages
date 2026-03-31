@@ -17408,5 +17408,13 @@
   },
   "extracted_at": "2026-03-29T15:35:12.750009+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "Mi 11 LE",
+  "market_name_candidates": [
+    "Mi 11 LE",
+    "Xiaomi 11 Lite 5G NE",
+    "Xiaomi 11 Lite NE"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "Mi 11 LE"
 }

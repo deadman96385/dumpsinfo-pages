@@ -5857,5 +5857,17 @@
   },
   "extracted_at": "2026-03-29T15:36:05.819476+00:00",
   "cpu_family": "qualcomm",
-  "gpu_label": "adreno"
+  "gpu_label": "adreno",
+  "market_name": "A2017",
+  "market_name_candidates": [
+    "TL99",
+    "TL99G",
+    "A2017",
+    "A2017G",
+    "A2017U",
+    "ZTE A2017G",
+    "ZTE A2017U"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "A2017"
 }

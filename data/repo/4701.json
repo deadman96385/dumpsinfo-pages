@@ -19217,5 +19217,11 @@
   },
   "extracted_at": "2026-03-29T15:44:24.116989+00:00",
   "cpu_family": "mediatek",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "iPlay60_mini_Pro",
+  "market_name_candidates": [
+    "iPlay60_mini_Pro"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "iPlay60_mini_Pro"
 }

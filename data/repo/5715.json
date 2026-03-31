@@ -7819,5 +7819,12 @@
   },
   "extracted_at": "2026-03-29T15:56:36.273624+00:00",
   "cpu_family": "unisoc",
-  "gpu_label": "mali"
+  "gpu_label": "mali",
+  "market_name": "onn. Streaming Device 4K pro",
+  "market_name_candidates": [
+    "270",
+    "onn. Streaming Device 4K pro"
+  ],
+  "market_name_brand_aligned": true,
+  "display_name": "onn. Streaming Device 4K pro"
 }
